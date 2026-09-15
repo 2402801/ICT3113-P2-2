@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# JMeter load generator outputs
+load-generator/data/*.jsonl
+load-generator/results/*.jtl
+load-generator/results/report/
+load-generator/jmeter.log
