@@ -1,6 +1,6 @@
 import time
 
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Request
 from pydantic import BaseModel, Field
 from sqlalchemy import func
 from sqlalchemy.orm import Session
@@ -8,13 +8,31 @@ from sqlalchemy.orm import Session
 from categories import CATEGORIES
 from classifier import classify
 from database import Ticket, RequestMetric, get_db, init_db
+from logging_setup import configure_logging
 
 app = FastAPI(title="Ticket Triage Service")
+access_logger = configure_logging()
 
 
 @app.on_event("startup")
 def on_startup() -> None:
     init_db()
+
+
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    start = time.perf_counter()
+    response = await call_next(request)
+    latency_ms = (time.perf_counter() - start) * 1000
+    access_logger.info(
+        "%s %s %s %.2fms client=%s",
+        request.method,
+        request.url.path,
+        response.status_code,
+        latency_ms,
+        request.client.host if request.client else "-",
+    )
+    return response
 
 
 class TicketIn(BaseModel):

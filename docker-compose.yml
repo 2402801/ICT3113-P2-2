@@ -37,6 +37,8 @@ services:
       MYSQL_USER: triage
       MYSQL_PASSWORD: triage
       MYSQL_DATABASE: triage
+    volumes:
+      - ./server/logs:/app/logs
     depends_on:
       mysql:
         condition: service_healthy
