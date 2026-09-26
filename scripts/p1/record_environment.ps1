@@ -37,7 +37,8 @@ $dockerVersion = Get-OrDefault { (Invoke-Native -Exe 'docker' -Arguments @('vers
 $composeVersion = Get-OrDefault { (Invoke-Native -Exe 'docker' -Arguments @('compose', 'version', '--short')) -join ' ' }
 $dockerVm = Get-OrDefault { (Invoke-Native -Exe 'docker' -Arguments @('info', '--format', '{{.NCPU}} vCPU, {{.MemTotal}} bytes RAM, kernel {{.KernelVersion}}')) -join ' ' }
 $wsl = Get-OrDefault { (Invoke-Native -Exe 'wsl.exe' -Arguments @('--version') | Where-Object { $_ -match 'WSL version|Kernel version' }) -join '; ' }
-$ollamaLogs = Get-ListOrEmpty { Invoke-Compose @('logs', '--no-color', 'ollama') }
+# @() at each call site: PowerShell unrolls a one-item array returned from a function.
+$ollamaLogs = @(Get-ListOrEmpty { Invoke-Compose @('logs', '--no-color', 'ollama') })
 $serverConfig = $ollamaLogs | Where-Object { $_ -match 'msg="server config"' } | Select-Object -Last 1
 $computeLine = $ollamaLogs | Where-Object { $_ -match 'msg="inference compute"' } | Select-Object -Last 1
 function Get-OllamaSetting([string]$Name) {
@@ -47,7 +48,8 @@ function Get-OllamaSetting([string]$Name) {
 
 $images = foreach ($svc in @('mysql', 'ollama', 'server')) {
     $id = Get-OrDefault { (Invoke-Compose @('images', '-q', $svc) | Select-Object -First 1) }
-    $ref = Get-OrDefault { (Invoke-Native -Exe 'docker' -Arguments @('image', 'inspect', $id, '--format', '{{join .RepoTags ","}} {{join .RepoDigests ","}}')) -join ' ' }
+    # No embedded double quotes in the format: PowerShell 5.1 strips them when calling native exes.
+    $ref = Get-OrDefault { (Invoke-Native -Exe 'docker' -Arguments @('image', 'inspect', $id, '--format', '{{json .RepoTags}} {{json .RepoDigests}}')) -join ' ' }
     [pscustomobject]@{ service = $svc; image = $ref; id = $id }
 }
 
@@ -108,7 +110,7 @@ Add '## Candidate models (Docker Ollama store)'
 Add ''
 Add '| Tag | Full digest | Short ID | Step 4 ID | Size | Params | Quant |'
 Add '| --- | --- | --- | --- | --- | --- | --- |'
-$inventory = Get-ListOrEmpty { Get-ModelInventory }
+$inventory = @(Get-ListOrEmpty { Get-ModelInventory })
 foreach ($m in $Candidates) {
     $x = $inventory | Where-Object { $_.tag -eq $m }
     if ($x) {
@@ -122,12 +124,12 @@ Add ''
 Add '## CPU-only evidence'
 Add ''
 if ($computeLine) { Add "- Ollama found no GPU at startup: ``$computeText``" }
-$loaded = Get-ListOrEmpty { Get-LoadedModels }
+$loaded = @(Get-ListOrEmpty { Get-LoadedModels })
 if ($loaded.Count -gt 0) {
     foreach ($l in $loaded) { Add "- ``/api/ps``: $($l.name) resident, size=$($l.size) bytes, **size_vram=$($l.size_vram)**" }
     Add ''
     Add '```'
-    foreach ($row in (Get-ListOrEmpty { Invoke-Compose @('exec', '-T', 'ollama', 'ollama', 'ps') })) { Add $row }
+    foreach ($row in @(Get-ListOrEmpty { Invoke-Compose @('exec', '-T', 'ollama', 'ollama', 'ps') })) { Add $row }
     Add '```'
 }
 else { Add '- No model loaded at record time. `prepare_run.ps1` checks size_vram = 0 before every run and saves `ollama_ps_before.*` in the run folder.' }

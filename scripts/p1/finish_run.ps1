@@ -28,7 +28,10 @@ Write-Utf8File -Path (Join-Path $runDir 'ollama_ps_after.json') -Content (Conver
 Write-Utf8File -Path (Join-Path $runDir 'ollama_ps_after.txt') -Content ((Invoke-Compose @('exec', '-T', 'ollama', 'ollama', 'ps')) -join "`n")
 $gpu = @($loaded | Where-Object { $_.size_vram -gt 0 })
 if ($gpu.Count -gt 0) { Write-Warn "GPU memory in use by $($gpu.name -join ', ') - this run is NOT valid evidence." }
-else { Write-Ok 'still CPU only' }
+elseif (-not ($loaded | Where-Object { $_.name -eq $info.model })) {
+    Write-Warn "$($info.model) is no longer loaded: it was unloaded during the run, so some tickets paid a cold start."
+}
+else { Write-Ok "$($info.model) still resident, CPU only" }
 
 Write-Step 'Archiving the service log'
 Invoke-Compose @('stop', 'server') | Out-Null

@@ -101,7 +101,9 @@ Then the tester copies their raw output (`.jtl`, accuracy CSV, …) into `runs\<
 | `ollama.log` | finish | Ollama's own log for the run window (one `[GIN]` line per inference) |
 | tester's files | tester | raw `.jtl` / accuracy output — **required** |
 
-`runs/run_register.csv` has one row per run (READY → DONE) and is the index for the slides.
+`runs/run_register.csv` has one row per run (READY → DONE) and is the index for the slides. Rows with
+`test_type = smoke` are P1's setup checks (two invented tickets per model, 2026-09-26). They prove the procedure and
+CPU-only inference work for all four models. They are not evidence for any requirement; exclude them from analysis.
 
 ## 6. For testers (P2–P5)
 
