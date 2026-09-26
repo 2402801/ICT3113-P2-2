@@ -1,0 +1,5 @@
+id	endpoint	status_code	latency_ms	created_at
+1	/tickets	200	24360.8	2026-09-26 13:37:49
+2	/tickets	200	17208.1	2026-09-26 13:38:06
+3	/search	200	2.04971	2026-09-26 13:38:06
+4	/stats	200	1.64184	2026-09-26 13:38:06
