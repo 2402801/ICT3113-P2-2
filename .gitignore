@@ -225,3 +225,7 @@ load-generator/jmeter.log
 
 # Server access log (scratch — copy a reported run's log into runs/ instead)
 server/logs/*.log
+
+# Official run evidence is committed: keep logs/results under runs/ despite the *.log rule above
+!runs/**/*.log
+!runs/**/*.jtl

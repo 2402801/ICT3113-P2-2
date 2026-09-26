@@ -1,6 +1,8 @@
+name: ict3113-p2-2
+
 services:
   mysql:
-    image: mysql:8.0
+    image: mysql:8.0.46
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -8,7 +10,8 @@ services:
       MYSQL_USER: triage
       MYSQL_PASSWORD: triage
     ports:
-      - "3306:3306"
+      # Host-only: testers on other laptops use the API on :8000, never the database.
+      - "127.0.0.1:3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
@@ -18,13 +21,23 @@ services:
       retries: 20
 
   ollama:
-    image: ollama/ollama:latest
+    # Pinned version: the same Ollama build for every official run (see docs/P1_SUT_RUNBOOK.md).
+    image: ollama/ollama:0.34.4
     restart: unless-stopped
-    profiles: ["llm"]
+    # No GPU devices are passed through to this container, so inference is CPU-only.
+    environment:
+      OLLAMA_NUM_PARALLEL: "1"       # baseline: one inference at a time, others wait in Ollama's queue
+      OLLAMA_MAX_LOADED_MODELS: "1"  # only the model under test is resident in RAM
+      OLLAMA_KEEP_ALIVE: "-1"        # never unload on idle mid-test; models are unloaded explicitly on switch
     ports:
-      - "11434:11434"
+      - "127.0.0.1:11434:11434"
     volumes:
       - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 10s
+      retries: 30
 
   server:
     build: ./server
@@ -37,10 +50,17 @@ services:
       MYSQL_USER: triage
       MYSQL_PASSWORD: triage
       MYSQL_DATABASE: triage
+      OLLAMA_URL: ${OLLAMA_URL:-http://ollama:11434/api/generate}
+      # Model under test. Switch with scripts/p1/switch_model.ps1 (writes it to .env).
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:1b}
+      OLLAMA_THINK: ${OLLAMA_THINK:-default}  # default = model's own behaviour; true/false forces it
+      OLLAMA_TIMEOUT_S: ${OLLAMA_TIMEOUT_S:-600}
     volumes:
       - ./server/logs:/app/logs
     depends_on:
       mysql:
+        condition: service_healthy
+      ollama:
         condition: service_healthy
 
 volumes:

@@ -5,37 +5,38 @@ plays the role of the complaint intake.
 
 ## Layout
 
-- `server/` — FastAPI web service. `POST /tickets`, `GET /search`, `GET /stats`. Classifies each
-  ticket (currently via a placeholder classifier — not yet wired to Ollama), stores the ticket +
-  assigned category in MySQL, and records per-request latency in a `request_metrics` table.
+- `server/` — FastAPI web service. `POST /tickets`, `GET /search`, `GET /stats`, `GET /health`.
+  Classifies each ticket with one blocking call to Ollama (`classifier.py`, fixed prompt in
+  `prompt.py`), stores the ticket + assigned category in MySQL, and records per-request latency in a
+  `request_metrics` table and in `server/logs/access.log` (with Ollama's timing breakdown).
   Classification is synchronous — the response to `POST /tickets` doesn't return until classification
-  is done.
+  is done. No caching, queuing or batching.
 - `load-generator/` — Apache JMeter test plan (`load_test.jmx`) modelling the Tier A workload: ticket
   intake (`POST /tickets`, thread count simulating one or more "load machines") and staff ticket lookups
   (`GET /search?q=...`), each cycling through an off-peak → peak → off-peak phase sequence. `prepare_data.py`
   converts the dataset CSV into a JMeter-friendly input file first.
 - `Dataset/` — the raw dataset CSV. This is never loaded into the service directly; it's only read by
   the load generator, which submits tickets one at a time exactly as a real intake would.
-- `docker-compose.yml` — brings up MySQL and the server together. Ollama is defined too but sits behind
-  the `llm` profile since the classifier doesn't call it yet — bring it up separately once that's wired.
+- `docker-compose.yml` — brings up MySQL, Ollama (CPU only, pinned version) and the server together.
+- `scripts/p1/` + `docs/P1_SUT_RUNBOOK.md` — operating the official SUT laptop: model switching,
+  per-run warm-up/reset/log archiving into `runs/`, preflight checks, environment evidence.
 
 ## Running the service
 
 ```bash
-docker compose up --build
+docker compose up -d --build
 ```
 
 This starts:
-- `mysql` on port 3306 (db `triage`, user/pass `triage`/`triage`)
+- `mysql` on 127.0.0.1:3306 (db `triage`, user/pass `triage`/`triage`)
+- `ollama` on 127.0.0.1:11434 (CPU only)
 - `server` (the Ticket Triage Service) on port 8000
 
-To also start Ollama (once the classifier is wired up to use it):
+The model is chosen by `OLLAMA_MODEL` (default `llama3.2:1b`; set it in `.env`, or use
+`scripts/p1/switch_model.ps1`). Pull the candidate models once with
+`powershell -ExecutionPolicy Bypass -File scripts\p1\pin_models.ps1 -Pull`.
 
-```bash
-docker compose --profile llm up --build
-```
-
-Health check:
+Health check (also shows which model is live):
 
 ```bash
 curl http://localhost:8000/health
@@ -46,6 +47,7 @@ curl http://localhost:8000/health
 - `POST /tickets` — body `{"narrative": "..."}`, returns `{id, category, narrative, classification_latency_ms}`
 - `GET /search?q=...` — returns tickets whose narrative contains `q`
 - `GET /stats` — returns ticket counts per category
+- `GET /health` — returns `{status, model, prompt_version, think}`
 
 ## Running the load generator (JMeter)
 
