@@ -122,8 +122,9 @@ function Get-LoadedModels {
 
 function Get-PinnedDigest([string]$Model) {
     if (-not (Test-Path $PinsPath)) { return $null }
-    $pin = @(Get-Content $PinsPath -Raw | ConvertFrom-Json) | Where-Object { $_.tag -eq $Model }
-    if ($pin) { return $pin.digest }
+    # Assign first: PowerShell 5.1's ConvertFrom-Json emits a JSON array as ONE pipeline object.
+    $pins = Get-Content $PinsPath -Raw | ConvertFrom-Json
+    foreach ($pin in $pins) { if ($pin.tag -eq $Model) { return $pin.digest } }
     return $null
 }
 

@@ -96,7 +96,7 @@ Then the tester copies their raw output (`.jtl`, accuracy CSV, …) into `runs\<
 | `run_info.json` | prepare | model + digest, commit, prompt, think, Ollama version, power state, SUT URL, READY time |
 | `warmup_access.log` | prepare | warm-up request(s) and P1 checks before READY (not part of the run) |
 | `ollama_ps_before.*` / `ollama_ps_after.*` | prepare / finish | model resident, `size_vram = 0` (CPU-only proof) |
-| `server_access.log` | finish | one line per request handled during the run |
+| `server_access.log` | finish | one line per request handled during the run (the first `GET /health` with `run=-` is P1's readiness check) |
 | `tickets.tsv`, `request_metrics.tsv` | finish | the database rows written during the run |
 | `ollama.log` | finish | Ollama's own log for the run window (one `[GIN]` line per inference) |
 | tester's files | tester | raw `.jtl` / accuracy output — **required** |
