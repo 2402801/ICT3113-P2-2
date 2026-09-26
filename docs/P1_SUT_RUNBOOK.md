@@ -31,14 +31,14 @@ Only the model changes between official comparisons. Everything below stays iden
 | Models | the 4 Step 4 candidates, full digests in `docs/environment/model_pins.json` | a changed digest = a different model |
 | GPU | none passed to the container; `size_vram = 0` checked before and after every run | brief forbids GPU inference |
 | `OLLAMA_NUM_PARALLEL` | 1 | baseline processes one ticket at a time; others wait in Ollama's queue |
-| `OLLAMA_MAX_QUEUE` | 512 (Ollama default) | beyond this Ollama answers 503 → the service answers 502 |
+| `OLLAMA_MAX_QUEUE` | 512 (Ollama default) | never reached through this service: its 40-thread pool lets at most 40 tickets into Ollama at once (P5 notes in §9) |
 | `OLLAMA_MAX_LOADED_MODELS` | 1 | only the model under test uses RAM |
 | `OLLAMA_KEEP_ALIVE` | -1 | a quiet period mid-test must not unload the model and turn the next ticket into a cold start |
 | Context window | Ollama default 4096 tokens (longest ticket + prompt ≈ 850 tokens) | no truncation |
 | Prompt | `server/prompt.py`, `PROMPT_VERSION = v1`: 7 categories + the protocol §1 definitions, no §2–3 edge-case rules | same instructions for every model |
 | Decoding | `temperature 0`, `seed 42`, JSON-schema output restricted to the 7 exact category names | deterministic; the answer is always one valid category |
 | `think` | not sent (`OLLAMA_THINK=default`): each model as shipped, so gemma4:e4b reasons before answering and the other three cannot | untuned baseline; matches how the Step 4 predictions were timed; see §9 |
-| Service → Ollama timeout | 600 s | failures come from the system limits under test, not an arbitrary short timeout |
+| Service → Ollama timeout | 600 s, counted from when a service thread calls Ollama | failures come from the system limits under test, not an arbitrary short timeout |
 | Warm-up | 1 fixed invented ticket (`$WarmupNarrative` in `scripts/p1/_common.ps1`), before each run, not measured | every run starts with the model already in RAM |
 | Service | synchronous: `POST /tickets` returns only after classification; no caching, queuing or batching | Assignment 1 baseline |
 
@@ -111,13 +111,16 @@ CPU-only inference work for all four models. They are not evidence for any requi
   returns the model under test, e.g. `{"status":"ok","model":"phi3:3.8b","prompt_version":"v1","think":"false"}`.
 - Only send traffic between READY and `finish_run`, and only for your run. Anything else lands in that run's evidence.
 - Optional header `X-Run-Id: <run-id>`: it is written into every server log line (`run=`) for that request.
-- `POST /tickets` → `200 {"id","category","narrative","classification_latency_ms"}`. `502` = classification failed
-  (Ollama error, queue full, timeout, or no valid category); the log's `error=` field says which. Count 502s as errors.
+- `POST /tickets` → `200 {"id","category","narrative","classification_latency_ms"}`. `502` = classification failed;
+  the log's `error=` field says why: `OllamaError` (Ollama returned an error), `ReadTimeout` (no answer within 600 s)
+  or `ClassificationError` (no valid category in the answer). Count 502s as errors.
 - Server log line format (UTC):
   `2026-09-26T13:17:09.317Z POST /tickets 200 3757.89ms client=… req_id=… start_ms=<epoch ms> run=… model=… ticket_id=… category="…" ollama_total_ms=… ollama_load_ms=… prompt_tokens=… prompt_eval_ms=… eval_tokens=… eval_ms=…`
   - `start_ms` is directly comparable with JMeter's `timeStamp` (epoch ms), within the two laptops' clock offset.
   - Every response carries an `X-Request-ID` header equal to `req_id`.
   - Time spent waiting in Ollama's queue ≈ `ollama_total_ms − ollama_load_ms − prompt_eval_ms − eval_ms`.
+  - Time spent in the service outside the model call (under load, mostly waiting for a free thread) ≈ the line's
+    latency − `classification_latency_ms` of the same ticket (`tickets.tsv`, joined on `ticket_id`).
 - `client=` shows the Docker gateway, not your laptop's IP (Docker Desktop port forwarding). Runs are told apart by time window and `run=`.
 
 ## 7. Manual fallback commands
@@ -169,13 +172,30 @@ and confirm `/health`. A leftover `$env:OLLAMA_MODEL` in your shell overrides `.
 8. **For Slide 5 (FYI).** All four pulled digests match the Step 4 short IDs. The default tags use different
    quantisations: llama3.2:1b Q8_0, phi3:3.8b Q4_0, mistral:7b Q4_K_M, gemma4:e4b Q4_K_M (8.0B, 8.95 GB).
    This affects speed and accuracy, so mention it next to the digests.
+9. **Other JMeter plan details (P2).** Both samplers have a 60 s response timeout, but the service waits up to 600 s
+   for the model. A ticket slower than 60 s becomes a JMeter error while the service still finishes and stores it
+   (200 in `server_access.log`), and no latency above 60 s can be seen. Choose the timeout on purpose and record it.
+   The plan writes to a fixed `results/results.jtl` and JMeter appends to an existing file, so use a new file per run
+   (`-l <run-id>.jtl`). The plan sends no `X-Run-Id` header; adding it to the Header Manager puts the run ID on every
+   server log line.
 
 Observations for P5's bottleneck analysis. These are not fixes; the baseline stays unoptimised.
 
-- `POST /tickets` is a sync endpoint: FastAPI runs it on a ~40-thread pool. Under load, up to ~40 requests
-  wait inside the service while Ollama (NUM_PARALLEL=1) serves one at a time. The rest queue in Ollama (max 512).
-- `GET /search` shares that thread pool, so heavy ticket load can delay searches even though search never calls the model.
-- `GET /search` scans the whole `tickets` table (`LIKE '%q%'`) and returns every full narrative. It slows down as a run stores more tickets.
+- All four endpoints are sync functions, so FastAPI runs them on one shared pool of 40 threads (anyio's default,
+  checked in the container). A `POST /tickets` holds its thread for the whole Ollama call.
+- Ollama (NUM_PARALLEL=1) classifies one ticket at a time, so at most 40 tickets are inside Ollama: 1 being
+  classified and up to 39 in its queue. Ollama's 512-request queue limit is never reached through this service.
+- Once 40 tickets are in flight, every new request (ticket, search, stats or health) waits inside the service for a
+  free thread, roughly first come first served, with no limit or timeout of its own. Under a ticket backlog, threads
+  free up only as fast as Ollama finishes tickets, so a search can wait minutes although it never calls the model.
+  This is the main risk for RR-2.
+- The 600 s timeout starts when the thread calls Ollama, so a ticket's total time can exceed 600 s. With up to 39
+  tickets ahead of it in Ollama's queue, a slow model can hit it (502, `error=ReadTimeout`).
+- `GET /search` scans the whole `tickets` table (`LIKE '%q%'`), then fetches each match again with its own query
+  (SQLAlchemy expires the loaded rows when the metric row is committed), and returns every full narrative: 1 + N
+  queries for N matches (checked in the container: 2 matches → 3 queries). It slows down as a run stores more tickets.
+- The database pool is SQLAlchemy's default: 5 connections + 10 overflow. A request that waits more than 30 s for a
+  connection fails with 500.
 - Ollama (llama.cpp) reuses the processed instruction prefix of the previous prompt. The service caches
   nothing, but Ollama itself processes only the new ticket text. Example from the setup smoke test
   (llama3.2:1b): the first ticket's prompt took 1,482 ms, the next one 179 ms for a similar-length prompt.
