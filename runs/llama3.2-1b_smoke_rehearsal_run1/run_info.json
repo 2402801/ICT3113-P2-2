@@ -1,0 +1,23 @@
+{
+    "run_id":  "llama3.2-1b_smoke_rehearsal_run1",
+    "test_type":  "smoke",
+    "config":  "rehearsal",
+    "run":  1,
+    "tester":  "P2",
+    "model":  "llama3.2:1b",
+    "model_digest":  "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "e4fad714df42a7d029daaedd9061ccf479d01ec0",
+    "git_branch":  "step5-test",
+    "git_dirty":  false,
+    "on_ac_power":  false,
+    "battery_pct":  63,
+    "power_mode":  "Balanced",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://172.20.10.3:8000",
+    "ready_at_utc":  "2026-09-29T07:49:03Z",
+    "notes":  ""
+}
