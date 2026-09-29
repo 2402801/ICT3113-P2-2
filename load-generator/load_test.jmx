@@ -20,6 +20,10 @@
             <stringProp name="Argument.name">PORT</stringProp>
             <stringProp name="Argument.value">${__P(port,8000)}</stringProp>
           </elementProp>
+          <elementProp name="RUN_ID" elementType="Argument">
+            <stringProp name="Argument.name">RUN_ID</stringProp>
+            <stringProp name="Argument.value">${__P(run_id,-)}</stringProp>
+          </elementProp>
           <elementProp name="THREADS" elementType="Argument">
             <stringProp name="Argument.name">THREADS</stringProp>
             <stringProp name="Argument.value">${__P(threads,4)}</stringProp>
@@ -85,6 +89,29 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
+
+      <!-- ===================== RUN TRACEABILITY: applies to every sampler below ===================== -->
+      <!-- X-Run-Id tags each server log line with the run; X-Request-ID is saved per sample when run with -Jsample_variables=req_id -->
+
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="X-Run-Id Header" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-Run-Id</stringProp>
+            <stringProp name="Header.value">${RUN_ID}</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Capture X-Request-ID" enabled="true">
+        <stringProp name="RegexExtractor.useHeaders">true</stringProp>
+        <stringProp name="RegexExtractor.refname">req_id</stringProp>
+        <stringProp name="RegexExtractor.regex">(?i)x-request-id:\s*(\w+)</stringProp>
+        <stringProp name="RegexExtractor.template">$1$</stringProp>
+        <stringProp name="RegexExtractor.default"></stringProp>
+        <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+        <stringProp name="RegexExtractor.match_number">1</stringProp>
+      </RegexExtractor>
+      <hashTree/>
 
       <!-- ===================== TICKET INTAKE: POST /tickets ===================== -->
 
@@ -484,7 +511,7 @@
             <threadCounts>true</threadCounts>
           </value>
         </objProp>
-        <stringProp name="filename">results/results.jtl</stringProp>
+        <stringProp name="filename">${__P(jtl,results/results.jtl)}</stringProp>
       </ResultCollector>
       <hashTree/>
 
