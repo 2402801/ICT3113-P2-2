@@ -150,9 +150,10 @@ function Set-DotEnvValue([string]$Key, [string]$Value) {
 function Get-GitInfo {
     $commit = Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'rev-parse', 'HEAD') | Select-Object -First 1
     $branch = Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'rev-parse', '--abbrev-ref', 'HEAD') | Select-Object -First 1
-    # Evidence folders change during runs by design, so they do not count as a dirty tree.
+    # Evidence folders and analysis/reconcile.py's reports change during testing by design, so they do not count
+    # as a dirty tree.
     $dirty = @(Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'status', '--porcelain', '--',
-            '.', ':(exclude)runs', ':(exclude)docs/environment') | Where-Object { $_ })
+            '.', ':(exclude)runs', ':(exclude)docs/environment', ':(exclude)analysis/output') | Where-Object { $_ })
     [pscustomobject]@{ commit = $commit; branch = $branch; dirty = ($dirty.Count -gt 0); dirty_files = $dirty }
 }
 
