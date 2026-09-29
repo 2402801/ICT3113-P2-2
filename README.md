@@ -63,7 +63,7 @@ curl http://localhost:8000/health
    ```bash
    jmeter -n -t load_test.jmx \
      -Jhost=localhost -Jport=8000 \
-     -Jthreads=4 \
+     -Jrun_id=my-run-01 \
      -Jdata_file=data/tickets.jsonl
    ```
 
@@ -74,37 +74,46 @@ curl http://localhost:8000/health
    docker run --rm --network ict3113-p2-2_default \
      -v "$(pwd)/results:/load-generator/results" \
      -v "$(pwd)/data:/load-generator/data" \
-     triage-jmeter -t load_test.jmx -Jhost=server -Jport=8000 -Jthreads=4 -Jdata_file=data/tickets.jsonl
+     triage-jmeter -t load_test.jmx -Jhost=server -Jport=8000 -Jrun_id=my-run-01 -Jdata_file=data/tickets.jsonl
    ```
 
    On Windows/Git Bash, prefix `docker run` with `MSYS_NO_PATHCONV=1` so the `-v` paths aren't mangled.
 
-`-Jthreads` sets how many concurrent workers post tickets (simulating multiple load machines);
-`-Jsearch_threads` sets concurrent staff searchers; `-Jhost`/`-Jport`/`-Jprotocol` point at the server.
+`-Jhost`/`-Jport`/`-Jprotocol` point at the server.
 Both `data/tickets.jsonl` and `data/search_terms.csv` are read on a loop (`recycle=true`), so a phase
 keeps sending at its target rate for its full duration regardless of file length.
 
-### Workload model (Tier A)
+### Workload model (open-loop)
 
-The test plan is built from Step 3's Tier A ticket-volume model (~5.5 tickets/hour off-peak, ~2.5x
-during a peak/billing window, ~2 staff searches per ticket) rather than firing requests as fast as
-possible. It runs three phases in sequence — off-peak → peak → off-peak — with `POST /tickets` and
-`GET /search` traffic running concurrently within each phase, paced by a Constant Throughput Timer:
+The plan is open-loop: it uses Open Model Thread Groups, so requests arrive at a fixed (Poisson) rate whether or
+not earlier requests have finished. A slow server builds a backlog instead of slowing the load. Three phases run in
+sequence (off-peak, peak, off-peak), with `POST /tickets` and `GET /search` running side by side in each:
 
 | Property | Default | Meaning |
 | --- | --- | --- |
-| `tickets_per_hour_offpeak` | `5.5` | Tier A off-peak ticket intake rate |
-| `peak_multiplier` | `2.5` | Peak-to-average ratio (billing-cycle window) |
-| `search_k` | `2` | Staff searches per ticket (duplicate checks, audits, re-routing) |
-| `time_unit_seconds` | `60` | Real seconds per simulated hour — `60` compresses the model to minutes for testing; set to `3600` to run at real wall-clock pace |
-| `offpeak_duration_sec` | `120` | Length of each off-peak phase (real test seconds) |
-| `peak_duration_sec` | `180` | Length of the peak phase (real test seconds) |
+| `tickets_per_hour_tr1` | `1312` | Step 4 TR-1 ticket rate (off-peak phases), real tickets/hour |
+| `tickets_per_hour_tr2` | `3936` | Step 4 TR-2 ticket rate (peak phase), real tickets/hour |
+| `search_k` | `2` | Staff searches per ticket |
+| `offpeak_duration_sec` | `120` | Length of each off-peak phase |
+| `peak_duration_sec` | `180` | Length of the peak phase |
+| `response_timeout_ms` | `630000` | Client wait per request: the service's 600 s limit on its Ollama call, plus 30 s |
+| `run_id` | `norun` | Sent as the `X-Run-Id` header on every request; always pass it |
 
-With the defaults, the full off-peak/peak/off-peak cycle takes 7 minutes and sends tickets at ~5.5/min
-off-peak and ~13.75/min at peak (with staff search running in parallel at 2x those rates). To validate
-against the real per-hour numbers from the workload model doc, rerun with `-Jtime_unit_seconds=3600`.
+Rates are real per-hour rates (no time compression), so short phases send few requests: 1,312/hour is about 0.36
+per second. Lengthen the phases for a meaningful sample. Threads are not a setting: the Open Model group starts one
+per arrival, so a 600 s ticket keeps its thread for the whole wait.
 
-Results land in `results/results.jtl` (per-request timestamp, latency, status, label — `POST /tickets`
-vs `GET /search`). Server-side request latency for the same traffic is available in the
-`request_metrics` table in MySQL, and per-ticket classification latency is stored on each row in
-`tickets`.
+The 630 s timeout lets JMeter see every answer the service gives itself (200, or 502 when its 600 s Ollama limit
+fires). It does not cap total server time: the 600 s starts only once a request gets one of the service's 40 threads,
+so under a backlog a request can queue for a thread first and pass 630 s. JMeter records that as a timeout error while
+the service still finishes and stores the ticket; `analysis/reconcile.py` pairs these by start time. The cap is
+deliberate: without it an overloaded run could keep draining for hours after the last arrival.
+
+Every schedule ends with a drain pause of connect + response timeout (635 s). JMeter interrupts a group's
+in-flight requests the moment its schedule ends, which would record every ticket still waiting on the model as a
+"Socket closed" error. So a run always lasts the three phases plus 635 s (about 17.6 minutes with the defaults), even
+if the service answers everything early.
+
+Each run writes `results/<run_id>-<yyyyMMdd-HHmmss>.jtl` (override with `-Jjtl=`), so runs never append to one
+file. Server-side request latency is in the `request_metrics` table in MySQL, and per-ticket classification latency
+is stored on each row in `tickets`.
