@@ -17,5 +17,6 @@ ENV PATH="/opt/jmeter/bin:${PATH}"
 WORKDIR /load-generator
 COPY . .
 
-ENTRYPOINT ["jmeter", "-n"]
+# req_id = X-Request-ID of each response, saved as a .jtl column so samples join the server log
+ENTRYPOINT ["jmeter", "-n", "-Jsample_variables=req_id"]
 CMD ["-t", "load_test.jmx"]
