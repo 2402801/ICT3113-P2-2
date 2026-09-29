@@ -1,0 +1,4 @@
+2026-09-26T13:36:00.427Z GET /health 200 1.81ms client=172.21.0.1 req_id=e233005b1aa5 start_ms=1790429760425 run=- model=phi3:3.8b
+2026-09-26T13:36:06.252Z GET /health 200 1.95ms client=172.21.0.1 req_id=0ed0126ea1d4 start_ms=1790429766250 run=- model=mistral:7b
+2026-09-26T13:36:06.604Z GET /health 200 0.48ms client=172.21.0.1 req_id=b742dd4e406a start_ms=1790429766604 run=- model=mistral:7b
+2026-09-26T13:36:19.528Z POST /tickets 200 10463.15ms client=172.21.0.1 req_id=1aaf34c74c68 start_ms=1790429769025 run=mistral-7b_smoke_setupcheck_run1-warmup model=mistral:7b ticket_id=3 category="Credit card" ollama_total_ms=10341.5 ollama_load_ms=4530.6 prompt_tokens=383 prompt_eval_ms=5147.2 eval_tokens=9 eval_ms=656.3

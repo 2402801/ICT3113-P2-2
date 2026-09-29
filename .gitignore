@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# JMeter load generator outputs (scratch — copy a reported run's results into runs/ instead)
+load-generator/data/*.jsonl
+load-generator/results/*.jtl
+load-generator/results/*_accuracy.csv
+load-generator/results/*_accuracy.meta.json
+load-generator/results/report/
+load-generator/jmeter.log
+
+# Server access log (scratch — copy a reported run's log into runs/ instead)
+server/logs/*.log
+
+# Official run evidence is committed: keep logs/results under runs/ despite the *.log rule above
+!runs/**/*.log
+!runs/**/*.jtl

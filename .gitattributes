@@ -1,0 +1,2 @@
+# Run evidence (logs, .jtl, DB exports) is stored byte-for-byte: no line-ending conversion
+runs/** -text

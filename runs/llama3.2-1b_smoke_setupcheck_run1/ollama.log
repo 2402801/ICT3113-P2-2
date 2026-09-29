@@ -1,0 +1,46 @@
+ollama-1  | [GIN] 2026/09/26 - 13:35:17 | 200 |      39.723µs |      172.21.0.1 | GET      "/api/version"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.919 (329/358) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.919 (> 0.100 thold), f_keep = 0.892
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 38 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 38 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 358
+ollama-1  | slot   operator(): id  0 | task 38 | cached n_tokens = 329, memory_seq_rm [329, end)
+ollama-1  | slot init_sampler: id  0 | task 38 | init sampler, took 0.03 ms, tokens: text = 358, total = 358
+ollama-1  | slot print_timing: id  0 | task 38 | prompt eval time =     214.32 ms /    29 tokens (    7.39 ms per token,   135.31 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 38 |        eval time =     196.81 ms /     9 tokens (   24.60 ms per token,    40.65 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 38 |       total time =     411.13 ms /    38 tokens
+ollama-1  | slot print_timing: id  0 | task 38 |    graphs reused =         34
+ollama-1  | slot      release: id  0 | task 38 | stop processing: n_tokens = 366, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/09/26 - 13:35:18 | 200 |  415.824585ms |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.927 (328/354) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.927 (> 0.100 thold), f_keep = 0.896
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 48 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 48 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 354
+ollama-1  | slot   operator(): id  0 | task 48 | cached n_tokens = 328, memory_seq_rm [328, end)
+ollama-1  | slot init_sampler: id  0 | task 48 | init sampler, took 0.04 ms, tokens: text = 354, total = 354
+ollama-1  | slot print_timing: id  0 | task 48 | prompt eval time =     118.08 ms /    26 tokens (    4.54 ms per token,   220.20 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 48 |        eval time =     199.21 ms /     9 tokens (   24.90 ms per token,    40.16 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 48 |       total time =     317.29 ms /    35 tokens
+ollama-1  | slot print_timing: id  0 | task 48 |    graphs reused =         41
+ollama-1  | slot      release: id  0 | task 48 | stop processing: n_tokens = 362, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/09/26 - 13:35:18 | 200 |  324.433251ms |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/09/26 - 13:35:21 | 200 |      99.617µs |      172.21.0.1 | GET      "/api/ps"
+ollama-1  | [GIN] 2026/09/26 - 13:35:21 | 200 |      25.103µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/09/26 - 13:35:21 | 200 |      20.369µs |       127.0.0.1 | GET      "/api/ps"
+ollama-1  | [GIN] 2026/09/26 - 13:35:22 | 200 |      16.105µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/09/26 - 13:35:22 | 200 |     726.061µs |       127.0.0.1 | GET      "/api/tags"
