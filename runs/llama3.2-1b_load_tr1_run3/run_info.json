@@ -1,0 +1,23 @@
+{
+    "run_id":  "llama3.2-1b_load_tr1_run3",
+    "test_type":  "load",
+    "config":  "tr1",
+    "run":  3,
+    "tester":  "P2",
+    "model":  "llama3.2:1b",
+    "model_digest":  "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "08cfe8e0f1a7207bfa43836c6f198bc5165dd729",
+    "git_branch":  "dev",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  98,
+    "power_mode":  "Best performance",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://172.20.10.2:8000",
+    "ready_at_utc":  "2026-10-05T09:12:12Z",
+    "notes":  "Legion Performance; JMeter 5 min send, 295 s timeout"
+}

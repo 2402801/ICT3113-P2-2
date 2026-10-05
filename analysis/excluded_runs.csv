@@ -1,2 +1,5 @@
 run_id,reason
 llama3.2-1b_load_tr1tr2_run1,"prepared but never used: no test traffic; plan changed to separate normal (tr1) and peak (tr2) runs"
+llama3.2-1b_load_tr1_run1,"superseded: old design (tickets + search at 1,312/h); plan restarted on 2026-10-05 as 36 runs: tickets-only normal, tickets-only peak, mixed peak"
+llama3.2-1b_load_tr1_run2,"superseded: old design (tickets + search at 1,312/h); plan restarted on 2026-10-05 as 36 runs: tickets-only normal, tickets-only peak, mixed peak"
+llama3.2-1b_load_tr1_run3,"superseded: old design (tickets + search at 1,312/h); plan restarted on 2026-10-05 as 36 runs: tickets-only normal, tickets-only peak, mixed peak"
