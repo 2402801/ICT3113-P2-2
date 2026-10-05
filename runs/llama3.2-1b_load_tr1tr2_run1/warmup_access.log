@@ -1,0 +1,48 @@
+2026-09-29T09:06:41.128Z GET /health 200 1.89ms client=172.21.0.1 req_id=cffc67b90dd4 start_ms=1790672801126 run=- model=llama3.2:1b
+2026-09-29T09:36:34.619Z GET /health 200 1.65ms client=172.21.0.1 req_id=e022eaeb4b9d start_ms=1790674594618 run=- model=llama3.2:1b
+2026-09-29T09:36:34.877Z GET /favicon.ico 404 0.30ms client=172.21.0.1 req_id=40b9d81e8426 start_ms=1790674594876 run=- model=llama3.2:1b
+2026-09-29T10:00:02.957Z GET /health 200 2.92ms client=172.21.0.1 req_id=f30220d7fd52 start_ms=1790676002954 run=- model=llama3.2:1b
+2026-09-29T10:00:35.293Z GET /health 200 2.22ms client=172.21.0.1 req_id=84afa981aea8 start_ms=1790676035290 run=- model=gemma4:e4b
+2026-09-29T10:02:46.502Z GET /health 200 1.77ms client=172.21.0.1 req_id=3422ba7ad2a6 start_ms=1790676166500 run=- model=gemma4:e4b
+2026-09-29T10:05:35.129Z GET /health 200 0.59ms client=172.21.0.1 req_id=fafea42263ea start_ms=1790676335128 run=- model=gemma4:e4b
+2026-09-29T10:07:11.483Z POST /tickets 422 6.12ms client=172.21.0.1 req_id=dddf6ae1f619 start_ms=1790676431477 run=- model=gemma4:e4b
+2026-09-29T10:07:11.522Z POST /tickets 422 2.44ms client=172.21.0.1 req_id=35733a0ba2d1 start_ms=1790676431520 run=- model=gemma4:e4b
+2026-09-29T10:07:11.537Z POST /tickets 422 1.97ms client=172.21.0.1 req_id=f76dafee1ea8 start_ms=1790676431535 run=- model=gemma4:e4b
+2026-09-29T10:07:11.568Z POST /tickets 422 2.22ms client=172.21.0.1 req_id=8eb9fd528457 start_ms=1790676431566 run=- model=gemma4:e4b
+2026-09-29T10:07:11.582Z POST /tickets 422 2.07ms client=172.21.0.1 req_id=6b8e745e52f5 start_ms=1790676431580 run=- model=gemma4:e4b
+2026-09-29T10:09:49.773Z POST /tickets 422 3.34ms client=172.21.0.1 req_id=5c71fc52eb1d start_ms=1790676589769 run=- model=gemma4:e4b
+2026-09-29T10:09:49.788Z POST /tickets 422 2.12ms client=172.21.0.1 req_id=ebca8b0f4378 start_ms=1790676589785 run=- model=gemma4:e4b
+2026-09-29T10:09:49.799Z POST /tickets 422 2.13ms client=172.21.0.1 req_id=1a4a3a4d8ea2 start_ms=1790676589797 run=- model=gemma4:e4b
+2026-09-29T10:09:49.811Z POST /tickets 422 2.12ms client=172.21.0.1 req_id=6713631ef6bf start_ms=1790676589809 run=- model=gemma4:e4b
+2026-09-29T10:09:49.823Z POST /tickets 422 1.68ms client=172.21.0.1 req_id=91f7af286e12 start_ms=1790676589822 run=- model=gemma4:e4b
+2026-09-29T10:10:25.242Z POST /tickets 422 1.66ms client=172.21.0.1 req_id=c47330f85296 start_ms=1790676625240 run=- model=gemma4:e4b
+2026-09-29T10:10:25.251Z POST /tickets 422 1.21ms client=172.21.0.1 req_id=1b4a853b5b86 start_ms=1790676625250 run=- model=gemma4:e4b
+2026-09-29T10:10:25.266Z POST /tickets 422 1.35ms client=172.21.0.1 req_id=10e0587ee039 start_ms=1790676625264 run=- model=gemma4:e4b
+2026-09-29T10:10:25.276Z POST /tickets 422 1.31ms client=172.21.0.1 req_id=29cc349c86d3 start_ms=1790676625275 run=- model=gemma4:e4b
+2026-09-29T10:10:25.285Z POST /tickets 422 0.96ms client=172.21.0.1 req_id=ae7e59bb6022 start_ms=1790676625284 run=- model=gemma4:e4b
+2026-09-29T10:11:47.158Z POST /tickets 422 1.33ms client=172.21.0.1 req_id=cc3639ef3fc3 start_ms=1790676707157 run=- model=gemma4:e4b
+2026-09-29T10:11:47.171Z POST /tickets 422 1.63ms client=172.21.0.1 req_id=a7eb37fd8fcb start_ms=1790676707169 run=- model=gemma4:e4b
+2026-09-29T10:11:47.185Z POST /tickets 422 1.14ms client=172.21.0.1 req_id=23ebdbb67799 start_ms=1790676707184 run=- model=gemma4:e4b
+2026-09-29T10:11:47.197Z POST /tickets 422 0.90ms client=172.21.0.1 req_id=f023a5889ddc start_ms=1790676707196 run=- model=gemma4:e4b
+2026-09-29T10:11:47.210Z POST /tickets 422 1.05ms client=172.21.0.1 req_id=1840ec517ed4 start_ms=1790676707209 run=- model=gemma4:e4b
+2026-09-29T10:14:08.525Z POST /tickets 422 1.45ms client=172.21.0.1 req_id=d6bce380967e start_ms=1790676848523 run=- model=gemma4:e4b
+2026-09-29T10:14:08.541Z POST /tickets 422 1.82ms client=172.21.0.1 req_id=4fc865db1667 start_ms=1790676848539 run=- model=gemma4:e4b
+2026-09-29T10:14:08.558Z POST /tickets 422 1.20ms client=172.21.0.1 req_id=740ac941dfbb start_ms=1790676848557 run=- model=gemma4:e4b
+2026-09-29T10:14:08.571Z POST /tickets 422 0.99ms client=172.21.0.1 req_id=320c1b7a2c61 start_ms=1790676848570 run=- model=gemma4:e4b
+2026-09-29T10:14:08.584Z POST /tickets 422 1.05ms client=172.21.0.1 req_id=23b659039599 start_ms=1790676848583 run=- model=gemma4:e4b
+2026-09-29T10:16:47.138Z GET /health 200 2.61ms client=172.21.0.1 req_id=fd9638033c45 start_ms=1790677007135 run=- model=gemma4:e4b
+2026-09-29T10:17:13.524Z POST /tickets 200 54159.42ms client=172.21.0.1 req_id=607f743c72ec start_ms=1790676983518 run=- model=gemma4:e4b ticket_id=108 category="Credit reporting" ollama_total_ms=54016.5 ollama_load_ms=9262.9 prompt_tokens=365 prompt_eval_ms=6240.1 eval_tokens=406 eval_ms=38483.2
+2026-09-29T10:17:47.020Z POST /tickets 200 71057.31ms client=172.21.0.1 req_id=2eefb5db4685 start_ms=1790676999923 run=- model=gemma4:e4b ticket_id=109 category="Credit reporting" ollama_total_ms=70950.2 ollama_load_ms=22.1 prompt_tokens=365 prompt_eval_ms=234.8 eval_tokens=376 eval_ms=35126.8
+2026-09-29T10:18:20.241Z POST /tickets 200 35186.68ms client=172.21.0.1 req_id=f769e8ca8012 start_ms=1790677067044 run=- model=gemma4:e4b ticket_id=110 category="Credit reporting" ollama_total_ms=35122.7 ollama_load_ms=2.0 prompt_tokens=365 prompt_eval_ms=193.5 eval_tokens=376 eval_ms=34873.0
+2026-09-29T10:18:53.964Z POST /tickets 200 35672.95ms client=172.21.0.1 req_id=15d62870b096 start_ms=1790677100254 run=- model=gemma4:e4b ticket_id=111 category="Credit reporting" ollama_total_ms=35610.6 ollama_load_ms=2.0 prompt_tokens=365 prompt_eval_ms=213.2 eval_tokens=376 eval_ms=35385.3
+2026-09-29T10:19:25.907Z POST /tickets 200 35916.62ms client=172.21.0.1 req_id=5ee2c4cecd30 start_ms=1790677133986 run=- model=gemma4:e4b ticket_id=112 category="Credit reporting" ollama_total_ms=35853.4 ollama_load_ms=4.6 prompt_tokens=365 prompt_eval_ms=216.5 eval_tokens=376 eval_ms=35620.5
+2026-09-29T10:19:59.414Z POST /tickets 200 35569.73ms client=172.21.0.1 req_id=39e87567915d start_ms=1790677165918 run=- model=gemma4:e4b ticket_id=113 category="Credit reporting" ollama_total_ms=35504.6 ollama_load_ms=2.4 prompt_tokens=365 prompt_eval_ms=231.5 eval_tokens=376 eval_ms=35260.8
+2026-09-29T10:23:38.157Z POST /tickets 200 36249.40ms client=172.21.0.1 req_id=9923933fae74 start_ms=1790677384041 run=- model=gemma4:e4b ticket_id=114 category="Credit reporting" ollama_total_ms=36184.8 ollama_load_ms=2.4 prompt_tokens=365 prompt_eval_ms=275.1 eval_tokens=376 eval_ms=35894.0
+2026-09-29T10:24:10.098Z POST /tickets 200 35950.96ms client=172.21.0.1 req_id=13d009b7d295 start_ms=1790677418173 run=- model=gemma4:e4b ticket_id=115 category="Credit reporting" ollama_total_ms=35878.1 ollama_load_ms=3.8 prompt_tokens=365 prompt_eval_ms=213.5 eval_tokens=376 eval_ms=35649.3
+2026-09-29T10:24:43.586Z POST /tickets 200 35523.30ms client=172.21.0.1 req_id=b420fd8fa946 start_ms=1790677450116 run=- model=gemma4:e4b ticket_id=116 category="Credit reporting" ollama_total_ms=35470.1 ollama_load_ms=1.7 prompt_tokens=365 prompt_eval_ms=194.4 eval_tokens=376 eval_ms=35263.5
+2026-09-29T10:25:17.820Z POST /tickets 200 36153.80ms client=172.21.0.1 req_id=f1b3d1678043 start_ms=1790677483603 run=- model=gemma4:e4b ticket_id=117 category="Credit reporting" ollama_total_ms=36085.8 ollama_load_ms=1.6 prompt_tokens=365 prompt_eval_ms=210.5 eval_tokens=376 eval_ms=35863.0
+2026-09-29T10:25:51.330Z POST /tickets 200 35561.94ms client=172.21.0.1 req_id=6ec1c4ce3c7d start_ms=1790677517839 run=- model=gemma4:e4b ticket_id=118 category="Credit reporting" ollama_total_ms=35489.9 ollama_load_ms=2.3 prompt_tokens=365 prompt_eval_ms=210.8 eval_tokens=376 eval_ms=35266.3
+2026-10-05T07:47:04.812Z GET /health 200 2.24ms client=172.21.0.1 req_id=5b17e8844b6f start_ms=1791186424809 run=- model=llama3.2:1b
+2026-10-05T07:47:06.023Z GET /health 200 0.54ms client=172.21.0.1 req_id=a78e6cc8ca5f start_ms=1791186426022 run=- model=llama3.2:1b
+2026-10-05T07:48:46.049Z GET /health 200 0.60ms client=172.21.0.1 req_id=00c50d0c2e6c start_ms=1791186526048 run=- model=llama3.2:1b
+2026-10-05T07:48:52.024Z POST /tickets 200 3769.71ms client=172.21.0.1 req_id=d6571b19b87b start_ms=1791186528255 run=llama3.2-1b_load_tr1tr2_run1-warmup model=llama3.2:1b ticket_id=119 category="Credit card" ollama_total_ms=3678.8 ollama_load_ms=1814.7 prompt_tokens=362 prompt_eval_ms=1694.5 eval_tokens=8 eval_ms=165.7
