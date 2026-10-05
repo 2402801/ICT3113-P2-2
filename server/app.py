@@ -1,4 +1,5 @@
 import time
+import uuid
 
 from fastapi import FastAPI, Depends, HTTPException, Request
 from pydantic import BaseModel, Field
@@ -6,9 +7,10 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from categories import CATEGORIES
-from classifier import classify
+from classifier import OLLAMA_MODEL, OLLAMA_THINK, classify_detailed
 from database import Ticket, RequestMetric, get_db, init_db
-from logging_setup import configure_logging
+from logging_setup import configure_logging, format_fields
+from prompt import PROMPT_VERSION
 
 app = FastAPI(title="Ticket Triage Service")
 access_logger = configure_logging()
@@ -21,18 +23,35 @@ def on_startup() -> None:
 
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
+    start_epoch_ms = int(time.time() * 1000)
     start = time.perf_counter()
-    response = await call_next(request)
-    latency_ms = (time.perf_counter() - start) * 1000
-    access_logger.info(
-        "%s %s %s %.2fms client=%s",
-        request.method,
-        request.url.path,
-        response.status_code,
-        latency_ms,
-        request.client.host if request.client else "-",
-    )
-    return response
+    request_id = uuid.uuid4().hex[:12]
+    # Handlers add ticket/Ollama details to this dict; it is shared through the request scope.
+    request.state.log_fields = {}
+    status_code = 500
+    try:
+        response = await call_next(request)
+        status_code = response.status_code
+        response.headers["X-Request-ID"] = request_id
+        return response
+    finally:
+        latency_ms = (time.perf_counter() - start) * 1000
+        fields = {
+            "client": request.client.host if request.client else "-",
+            "req_id": request_id,
+            "start_ms": start_epoch_ms,
+            "run": request.headers.get("x-run-id", "-"),
+            "model": OLLAMA_MODEL,
+            **request.state.log_fields,
+        }
+        access_logger.info(
+            "%s %s %s %.2fms %s",
+            request.method,
+            request.url.path,
+            status_code,
+            latency_ms,
+            format_fields(fields),
+        )
 
 
 class TicketIn(BaseModel):
@@ -52,13 +71,14 @@ def _record_metric(db: Session, endpoint: str, status_code: int, latency_ms: flo
 
 
 @app.post("/tickets", response_model=TicketOut)
-def create_ticket(ticket: TicketIn, db: Session = Depends(get_db)):
+def create_ticket(ticket: TicketIn, request: Request, db: Session = Depends(get_db)):
     start = time.perf_counter()
     status_code = 200
     try:
-        category = classify(ticket.narrative)
+        result = classify_detailed(ticket.narrative)
     except Exception as exc:
         status_code = 502
+        request.state.log_fields.update(getattr(exc, "ollama", {}), error=type(exc).__name__)
         _record_metric(db, "/tickets", status_code, (time.perf_counter() - start) * 1000)
         raise HTTPException(status_code=502, detail=f"Classification backend error: {exc}")
 
@@ -66,13 +86,16 @@ def create_ticket(ticket: TicketIn, db: Session = Depends(get_db)):
 
     db_ticket = Ticket(
         narrative=ticket.narrative,
-        category=category,
+        category=result.category,
         classification_latency_ms=latency_ms,
     )
     db.add(db_ticket)
     db.commit()
     db.refresh(db_ticket)
 
+    request.state.log_fields.update(
+        ticket_id=db_ticket.id, category=db_ticket.category, **result.ollama
+    )
     _record_metric(db, "/tickets", status_code, latency_ms)
 
     return TicketOut(
@@ -130,4 +153,9 @@ def stats(db: Session = Depends(get_db)):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "model": OLLAMA_MODEL,
+        "prompt_version": PROMPT_VERSION,
+        "think": OLLAMA_THINK,
+    }

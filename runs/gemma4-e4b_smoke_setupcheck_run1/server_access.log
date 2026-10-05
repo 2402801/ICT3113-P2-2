@@ -1,0 +1,5 @@
+2026-09-26T13:37:18.637Z GET /health 200 1.27ms client=172.21.0.1 req_id=3833e8eebdf1 start_ms=1790429838636 run=- model=gemma4:e4b
+2026-09-26T13:37:49.403Z POST /tickets 200 24411.41ms client=172.21.0.1 req_id=8a9e46880765 start_ms=1790429844960 run=gemma4-e4b_smoke_setupcheck_run1 model=gemma4:e4b ticket_id=1 category="Money transfer or service" ollama_total_ms=24351.4 ollama_load_ms=1.0 prompt_tokens=355 prompt_eval_ms=3263.6 eval_tokens=309 eval_ms=21068.8
+2026-09-26T13:38:06.652Z POST /tickets 200 17245.57ms client=172.21.0.1 req_id=3a6eafff2f90 start_ms=1790429869406 run=gemma4-e4b_smoke_setupcheck_run1 model=gemma4:e4b ticket_id=2 category=Mortgage ollama_total_ms=17200.5 ollama_load_ms=2.0 prompt_tokens=348 prompt_eval_ms=3984.2 eval_tokens=201 eval_ms=13175.9
+2026-09-26T13:38:06.734Z GET /search 200 22.83ms client=172.21.0.1 req_id=dff418460f34 start_ms=1790429886711 run=gemma4-e4b_smoke_setupcheck_run1 model=gemma4:e4b
+2026-09-26T13:38:06.756Z GET /stats 200 19.27ms client=172.21.0.1 req_id=4887039c8274 start_ms=1790429886737 run=gemma4-e4b_smoke_setupcheck_run1 model=gemma4:e4b
