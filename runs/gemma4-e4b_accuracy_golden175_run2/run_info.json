@@ -1,0 +1,23 @@
+{
+    "run_id":  "gemma4-e4b_accuracy_golden175_run2",
+    "test_type":  "accuracy",
+    "config":  "golden175",
+    "run":  2,
+    "tester":  "P3",
+    "model":  "gemma4:e4b",
+    "model_digest":  "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "7bf9e24e2467a5499ce000afb75ac650e405d194",
+    "git_branch":  "accuracy_runs",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  100,
+    "power_mode":  "unknown",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://192.168.0.8:8000",
+    "ready_at_utc":  "2026-10-07T15:04:27Z",
+    "notes":  ""
+}

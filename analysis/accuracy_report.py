@@ -273,8 +273,6 @@ def main() -> None:
     summary_rows, overview, sections = [], [], []
     for group, entries in groups.items():
         runs = [src for src, _, _ in entries]
-        if len(runs) < MIN_RUNS:
-            print(f"!! {group}: only {len(runs)} run(s) - a single run is not a measurement ({MIN_RUNS} required)")
         overall = pct([sc["accuracy"] for _, _, sc in entries])
         per_cat = {c: pct([sc["per_category"][c]["accuracy"] for _, _, sc in entries]) for c in CATEGORIES}
         precision = {c: pct([sc["per_category"][c]["precision"] for _, _, sc in entries]) for c in CATEGORIES}

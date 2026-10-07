@@ -1,52 +1,69 @@
 group,metric,n_runs,mean,sd,min,max,cv_pct,ci95_low,ci95_high
-llama3.2-1b_accuracy_golden175,accuracy_overall_pct,3,34.857,0.0,34.857,34.857,0.0,28.0,41.714
-llama3.2-1b_accuracy_golden175,accuracy_pct_Credit reporting,3,71.429,0.0,71.429,71.429,0.0,54.286,85.714
-llama3.2-1b_accuracy_golden175,accuracy_pct_Credit card,3,0.0,0.0,0.0,0.0,,0.0,0.0
-llama3.2-1b_accuracy_golden175,accuracy_pct_Consumer loan,3,8.696,0.0,8.696,8.696,0.0,0.0,21.739
-llama3.2-1b_accuracy_golden175,accuracy_pct_Bank account or service,3,26.923,0.0,26.923,26.923,0.0,11.538,46.154
-llama3.2-1b_accuracy_golden175,accuracy_pct_Debt collection,3,81.818,0.0,81.818,81.818,0.0,63.636,95.455
-llama3.2-1b_accuracy_golden175,accuracy_pct_Money transfer or service,3,0.0,0.0,0.0,0.0,,0.0,0.0
-llama3.2-1b_accuracy_golden175,accuracy_pct_Mortgage,3,42.857,0.0,42.857,42.857,0.0,19.048,66.667
-llama3.2-1b_accuracy_golden175,precision_pct_Credit reporting,3,33.333,0.0,33.333,33.333,0.0,,
-llama3.2-1b_accuracy_golden175,precision_pct_Credit card,3,0.0,0.0,0.0,0.0,,,
-llama3.2-1b_accuracy_golden175,precision_pct_Consumer loan,3,66.667,0.0,66.667,66.667,0.0,,
-llama3.2-1b_accuracy_golden175,precision_pct_Bank account or service,3,70.0,0.0,70.0,70.0,0.0,,
-llama3.2-1b_accuracy_golden175,precision_pct_Debt collection,3,24.658,0.0,24.658,24.658,0.0,,
-llama3.2-1b_accuracy_golden175,precision_pct_Money transfer or service,3,,,,,,,
-llama3.2-1b_accuracy_golden175,precision_pct_Mortgage,3,69.231,0.0,69.231,69.231,0.0,,
-llama3.2-1b_accuracy_golden175,no_answer,3,0.0,0.0,0,0,,,
-llama3.2-1b_accuracy_golden175,latency_p50_ms,3,2746.5,269.522,2475.0,3014.0,9.813,,
-mistral-7b_accuracy_golden175,accuracy_overall_pct,3,73.143,0.0,73.143,73.143,0.0,66.857,79.429
-mistral-7b_accuracy_golden175,accuracy_pct_Credit reporting,3,82.857,0.0,82.857,82.857,0.0,68.571,94.286
-mistral-7b_accuracy_golden175,accuracy_pct_Credit card,3,75.0,0.0,75.0,75.0,0.0,58.333,91.667
-mistral-7b_accuracy_golden175,accuracy_pct_Consumer loan,3,65.217,0.0,65.217,65.217,0.0,43.478,82.609
-mistral-7b_accuracy_golden175,accuracy_pct_Bank account or service,3,69.231,0.0,69.231,69.231,0.0,50.0,84.615
-mistral-7b_accuracy_golden175,accuracy_pct_Debt collection,3,86.364,0.0,86.364,86.364,0.0,72.727,100.0
-mistral-7b_accuracy_golden175,accuracy_pct_Money transfer or service,3,33.333,0.0,33.333,33.333,0.0,16.667,54.167
-mistral-7b_accuracy_golden175,accuracy_pct_Mortgage,3,100.0,0.0,100.0,100.0,0.0,100.0,100.0
-mistral-7b_accuracy_golden175,precision_pct_Credit reporting,3,85.294,0.0,85.294,85.294,0.0,,
-mistral-7b_accuracy_golden175,precision_pct_Credit card,3,50.0,0.0,50.0,50.0,0.0,,
-mistral-7b_accuracy_golden175,precision_pct_Consumer loan,3,83.333,0.0,83.333,83.333,0.0,,
-mistral-7b_accuracy_golden175,precision_pct_Bank account or service,3,64.286,0.0,64.286,64.286,0.0,,
-mistral-7b_accuracy_golden175,precision_pct_Debt collection,3,82.609,0.0,82.609,82.609,0.0,,
-mistral-7b_accuracy_golden175,precision_pct_Money transfer or service,3,100.0,0.0,100.0,100.0,0.0,,
-mistral-7b_accuracy_golden175,precision_pct_Mortgage,3,75.0,0.0,75.0,75.0,0.0,,
-mistral-7b_accuracy_golden175,no_answer,3,0.0,0.0,0,0,,,
-mistral-7b_accuracy_golden175,latency_p50_ms,3,11573.167,715.859,11131.4,12399.1,6.186,,
-phi3-3.8b_accuracy_golden175,accuracy_overall_pct,3,73.143,0.0,73.143,73.143,0.0,66.857,80.0
-phi3-3.8b_accuracy_golden175,accuracy_pct_Credit reporting,3,85.714,0.0,85.714,85.714,0.0,74.286,97.143
-phi3-3.8b_accuracy_golden175,accuracy_pct_Credit card,3,58.333,0.0,58.333,58.333,0.0,37.5,79.167
-phi3-3.8b_accuracy_golden175,accuracy_pct_Consumer loan,3,73.913,0.0,73.913,73.913,0.0,56.522,91.304
-phi3-3.8b_accuracy_golden175,accuracy_pct_Bank account or service,3,88.462,0.0,88.462,88.462,0.0,76.923,100.0
-phi3-3.8b_accuracy_golden175,accuracy_pct_Debt collection,3,50.0,0.0,50.0,50.0,0.0,27.273,72.727
-phi3-3.8b_accuracy_golden175,accuracy_pct_Money transfer or service,3,50.0,0.0,50.0,50.0,0.0,29.167,70.833
-phi3-3.8b_accuracy_golden175,accuracy_pct_Mortgage,3,100.0,0.0,100.0,100.0,0.0,100.0,100.0
-phi3-3.8b_accuracy_golden175,precision_pct_Credit reporting,3,75.0,0.0,75.0,75.0,0.0,,
-phi3-3.8b_accuracy_golden175,precision_pct_Credit card,3,77.778,0.0,77.778,77.778,0.0,,
-phi3-3.8b_accuracy_golden175,precision_pct_Consumer loan,3,89.474,0.0,89.474,89.474,0.0,,
-phi3-3.8b_accuracy_golden175,precision_pct_Bank account or service,3,53.488,0.0,53.488,53.488,0.0,,
-phi3-3.8b_accuracy_golden175,precision_pct_Debt collection,3,100.0,0.0,100.0,100.0,0.0,,
-phi3-3.8b_accuracy_golden175,precision_pct_Money transfer or service,3,100.0,0.0,100.0,100.0,0.0,,
-phi3-3.8b_accuracy_golden175,precision_pct_Mortgage,3,65.625,0.0,65.625,65.625,0.0,,
-phi3-3.8b_accuracy_golden175,no_answer,3,0.0,0.0,0,0,,,
-phi3-3.8b_accuracy_golden175,latency_p50_ms,3,6561.8,226.074,6384.9,6816.5,3.445,,
+gemma4-e4b_accuracy_golden175,accuracy_overall_pct,1,84.0,,84.0,84.0,,77.714,89.143
+gemma4-e4b_accuracy_golden175,accuracy_pct_Credit reporting,1,85.714,,85.714,85.714,,74.286,97.143
+gemma4-e4b_accuracy_golden175,accuracy_pct_Credit card,1,58.333,,58.333,58.333,,37.5,79.167
+gemma4-e4b_accuracy_golden175,accuracy_pct_Consumer loan,1,95.652,,95.652,95.652,,86.957,100.0
+gemma4-e4b_accuracy_golden175,accuracy_pct_Bank account or service,1,100.0,,100.0,100.0,,100.0,100.0
+gemma4-e4b_accuracy_golden175,accuracy_pct_Debt collection,1,77.273,,77.273,77.273,,59.091,95.455
+gemma4-e4b_accuracy_golden175,accuracy_pct_Money transfer or service,1,70.833,,70.833,70.833,,54.062,87.5
+gemma4-e4b_accuracy_golden175,accuracy_pct_Mortgage,1,100.0,,100.0,100.0,,100.0,100.0
+gemma4-e4b_accuracy_golden175,precision_pct_Credit reporting,1,78.947,,78.947,78.947,,,
+gemma4-e4b_accuracy_golden175,precision_pct_Credit card,1,93.333,,93.333,93.333,,,
+gemma4-e4b_accuracy_golden175,precision_pct_Consumer loan,1,91.667,,91.667,91.667,,,
+gemma4-e4b_accuracy_golden175,precision_pct_Bank account or service,1,68.421,,68.421,68.421,,,
+gemma4-e4b_accuracy_golden175,precision_pct_Debt collection,1,94.444,,94.444,94.444,,,
+gemma4-e4b_accuracy_golden175,precision_pct_Money transfer or service,1,100.0,,100.0,100.0,,,
+gemma4-e4b_accuracy_golden175,precision_pct_Mortgage,1,84.0,,84.0,84.0,,,
+gemma4-e4b_accuracy_golden175,no_answer,1,0.0,,0,0,,,
+gemma4-e4b_accuracy_golden175,latency_p50_ms,1,34909.8,,34909.8,34909.8,,,
+llama3.2-1b_accuracy_golden175,accuracy_overall_pct,1,34.857,,34.857,34.857,,28.0,41.714
+llama3.2-1b_accuracy_golden175,accuracy_pct_Credit reporting,1,71.429,,71.429,71.429,,54.286,85.714
+llama3.2-1b_accuracy_golden175,accuracy_pct_Credit card,1,0.0,,0.0,0.0,,0.0,0.0
+llama3.2-1b_accuracy_golden175,accuracy_pct_Consumer loan,1,8.696,,8.696,8.696,,0.0,21.739
+llama3.2-1b_accuracy_golden175,accuracy_pct_Bank account or service,1,26.923,,26.923,26.923,,11.538,46.154
+llama3.2-1b_accuracy_golden175,accuracy_pct_Debt collection,1,81.818,,81.818,81.818,,63.636,95.455
+llama3.2-1b_accuracy_golden175,accuracy_pct_Money transfer or service,1,0.0,,0.0,0.0,,0.0,0.0
+llama3.2-1b_accuracy_golden175,accuracy_pct_Mortgage,1,42.857,,42.857,42.857,,19.048,66.667
+llama3.2-1b_accuracy_golden175,precision_pct_Credit reporting,1,33.333,,33.333,33.333,,,
+llama3.2-1b_accuracy_golden175,precision_pct_Credit card,1,0.0,,0.0,0.0,,,
+llama3.2-1b_accuracy_golden175,precision_pct_Consumer loan,1,66.667,,66.667,66.667,,,
+llama3.2-1b_accuracy_golden175,precision_pct_Bank account or service,1,70.0,,70.0,70.0,,,
+llama3.2-1b_accuracy_golden175,precision_pct_Debt collection,1,24.658,,24.658,24.658,,,
+llama3.2-1b_accuracy_golden175,precision_pct_Money transfer or service,1,,,,,,,
+llama3.2-1b_accuracy_golden175,precision_pct_Mortgage,1,69.231,,69.231,69.231,,,
+llama3.2-1b_accuracy_golden175,no_answer,1,0.0,,0,0,,,
+llama3.2-1b_accuracy_golden175,latency_p50_ms,1,2750.5,,2750.5,2750.5,,,
+mistral-7b_accuracy_golden175,accuracy_overall_pct,1,73.143,,73.143,73.143,,66.857,79.429
+mistral-7b_accuracy_golden175,accuracy_pct_Credit reporting,1,82.857,,82.857,82.857,,68.571,94.286
+mistral-7b_accuracy_golden175,accuracy_pct_Credit card,1,75.0,,75.0,75.0,,58.333,91.667
+mistral-7b_accuracy_golden175,accuracy_pct_Consumer loan,1,65.217,,65.217,65.217,,43.478,82.609
+mistral-7b_accuracy_golden175,accuracy_pct_Bank account or service,1,69.231,,69.231,69.231,,50.0,84.615
+mistral-7b_accuracy_golden175,accuracy_pct_Debt collection,1,86.364,,86.364,86.364,,72.727,100.0
+mistral-7b_accuracy_golden175,accuracy_pct_Money transfer or service,1,33.333,,33.333,33.333,,16.667,54.167
+mistral-7b_accuracy_golden175,accuracy_pct_Mortgage,1,100.0,,100.0,100.0,,100.0,100.0
+mistral-7b_accuracy_golden175,precision_pct_Credit reporting,1,85.294,,85.294,85.294,,,
+mistral-7b_accuracy_golden175,precision_pct_Credit card,1,50.0,,50.0,50.0,,,
+mistral-7b_accuracy_golden175,precision_pct_Consumer loan,1,83.333,,83.333,83.333,,,
+mistral-7b_accuracy_golden175,precision_pct_Bank account or service,1,64.286,,64.286,64.286,,,
+mistral-7b_accuracy_golden175,precision_pct_Debt collection,1,82.609,,82.609,82.609,,,
+mistral-7b_accuracy_golden175,precision_pct_Money transfer or service,1,100.0,,100.0,100.0,,,
+mistral-7b_accuracy_golden175,precision_pct_Mortgage,1,75.0,,75.0,75.0,,,
+mistral-7b_accuracy_golden175,no_answer,1,0.0,,0,0,,,
+mistral-7b_accuracy_golden175,latency_p50_ms,1,12399.1,,12399.1,12399.1,,,
+phi3-3.8b_accuracy_golden175,accuracy_overall_pct,1,73.143,,73.143,73.143,,66.857,80.0
+phi3-3.8b_accuracy_golden175,accuracy_pct_Credit reporting,1,85.714,,85.714,85.714,,74.286,97.143
+phi3-3.8b_accuracy_golden175,accuracy_pct_Credit card,1,58.333,,58.333,58.333,,37.5,79.167
+phi3-3.8b_accuracy_golden175,accuracy_pct_Consumer loan,1,73.913,,73.913,73.913,,56.522,91.304
+phi3-3.8b_accuracy_golden175,accuracy_pct_Bank account or service,1,88.462,,88.462,88.462,,76.923,100.0
+phi3-3.8b_accuracy_golden175,accuracy_pct_Debt collection,1,50.0,,50.0,50.0,,27.273,72.727
+phi3-3.8b_accuracy_golden175,accuracy_pct_Money transfer or service,1,50.0,,50.0,50.0,,29.167,70.833
+phi3-3.8b_accuracy_golden175,accuracy_pct_Mortgage,1,100.0,,100.0,100.0,,100.0,100.0
+phi3-3.8b_accuracy_golden175,precision_pct_Credit reporting,1,75.0,,75.0,75.0,,,
+phi3-3.8b_accuracy_golden175,precision_pct_Credit card,1,77.778,,77.778,77.778,,,
+phi3-3.8b_accuracy_golden175,precision_pct_Consumer loan,1,89.474,,89.474,89.474,,,
+phi3-3.8b_accuracy_golden175,precision_pct_Bank account or service,1,53.488,,53.488,53.488,,,
+phi3-3.8b_accuracy_golden175,precision_pct_Debt collection,1,100.0,,100.0,100.0,,,
+phi3-3.8b_accuracy_golden175,precision_pct_Money transfer or service,1,100.0,,100.0,100.0,,,
+phi3-3.8b_accuracy_golden175,precision_pct_Mortgage,1,65.625,,65.625,65.625,,,
+phi3-3.8b_accuracy_golden175,no_answer,1,0.0,,0,0,,,
+phi3-3.8b_accuracy_golden175,latency_p50_ms,1,6484.0,,6484.0,6484.0,,,
