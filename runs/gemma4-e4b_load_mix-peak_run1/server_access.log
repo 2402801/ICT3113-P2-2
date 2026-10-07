@@ -1,0 +1,215 @@
+2026-10-07T08:17:34.825Z GET /health 200 0.90ms client=172.21.0.1 req_id=64c0ba9ff962 start_ms=1791361054824 run=- model=gemma4:e4b
+2026-10-07T08:19:14.210Z GET /search 200 26.75ms client=172.21.0.1 req_id=4d44da3119c7 start_ms=1791361154183 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:14.214Z GET /search 200 29.77ms client=172.21.0.1 req_id=1f7bd2e4aa29 start_ms=1791361154184 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:14.215Z GET /search 200 31.42ms client=172.21.0.1 req_id=7b41161623e3 start_ms=1791361154184 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:14.311Z GET /search 200 17.80ms client=172.21.0.1 req_id=1bfd708bbe88 start_ms=1791361154293 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:14.368Z GET /search 200 17.73ms client=172.21.0.1 req_id=b3bf7f153506 start_ms=1791361154350 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:15.476Z GET /search 200 27.28ms client=172.21.0.1 req_id=3569972fbca8 start_ms=1791361155448 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:15.541Z GET /search 200 17.28ms client=172.21.0.1 req_id=d5180db9e48c start_ms=1791361155524 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:15.699Z GET /search 200 19.01ms client=172.21.0.1 req_id=cdee27316e88 start_ms=1791361155680 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:15.821Z GET /search 200 24.02ms client=172.21.0.1 req_id=05951aeee6e9 start_ms=1791361155797 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:15.875Z GET /search 200 17.59ms client=172.21.0.1 req_id=23b76e02ff61 start_ms=1791361155858 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:15.978Z GET /search 200 19.52ms client=172.21.0.1 req_id=2a7c002d5080 start_ms=1791361155959 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:16.654Z GET /search 200 27.61ms client=172.21.0.1 req_id=a1610093ea4f start_ms=1791361156626 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:18.148Z GET /search 200 16.24ms client=172.21.0.1 req_id=608c65986955 start_ms=1791361158132 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:18.204Z GET /search 200 17.06ms client=172.21.0.1 req_id=ff78532ee3ca start_ms=1791361158187 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:18.649Z GET /search 200 26.82ms client=172.21.0.1 req_id=0c860e6e1951 start_ms=1791361158623 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:19.457Z GET /search 200 28.07ms client=172.21.0.1 req_id=e1d122556c00 start_ms=1791361159428 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:19.760Z GET /search 200 32.84ms client=172.21.0.1 req_id=cc3f76e95428 start_ms=1791361159727 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:20.008Z GET /search 200 31.20ms client=172.21.0.1 req_id=328157b4e645 start_ms=1791361159977 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:20.261Z GET /search 200 20.46ms client=172.21.0.1 req_id=086a5df236bc start_ms=1791361160240 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:20.657Z GET /search 200 26.21ms client=172.21.0.1 req_id=685e1a31798a start_ms=1791361160631 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:21.070Z GET /search 200 31.78ms client=172.21.0.1 req_id=04ec564442f1 start_ms=1791361161038 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:21.475Z GET /search 200 29.21ms client=172.21.0.1 req_id=116d29dacd7b start_ms=1791361161446 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:21.800Z GET /search 200 17.71ms client=172.21.0.1 req_id=1ac4128eedee start_ms=1791361161782 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:22.376Z GET /search 200 18.22ms client=172.21.0.1 req_id=36e1449244db start_ms=1791361162357 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:22.413Z GET /search 200 22.73ms client=172.21.0.1 req_id=c45a6c2f03c6 start_ms=1791361162391 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:22.711Z GET /search 200 19.53ms client=172.21.0.1 req_id=8ed3aa8bd31c start_ms=1791361162692 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:23.074Z GET /search 200 16.28ms client=172.21.0.1 req_id=3e4a4d512b63 start_ms=1791361163058 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:23.145Z GET /search 200 16.89ms client=172.21.0.1 req_id=a74b873e7368 start_ms=1791361163128 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:23.366Z GET /search 200 23.47ms client=172.21.0.1 req_id=b0d09d15209d start_ms=1791361163343 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:23.704Z GET /search 200 29.47ms client=172.21.0.1 req_id=d86441eb63c7 start_ms=1791361163674 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:23.837Z GET /search 200 17.45ms client=172.21.0.1 req_id=4ed22ccbfc37 start_ms=1791361163819 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:24.463Z GET /search 200 16.99ms client=172.21.0.1 req_id=6d3b9a925c6d start_ms=1791361164446 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:24.479Z GET /search 200 21.11ms client=172.21.0.1 req_id=6e10e9780672 start_ms=1791361164458 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:24.542Z GET /search 200 17.86ms client=172.21.0.1 req_id=4c9913cc871d start_ms=1791361164524 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:24.683Z GET /search 200 18.11ms client=172.21.0.1 req_id=4d7d888e4feb start_ms=1791361164665 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:24.942Z GET /search 200 18.13ms client=172.21.0.1 req_id=caba615a8386 start_ms=1791361164924 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:25.201Z GET /search 200 17.50ms client=172.21.0.1 req_id=dc4936a53e0e start_ms=1791361165183 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:26.557Z GET /search 200 18.22ms client=172.21.0.1 req_id=ee2cac84463f start_ms=1791361166539 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:27.104Z GET /search 200 22.90ms client=172.21.0.1 req_id=9a02fc9f1bfa start_ms=1791361167081 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:27.405Z GET /search 200 29.10ms client=172.21.0.1 req_id=05aa2f87fae0 start_ms=1791361167376 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:28.726Z GET /search 200 18.45ms client=172.21.0.1 req_id=45391b304e94 start_ms=1791361168708 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:29.809Z GET /search 200 33.18ms client=172.21.0.1 req_id=087204a30653 start_ms=1791361169776 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:29.936Z GET /search 200 18.27ms client=172.21.0.1 req_id=5267cd99ffdb start_ms=1791361169917 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:30.253Z GET /search 200 30.06ms client=172.21.0.1 req_id=6919c45b4734 start_ms=1791361170223 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:30.449Z GET /search 200 21.11ms client=172.21.0.1 req_id=6d1f388505d4 start_ms=1791361170428 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:30.551Z GET /search 200 19.30ms client=172.21.0.1 req_id=762b6c2f94ba start_ms=1791361170532 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:30.941Z GET /search 200 28.79ms client=172.21.0.1 req_id=878c1fddfb05 start_ms=1791361170912 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:31.192Z GET /search 200 25.13ms client=172.21.0.1 req_id=f86d98a8d7a5 start_ms=1791361171167 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:31.198Z GET /search 200 26.75ms client=172.21.0.1 req_id=efec54e633ac start_ms=1791361171171 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:31.535Z GET /search 200 27.16ms client=172.21.0.1 req_id=038ddbe14880 start_ms=1791361171507 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:31.636Z GET /search 200 19.87ms client=172.21.0.1 req_id=00b25df88b50 start_ms=1791361171616 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:31.830Z GET /search 200 18.08ms client=172.21.0.1 req_id=ee9654c9bab8 start_ms=1791361171812 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:31.909Z GET /search 200 18.57ms client=172.21.0.1 req_id=31787aee83ad start_ms=1791361171890 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:32.089Z GET /search 200 18.51ms client=172.21.0.1 req_id=912ce3b2020a start_ms=1791361172070 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:32.151Z GET /search 200 24.14ms client=172.21.0.1 req_id=5267b71222d2 start_ms=1791361172126 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:32.826Z GET /search 200 20.10ms client=172.21.0.1 req_id=9c5515fbe87f start_ms=1791361172806 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:33.144Z GET /search 200 17.55ms client=172.21.0.1 req_id=0e6e1597055d start_ms=1791361173126 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:34.291Z GET /search 200 23.71ms client=172.21.0.1 req_id=d3d6df4a8774 start_ms=1791361174267 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:34.801Z GET /search 200 22.00ms client=172.21.0.1 req_id=1175a0f628ae start_ms=1791361174778 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:35.391Z GET /search 200 18.51ms client=172.21.0.1 req_id=2c72a23d162b start_ms=1791361175372 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:35.938Z GET /search 200 26.62ms client=172.21.0.1 req_id=2951de5b5ac6 start_ms=1791361175911 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:36.489Z GET /search 200 27.08ms client=172.21.0.1 req_id=64f37ddfb27b start_ms=1791361176462 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:36.651Z GET /search 200 24.50ms client=172.21.0.1 req_id=269ac8cc559c start_ms=1791361176626 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:36.951Z GET /search 200 19.24ms client=172.21.0.1 req_id=3afcd8736a3f start_ms=1791361176932 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:37.371Z GET /search 200 16.26ms client=172.21.0.1 req_id=1df4b9f548bf start_ms=1791361177355 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:38.277Z GET /search 200 17.42ms client=172.21.0.1 req_id=184e58d7c37e start_ms=1791361178260 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:39.639Z GET /search 200 27.59ms client=172.21.0.1 req_id=4c6fc15d557a start_ms=1791361179611 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:40.618Z GET /search 200 17.57ms client=172.21.0.1 req_id=999ab0385362 start_ms=1791361180600 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:40.623Z GET /search 200 17.56ms client=172.21.0.1 req_id=bee423aba3c8 start_ms=1791361180605 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:41.488Z GET /search 200 21.88ms client=172.21.0.1 req_id=32ccf212d1c9 start_ms=1791361181466 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:43.337Z GET /search 200 27.57ms client=172.21.0.1 req_id=9cb17de96f59 start_ms=1791361183309 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:43.585Z POST /tickets 200 29477.95ms client=172.21.0.1 req_id=d25505dbd92e start_ms=1791361154186 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=1 category="Consumer loan" ollama_total_ms=29421.5 ollama_load_ms=1.0 prompt_tokens=533 prompt_eval_ms=150.1 eval_tokens=505 eval_ms=29233.0
+2026-10-07T08:19:44.572Z GET /search 200 26.63ms client=172.21.0.1 req_id=46b73bf53931 start_ms=1791361184546 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:44.676Z GET /search 200 19.18ms client=172.21.0.1 req_id=209fbc797ce7 start_ms=1791361184657 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:45.091Z GET /search 200 28.79ms client=172.21.0.1 req_id=1321d69fd826 start_ms=1791361185062 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:45.212Z GET /search 200 17.83ms client=172.21.0.1 req_id=2405e62c3002 start_ms=1791361185194 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:45.238Z GET /search 200 19.25ms client=172.21.0.1 req_id=16d226a53d64 start_ms=1791361185218 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:45.310Z GET /search 200 15.36ms client=172.21.0.1 req_id=89324d01c819 start_ms=1791361185294 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:45.925Z GET /search 200 17.76ms client=172.21.0.1 req_id=d0505b307a22 start_ms=1791361185907 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:46.501Z GET /search 200 30.72ms client=172.21.0.1 req_id=aec8b9facb14 start_ms=1791361186471 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:46.576Z GET /search 200 16.58ms client=172.21.0.1 req_id=8c181a08b2b3 start_ms=1791361186559 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:46.849Z GET /search 200 25.02ms client=172.21.0.1 req_id=3e97a83517da start_ms=1791361186824 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:47.595Z GET /search 200 21.06ms client=172.21.0.1 req_id=2f078b60277f start_ms=1791361187573 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:47.629Z GET /search 200 19.35ms client=172.21.0.1 req_id=bc2bafe790f0 start_ms=1791361187610 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:47.986Z GET /search 200 27.34ms client=172.21.0.1 req_id=ac4f9efb4e58 start_ms=1791361187959 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:49.530Z GET /search 200 28.69ms client=172.21.0.1 req_id=f9b3a246138a start_ms=1791361189502 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:50.224Z GET /search 200 29.13ms client=172.21.0.1 req_id=382b2353e3a4 start_ms=1791361190195 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:50.457Z GET /search 200 18.37ms client=172.21.0.1 req_id=f8b47a29f565 start_ms=1791361190439 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:50.495Z GET /search 200 16.93ms client=172.21.0.1 req_id=0af522d6b0fa start_ms=1791361190478 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:19:50.886Z GET /search 200 20.32ms client=172.21.0.1 req_id=4677b2cbe999 start_ms=1791361190866 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:20:12.732Z POST /tickets 200 58722.93ms client=172.21.0.1 req_id=e7a6ec877e73 start_ms=1791361154182 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=2 category="Credit reporting" ollama_total_ms=58619.4 ollama_load_ms=1.0 prompt_tokens=707 prompt_eval_ms=137.9 eval_tokens=510 eval_ms=29021.8
+2026-10-07T08:20:12.748Z GET /search 200 21662.19ms client=172.21.0.1 req_id=ae710541bbef start_ms=1791361191180 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:20:12.763Z GET /search 200 21540.97ms client=172.21.0.1 req_id=354b0ad0766b start_ms=1791361191317 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:20:12.779Z GET /search 200 21355.34ms client=172.21.0.1 req_id=febbe173e14e start_ms=1791361191518 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:20:12.799Z GET /search 200 20952.90ms client=172.21.0.1 req_id=6456cdcf3e2f start_ms=1791361191941 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:20:12.829Z GET /search 200 19154.41ms client=172.21.0.1 req_id=de33b474d6bc start_ms=1791361193769 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:02.243Z GET /search 200 67823.37ms client=172.21.0.1 req_id=f34208b6a0c0 start_ms=1791361194701 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:02.264Z GET /search 200 67794.88ms client=172.21.0.1 req_id=f4354e3e0324 start_ms=1791361194751 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:30.792Z GET /search 200 95413.30ms client=172.21.0.1 req_id=82d0da63c8c1 start_ms=1791361195660 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:30.809Z GET /search 200 94855.32ms client=172.21.0.1 req_id=38ff6c38a9ea start_ms=1791361196235 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:30.829Z GET /search 200 94534.33ms client=172.21.0.1 req_id=07bc9f0f3983 start_ms=1791361196576 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:30.846Z GET /search 200 94448.79ms client=172.21.0.1 req_id=c73871e9b092 start_ms=1791361196678 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:21:30.863Z GET /search 200 94008.00ms client=172.21.0.1 req_id=98a1c242d65d start_ms=1791361197136 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:22:06.419Z GET /search 200 128750.63ms client=172.21.0.1 req_id=f92bf7864c84 start_ms=1791361198108 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:22:33.611Z GET /search 200 155699.86ms client=172.21.0.1 req_id=9293633a4e62 start_ms=1791361198445 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:22:33.631Z GET /search 200 155268.24ms client=172.21.0.1 req_id=f050e89eab9e start_ms=1791361198897 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:22:54.815Z GET /search 200 176100.92ms client=172.21.0.1 req_id=2ecab33bcadc start_ms=1791361199249 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:23:26.386Z GET /search 200 206623.51ms client=172.21.0.1 req_id=8e5192bd9ad2 start_ms=1791361200392 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:23:26.404Z GET /search 200 206045.33ms client=172.21.0.1 req_id=9d1538bacd8f start_ms=1791361200987 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:23:26.421Z GET /search 200 205390.06ms client=172.21.0.1 req_id=310f7ad40985 start_ms=1791361201660 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:24:01.271Z GET /search 200 239303.77ms client=172.21.0.1 req_id=9bdb1a9647a8 start_ms=1791361202570 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:24:01.305Z GET /search 200 239143.31ms client=172.21.0.1 req_id=e1bf6db7f336 start_ms=1791361202765 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:24:01.329Z GET /search 200 238819.10ms client=172.21.0.1 req_id=cd96ed774e71 start_ms=1791361203113 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:24:37.770Z GET /search 200 274453.98ms client=172.21.0.1 req_id=4413b123501d start_ms=1791361204101 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:05.307Z GET /search 200 361829.25ms client=172.21.0.1 req_id=3dd1f68c033c start_ms=1791361204527 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:05.325Z GET /search 200 361423.84ms client=172.21.0.1 req_id=2ffe218bceb3 start_ms=1791361204951 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:05.341Z GET /search 200 361257.40ms client=172.21.0.1 req_id=d42259213d8e start_ms=1791361205133 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:05.357Z GET /search 200 361196.16ms client=172.21.0.1 req_id=55a3bb6badb0 start_ms=1791361205210 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:05.371Z GET /search 200 361006.16ms client=172.21.0.1 req_id=718d7b875375 start_ms=1791361205414 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:35.212Z GET /search 200 390524.52ms client=172.21.0.1 req_id=bde73d107332 start_ms=1791361205818 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:35.231Z GET /search 200 390535.24ms client=172.21.0.1 req_id=3f14816323cc start_ms=1791361205826 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:26:35.250Z GET /search 200 390386.38ms client=172.21.0.1 req_id=ef495394c78f start_ms=1791361205994 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:27:12.730Z GET /search 200 427377.31ms client=172.21.0.1 req_id=c5930a3fcb7b start_ms=1791361206571 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:27:12.768Z GET /search 200 426380.92ms client=172.21.0.1 req_id=2e8c0689ddde start_ms=1791361207605 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:27:43.200Z GET /search 200 456823.93ms client=172.21.0.1 req_id=713b43ce647b start_ms=1791361207689 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:27:43.218Z GET /search 200 456298.58ms client=172.21.0.1 req_id=b7114358c89b start_ms=1791361208232 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:27:43.236Z GET /search 200 455887.02ms client=172.21.0.1 req_id=03f98e0ca462 start_ms=1791361208662 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:27:43.256Z GET /search 200 455688.89ms client=172.21.0.1 req_id=273616199078 start_ms=1791361208880 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:29:33.349Z POST /tickets 500 603156.53ms client=172.21.0.1 req_id=0e67883fc467 start_ms=1791361172021 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:29:52.068Z POST /tickets 500 621330.51ms client=172.21.0.1 req_id=62b1a49c9744 start_ms=1791361172487 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:03.351Z GET /search 500 595532.28ms client=172.21.0.1 req_id=9902b7fe1416 start_ms=1791361209562 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:03.472Z POST /tickets 500 630193.21ms client=172.21.0.1 req_id=4dbedad41bcb start_ms=1791361175116 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:04.380Z POST /tickets 500 630130.20ms client=172.21.0.1 req_id=5290e24db1eb start_ms=1791361176087 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:04.908Z POST /tickets 500 630193.59ms client=172.21.0.1 req_id=01d4575e1adb start_ms=1791361176552 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:06.280Z POST /tickets 500 630194.06ms client=172.21.0.1 req_id=4df67740730e start_ms=1791361177924 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:08.063Z POST /tickets 500 630114.08ms client=172.21.0.1 req_id=03f3882b95d8 start_ms=1791361179786 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:08.064Z POST /tickets 500 630220.87ms client=172.21.0.1 req_id=63ff611d6275 start_ms=1791361179681 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:08.376Z POST /tickets 500 630194.44ms client=172.21.0.1 req_id=0329e3fb85eb start_ms=1791361180019 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:08.661Z POST /tickets 500 630195.53ms client=172.21.0.1 req_id=eac0e612a8d8 start_ms=1791361180303 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.597Z POST /tickets 500 630183.61ms client=172.21.0.1 req_id=c7b5ab383350 start_ms=1791361181251 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.636Z POST /tickets 200 655385.84ms client=172.21.0.1 req_id=621ee94990f3 start_ms=1791361156167 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=3 category="Credit card" ollama_total_ms=83398.7 ollama_load_ms=0.9 prompt_tokens=416 prompt_eval_ms=1949.9 eval_tokens=441 eval_ms=24762.7
+2026-10-07T08:30:09.662Z POST /tickets 200 655369.74ms client=172.21.0.1 req_id=bc1d92f4db2b start_ms=1791361156209 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=4 category="Consumer loan" ollama_total_ms=106326.5 ollama_load_ms=1.6 prompt_tokens=472 prompt_eval_ms=132.3 eval_tokens=404 eval_ms=22800.5
+2026-10-07T08:30:09.664Z POST /tickets 502 630041.16ms client=172.21.0.1 req_id=f4b5cac01818 start_ms=1791361181460 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.684Z POST /tickets 502 627377.81ms client=172.21.0.1 req_id=ce47ec96b9b0 start_ms=1791361184144 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.688Z POST /tickets 502 626904.23ms client=172.21.0.1 req_id=5b6bf4c43faf start_ms=1791361184621 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.704Z POST /tickets 200 653122.08ms client=172.21.0.1 req_id=77ddc03b3b81 start_ms=1791361158499 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=5 category="Credit reporting" ollama_total_ms=132581.6 ollama_load_ms=1.3 prompt_tokens=523 prompt_eval_ms=136.4 eval_tokens=499 eval_ms=28363.9
+2026-10-07T08:30:09.708Z POST /tickets 502 626561.79ms client=172.21.0.1 req_id=1ba57d693d3e start_ms=1791361184984 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.713Z POST /tickets 502 626556.50ms client=172.21.0.1 req_id=99b0cc14a2a7 start_ms=1791361184994 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.727Z POST /tickets 502 626029.91ms client=172.21.0.1 req_id=71ab40c76fdb start_ms=1791361185535 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.732Z POST /tickets 502 625630.53ms client=172.21.0.1 req_id=41fe0fbf30bd start_ms=1791361185939 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.734Z POST /tickets 502 625457.00ms client=172.21.0.1 req_id=e39706f39522 start_ms=1791361186114 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.747Z POST /tickets 502 621974.63ms client=172.21.0.1 req_id=ac3e790902a9 start_ms=1791361189610 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.758Z POST /tickets 502 621644.59ms client=172.21.0.1 req_id=ee8caa21b56a start_ms=1791361189951 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.762Z POST /tickets 200 651039.27ms client=172.21.0.1 req_id=0c7221133aef start_ms=1791361160640 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=6 category="Credit reporting" ollama_total_ms=166230.8 ollama_load_ms=1.6 prompt_tokens=722 prompt_eval_ms=139.2 eval_tokens=619 eval_ms=35619.8
+2026-10-07T08:30:09.765Z POST /tickets 502 621583.13ms client=172.21.0.1 req_id=35a56677d33a start_ms=1791361190020 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.782Z POST /tickets 502 620908.27ms client=172.21.0.1 req_id=5b5371955df6 start_ms=1791361190712 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.786Z POST /tickets 502 620459.39ms client=172.21.0.1 req_id=e75364a467c4 start_ms=1791361191165 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b error=ReadTimeout
+2026-10-07T08:30:09.797Z POST /tickets 200 650882.27ms client=172.21.0.1 req_id=0ded3c6f66bc start_ms=1791361160831 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=7 category="Consumer loan" ollama_total_ms=193315.0 ollama_load_ms=2.5 prompt_tokens=527 prompt_eval_ms=4022.5 eval_tokens=406 eval_ms=23219.0
+2026-10-07T08:30:09.842Z GET /search 200 600915.47ms client=172.21.0.1 req_id=00d9025718c6 start_ms=1791361210670 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:09.864Z GET /search 200 600361.36ms client=172.21.0.1 req_id=c28d88a6b047 start_ms=1791361211246 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:09.870Z POST /tickets 200 650579.48ms client=172.21.0.1 req_id=834500adb818 start_ms=1791361161207 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=8 category="Credit reporting" ollama_total_ms=214144.6 ollama_load_ms=1.5 prompt_tokens=408 prompt_eval_ms=130.4 eval_tokens=370 eval_ms=21044.1
+2026-10-07T08:30:09.871Z GET /search 200 601400.91ms client=172.21.0.1 req_id=018577c5ef8f start_ms=1791361210214 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:09.890Z GET /search 200 600388.99ms client=172.21.0.1 req_id=e49b5d24e7d7 start_ms=1791361211244 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:09.900Z GET /search 200 600053.02ms client=172.21.0.1 req_id=4405bd4ff763 start_ms=1791361211590 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:09.910Z GET /search 200 599899.03ms client=172.21.0.1 req_id=55061454badc start_ms=1791361211754 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:09.919Z POST /tickets 200 649455.48ms client=172.21.0.1 req_id=44d8dd9d8e4a start_ms=1791361162380 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=9 category="Credit reporting" ollama_total_ms=244640.4 ollama_load_ms=1.5 prompt_tokens=417 prompt_eval_ms=136.4 eval_tokens=553 eval_ms=31506.2
+2026-10-07T08:30:09.940Z GET /search 200 599404.85ms client=172.21.0.1 req_id=5d3fe17d34d6 start_ms=1791361212279 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.038Z GET /search 200 600888.12ms client=172.21.0.1 req_id=d7d97d91b10b start_ms=1791361210894 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.042Z POST /tickets 200 646218.08ms client=172.21.0.1 req_id=6f76e548a0df start_ms=1791361165740 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=11 category="Debt collection" ollama_total_ms=312913.4 ollama_load_ms=1.1 prompt_tokens=692 prompt_eval_ms=142.6 eval_tokens=633 eval_ms=36496.1
+2026-10-07T08:30:10.047Z POST /tickets 200 644127.30ms client=172.21.0.1 req_id=0c2bd95653b8 start_ms=1791361167836 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=13 category="Bank account or service" ollama_total_ms=398614.1 ollama_load_ms=1.3 prompt_tokens=460 prompt_eval_ms=142.3 eval_tokens=943 eval_ms=54479.4
+2026-10-07T08:30:10.050Z POST /tickets 200 645096.39ms client=172.21.0.1 req_id=b9bfe9537543 start_ms=1791361166871 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=12 category="Credit card" ollama_total_ms=344923.0 ollama_load_ms=1.6 prompt_tokens=630 prompt_eval_ms=140.1 eval_tokens=573 eval_ms=32955.8
+2026-10-07T08:30:10.054Z POST /tickets 200 649050.59ms client=172.21.0.1 req_id=2b579c6d509f start_ms=1791361162920 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=10 category="Credit card" ollama_total_ms=279057.7 ollama_load_ms=1.5 prompt_tokens=592 prompt_eval_ms=3529.8 eval_tokens=538 eval_ms=31389.2
+2026-10-07T08:30:10.056Z POST /tickets 200 642341.57ms client=172.21.0.1 req_id=552e71b2cbe2 start_ms=1791361169631 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=15 category="Bank account or service" ollama_total_ms=464414.3 ollama_load_ms=1.5 prompt_tokens=672 prompt_eval_ms=139.3 eval_tokens=650 eval_ms=37417.1
+2026-10-07T08:30:10.058Z POST /tickets 200 644063.23ms client=172.21.0.1 req_id=4b969728e858 start_ms=1791361167912 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=14 category=Mortgage ollama_total_ms=428539.5 ollama_load_ms=1.7 prompt_tokens=473 prompt_eval_ms=3648.8 eval_tokens=463 eval_ms=26319.4
+2026-10-07T08:30:10.060Z POST /tickets 200 641508.60ms client=172.21.0.1 req_id=50be3a1578ae start_ms=1791361170468 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=16 category="Credit reporting" ollama_total_ms=494150.5 ollama_load_ms=1.7 prompt_tokens=475 prompt_eval_ms=133.5 eval_tokens=532 eval_ms=30388.2
+2026-10-07T08:30:10.067Z POST /tickets 200 640557.09ms client=172.21.0.1 req_id=8a064b2d3ddd start_ms=1791361171426 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b ticket_id=17 category="Debt collection" ollama_total_ms=534718.5 ollama_load_ms=1.2 prompt_tokens=744 prompt_eval_ms=143.7 eval_tokens=721 eval_ms=41343.8
+2026-10-07T08:30:10.077Z GET /search 200 598525.15ms client=172.21.0.1 req_id=919185253379 start_ms=1791361213296 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.080Z GET /search 200 596302.16ms client=172.21.0.1 req_id=8d416dc4169b start_ms=1791361215522 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.088Z GET /search 200 594748.48ms client=172.21.0.1 req_id=e2650a98dac7 start_ms=1791361217083 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.092Z GET /search 200 594915.17ms client=172.21.0.1 req_id=77741f06bacf start_ms=1791361216920 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.103Z GET /search 200 597773.06ms client=172.21.0.1 req_id=8d276441ebd1 start_ms=1791361214073 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.116Z GET /search 200 594463.64ms client=172.21.0.1 req_id=964a1111739f start_ms=1791361217396 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.126Z GET /search 200 596327.47ms client=172.21.0.1 req_id=c0c794b0a6a5 start_ms=1791361215542 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.129Z GET /search 200 598464.81ms client=172.21.0.1 req_id=f5404089d0d2 start_ms=1791361213407 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.139Z GET /search 200 596246.58ms client=172.21.0.1 req_id=6dbc3691b0f8 start_ms=1791361215636 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.141Z GET /search 200 598589.43ms client=172.21.0.1 req_id=c2b0dcc64375 start_ms=1791361213295 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.143Z GET /search 200 592178.74ms client=172.21.0.1 req_id=9df5e506827d start_ms=1791361219708 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.145Z GET /search 200 592088.12ms client=172.21.0.1 req_id=51be2c80f664 start_ms=1791361219801 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.153Z GET /search 200 591815.66ms client=172.21.0.1 req_id=a5f5b782ae86 start_ms=1791361220081 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.167Z GET /search 200 594714.16ms client=172.21.0.1 req_id=059688e5f404 start_ms=1791361217196 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.172Z GET /search 200 593270.03ms client=172.21.0.1 req_id=04450caabcaa start_ms=1791361218646 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.175Z GET /search 200 591963.46ms client=172.21.0.1 req_id=fadbae56d4d6 start_ms=1791361219955 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.180Z GET /search 200 591697.57ms client=172.21.0.1 req_id=d7b4f981d61e start_ms=1791361220226 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.188Z GET /search 200 589696.64ms client=172.21.0.1 req_id=89262e9e7b40 start_ms=1791361222234 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.191Z GET /search 200 589043.61ms client=172.21.0.1 req_id=71d697451ca9 start_ms=1791361222891 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.218Z GET /search 200 594152.32ms client=172.21.0.1 req_id=10cc2b3ea153 start_ms=1791361217809 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.224Z GET /search 200 587856.61ms client=172.21.0.1 req_id=89b99f18a4e7 start_ms=1791361224111 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.231Z GET /search 200 591383.82ms client=172.21.0.1 req_id=0b6c3aaddb97 start_ms=1791361220591 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.236Z GET /search 200 589743.26ms client=172.21.0.1 req_id=9bf2d74d6155 start_ms=1791361222236 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.240Z GET /search 200 589054.82ms client=172.21.0.1 req_id=8a9d9e81b8fb start_ms=1791361222929 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.245Z GET /search 200 588781.09ms client=172.21.0.1 req_id=c65dae05ccfc start_ms=1791361223207 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.258Z GET /search 200 588393.83ms client=172.21.0.1 req_id=73aca8aed353 start_ms=1791361223608 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.261Z GET /search 200 587610.82ms client=172.21.0.1 req_id=a73d4ab43543 start_ms=1791361224394 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.276Z GET /search 200 587084.68ms client=172.21.0.1 req_id=26dd47966173 start_ms=1791361224935 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.281Z GET /search 200 587653.82ms client=172.21.0.1 req_id=8a8ed7d7676e start_ms=1791361224371 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.289Z GET /search 200 586527.03ms client=172.21.0.1 req_id=ded4fb3a1058 start_ms=1791361225505 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.296Z GET /search 200 587416.19ms client=172.21.0.1 req_id=81a3f00ef0db start_ms=1791361224623 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.304Z GET /search 200 585524.93ms client=172.21.0.1 req_id=1479603e4b81 start_ms=1791361226522 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.307Z GET /search 200 585369.91ms client=172.21.0.1 req_id=9012769279cf start_ms=1791361226680 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.327Z GET /search 200 584282.04ms client=172.21.0.1 req_id=826b98da4cf1 start_ms=1791361227788 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.349Z GET /search 200 583360.03ms client=172.21.0.1 req_id=65fc05b80f56 start_ms=1791361228733 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.381Z GET /search 200 583361.81ms client=172.21.0.1 req_id=0d45182c7bb8 start_ms=1791361228763 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.412Z GET /search 200 583031.72ms client=172.21.0.1 req_id=afd8fab2267e start_ms=1791361229124 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
+2026-10-07T08:30:10.431Z GET /search 200 582939.17ms client=172.21.0.1 req_id=09a64a95eb5f start_ms=1791361229236 run=gemma4-e4b_load_mix-peak_run1 model=gemma4:e4b
