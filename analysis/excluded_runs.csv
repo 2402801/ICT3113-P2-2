@@ -7,3 +7,4 @@ gemma4-e4b_stress_ramp_run1,"invalid: run with P5's original closed-model plan (
 gemma4-e4b_load_tkt-normal_run2-dropped,"not used: phone hotspot disconnected during the run; redone as gemma4-e4b_load_tkt-normal_run2"
 phi3-3.8b_load_tkt-normal_run1-noconnect,"not used: no traffic reached the SUT (SUT on SIT-WIFI, JMeter targeted the hotspot IP; 107 x Connect timed out); redone as phi3-3.8b_load_tkt-normal_run1"
 phi3-3.8b_load_tkt-normal_run1-refused,"not used: no traffic reached the SUT (P2 on a different network; 107 x Connection refused at 192.168.0.100:8000)"
+gemma4-e4b_accuracy_golden175_run2,"interrupted and resumed twice; result CSV overwritten during a GitHub Desktop stash restore, so 8 logged requests (server ticket ids 85-91, 94) have no matching CSV row; replaced by gemma4-e4b_accuracy_golden175_run4"
