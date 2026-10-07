@@ -1,0 +1,9 @@
+2026-10-07T09:40:54.875Z GET /health 200 1.14ms client=172.18.0.1 req_id=a42561dcdede start_ms=1791366054873 run=- model=llama3.2:1b
+2026-10-07T09:40:54.930Z GET /health 200 0.74ms client=172.18.0.1 req_id=66dbb0712909 start_ms=1791366054929 run=- model=llama3.2:1b
+2026-10-07T09:43:33.742Z GET /health 200 1.20ms client=172.18.0.1 req_id=62e5ad189c1a start_ms=1791366213740 run=- model=llama3.2:1b
+2026-10-07T09:43:33.788Z GET /health 200 0.60ms client=172.18.0.1 req_id=f308cbfd393f start_ms=1791366213787 run=- model=llama3.2:1b
+2026-10-07T09:44:20.735Z GET /health 200 1.35ms client=172.18.0.1 req_id=1b5e2439e0c1 start_ms=1791366260734 run=- model=llama3.2:1b
+2026-10-07T09:44:20.783Z GET /health 200 0.74ms client=172.18.0.1 req_id=a102acc05e8d start_ms=1791366260782 run=- model=llama3.2:1b
+2026-10-07T09:44:51.059Z GET /health 200 1.29ms client=172.18.0.1 req_id=aa0a6507d14a start_ms=1791366291058 run=- model=llama3.2:1b
+2026-10-07T09:44:51.100Z GET /health 200 0.79ms client=172.18.0.1 req_id=bb398402920f start_ms=1791366291099 run=- model=llama3.2:1b
+2026-10-07T09:44:58.049Z POST /tickets 200 6666.41ms client=172.18.0.1 req_id=602bd92fdbea start_ms=1791366291383 run=llama3.2-1b_accuracy_golden175_run1-warmup model=llama3.2:1b ticket_id=1 category="Credit card" ollama_total_ms=6585.8 ollama_load_ms=2823.2 prompt_tokens=362 prompt_eval_ms=3321.7 eval_tokens=8 eval_ms=430.6

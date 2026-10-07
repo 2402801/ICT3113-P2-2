@@ -1,0 +1,176 @@
+row,golden_label,llama3.2-1b_accuracy_golden175_run1,llama3.2-1b_accuracy_golden175_run2,llama3.2-1b_accuracy_golden175_run3,mistral-7b_accuracy_golden175_run1,mistral-7b_accuracy_golden175_run2,mistral-7b_accuracy_golden175_run3,phi3-3.8b_accuracy_golden175_run1,phi3-3.8b_accuracy_golden175_run2,phi3-3.8b_accuracy_golden175_run3
+2021,Credit card,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Credit card,Credit card,Credit card
+2027,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2043,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2051,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting
+2052,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Mortgage,Mortgage,Mortgage
+2056,Credit card,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2060,Credit card,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Credit card,Credit card,Credit card
+2070,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2077,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2131,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2141,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit reporting,Credit reporting,Credit reporting
+2142,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2151,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2154,Credit reporting,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting
+2163,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2180,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2213,Mortgage,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2216,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2222,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2225,Debt collection,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2227,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2229,Consumer loan,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2267,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2276,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2280,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit reporting,Credit reporting,Credit reporting
+2283,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2286,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2303,Money transfer or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2306,Money transfer or service,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service,Credit reporting,Credit reporting,Credit reporting
+2318,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2327,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,(no answer)
+2328,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2331,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2333,Consumer loan,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2339,Mortgage,Consumer loan,Consumer loan,Consumer loan,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2344,Debt collection,Credit reporting,Credit reporting,Credit reporting,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service
+2345,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting
+2347,Consumer loan,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Mortgage,Mortgage,Mortgage
+2348,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2354,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service
+2359,Money transfer or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2369,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2379,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2383,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2384,Credit reporting,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2385,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2389,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2393,Consumer loan,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2395,Money transfer or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2399,Mortgage,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2413,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2417,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2418,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2420,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2421,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2423,Credit card,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2430,Money transfer or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Money transfer or service,Money transfer or service,Money transfer or service
+2432,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2434,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2442,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan
+2443,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2446,Money transfer or service,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service
+2447,Bank account or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2469,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2470,Bank account or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2471,Bank account or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2472,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting
+2476,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit reporting,Credit reporting,Credit reporting
+2486,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2487,Bank account or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2489,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2490,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit reporting,(no answer),Credit reporting
+2499,Debt collection,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2504,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2505,Credit card,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Bank account or service,Bank account or service,Bank account or service
+2511,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit reporting,Credit reporting,Credit reporting
+2513,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2533,Money transfer or service,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service,Bank account or service,Bank account or service,Bank account or service
+2535,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2539,Mortgage,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2549,Mortgage,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2556,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2560,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2562,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Mortgage,Mortgage,Mortgage
+2578,Money transfer or service,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service
+2587,Consumer loan,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2588,Money transfer or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Money transfer or service,Money transfer or service,Money transfer or service
+2591,Consumer loan,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan
+2595,Credit reporting,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2599,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2605,Money transfer or service,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service
+2608,Credit reporting,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan
+2612,Credit card,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2613,Mortgage,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2640,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2642,Money transfer or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2645,Mortgage,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2652,Consumer loan,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2660,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2664,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage
+2665,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2666,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2670,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2674,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2679,Credit reporting,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2682,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2684,Consumer loan,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan
+2689,Consumer loan,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2690,Credit reporting,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2697,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2701,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan
+2707,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2718,Mortgage,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2722,Money transfer or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2723,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2731,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2732,Bank account or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2734,Money transfer or service,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service
+2735,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2737,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2744,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2756,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2758,Money transfer or service,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service,(no answer),Money transfer or service,Money transfer or service
+2759,Bank account or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2761,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting
+2772,Credit reporting,Debt collection,Debt collection,Debt collection,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2774,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2784,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,(no answer)
+2792,Consumer loan,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2793,Mortgage,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2794,Money transfer or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Money transfer or service,Money transfer or service,Money transfer or service
+2796,Bank account or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2798,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2800,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2803,Mortgage,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2810,Money transfer or service,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2812,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2814,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2817,Money transfer or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Money transfer or service,Money transfer or service,Money transfer or service
+2820,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2823,Money transfer or service,Bank account or service,Bank account or service,Bank account or service,Money transfer or service,Money transfer or service,Money transfer or service,Bank account or service,Bank account or service,Bank account or service
+2825,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2827,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Credit card,Credit card,Credit card
+2828,Money transfer or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Money transfer or service,Money transfer or service,Money transfer or service
+2830,Consumer loan,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Consumer loan,Consumer loan,Consumer loan
+2836,Money transfer or service,Debt collection,Debt collection,Debt collection,Credit card,Credit card,Credit card,Money transfer or service,Money transfer or service,Money transfer or service
+2838,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2858,Money transfer or service,Credit reporting,Credit reporting,Credit reporting,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service
+2870,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2874,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2877,Bank account or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2889,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan,Consumer loan
+2893,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2896,Mortgage,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2899,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2911,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2922,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Bank account or service,Bank account or service,Bank account or service
+2923,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2925,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2930,Mortgage,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2933,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2943,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2948,Credit card,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2949,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2954,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2959,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Credit card,Credit card,Credit card,Consumer loan,Consumer loan,Consumer loan
+2966,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting
+2970,Credit card,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service
+2972,Money transfer or service,Debt collection,Debt collection,Debt collection,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service,Money transfer or service
+2975,Debt collection,Credit reporting,Credit reporting,Credit reporting,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection,Debt collection
+2982,Money transfer or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2989,Consumer loan,Credit reporting,Credit reporting,Credit reporting,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2990,Credit reporting,Debt collection,Debt collection,Debt collection,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage,Mortgage
+2996,Money transfer or service,Debt collection,Debt collection,Debt collection,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service,Bank account or service
+2998,Bank account or service,Credit reporting,Credit reporting,Credit reporting,Bank account or service,Bank account or service,Bank account or service,Credit card,Credit card,Credit card
