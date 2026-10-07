@@ -1,3 +1,0 @@
-2026-10-05T08:25:14.700Z GET /health 200 2.15ms client=172.21.0.1 req_id=a5b506750f0d start_ms=1791188714698 run=- model=llama3.2:1b
-2026-10-05T08:30:17.097Z GET /health 200 0.82ms client=172.21.0.1 req_id=c00755e0baf3 start_ms=1791189017096 run=- model=llama3.2:1b
-2026-10-05T08:30:19.871Z POST /tickets 200 629.79ms client=172.21.0.1 req_id=237069fb6def start_ms=1791189019242 run=llama3.2-1b_load_tr1_run1-warmup model=llama3.2:1b ticket_id=1 category="Credit card" ollama_total_ms=531.1 ollama_load_ms=2.3 prompt_tokens=362 prompt_eval_ms=352.5 eval_tokens=8 eval_ms=160.6

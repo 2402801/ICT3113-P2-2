@@ -1,0 +1,1640 @@
+ollama-1  | [GIN] 2026/10/07 - 06:12:59 | 200 |      51.651µs |      172.21.0.1 | GET      "/api/version"
+ollama-1  | [GIN] 2026/10/07 - 06:13:02 | 200 |      18.014µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:13:02 | 200 |     837.716µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:13:12 | 200 |       49.12µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:13:12 | 200 |    1.149054ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:13:22 | 200 |      16.172µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:13:22 | 200 |     824.619µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:13:32 | 200 |      16.787µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:13:32 | 200 |     784.763µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:13:42 | 200 |      16.534µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:13:42 | 200 |    1.435923ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:13:52 | 200 |      15.018µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:13:52 | 200 |     751.977µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:14:02 | 200 |      17.422µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:14:02 | 200 |     789.938µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:14:12 | 200 |      24.253µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:14:12 | 200 |     683.406µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:14:22 | 200 |      18.422µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:14:22 | 200 |     784.738µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:14:32 | 200 |       15.83µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:14:32 | 200 |     810.513µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:14:42 | 200 |      15.997µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:14:42 | 200 |     1.31052ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:14:52 | 200 |       16.27µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:14:52 | 200 |     782.875µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:15:02 | 200 |      19.737µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:15:02 | 200 |    5.955759ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:15:12 | 200 |      18.992µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:15:12 | 200 |     762.891µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:15:22 | 200 |      16.925µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:15:22 | 200 |     725.339µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:15:32 | 200 |      15.456µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:15:32 | 200 |     711.746µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:15:42 | 200 |      16.098µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:15:42 | 200 |     667.446µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:15:52 | 200 |      15.425µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:15:52 | 200 |    1.404764ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:16:02 | 200 |      17.522µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:16:02 | 200 |     718.047µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:16:12 | 200 |       15.73µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:16:12 | 200 |     684.825µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:16:22 | 200 |      18.411µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:16:22 | 200 |      706.54µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:16:32 | 200 |      23.176µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:16:32 | 200 |     788.846µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:16:42 | 200 |      14.722µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:16:42 | 200 |     661.013µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:16:52 | 200 |      18.659µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:16:52 | 200 |    1.494551ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:17:02 | 200 |        15.4µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:17:02 | 200 |     804.873µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:17:12 | 200 |       14.75µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:17:12 | 200 |     682.055µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:17:22 | 200 |      15.361µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:17:22 | 200 |     716.463µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:17:33 | 200 |      15.074µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:17:33 | 200 |     704.642µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:17:42 | 200 |      23.427µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:17:42 | 200 |     851.631µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:17:52 | 200 |      39.546µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:17:52 | 200 |    1.779498ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:18:03 | 200 |      15.477µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:18:03 | 200 |     695.481µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:18:12 | 200 |      15.353µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:18:13 | 200 |     688.297µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:18:23 | 200 |      14.863µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:18:23 | 200 |     797.922µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:18:33 | 200 |      22.407µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:18:33 | 200 |     920.643µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:18:43 | 200 |      17.045µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:18:43 | 200 |     726.352µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:18:53 | 200 |      16.132µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:18:53 | 200 |     673.288µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.455 (322/707) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.455 (> 0.100 thold), f_keep = 0.474
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 680, total state size = 30.639 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.474, f_sim = 0.455
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.455
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.455
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.455
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.455
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.455
+ollama-1  | srv          load:    - prompt with length     680, lcp =     322, f_keep = 0.474, f_sim = 0.455
+ollama-1  | srv        update:  - cache state: 6 prompts, 295.526 MiB (limits: 8192.000 MiB, 4096 tokens, 135773 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     680 tokens, checkpoints:  2,    58.187 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 33.15 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 4240 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 4240 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 707
+ollama-1  | slot   operator(): id  0 | task 4240 | checking checkpoint with [0, 352] against 0...
+ollama-1  | slot   operator(): id  0 | task 4240 | checking checkpoint with [0, 351] against 0...
+ollama-1  | slot   operator(): id  0 | task 4240 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 4240 | erased invalidated context checkpoint (pos_min = 0, pos_max = 351, n_tokens = 352, n_swa = 512, pos_next = 0, size = 13.755 MiB)
+ollama-1  | slot   operator(): id  0 | task 4240 | erased invalidated context checkpoint (pos_min = 0, pos_max = 352, n_tokens = 353, n_swa = 512, pos_next = 0, size = 13.794 MiB)
+ollama-1  | slot   operator(): id  0 | task 4240 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot   operator(): id  0 | task 4240 | cached n_tokens = 195, memory_seq_rm [195, end)
+ollama-1  | slot create_check: id  0 | task 4240 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 194, n_tokens = 195, size = 7.620 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:19:03 | 200 |      30.376µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:19:03 | 200 |    1.426566ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4240 | prompt processing, n_tokens =    703, progress = 0.99, t =   5.72 s / 122.88 tokens per second
+ollama-1  | slot   operator(): id  0 | task 4240 | cached n_tokens = 703, memory_seq_rm [703, end)
+ollama-1  | slot init_sampler: id  0 | task 4240 | init sampler, took 0.14 ms, tokens: text = 707, total = 707
+ollama-1  | slot create_check: id  0 | task 4240 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 702, n_tokens = 703, size = 20.006 MiB)
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    100, tg =  16.65 t/s, tg_3s =  16.82 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:19:13 | 200 |      31.393µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:19:13 | 200 |     768.121µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    149, tg =  16.49 t/s, tg_3s =  16.17 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    200, tg =  16.58 t/s, tg_3s =  16.86 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    252, tg =  16.73 t/s, tg_3s =  17.33 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    302, tg =  16.70 t/s, tg_3s =  16.54 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:19:23 | 200 |      72.063µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:19:23 | 200 |     904.676µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    352, tg =  16.64 t/s, tg_3s =  16.34 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    402, tg =  16.65 t/s, tg_3s =  16.65 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    452, tg =  16.62 t/s, tg_3s =  16.45 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:19:33 | 200 |       33.49µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:19:33 | 200 |    1.729135ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    502, tg =  16.61 t/s, tg_3s =  16.52 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    554, tg =  16.67 t/s, tg_3s =  17.20 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | n_gen =    607, tg =  16.73 t/s, tg_3s =  17.45 t/s
+ollama-1  | slot print_timing: id  0 | task 4240 | prompt eval time =    5810.74 ms /   707 tokens (    8.22 ms per token,   121.67 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 4240 |        eval time =   37262.01 ms /   625 tokens (   59.71 ms per token,    16.75 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 4240 |       total time =   43072.76 ms /  1332 tokens
+ollama-1  | slot print_timing: id  0 | task 4240 |    graphs reused =       4802
+ollama-1  | slot      release: id  0 | task 4240 | stop processing: n_tokens = 1331, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:19:41 | 200 | 43.145495275s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.604 (322/533) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.604 (> 0.100 thold), f_keep = 0.242
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1331, total state size = 40.819 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.242, f_sim = 0.604
+ollama-1  | srv          load:    - prompt with length     810, lcp =     323, f_keep = 0.399, f_sim = 0.606
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.604
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.604
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.604
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.604
+ollama-1  | srv          load:    - prompt with length     680, lcp =     323, f_keep = 0.475, f_sim = 0.606
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.604
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.399, f_sim = 0.606
+ollama-1  | srv        update:  - cache state: 6 prompts, 316.958 MiB (limits: 8192.000 MiB, 4096 tokens, 140057 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     680 tokens, checkpoints:  2,    58.187 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 100.50 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 4868 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 4868 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 533
+ollama-1  | slot   operator(): id  0 | task 4868 | checking checkpoint with [0, 366] against 0...
+ollama-1  | slot   operator(): id  0 | task 4868 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 4868 | erased invalidated context checkpoint (pos_min = 0, pos_max = 366, n_tokens = 367, n_swa = 512, pos_next = 0, size = 14.341 MiB)
+ollama-1  | slot   operator(): id  0 | task 4868 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot   operator(): id  0 | task 4868 | cached n_tokens = 21, memory_seq_rm [21, end)
+ollama-1  | slot create_check: id  0 | task 4868 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 20, n_tokens = 21, size = 0.821 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:19:43 | 200 |      31.158µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:19:43 | 200 |     870.616µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4868 | prompt processing, n_tokens =    529, progress = 0.99, t =   4.67 s / 113.18 tokens per second
+ollama-1  | slot   operator(): id  0 | task 4868 | cached n_tokens = 529, memory_seq_rm [529, end)
+ollama-1  | slot init_sampler: id  0 | task 4868 | init sampler, took 0.07 ms, tokens: text = 533, total = 533
+ollama-1  | slot create_check: id  0 | task 4868 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 528, n_tokens = 529, size = 20.006 MiB)
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    100, tg =  16.57 t/s, tg_3s =  16.74 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:19:53 | 200 |      67.148µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:19:53 | 200 |    1.690873ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    152, tg =  16.74 t/s, tg_3s =  17.06 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    206, tg =  17.01 t/s, tg_3s =  17.84 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    260, tg =  17.15 t/s, tg_3s =  17.67 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:20:03 | 200 |      34.131µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:20:03 | 200 |    1.809083ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    310, tg =  17.02 t/s, tg_3s =  16.40 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    361, tg =  17.01 t/s, tg_3s =  16.93 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    415, tg =  17.13 t/s, tg_3s =  18.00 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    469, tg =  17.19 t/s, tg_3s =  17.71 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:20:13 | 200 |      43.981µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:20:13 | 200 |    1.715897ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    522, tg =  17.21 t/s, tg_3s =  17.39 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | n_gen =    575, tg =  17.23 t/s, tg_3s =  17.40 t/s
+ollama-1  | slot print_timing: id  0 | task 4868 | prompt eval time =    4755.87 ms /   533 tokens (    8.92 ms per token,   112.07 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 4868 |        eval time =   33663.48 ms /   581 tokens (   58.04 ms per token,    17.23 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 4868 |       total time =   38419.34 ms /  1114 tokens
+ollama-1  | slot print_timing: id  0 | task 4868 |    graphs reused =       5379
+ollama-1  | slot      release: id  0 | task 4868 | stop processing: n_tokens = 1113, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:20:19 | 200 |         1m18s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.774 (322/416) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.774 (> 0.100 thold), f_keep = 0.289
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1113, total state size = 37.410 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.289, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length     680, lcp =     322, f_keep = 0.474, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.774
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.774
+ollama-1  | srv        update:  - cache state: 7 prompts, 375.195 MiB (limits: 8192.000 MiB, 4096 tokens, 142619 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     680 tokens, checkpoints:  2,    58.187 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 42.50 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 5452 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 5452 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 416
+ollama-1  | slot   operator(): id  0 | task 5452 | checking checkpoint with [0, 528] against 0...
+ollama-1  | slot   operator(): id  0 | task 5452 | checking checkpoint with [0, 20] against 0...
+ollama-1  | slot   operator(): id  0 | task 5452 | restored context checkpoint (pos_min = 0, pos_max = 20, n_tokens = 21, n_past = 20, size = 0.821 MiB)
+ollama-1  | slot   operator(): id  0 | task 5452 | erased invalidated context checkpoint (pos_min = 0, pos_max = 528, n_tokens = 529, n_swa = 512, pos_next = 20, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 5452 | cached n_tokens = 20, memory_seq_rm [20, end)
+ollama-1  | slot create_check: id  0 | task 5452 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 19, n_tokens = 20, size = 0.782 MiB)
+ollama-1  | slot print_timing: id  0 | task 5452 | prompt processing, n_tokens =    392, progress = 0.99, t =   3.47 s / 112.83 tokens per second
+ollama-1  | slot   operator(): id  0 | task 5452 | cached n_tokens = 412, memory_seq_rm [412, end)
+ollama-1  | slot init_sampler: id  0 | task 5452 | init sampler, took 0.06 ms, tokens: text = 416, total = 416
+ollama-1  | slot create_check: id  0 | task 5452 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 411, n_tokens = 412, size = 16.099 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:20:23 | 200 |      42.963µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:20:23 | 200 |    1.720992ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    100, tg =  17.31 t/s, tg_3s =  17.48 t/s
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    152, tg =  17.29 t/s, tg_3s =  17.25 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:20:33 | 200 |      33.577µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:20:33 | 200 |     889.936µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    204, tg =  17.24 t/s, tg_3s =  17.12 t/s
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    257, tg =  17.30 t/s, tg_3s =  17.53 t/s
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    311, tg =  17.36 t/s, tg_3s =  17.66 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:20:43 | 200 |      39.443µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:20:43 | 200 |    1.892643ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    363, tg =  17.33 t/s, tg_3s =  17.12 t/s
+ollama-1  | slot print_timing: id  0 | task 5452 | n_gen =    415, tg =  17.32 t/s, tg_3s =  17.25 t/s
+ollama-1  | slot print_timing: id  0 | task 5452 | prompt eval time =    3551.23 ms /   396 tokens (    8.97 ms per token,   111.51 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 5452 |        eval time =   26928.60 ms /   468 tokens (   57.66 ms per token,    17.34 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 5452 |       total time =   30479.84 ms /   864 tokens
+ollama-1  | slot print_timing: id  0 | task 5452 |    graphs reused =       5843
+ollama-1  | slot      release: id  0 | task 5452 | stop processing: n_tokens = 883, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:20:50 | 200 |         1m44s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.682 (322/472) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.682 (> 0.100 thold), f_keep = 0.365
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 883, total state size = 33.813 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.365, f_sim = 0.682
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.682
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.682
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.682
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.682
+ollama-1  | srv          load:    - prompt with length     680, lcp =     323, f_keep = 0.475, f_sim = 0.684
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.682
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     323, f_keep = 0.290, f_sim = 0.684
+ollama-1  | srv          load:    - prompt with length     883, lcp =     322, f_keep = 0.365, f_sim = 0.682
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.475, f_sim = 0.684
+ollama-1  | srv        update:  - cache state: 7 prompts, 368.523 MiB (limits: 8192.000 MiB, 4096 tokens, 149714 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x2d0dc3e0:     883 tokens, checkpoints:  3,    51.515 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 31.45 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 5922 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 5922 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 472
+ollama-1  | slot   operator(): id  0 | task 5922 | checking checkpoint with [0, 352] against 0...
+ollama-1  | slot   operator(): id  0 | task 5922 | checking checkpoint with [0, 351] against 0...
+ollama-1  | slot   operator(): id  0 | task 5922 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 5922 | erased invalidated context checkpoint (pos_min = 0, pos_max = 351, n_tokens = 352, n_swa = 512, pos_next = 0, size = 13.755 MiB)
+ollama-1  | slot   operator(): id  0 | task 5922 | erased invalidated context checkpoint (pos_min = 0, pos_max = 352, n_tokens = 353, n_swa = 512, pos_next = 0, size = 13.794 MiB)
+ollama-1  | slot   operator(): id  0 | task 5922 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | [GIN] 2026/10/07 - 06:20:53 | 200 |      30.323µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:20:53 | 200 |    1.465156ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 5922 | prompt processing, n_tokens =    468, progress = 0.99, t =   4.15 s / 112.83 tokens per second
+ollama-1  | slot   operator(): id  0 | task 5922 | cached n_tokens = 468, memory_seq_rm [468, end)
+ollama-1  | slot init_sampler: id  0 | task 5922 | init sampler, took 0.07 ms, tokens: text = 472, total = 472
+ollama-1  | slot create_check: id  0 | task 5922 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 467, n_tokens = 468, size = 18.287 MiB)
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    100, tg =  17.58 t/s, tg_3s =  17.76 t/s
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    152, tg =  17.46 t/s, tg_3s =  17.22 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:21:03 | 200 |      52.205µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:21:03 | 200 |    1.436953ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    205, tg =  17.43 t/s, tg_3s =  17.36 t/s
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    259, tg =  17.51 t/s, tg_3s =  17.80 t/s
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    312, tg =  17.52 t/s, tg_3s =  17.55 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:21:13 | 200 |       35.57µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:21:13 | 200 |    1.349473ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    364, tg =  17.45 t/s, tg_3s =  17.08 t/s
+ollama-1  | slot print_timing: id  0 | task 5922 | n_gen =    417, tg =  17.45 t/s, tg_3s =  17.40 t/s
+ollama-1  | slot print_timing: id  0 | task 5922 | prompt eval time =    4229.75 ms /   472 tokens (    8.96 ms per token,   111.59 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 5922 |        eval time =   24617.88 ms /   430 tokens (   57.38 ms per token,    17.43 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 5922 |       total time =   28847.62 ms /   902 tokens
+ollama-1  | slot print_timing: id  0 | task 5922 |    graphs reused =       6269
+ollama-1  | slot      release: id  0 | task 5922 | stop processing: n_tokens = 901, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:21:18 | 200 |         2m12s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.620 (324/523) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.620 (> 0.100 thold), f_keep = 0.360
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 901, total state size = 34.095 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.360, f_sim = 0.620
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.616
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.616
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.616
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.616
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.616
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     323, f_keep = 0.290, f_sim = 0.618
+ollama-1  | srv          load:    - prompt with length     883, lcp =     322, f_keep = 0.365, f_sim = 0.616
+ollama-1  | srv          load:    - prompt with length     901, lcp =     324, f_keep = 0.360, f_sim = 0.620
+ollama-1  | srv        update:  - cache state: 8 prompts, 420.905 MiB (limits: 8192.000 MiB, 4096 tokens, 148618 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x2d0dc3e0:     883 tokens, checkpoints:  3,    51.515 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 16.76 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 6354 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 6354 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 523
+ollama-1  | slot   operator(): id  0 | task 6354 | checking checkpoint with [0, 467] against 0...
+ollama-1  | slot   operator(): id  0 | task 6354 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 6354 | erased invalidated context checkpoint (pos_min = 0, pos_max = 467, n_tokens = 468, n_swa = 512, pos_next = 0, size = 18.287 MiB)
+ollama-1  | slot   operator(): id  0 | task 6354 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot   operator(): id  0 | task 6354 | cached n_tokens = 11, memory_seq_rm [11, end)
+ollama-1  | slot create_check: id  0 | task 6354 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 10, n_tokens = 11, size = 0.430 MiB)
+ollama-1  | slot print_timing: id  0 | task 6354 | prompt processing, n_tokens =    519, progress = 0.99, t =   4.61 s / 112.66 tokens per second
+ollama-1  | slot   operator(): id  0 | task 6354 | cached n_tokens = 519, memory_seq_rm [519, end)
+ollama-1  | slot init_sampler: id  0 | task 6354 | init sampler, took 0.10 ms, tokens: text = 523, total = 523
+ollama-1  | slot create_check: id  0 | task 6354 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 518, n_tokens = 519, size = 20.006 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:21:23 | 200 |      36.706µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:21:23 | 200 |    2.016529ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    100, tg =  17.57 t/s, tg_3s =  17.75 t/s
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    153, tg =  17.51 t/s, tg_3s =  17.40 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:21:33 | 200 |       47.37µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:21:33 | 200 |    2.955219ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    205, tg =  17.42 t/s, tg_3s =  17.15 t/s
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    258, tg =  17.44 t/s, tg_3s =  17.51 t/s
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    312, tg =  17.50 t/s, tg_3s =  17.78 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:21:43 | 200 |      38.828µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:21:43 | 200 |    1.541932ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    364, tg =  17.47 t/s, tg_3s =  17.33 t/s
+ollama-1  | slot print_timing: id  0 | task 6354 | n_gen =    417, tg =  17.47 t/s, tg_3s =  17.48 t/s
+ollama-1  | slot print_timing: id  0 | task 6354 | prompt eval time =    4689.51 ms /   523 tokens (    8.97 ms per token,   111.53 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 6354 |        eval time =   25513.14 ms /   446 tokens (   57.33 ms per token,    17.44 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 6354 |       total time =   30202.65 ms /   969 tokens
+ollama-1  | slot print_timing: id  0 | task 6354 |    graphs reused =       6712
+ollama-1  | slot      release: id  0 | task 6354 | stop processing: n_tokens = 968, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:21:49 | 200 |         2m42s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.446 (322/722) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.446 (> 0.100 thold), f_keep = 0.333
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 968, total state size = 35.143 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.333, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     883, lcp =     322, f_keep = 0.365, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.446
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.446
+ollama-1  | srv        update:  - cache state: 9 prompts, 476.484 MiB (limits: 8192.000 MiB, 4096 tokens, 147925 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x2d0dc3e0:     883 tokens, checkpoints:  3,    51.515 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 21.32 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 6803 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 6803 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 722
+ollama-1  | slot   operator(): id  0 | task 6803 | checking checkpoint with [0, 518] against 0...
+ollama-1  | slot   operator(): id  0 | task 6803 | checking checkpoint with [0, 10] against 0...
+ollama-1  | slot   operator(): id  0 | task 6803 | restored context checkpoint (pos_min = 0, pos_max = 10, n_tokens = 11, n_past = 10, size = 0.430 MiB)
+ollama-1  | slot   operator(): id  0 | task 6803 | erased invalidated context checkpoint (pos_min = 0, pos_max = 518, n_tokens = 519, n_swa = 512, pos_next = 10, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 6803 | cached n_tokens = 10, memory_seq_rm [10, end)
+ollama-1  | slot   operator(): id  0 | task 6803 | cached n_tokens = 210, memory_seq_rm [210, end)
+ollama-1  | slot create_check: id  0 | task 6803 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 209, n_tokens = 210, size = 8.206 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:21:54 | 200 |      22.182µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:21:54 | 200 |     895.997µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6803 | prompt processing, n_tokens =    708, progress = 0.99, t =   6.40 s / 110.64 tokens per second
+ollama-1  | slot   operator(): id  0 | task 6803 | cached n_tokens = 718, memory_seq_rm [718, end)
+ollama-1  | slot init_sampler: id  0 | task 6803 | init sampler, took 0.10 ms, tokens: text = 722, total = 722
+ollama-1  | slot create_check: id  0 | task 6803 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 717, n_tokens = 718, size = 20.006 MiB)
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    100, tg =  17.31 t/s, tg_3s =  17.49 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:22:04 | 200 |      26.488µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:22:04 | 200 |     927.532µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    150, tg =  17.01 t/s, tg_3s =  16.44 t/s
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    201, tg =  16.99 t/s, tg_3s =  16.91 t/s
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    254, tg =  17.10 t/s, tg_3s =  17.55 t/s
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    305, tg =  17.06 t/s, tg_3s =  16.89 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:22:14 | 200 |      33.433µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:22:14 | 200 |     875.296µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    357, tg =  17.06 t/s, tg_3s =  17.04 t/s
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    409, tg =  17.07 t/s, tg_3s =  17.16 t/s
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    461, tg =  17.07 t/s, tg_3s =  17.08 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:22:24 | 200 |      35.571µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:22:24 | 200 |    1.552425ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 6803 | n_gen =    512, tg =  17.05 t/s, tg_3s =  16.84 t/s
+ollama-1  | slot print_timing: id  0 | task 6803 | prompt eval time =    6479.11 ms /   712 tokens (    9.10 ms per token,   109.89 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 6803 |        eval time =   30710.75 ms /   524 tokens (   58.72 ms per token,    17.03 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 6803 |       total time =   37189.86 ms /  1236 tokens
+ollama-1  | slot print_timing: id  0 | task 6803 |    graphs reused =       7232
+ollama-1  | slot      release: id  0 | task 6803 | stop processing: n_tokens = 1245, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:22:26 | 200 |         3m18s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.611 (322/527) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.611 (> 0.100 thold), f_keep = 0.259
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1245, total state size = 39.474 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.259, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length     883, lcp =     323, f_keep = 0.366, f_sim = 0.613
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.611
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.611
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.366, f_sim = 0.613
+ollama-1  | srv        update:  - cache state: 9 prompts, 493.085 MiB (limits: 8192.000 MiB, 4096 tokens, 148959 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 31.16 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 7330 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 7330 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 527
+ollama-1  | slot   operator(): id  0 | task 7330 | checking checkpoint with [0, 411] against 0...
+ollama-1  | slot   operator(): id  0 | task 7330 | checking checkpoint with [0, 19] against 0...
+ollama-1  | slot   operator(): id  0 | task 7330 | restored context checkpoint (pos_min = 0, pos_max = 19, n_tokens = 20, n_past = 19, size = 0.782 MiB)
+ollama-1  | slot   operator(): id  0 | task 7330 | erased invalidated context checkpoint (pos_min = 0, pos_max = 20, n_tokens = 21, n_swa = 512, pos_next = 19, size = 0.821 MiB)
+ollama-1  | slot   operator(): id  0 | task 7330 | erased invalidated context checkpoint (pos_min = 0, pos_max = 411, n_tokens = 412, n_swa = 512, pos_next = 19, size = 16.099 MiB)
+ollama-1  | slot   operator(): id  0 | task 7330 | cached n_tokens = 19, memory_seq_rm [19, end)
+ollama-1  | slot create_check: id  0 | task 7330 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 18, n_tokens = 19, size = 0.743 MiB)
+ollama-1  | slot print_timing: id  0 | task 7330 | prompt processing, n_tokens =    504, progress = 0.99, t =   4.42 s / 113.92 tokens per second
+ollama-1  | slot   operator(): id  0 | task 7330 | cached n_tokens = 523, memory_seq_rm [523, end)
+ollama-1  | slot init_sampler: id  0 | task 7330 | init sampler, took 0.07 ms, tokens: text = 527, total = 527
+ollama-1  | slot create_check: id  0 | task 7330 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 522, n_tokens = 523, size = 20.006 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:22:34 | 200 |      36.357µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:22:34 | 200 |    1.727566ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 7330 | n_gen =    100, tg =  17.09 t/s, tg_3s =  17.26 t/s
+ollama-1  | slot print_timing: id  0 | task 7330 | n_gen =    153, tg =  17.25 t/s, tg_3s =  17.58 t/s
+ollama-1  | slot print_timing: id  0 | task 7330 | n_gen =    206, tg =  17.31 t/s, tg_3s =  17.46 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:22:44 | 200 |      30.865µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:22:44 | 200 |     1.73592ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 7330 | n_gen =    257, tg =  17.23 t/s, tg_3s =  16.93 t/s
+ollama-1  | slot print_timing: id  0 | task 7330 | n_gen =    308, tg =  17.17 t/s, tg_3s =  16.86 t/s
+ollama-1  | slot print_timing: id  0 | task 7330 | n_gen =    357, tg =  17.03 t/s, tg_3s =  16.21 t/s
+ollama-1  | slot print_timing: id  0 | task 7330 | prompt eval time =    4506.14 ms /   508 tokens (    8.87 ms per token,   112.73 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 7330 |        eval time =   21662.03 ms /   369 tokens (   58.86 ms per token,    16.99 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 7330 |       total time =   26168.17 ms /   877 tokens
+ollama-1  | slot print_timing: id  0 | task 7330 |    graphs reused =       7598
+ollama-1  | slot      release: id  0 | task 7330 | stop processing: n_tokens = 895, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:22:52 | 200 |         3m42s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.789 (322/408) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.789 (> 0.100 thold), f_keep = 0.360
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 895, total state size = 34.001 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.360, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.789
+ollama-1  | srv          load:    - prompt with length     895, lcp =     322, f_keep = 0.360, f_sim = 0.789
+ollama-1  | srv        update:  - cache state: 10 prompts, 548.617 MiB (limits: 8192.000 MiB, 4096 tokens, 147245 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     895 tokens, checkpoints:  3,    55.532 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 23.29 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 7701 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 7701 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 408
+ollama-1  | slot   operator(): id  0 | task 7701 | checking checkpoint with [0, 522] against 0...
+ollama-1  | slot   operator(): id  0 | task 7701 | checking checkpoint with [0, 18] against 0...
+ollama-1  | slot   operator(): id  0 | task 7701 | restored context checkpoint (pos_min = 0, pos_max = 18, n_tokens = 19, n_past = 18, size = 0.743 MiB)
+ollama-1  | slot   operator(): id  0 | task 7701 | erased invalidated context checkpoint (pos_min = 0, pos_max = 19, n_tokens = 20, n_swa = 512, pos_next = 18, size = 0.782 MiB)
+ollama-1  | slot   operator(): id  0 | task 7701 | erased invalidated context checkpoint (pos_min = 0, pos_max = 522, n_tokens = 523, n_swa = 512, pos_next = 18, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 7701 | cached n_tokens = 18, memory_seq_rm [18, end)
+ollama-1  | slot create_check: id  0 | task 7701 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 17, n_tokens = 18, size = 0.704 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:22:54 | 200 |      28.975µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:22:54 | 200 |    1.702646ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 7701 | prompt processing, n_tokens =    386, progress = 0.99, t =   3.47 s / 111.22 tokens per second
+ollama-1  | slot   operator(): id  0 | task 7701 | cached n_tokens = 404, memory_seq_rm [404, end)
+ollama-1  | slot init_sampler: id  0 | task 7701 | init sampler, took 0.06 ms, tokens: text = 408, total = 408
+ollama-1  | slot create_check: id  0 | task 7701 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 403, n_tokens = 404, size = 15.786 MiB)
+ollama-1  | slot print_timing: id  0 | task 7701 | n_gen =    100, tg =  17.12 t/s, tg_3s =  17.29 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:23:04 | 200 |      25.068µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:23:04 | 200 |    1.460755ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 7701 | n_gen =    151, tg =  17.01 t/s, tg_3s =  16.80 t/s
+ollama-1  | slot print_timing: id  0 | task 7701 | n_gen =    203, tg =  17.06 t/s, tg_3s =  17.22 t/s
+ollama-1  | slot print_timing: id  0 | task 7701 | n_gen =    256, tg =  17.18 t/s, tg_3s =  17.65 t/s
+ollama-1  | slot print_timing: id  0 | task 7701 | n_gen =    309, tg =  17.23 t/s, tg_3s =  17.49 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:23:14 | 200 |       47.23µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:23:14 | 200 |      969.68µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 7701 | prompt eval time =    3553.06 ms /   390 tokens (    9.11 ms per token,   109.76 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 7701 |        eval time =   18861.59 ms /   326 tokens (   58.04 ms per token,    17.23 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 7701 |       total time =   22414.65 ms /   716 tokens
+ollama-1  | slot print_timing: id  0 | task 7701 |    graphs reused =       7921
+ollama-1  | slot      release: id  0 | task 7701 | stop processing: n_tokens = 733, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:23:14 | 200 |          4m4s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.772 (322/417) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.772 (> 0.100 thold), f_keep = 0.439
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 733, total state size = 31.468 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.439, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     323, f_keep = 0.259, f_sim = 0.775
+ollama-1  | srv          load:    - prompt with length     895, lcp =     322, f_keep = 0.360, f_sim = 0.772
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.772
+ollama-1  | srv        update:  - cache state: 11 prompts, 597.318 MiB (limits: 8192.000 MiB, 4096 tokens, 145292 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     895 tokens, checkpoints:  3,    55.532 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 21.46 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 8029 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 8029 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 417
+ollama-1  | slot   operator(): id  0 | task 8029 | checking checkpoint with [0, 403] against 0...
+ollama-1  | slot   operator(): id  0 | task 8029 | checking checkpoint with [0, 17] against 0...
+ollama-1  | slot   operator(): id  0 | task 8029 | restored context checkpoint (pos_min = 0, pos_max = 17, n_tokens = 18, n_past = 17, size = 0.704 MiB)
+ollama-1  | slot   operator(): id  0 | task 8029 | erased invalidated context checkpoint (pos_min = 0, pos_max = 18, n_tokens = 19, n_swa = 512, pos_next = 17, size = 0.743 MiB)
+ollama-1  | slot   operator(): id  0 | task 8029 | erased invalidated context checkpoint (pos_min = 0, pos_max = 403, n_tokens = 404, n_swa = 512, pos_next = 17, size = 15.786 MiB)
+ollama-1  | slot   operator(): id  0 | task 8029 | cached n_tokens = 17, memory_seq_rm [17, end)
+ollama-1  | slot create_check: id  0 | task 8029 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 16, n_tokens = 17, size = 0.665 MiB)
+ollama-1  | slot print_timing: id  0 | task 8029 | prompt processing, n_tokens =    396, progress = 0.99, t =   3.53 s / 112.05 tokens per second
+ollama-1  | slot   operator(): id  0 | task 8029 | cached n_tokens = 413, memory_seq_rm [413, end)
+ollama-1  | slot init_sampler: id  0 | task 8029 | init sampler, took 0.06 ms, tokens: text = 417, total = 417
+ollama-1  | slot create_check: id  0 | task 8029 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 412, n_tokens = 413, size = 16.138 MiB)
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    100, tg =  17.76 t/s, tg_3s =  17.94 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:23:24 | 200 |      40.513µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:23:24 | 200 |    1.529668ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    153, tg =  17.62 t/s, tg_3s =  17.35 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    206, tg =  17.56 t/s, tg_3s =  17.41 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    260, tg =  17.61 t/s, tg_3s =  17.77 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:23:34 | 200 |      42.171µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:23:34 | 200 |    1.362222ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    311, tg =  17.47 t/s, tg_3s =  16.83 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    364, tg =  17.49 t/s, tg_3s =  17.56 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    415, tg =  17.40 t/s, tg_3s =  16.82 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:23:44 | 200 |      43.454µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:23:44 | 200 |     1.48473ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    467, tg =  17.38 t/s, tg_3s =  17.22 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    518, tg =  17.33 t/s, tg_3s =  16.89 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    570, tg =  17.30 t/s, tg_3s =  17.03 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    621, tg =  17.26 t/s, tg_3s =  16.77 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:23:54 | 200 |      26.521µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:23:54 | 200 |    2.513704ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8029 | n_gen =    671, tg =  17.21 t/s, tg_3s =  16.58 t/s
+ollama-1  | slot print_timing: id  0 | task 8029 | prompt eval time =    3622.06 ms /   400 tokens (    9.06 ms per token,   110.43 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 8029 |        eval time =   41947.04 ms /   721 tokens (   58.26 ms per token,    17.16 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 8029 |       total time =   45569.09 ms /  1121 tokens
+ollama-1  | slot print_timing: id  0 | task 8029 |    graphs reused =       8637
+ollama-1  | slot      release: id  0 | task 8029 | stop processing: n_tokens = 1137, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:23:59 | 200 |         4m47s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.544 (322/592) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.544 (> 0.100 thold), f_keep = 0.283
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1137, total state size = 37.785 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.283, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length     895, lcp =     328, f_keep = 0.366, f_sim = 0.554
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.544
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.544
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.366, f_sim = 0.554
+ollama-1  | srv        update:  - cache state: 11 prompts, 597.078 MiB (limits: 8192.000 MiB, 4096 tokens, 148671 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 41.86 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 8752 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 8752 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 592
+ollama-1  | slot   operator(): id  0 | task 8752 | checking checkpoint with [0, 522] against 0...
+ollama-1  | slot   operator(): id  0 | task 8752 | checking checkpoint with [0, 18] against 0...
+ollama-1  | slot   operator(): id  0 | task 8752 | restored context checkpoint (pos_min = 0, pos_max = 18, n_tokens = 19, n_past = 18, size = 0.743 MiB)
+ollama-1  | slot   operator(): id  0 | task 8752 | erased invalidated context checkpoint (pos_min = 0, pos_max = 19, n_tokens = 20, n_swa = 512, pos_next = 18, size = 0.782 MiB)
+ollama-1  | slot   operator(): id  0 | task 8752 | erased invalidated context checkpoint (pos_min = 0, pos_max = 522, n_tokens = 523, n_swa = 512, pos_next = 18, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 8752 | cached n_tokens = 18, memory_seq_rm [18, end)
+ollama-1  | slot   operator(): id  0 | task 8752 | cached n_tokens = 80, memory_seq_rm [80, end)
+ollama-1  | slot create_check: id  0 | task 8752 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 79, n_tokens = 80, size = 3.126 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:24:04 | 200 |      21.574µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:24:04 | 200 |    1.068316ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8752 | prompt processing, n_tokens =    570, progress = 0.99, t =   5.28 s / 107.95 tokens per second
+ollama-1  | slot   operator(): id  0 | task 8752 | cached n_tokens = 588, memory_seq_rm [588, end)
+ollama-1  | slot init_sampler: id  0 | task 8752 | init sampler, took 0.08 ms, tokens: text = 592, total = 592
+ollama-1  | slot create_check: id  0 | task 8752 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 587, n_tokens = 588, size = 20.006 MiB)
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    100, tg =  17.66 t/s, tg_3s =  17.83 t/s
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    153, tg =  17.59 t/s, tg_3s =  17.48 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:24:14 | 200 |      26.102µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:24:14 | 200 |     776.514µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    203, tg =  17.30 t/s, tg_3s =  16.47 t/s
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    253, tg =  17.12 t/s, tg_3s =  16.40 t/s
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    303, tg =  17.02 t/s, tg_3s =  16.57 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:24:24 | 200 |      29.256µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:24:24 | 200 |    1.545212ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    353, tg =  16.93 t/s, tg_3s =  16.39 t/s
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    404, tg =  16.91 t/s, tg_3s =  16.75 t/s
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    455, tg =  16.89 t/s, tg_3s =  16.71 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:24:34 | 200 |      20.601µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:24:34 | 200 |    1.494995ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 8752 | n_gen =    505, tg =  16.86 t/s, tg_3s =  16.60 t/s
+ollama-1  | slot print_timing: id  0 | task 8752 | prompt eval time =    5365.36 ms /   574 tokens (    9.35 ms per token,   106.98 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 8752 |        eval time =   32676.70 ms /   552 tokens (   59.30 ms per token,    16.86 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 8752 |       total time =   38042.06 ms /  1126 tokens
+ollama-1  | slot print_timing: id  0 | task 8752 |    graphs reused =       9185
+ollama-1  | slot      release: id  0 | task 8752 | stop processing: n_tokens = 1143, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:24:37 | 200 |         5m18s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.465 (322/692) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.465 (> 0.100 thold), f_keep = 0.282
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1143, total state size = 37.879 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.282, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.465
+ollama-1  | srv          load:    - prompt with length    1143, lcp =     322, f_keep = 0.282, f_sim = 0.465
+ollama-1  | srv        update:  - cache state: 12 prompts, 658.832 MiB (limits: 8192.000 MiB, 4096 tokens, 148948 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x2d0dc3e0:    1143 tokens, checkpoints:  3,    61.755 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 29.75 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 9307 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 9307 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 692
+ollama-1  | slot   operator(): id  0 | task 9307 | checking checkpoint with [0, 587] against 0...
+ollama-1  | slot   operator(): id  0 | task 9307 | checking checkpoint with [0, 79] against 0...
+ollama-1  | slot   operator(): id  0 | task 9307 | restored context checkpoint (pos_min = 0, pos_max = 79, n_tokens = 80, n_past = 79, size = 3.126 MiB)
+ollama-1  | slot   operator(): id  0 | task 9307 | erased invalidated context checkpoint (pos_min = 0, pos_max = 587, n_tokens = 588, n_swa = 512, pos_next = 79, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 9307 | cached n_tokens = 79, memory_seq_rm [79, end)
+ollama-1  | slot   operator(): id  0 | task 9307 | cached n_tokens = 180, memory_seq_rm [180, end)
+ollama-1  | slot create_check: id  0 | task 9307 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 179, n_tokens = 180, size = 7.034 MiB)
+ollama-1  | slot print_timing: id  0 | task 9307 | prompt processing, n_tokens =    609, progress = 0.99, t =   5.52 s / 110.36 tokens per second
+ollama-1  | slot   operator(): id  0 | task 9307 | cached n_tokens = 688, memory_seq_rm [688, end)
+ollama-1  | slot init_sampler: id  0 | task 9307 | init sampler, took 0.10 ms, tokens: text = 692, total = 692
+ollama-1  | slot create_check: id  0 | task 9307 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 687, n_tokens = 688, size = 20.006 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:24:44 | 200 |      37.206µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:24:44 | 200 |    1.585894ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    100, tg =  17.22 t/s, tg_3s =  17.39 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    151, tg =  17.09 t/s, tg_3s =  16.84 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:24:55 | 200 |      30.748µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:24:55 | 200 |    1.044582ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    202, tg =  17.04 t/s, tg_3s =  16.89 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    255, tg =  17.10 t/s, tg_3s =  17.35 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    307, tg =  17.09 t/s, tg_3s =  17.06 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    358, tg =  17.04 t/s, tg_3s =  16.72 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:25:04 | 200 |        44.5µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:25:05 | 200 |    8.564599ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    409, tg =  17.00 t/s, tg_3s =  16.72 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    460, tg =  16.99 t/s, tg_3s =  16.92 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    511, tg =  16.96 t/s, tg_3s =  16.69 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:25:15 | 200 |      35.356µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:25:15 | 200 |    1.113569ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    563, tg =  16.98 t/s, tg_3s =  17.23 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    615, tg =  16.99 t/s, tg_3s =  17.02 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | n_gen =    666, tg =  16.97 t/s, tg_3s =  16.72 t/s
+ollama-1  | slot print_timing: id  0 | task 9307 | prompt eval time =    5603.84 ms /   613 tokens (    9.14 ms per token,   109.39 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 9307 |        eval time =   41992.56 ms /   713 tokens (   58.98 ms per token,    16.96 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 9307 |       total time =   47596.40 ms /  1326 tokens
+ollama-1  | slot print_timing: id  0 | task 9307 |    graphs reused =       9893
+ollama-1  | slot      release: id  0 | task 9307 | stop processing: n_tokens = 1404, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:25:25 | 200 |          6m4s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | [GIN] 2026/10/07 - 06:25:25 | 200 |       23.27µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.511 (322/630) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.511 (> 0.100 thold), f_keep = 0.229
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1404, total state size = 41.960 MiB (draft: 0.000 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:25:25 | 200 |     780.928µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.229, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length    1143, lcp =     322, f_keep = 0.282, f_sim = 0.511
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.511
+ollama-1  | srv        update:  - cache state: 13 prompts, 731.702 MiB (limits: 8192.000 MiB, 4096 tokens, 149833 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x2d0dc3e0:    1143 tokens, checkpoints:  3,    61.755 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 39.20 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 10023 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 10023 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 630
+ollama-1  | slot   operator(): id  0 | task 10023 | checking checkpoint with [0, 687] against 0...
+ollama-1  | slot   operator(): id  0 | task 10023 | checking checkpoint with [0, 179] against 0...
+ollama-1  | slot   operator(): id  0 | task 10023 | restored context checkpoint (pos_min = 0, pos_max = 179, n_tokens = 180, n_past = 179, size = 7.034 MiB)
+ollama-1  | slot   operator(): id  0 | task 10023 | erased invalidated context checkpoint (pos_min = 0, pos_max = 687, n_tokens = 688, n_swa = 512, pos_next = 179, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 10023 | cached n_tokens = 179, memory_seq_rm [179, end)
+ollama-1  | slot create_check: id  0 | task 10023 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 178, n_tokens = 179, size = 6.995 MiB)
+ollama-1  | slot print_timing: id  0 | task 10023 | prompt processing, n_tokens =    447, progress = 0.99, t =   3.98 s / 112.36 tokens per second
+ollama-1  | slot   operator(): id  0 | task 10023 | cached n_tokens = 626, memory_seq_rm [626, end)
+ollama-1  | slot init_sampler: id  0 | task 10023 | init sampler, took 0.09 ms, tokens: text = 630, total = 630
+ollama-1  | slot create_check: id  0 | task 10023 | created context checkpoint 5 of 32 (pos_min = 0, pos_max = 625, n_tokens = 626, size = 20.006 MiB)
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    100, tg =  17.35 t/s, tg_3s =  17.52 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:25:35 | 200 |      29.001µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:25:35 | 200 |     832.605µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    151, tg =  17.20 t/s, tg_3s =  16.94 t/s
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    203, tg =  17.20 t/s, tg_3s =  17.19 t/s
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    254, tg =  17.11 t/s, tg_3s =  16.77 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:25:45 | 200 |      40.327µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:25:45 | 200 |      1.1949ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    305, tg =  17.07 t/s, tg_3s =  16.88 t/s
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    357, tg =  17.09 t/s, tg_3s =  17.16 t/s
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    408, tg =  17.07 t/s, tg_3s =  16.96 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:25:55 | 200 |       27.64µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:25:55 | 200 |    1.355114ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    459, tg =  17.04 t/s, tg_3s =  16.76 t/s
+ollama-1  | slot print_timing: id  0 | task 10023 | n_gen =    510, tg =  17.02 t/s, tg_3s =  16.87 t/s
+ollama-1  | slot print_timing: id  0 | task 10023 | prompt eval time =    4065.50 ms /   451 tokens (    9.01 ms per token,   110.93 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 10023 |        eval time =   30955.41 ms /   527 tokens (   58.85 ms per token,    16.99 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 10023 |       total time =   35020.91 ms /   978 tokens
+ollama-1  | slot print_timing: id  0 | task 10023 |    graphs reused =      10416
+ollama-1  | slot      release: id  0 | task 10023 | stop processing: n_tokens = 1156, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:26:00 | 200 |         6m37s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.700 (322/460) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.700 (> 0.100 thold), f_keep = 0.279
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1156, total state size = 38.082 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.279, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1143, lcp =     322, f_keep = 0.282, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.700
+ollama-1  | srv          load:    - prompt with length    1156, lcp =     322, f_keep = 0.279, f_sim = 0.700
+ollama-1  | srv        update:  - cache state: 14 prompts, 807.688 MiB (limits: 8192.000 MiB, 4096 tokens, 147462 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x2d0dc3e0:    1143 tokens, checkpoints:  3,    61.755 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv        update:    - prompt 0x2cca61e0:    1156 tokens, checkpoints:  5,    75.986 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 37.24 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 10552 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 10552 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 460
+ollama-1  | slot   operator(): id  0 | task 10552 | checking checkpoint with [0, 625] against 0...
+ollama-1  | slot   operator(): id  0 | task 10552 | checking checkpoint with [0, 178] against 0...
+ollama-1  | slot   operator(): id  0 | task 10552 | restored context checkpoint (pos_min = 0, pos_max = 178, n_tokens = 179, n_past = 178, size = 6.995 MiB)
+ollama-1  | slot   operator(): id  0 | task 10552 | erased invalidated context checkpoint (pos_min = 0, pos_max = 179, n_tokens = 180, n_swa = 512, pos_next = 178, size = 7.034 MiB)
+ollama-1  | slot   operator(): id  0 | task 10552 | erased invalidated context checkpoint (pos_min = 0, pos_max = 625, n_tokens = 626, n_swa = 512, pos_next = 178, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 10552 | cached n_tokens = 178, memory_seq_rm [178, end)
+ollama-1  | slot create_check: id  0 | task 10552 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 177, n_tokens = 178, size = 6.956 MiB)
+ollama-1  | slot   operator(): id  0 | task 10552 | cached n_tokens = 456, memory_seq_rm [456, end)
+ollama-1  | slot init_sampler: id  0 | task 10552 | init sampler, took 0.05 ms, tokens: text = 460, total = 460
+ollama-1  | slot create_check: id  0 | task 10552 | created context checkpoint 5 of 32 (pos_min = 0, pos_max = 455, n_tokens = 456, size = 17.818 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:26:05 | 200 |      37.246µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:26:05 | 200 |    2.910736ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    100, tg =  17.68 t/s, tg_3s =  17.86 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    152, tg =  17.51 t/s, tg_3s =  17.18 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    204, tg =  17.40 t/s, tg_3s =  17.09 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:26:15 | 200 |       30.62µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:26:15 | 200 |    1.587151ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    255, tg =  17.30 t/s, tg_3s =  16.94 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    307, tg =  17.27 t/s, tg_3s =  17.13 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    358, tg =  17.22 t/s, tg_3s =  16.88 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:26:25 | 200 |      40.599µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:26:25 | 200 |    1.504644ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    408, tg =  17.15 t/s, tg_3s =  16.66 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    460, tg =  17.14 t/s, tg_3s =  17.09 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    511, tg =  17.10 t/s, tg_3s =  16.79 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    563, tg =  17.11 t/s, tg_3s =  17.12 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:26:35 | 200 |      33.153µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:26:35 | 200 |     879.533µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    616, tg =  17.13 t/s, tg_3s =  17.36 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    668, tg =  17.14 t/s, tg_3s =  17.31 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    720, tg =  17.13 t/s, tg_3s =  17.00 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:26:45 | 200 |      29.094µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:26:45 | 200 |    1.632184ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    771, tg =  17.12 t/s, tg_3s =  16.98 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    823, tg =  17.11 t/s, tg_3s =  17.02 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    874, tg =  17.10 t/s, tg_3s =  16.88 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:26:55 | 200 |      23.212µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:26:55 | 200 |    1.753829ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 10552 | n_gen =    925, tg =  17.08 t/s, tg_3s =  16.73 t/s
+ollama-1  | slot print_timing: id  0 | task 10552 | prompt eval time =    2667.86 ms /   282 tokens (    9.46 ms per token,   105.70 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 10552 |        eval time =   56550.50 ms /   966 tokens (   58.60 ms per token,    17.06 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 10552 |       total time =   59218.36 ms /  1248 tokens
+ollama-1  | slot print_timing: id  0 | task 10552 |    graphs reused =      11376
+ollama-1  | slot      release: id  0 | task 10552 | stop processing: n_tokens = 1425, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:26:59 | 200 |         7m29s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.681 (322/473) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.681 (> 0.100 thold), f_keep = 0.226
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1425, total state size = 42.288 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.226, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1143, lcp =     327, f_keep = 0.286, f_sim = 0.691
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1156, lcp =     322, f_keep = 0.279, f_sim = 0.681
+ollama-1  | srv          load:    - prompt with length    1425, lcp =     322, f_keep = 0.226, f_sim = 0.681
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.286, f_sim = 0.691
+ollama-1  | srv        update:  - cache state: 14 prompts, 823.860 MiB (limits: 8192.000 MiB, 4096 tokens, 147371 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv        update:    - prompt 0x2cca61e0:    1156 tokens, checkpoints:  5,    75.986 MiB
+ollama-1  | srv        update:    - prompt 0x2582b290:    1425 tokens, checkpoints:  5,    77.926 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 47.65 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 11520 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 11520 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 473
+ollama-1  | slot   operator(): id  0 | task 11520 | checking checkpoint with [0, 587] against 0...
+ollama-1  | slot   operator(): id  0 | task 11520 | checking checkpoint with [0, 79] against 0...
+ollama-1  | slot   operator(): id  0 | task 11520 | restored context checkpoint (pos_min = 0, pos_max = 79, n_tokens = 80, n_past = 79, size = 3.126 MiB)
+ollama-1  | slot   operator(): id  0 | task 11520 | erased invalidated context checkpoint (pos_min = 0, pos_max = 587, n_tokens = 588, n_swa = 512, pos_next = 79, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 11520 | cached n_tokens = 79, memory_seq_rm [79, end)
+ollama-1  | slot create_check: id  0 | task 11520 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 78, n_tokens = 79, size = 3.087 MiB)
+ollama-1  | slot print_timing: id  0 | task 11520 | prompt processing, n_tokens =    390, progress = 0.99, t =   3.58 s / 108.85 tokens per second
+ollama-1  | slot   operator(): id  0 | task 11520 | cached n_tokens = 469, memory_seq_rm [469, end)
+ollama-1  | slot init_sampler: id  0 | task 11520 | init sampler, took 0.07 ms, tokens: text = 473, total = 473
+ollama-1  | slot create_check: id  0 | task 11520 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 468, n_tokens = 469, size = 18.326 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:27:05 | 200 |      19.215µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:27:05 | 200 |     806.454µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 11520 | n_gen =    100, tg =  17.49 t/s, tg_3s =  17.66 t/s
+ollama-1  | slot print_timing: id  0 | task 11520 | n_gen =    153, tg =  17.52 t/s, tg_3s =  17.59 t/s
+ollama-1  | slot print_timing: id  0 | task 11520 | n_gen =    206, tg =  17.49 t/s, tg_3s =  17.40 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:27:15 | 200 |      37.591µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:27:15 | 200 |    1.432149ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 11520 | n_gen =    258, tg =  17.41 t/s, tg_3s =  17.10 t/s
+ollama-1  | slot print_timing: id  0 | task 11520 | n_gen =    309, tg =  17.31 t/s, tg_3s =  16.82 t/s
+ollama-1  | slot print_timing: id  0 | task 11520 | n_gen =    360, tg =  17.22 t/s, tg_3s =  16.69 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:27:25 | 200 |      37.077µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:27:25 | 200 |    2.808209ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 11520 | prompt eval time =    3664.97 ms /   394 tokens (    9.30 ms per token,   107.50 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 11520 |        eval time =   23560.19 ms /   405 tokens (   58.32 ms per token,    17.15 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 11520 |       total time =   27225.16 ms /   799 tokens
+ollama-1  | slot print_timing: id  0 | task 11520 |    graphs reused =      11777
+ollama-1  | slot      release: id  0 | task 11520 | stop processing: n_tokens = 877, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:27:26 | 200 |         7m56s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.479 (322/672) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.479 (> 0.100 thold), f_keep = 0.367
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 877, total state size = 33.720 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.367, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     322, f_keep = 0.289, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1156, lcp =     322, f_keep = 0.279, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length    1425, lcp =     322, f_keep = 0.226, f_sim = 0.479
+ollama-1  | srv          load:    - prompt with length     877, lcp =     322, f_keep = 0.367, f_sim = 0.479
+ollama-1  | srv        update:  - cache state: 15 prompts, 882.862 MiB (limits: 8192.000 MiB, 4096 tokens, 145660 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:    1113 tokens, checkpoints:  2,    58.237 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv        update:    - prompt 0x2cca61e0:    1156 tokens, checkpoints:  5,    75.986 MiB
+ollama-1  | srv        update:    - prompt 0x2582b290:    1425 tokens, checkpoints:  5,    77.926 MiB
+ollama-1  | srv        update:    - prompt 0x253dedc0:     877 tokens, checkpoints:  4,    59.002 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 25.65 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 11927 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 11927 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 672
+ollama-1  | slot   operator(): id  0 | task 11927 | checking checkpoint with [0, 468] against 0...
+ollama-1  | slot   operator(): id  0 | task 11927 | checking checkpoint with [0, 78] against 0...
+ollama-1  | slot   operator(): id  0 | task 11927 | restored context checkpoint (pos_min = 0, pos_max = 78, n_tokens = 79, n_past = 78, size = 3.087 MiB)
+ollama-1  | slot   operator(): id  0 | task 11927 | erased invalidated context checkpoint (pos_min = 0, pos_max = 79, n_tokens = 80, n_swa = 512, pos_next = 78, size = 3.126 MiB)
+ollama-1  | slot   operator(): id  0 | task 11927 | erased invalidated context checkpoint (pos_min = 0, pos_max = 468, n_tokens = 469, n_swa = 512, pos_next = 78, size = 18.326 MiB)
+ollama-1  | slot   operator(): id  0 | task 11927 | cached n_tokens = 78, memory_seq_rm [78, end)
+ollama-1  | slot   operator(): id  0 | task 11927 | cached n_tokens = 160, memory_seq_rm [160, end)
+ollama-1  | slot create_check: id  0 | task 11927 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 159, n_tokens = 160, size = 6.252 MiB)
+ollama-1  | slot print_timing: id  0 | task 11927 | prompt processing, n_tokens =    590, progress = 0.99, t =   5.50 s / 107.25 tokens per second
+ollama-1  | slot   operator(): id  0 | task 11927 | cached n_tokens = 668, memory_seq_rm [668, end)
+ollama-1  | slot init_sampler: id  0 | task 11927 | init sampler, took 0.09 ms, tokens: text = 672, total = 672
+ollama-1  | slot create_check: id  0 | task 11927 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 667, n_tokens = 668, size = 20.006 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:27:35 | 200 |      32.335µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:27:35 | 200 |    1.342282ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    100, tg =  16.74 t/s, tg_3s =  16.91 t/s
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    149, tg =  16.58 t/s, tg_3s =  16.27 t/s
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    200, tg =  16.64 t/s, tg_3s =  16.84 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:27:45 | 200 |      28.866µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:27:45 | 200 |    1.489329ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    251, tg =  16.70 t/s, tg_3s =  16.91 t/s
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    301, tg =  16.68 t/s, tg_3s =  16.59 t/s
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    351, tg =  16.67 t/s, tg_3s =  16.62 t/s
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    401, tg =  16.66 t/s, tg_3s =  16.60 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:27:55 | 200 |      23.483µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:27:55 | 200 |    1.797555ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 11927 | n_gen =    452, tg =  16.67 t/s, tg_3s =  16.76 t/s
+ollama-1  | slot print_timing: id  0 | task 11927 | prompt eval time =    5590.32 ms /   594 tokens (    9.41 ms per token,   106.26 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 11927 |        eval time =   30107.66 ms /   504 tokens (   59.86 ms per token,    16.71 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 11927 |       total time =   35697.98 ms /  1098 tokens
+ollama-1  | slot print_timing: id  0 | task 11927 |    graphs reused =      12277
+ollama-1  | slot      release: id  0 | task 11927 | stop processing: n_tokens = 1175, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:28:01 | 200 |         8m31s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.678 (322/475) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.678 (> 0.100 thold), f_keep = 0.274
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1175, total state size = 38.379 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.274, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1113, lcp =     323, f_keep = 0.290, f_sim = 0.680
+ollama-1  | srv          load:    - prompt with length     901, lcp =     323, f_keep = 0.358, f_sim = 0.680
+ollama-1  | srv          load:    - prompt with length     968, lcp =     323, f_keep = 0.334, f_sim = 0.680
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1156, lcp =     322, f_keep = 0.279, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1425, lcp =     322, f_keep = 0.226, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length     877, lcp =     322, f_keep = 0.367, f_sim = 0.678
+ollama-1  | srv          load:    - prompt with length    1175, lcp =     322, f_keep = 0.274, f_sim = 0.678
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.290, f_sim = 0.680
+ollama-1  | srv        update:  - cache state: 15 prompts, 893.093 MiB (limits: 8192.000 MiB, 4096 tokens, 144560 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv        update:    - prompt 0x2cca61e0:    1156 tokens, checkpoints:  5,    75.986 MiB
+ollama-1  | srv        update:    - prompt 0x2582b290:    1425 tokens, checkpoints:  5,    77.926 MiB
+ollama-1  | srv        update:    - prompt 0x253dedc0:     877 tokens, checkpoints:  4,    59.002 MiB
+ollama-1  | srv        update:    - prompt 0x2fa638f0:    1175 tokens, checkpoints:  4,    68.468 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 37.19 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 12434 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 12434 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 475
+ollama-1  | slot   operator(): id  0 | task 12434 | checking checkpoint with [0, 528] against 0...
+ollama-1  | slot   operator(): id  0 | task 12434 | checking checkpoint with [0, 20] against 0...
+ollama-1  | slot   operator(): id  0 | task 12434 | restored context checkpoint (pos_min = 0, pos_max = 20, n_tokens = 21, n_past = 20, size = 0.821 MiB)
+ollama-1  | slot   operator(): id  0 | task 12434 | erased invalidated context checkpoint (pos_min = 0, pos_max = 528, n_tokens = 529, n_swa = 512, pos_next = 20, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 12434 | cached n_tokens = 20, memory_seq_rm [20, end)
+ollama-1  | slot create_check: id  0 | task 12434 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 19, n_tokens = 20, size = 0.782 MiB)
+ollama-1  | slot print_timing: id  0 | task 12434 | prompt processing, n_tokens =    451, progress = 0.99, t =   4.08 s / 110.53 tokens per second
+ollama-1  | slot   operator(): id  0 | task 12434 | cached n_tokens = 471, memory_seq_rm [471, end)
+ollama-1  | slot init_sampler: id  0 | task 12434 | init sampler, took 0.07 ms, tokens: text = 475, total = 475
+ollama-1  | slot create_check: id  0 | task 12434 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 470, n_tokens = 471, size = 18.404 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:28:05 | 200 |      58.545µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:28:05 | 200 |    1.651755ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    100, tg =  15.90 t/s, tg_3s =  16.07 t/s
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    149, tg =  15.97 t/s, tg_3s =  16.11 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:28:16 | 200 |      37.012µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:28:16 | 200 |    1.688437ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    198, tg =  16.04 t/s, tg_3s =  16.25 t/s
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    247, tg =  16.09 t/s, tg_3s =  16.31 t/s
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    298, tg =  16.20 t/s, tg_3s =  16.74 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:28:26 | 200 |      36.676µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:28:26 | 200 |    2.134197ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    348, tg =  16.23 t/s, tg_3s =  16.44 t/s
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    398, tg =  16.26 t/s, tg_3s =  16.43 t/s
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    448, tg =  16.28 t/s, tg_3s =  16.42 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:28:36 | 200 |      37.376µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:28:36 | 200 |    2.104098ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12434 | n_gen =    498, tg =  16.30 t/s, tg_3s =  16.52 t/s
+ollama-1  | slot print_timing: id  0 | task 12434 | prompt eval time =    4173.95 ms /   455 tokens (    9.17 ms per token,   109.01 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 12434 |        eval time =   32416.85 ms /   531 tokens (   61.16 ms per token,    16.35 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 12434 |       total time =   36590.80 ms /   986 tokens
+ollama-1  | slot print_timing: id  0 | task 12434 |    graphs reused =      12804
+ollama-1  | slot      release: id  0 | task 12434 | stop processing: n_tokens = 1005, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 06:28:38 | 200 |          9m6s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.433 (322/744) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.433 (> 0.100 thold), f_keep = 0.320
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1005, total state size = 35.721 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.320, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1156, lcp =     322, f_keep = 0.279, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1425, lcp =     322, f_keep = 0.226, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length     877, lcp =     322, f_keep = 0.367, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1175, lcp =     322, f_keep = 0.274, f_sim = 0.433
+ollama-1  | srv          load:    - prompt with length    1005, lcp =     322, f_keep = 0.320, f_sim = 0.433
+ollama-1  | srv        update:  - cache state: 16 prompts, 948.821 MiB (limits: 8192.000 MiB, 4096 tokens, 144746 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv        update:    - prompt 0x2cca61e0:    1156 tokens, checkpoints:  5,    75.986 MiB
+ollama-1  | srv        update:    - prompt 0x2582b290:    1425 tokens, checkpoints:  5,    77.926 MiB
+ollama-1  | srv        update:    - prompt 0x253dedc0:     877 tokens, checkpoints:  4,    59.002 MiB
+ollama-1  | srv        update:    - prompt 0x2fa638f0:    1175 tokens, checkpoints:  4,    68.468 MiB
+ollama-1  | srv        update:    - prompt 0x2324fa40:    1005 tokens, checkpoints:  3,    55.728 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 19.91 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 12967 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 12967 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 744
+ollama-1  | slot   operator(): id  0 | task 12967 | checking checkpoint with [0, 470] against 0...
+ollama-1  | slot   operator(): id  0 | task 12967 | checking checkpoint with [0, 19] against 0...
+ollama-1  | slot   operator(): id  0 | task 12967 | restored context checkpoint (pos_min = 0, pos_max = 19, n_tokens = 20, n_past = 19, size = 0.782 MiB)
+ollama-1  | slot   operator(): id  0 | task 12967 | erased invalidated context checkpoint (pos_min = 0, pos_max = 20, n_tokens = 21, n_swa = 512, pos_next = 19, size = 0.821 MiB)
+ollama-1  | slot   operator(): id  0 | task 12967 | erased invalidated context checkpoint (pos_min = 0, pos_max = 470, n_tokens = 471, n_swa = 512, pos_next = 19, size = 18.404 MiB)
+ollama-1  | slot   operator(): id  0 | task 12967 | cached n_tokens = 19, memory_seq_rm [19, end)
+ollama-1  | slot   operator(): id  0 | task 12967 | cached n_tokens = 232, memory_seq_rm [232, end)
+ollama-1  | slot create_check: id  0 | task 12967 | created context checkpoint 2 of 32 (pos_min = 0, pos_max = 231, n_tokens = 232, size = 9.066 MiB)
+ollama-1  | slot print_timing: id  0 | task 12967 | prompt processing, n_tokens =    721, progress = 0.99, t =   6.74 s / 106.94 tokens per second
+ollama-1  | slot   operator(): id  0 | task 12967 | cached n_tokens = 740, memory_seq_rm [740, end)
+ollama-1  | slot init_sampler: id  0 | task 12967 | init sampler, took 0.10 ms, tokens: text = 744, total = 744
+ollama-1  | slot create_check: id  0 | task 12967 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 739, n_tokens = 740, size = 20.006 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:28:46 | 200 |      61.642µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:28:46 | 200 |    1.750261ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    100, tg =  16.40 t/s, tg_3s =  16.57 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    149, tg =  16.34 t/s, tg_3s =  16.23 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:28:56 | 200 |      33.501µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:28:56 | 200 |    1.538702ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    200, tg =  16.44 t/s, tg_3s =  16.73 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    251, tg =  16.51 t/s, tg_3s =  16.77 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    302, tg =  16.58 t/s, tg_3s =  16.96 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    354, tg =  16.65 t/s, tg_3s =  17.04 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:29:06 | 200 |      27.718µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:29:06 | 200 |    1.578213ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    407, tg =  16.75 t/s, tg_3s =  17.45 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    459, tg =  16.79 t/s, tg_3s =  17.16 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    510, tg =  16.81 t/s, tg_3s =  16.90 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:29:16 | 200 |      30.253µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:29:16 | 200 |    1.342991ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    561, tg =  16.81 t/s, tg_3s =  16.81 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    611, tg =  16.78 t/s, tg_3s =  16.54 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    661, tg =  16.77 t/s, tg_3s =  16.56 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:29:26 | 200 |      33.164µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:29:26 | 200 |    1.496202ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    710, tg =  16.74 t/s, tg_3s =  16.32 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    759, tg =  16.71 t/s, tg_3s =  16.32 t/s
+ollama-1  | slot print_timing: id  0 | task 12967 | n_gen =    808, tg =  16.67 t/s, tg_3s =  16.16 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:29:34 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task 12967 |  - skipping, is_processing = 1
+ollama-1  | srv          stop: cancel task, id_task = 12967
+ollama-1  | slot      release: id  0 | task 12967 | stop processing: n_tokens = 1573, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.776 (322/415) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.776 (> 0.100 thold), f_keep = 0.205
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 1573, total state size = 44.603 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.205, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     807, lcp =     322, f_keep = 0.399, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1331, lcp =     322, f_keep = 0.242, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     901, lcp =     322, f_keep = 0.357, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     968, lcp =     322, f_keep = 0.333, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1245, lcp =     322, f_keep = 0.259, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     733, lcp =     322, f_keep = 0.439, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1137, lcp =     322, f_keep = 0.283, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1404, lcp =     322, f_keep = 0.229, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1156, lcp =     322, f_keep = 0.279, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1425, lcp =     322, f_keep = 0.226, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length     877, lcp =     322, f_keep = 0.367, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1175, lcp =     322, f_keep = 0.274, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1005, lcp =     322, f_keep = 0.320, f_sim = 0.776
+ollama-1  | srv          load:    - prompt with length    1573, lcp =     322, f_keep = 0.205, f_sim = 0.776
+ollama-1  | srv        update:  - cache state: 17 prompts, 1023.278 MiB (limits: 8192.000 MiB, 4096 tokens, 146807 est)
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv        update:    - prompt 0x2324cc60:     807 tokens, checkpoints:  1,    48.177 MiB
+ollama-1  | srv        update:    - prompt 0x2fd601d0:    1331 tokens, checkpoints:  2,    68.445 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     901 tokens, checkpoints:  1,    52.382 MiB
+ollama-1  | srv        update:    - prompt 0x258f65a0:     968 tokens, checkpoints:  2,    55.579 MiB
+ollama-1  | srv        update:    - prompt 0x2f8d58f0:    1245 tokens, checkpoints:  3,    68.116 MiB
+ollama-1  | srv        update:    - prompt 0x2d0f3aa0:     733 tokens, checkpoints:  3,    48.701 MiB
+ollama-1  | srv        update:    - prompt 0x2d10a000:    1137 tokens, checkpoints:  3,    55.292 MiB
+ollama-1  | srv        update:    - prompt 0x34805b10:    1404 tokens, checkpoints:  4,    72.869 MiB
+ollama-1  | srv        update:    - prompt 0x2cca61e0:    1156 tokens, checkpoints:  5,    75.986 MiB
+ollama-1  | srv        update:    - prompt 0x2582b290:    1425 tokens, checkpoints:  5,    77.926 MiB
+ollama-1  | srv        update:    - prompt 0x253dedc0:     877 tokens, checkpoints:  4,    59.002 MiB
+ollama-1  | srv        update:    - prompt 0x2fa638f0:    1175 tokens, checkpoints:  4,    68.468 MiB
+ollama-1  | srv        update:    - prompt 0x2324fa40:    1005 tokens, checkpoints:  3,    55.728 MiB
+ollama-1  | srv        update:    - prompt 0x2324cd10:    1573 tokens, checkpoints:  3,    74.457 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 38.73 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13799 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13799 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 415
+ollama-1  | slot   operator(): id  0 | task 13799 | checking checkpoint with [0, 739] against 0...
+ollama-1  | slot   operator(): id  0 | task 13799 | checking checkpoint with [0, 231] against 0...
+ollama-1  | slot   operator(): id  0 | task 13799 | restored context checkpoint (pos_min = 0, pos_max = 231, n_tokens = 232, n_past = 231, size = 9.066 MiB)
+ollama-1  | slot   operator(): id  0 | task 13799 | erased invalidated context checkpoint (pos_min = 0, pos_max = 739, n_tokens = 740, n_swa = 512, pos_next = 231, size = 20.006 MiB)
+ollama-1  | slot   operator(): id  0 | task 13799 | cached n_tokens = 231, memory_seq_rm [231, end)
+ollama-1  | slot create_check: id  0 | task 13799 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 230, n_tokens = 231, size = 9.027 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:35 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task 13799 |  - skipping, is_processing = 1
+ollama-1  | slot   operator(): id  0 | task 13799 | cached n_tokens = 411, memory_seq_rm [411, end)
+ollama-1  | slot init_sampler: id  0 | task 13799 | init sampler, took 0.06 ms, tokens: text = 415, total = 415
+ollama-1  | slot create_check: id  0 | task 13799 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 410, n_tokens = 411, size = 16.060 MiB)
+ollama-1  | srv          stop: cancel task, id_task = 13799
+ollama-1  | slot      release: id  0 | task 13799 | stop processing: n_tokens = 416, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.640 (322/503) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.640 (> 0.100 thold), f_keep = 0.774
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13803 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13803 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 503
+ollama-1  | slot   operator(): id  0 | task 13803 | checking checkpoint with [0, 410] against 0...
+ollama-1  | slot   operator(): id  0 | task 13803 | checking checkpoint with [0, 230] against 0...
+ollama-1  | slot   operator(): id  0 | task 13803 | restored context checkpoint (pos_min = 0, pos_max = 230, n_tokens = 231, n_past = 230, size = 9.027 MiB)
+ollama-1  | slot   operator(): id  0 | task 13803 | erased invalidated context checkpoint (pos_min = 0, pos_max = 231, n_tokens = 232, n_swa = 512, pos_next = 230, size = 9.066 MiB)
+ollama-1  | slot   operator(): id  0 | task 13803 | erased invalidated context checkpoint (pos_min = 0, pos_max = 410, n_tokens = 411, n_swa = 512, pos_next = 230, size = 16.060 MiB)
+ollama-1  | slot   operator(): id  0 | task 13803 | cached n_tokens = 230, memory_seq_rm [230, end)
+ollama-1  | slot create_check: id  0 | task 13803 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 229, n_tokens = 230, size = 8.987 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:36 | 200 |      28.659µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:29:36 | 200 |    1.576091ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:29:37 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | srv          stop: cancel task, id_task = 13803
+ollama-1  | slot get_availabl: id  0 | task 13803 |  - skipping, is_processing = 1
+ollama-1  | slot      release: id  0 | task 13803 | stop processing: n_tokens = 499, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.649 (322/496) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.649 (> 0.100 thold), f_keep = 0.645
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13808 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13808 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 496
+ollama-1  | slot   operator(): id  0 | task 13808 | checking checkpoint with [0, 229] against 0...
+ollama-1  | slot   operator(): id  0 | task 13808 | restored context checkpoint (pos_min = 0, pos_max = 229, n_tokens = 230, n_past = 229, size = 8.987 MiB)
+ollama-1  | slot   operator(): id  0 | task 13808 | erased invalidated context checkpoint (pos_min = 0, pos_max = 230, n_tokens = 231, n_swa = 512, pos_next = 229, size = 9.027 MiB)
+ollama-1  | slot   operator(): id  0 | task 13808 | cached n_tokens = 229, memory_seq_rm [229, end)
+ollama-1  | slot create_check: id  0 | task 13808 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 228, n_tokens = 229, size = 8.948 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:40 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | srv          stop: cancel task, id_task = 13808
+ollama-1  | slot get_availabl: id  0 | task 13808 |  - skipping, is_processing = 1
+ollama-1  | slot      release: id  0 | task 13808 | stop processing: n_tokens = 492, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.641 (322/502) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.641 (> 0.100 thold), f_keep = 0.654
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13811 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13811 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 502
+ollama-1  | slot   operator(): id  0 | task 13811 | checking checkpoint with [0, 228] against 0...
+ollama-1  | slot   operator(): id  0 | task 13811 | restored context checkpoint (pos_min = 0, pos_max = 228, n_tokens = 229, n_past = 228, size = 8.948 MiB)
+ollama-1  | slot   operator(): id  0 | task 13811 | erased invalidated context checkpoint (pos_min = 0, pos_max = 229, n_tokens = 230, n_swa = 512, pos_next = 228, size = 8.987 MiB)
+ollama-1  | slot   operator(): id  0 | task 13811 | cached n_tokens = 228, memory_seq_rm [228, end)
+ollama-1  | slot create_check: id  0 | task 13811 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 227, n_tokens = 228, size = 8.909 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:41 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | srv          stop: cancel task, id_task = 13811
+ollama-1  | slot get_availabl: id  0 | task 13811 |  - skipping, is_processing = 1
+ollama-1  | slot      release: id  0 | task 13811 | stop processing: n_tokens = 498, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.799 (322/403) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.799 (> 0.100 thold), f_keep = 0.647
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13814 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13814 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 403
+ollama-1  | slot   operator(): id  0 | task 13814 | checking checkpoint with [0, 227] against 0...
+ollama-1  | slot   operator(): id  0 | task 13814 | restored context checkpoint (pos_min = 0, pos_max = 227, n_tokens = 228, n_past = 227, size = 8.909 MiB)
+ollama-1  | slot   operator(): id  0 | task 13814 | erased invalidated context checkpoint (pos_min = 0, pos_max = 228, n_tokens = 229, n_swa = 512, pos_next = 227, size = 8.948 MiB)
+ollama-1  | slot   operator(): id  0 | task 13814 | cached n_tokens = 227, memory_seq_rm [227, end)
+ollama-1  | slot create_check: id  0 | task 13814 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 226, n_tokens = 227, size = 8.870 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:44 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | srv          stop: cancel task, id_task = 13814
+ollama-1  | [GIN] 2026/10/07 - 06:29:45 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | srv          stop: cancel task, id_task = 13817
+ollama-1  | [GIN] 2026/10/07 - 06:29:45 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot      release: id  0 | task 13814 | stop processing: n_tokens = 399, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.532 (322/605) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.532 (> 0.100 thold), f_keep = 0.807
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13819 | processing task, is_child = 0
+ollama-1  | slot get_availabl: id  0 | task 13819 |  - skipping, is_processing = 1
+ollama-1  | slot   operator(): id  0 | task 13819 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 605
+ollama-1  | slot   operator(): id  0 | task 13819 | checking checkpoint with [0, 226] against 0...
+ollama-1  | slot   operator(): id  0 | task 13819 | restored context checkpoint (pos_min = 0, pos_max = 226, n_tokens = 227, n_past = 226, size = 8.870 MiB)
+ollama-1  | slot   operator(): id  0 | task 13819 | erased invalidated context checkpoint (pos_min = 0, pos_max = 227, n_tokens = 228, n_swa = 512, pos_next = 226, size = 8.909 MiB)
+ollama-1  | slot   operator(): id  0 | task 13819 | cached n_tokens = 226, memory_seq_rm [226, end)
+ollama-1  | srv          stop: cancel task, id_task = 13819
+ollama-1  | slot create_check: id  0 | task 13819 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 225, n_tokens = 226, size = 8.831 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:46 | 200 |      28.039µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:29:46 | 200 |    1.469281ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 06:29:46 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | srv          stop: cancel task, id_task = 13821
+ollama-1  | slot      release: id  0 | task 13819 | stop processing: n_tokens = 601, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.770 (322/418) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.770 (> 0.100 thold), f_keep = 0.536
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13824 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13824 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 418
+ollama-1  | slot   operator(): id  0 | task 13824 | checking checkpoint with [0, 225] against 0...
+ollama-1  | slot   operator(): id  0 | task 13824 | restored context checkpoint (pos_min = 0, pos_max = 225, n_tokens = 226, n_past = 225, size = 8.831 MiB)
+ollama-1  | slot   operator(): id  0 | task 13824 | erased invalidated context checkpoint (pos_min = 0, pos_max = 226, n_tokens = 227, n_swa = 512, pos_next = 225, size = 8.870 MiB)
+ollama-1  | slot   operator(): id  0 | task 13824 | cached n_tokens = 225, memory_seq_rm [225, end)
+ollama-1  | slot create_check: id  0 | task 13824 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 224, n_tokens = 225, size = 8.792 MiB)
+ollama-1  | slot   operator(): id  0 | task 13824 | cached n_tokens = 414, memory_seq_rm [414, end)
+ollama-1  | slot init_sampler: id  0 | task 13824 | init sampler, took 0.06 ms, tokens: text = 418, total = 418
+ollama-1  | slot create_check: id  0 | task 13824 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 413, n_tokens = 414, size = 16.177 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:29:56 | 200 |      63.442µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:29:56 | 200 |    1.015959ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 13824 | n_gen =    100, tg =  17.54 t/s, tg_3s =  17.72 t/s
+ollama-1  | [GIN] 2026/10/07 - 06:29:58 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task 13824 |  - skipping, is_processing = 1
+ollama-1  | srv          stop: cancel task, id_task = 13824
+ollama-1  | slot      release: id  0 | task 13824 | stop processing: n_tokens = 549, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.661 (322/487) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.661 (> 0.100 thold), f_keep = 0.587
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 13958 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 13958 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 487
+ollama-1  | slot   operator(): id  0 | task 13958 | checking checkpoint with [0, 413] against 0...
+ollama-1  | slot   operator(): id  0 | task 13958 | checking checkpoint with [0, 224] against 0...
+ollama-1  | slot   operator(): id  0 | task 13958 | restored context checkpoint (pos_min = 0, pos_max = 224, n_tokens = 225, n_past = 224, size = 8.792 MiB)
+ollama-1  | slot   operator(): id  0 | task 13958 | erased invalidated context checkpoint (pos_min = 0, pos_max = 225, n_tokens = 226, n_swa = 512, pos_next = 224, size = 8.831 MiB)
+ollama-1  | slot   operator(): id  0 | task 13958 | erased invalidated context checkpoint (pos_min = 0, pos_max = 413, n_tokens = 414, n_swa = 512, pos_next = 224, size = 16.177 MiB)
+ollama-1  | slot   operator(): id  0 | task 13958 | cached n_tokens = 224, memory_seq_rm [224, end)
+ollama-1  | slot create_check: id  0 | task 13958 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 223, n_tokens = 224, size = 8.753 MiB)
+ollama-1  | slot   operator(): id  0 | task 13958 | cached n_tokens = 483, memory_seq_rm [483, end)
+ollama-1  | slot init_sampler: id  0 | task 13958 | init sampler, took 0.07 ms, tokens: text = 487, total = 487
+ollama-1  | slot create_check: id  0 | task 13958 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 482, n_tokens = 483, size = 18.873 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:30:05 | 500 |         10m0s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task 13958 |  - skipping, is_processing = 1
+ollama-1  | srv          stop: cancel task, id_task = 13958
+ollama-1  | slot      release: id  0 | task 13958 | stop processing: n_tokens = 562, truncated = 0
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.832 (322/387) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.832 (> 0.100 thold), f_keep = 0.573
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 14037 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 14037 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 387
+ollama-1  | slot   operator(): id  0 | task 14037 | checking checkpoint with [0, 482] against 0...
+ollama-1  | slot   operator(): id  0 | task 14037 | checking checkpoint with [0, 223] against 0...
+ollama-1  | slot   operator(): id  0 | task 14037 | restored context checkpoint (pos_min = 0, pos_max = 223, n_tokens = 224, n_past = 223, size = 8.753 MiB)
+ollama-1  | slot   operator(): id  0 | task 14037 | erased invalidated context checkpoint (pos_min = 0, pos_max = 224, n_tokens = 225, n_swa = 512, pos_next = 223, size = 8.792 MiB)
+ollama-1  | slot   operator(): id  0 | task 14037 | erased invalidated context checkpoint (pos_min = 0, pos_max = 482, n_tokens = 483, n_swa = 512, pos_next = 223, size = 18.873 MiB)
+ollama-1  | slot   operator(): id  0 | task 14037 | cached n_tokens = 223, memory_seq_rm [223, end)
+ollama-1  | slot create_check: id  0 | task 14037 | created context checkpoint 3 of 32 (pos_min = 0, pos_max = 222, n_tokens = 223, size = 8.714 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:30:06 | 200 |      19.206µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:30:06 | 200 |    1.060113ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot   operator(): id  0 | task 14037 | cached n_tokens = 383, memory_seq_rm [383, end)
+ollama-1  | slot init_sampler: id  0 | task 14037 | init sampler, took 0.05 ms, tokens: text = 387, total = 387
+ollama-1  | slot create_check: id  0 | task 14037 | created context checkpoint 4 of 32 (pos_min = 0, pos_max = 382, n_tokens = 383, size = 14.966 MiB)
+ollama-1  | [GIN] 2026/10/07 - 06:30:08 | 200 |     146.408µs |      172.21.0.1 | GET      "/api/ps"
+ollama-1  | [GIN] 2026/10/07 - 06:30:08 | 200 |      35.792µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 06:30:08 | 200 |      28.194µs |       127.0.0.1 | GET      "/api/ps"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 29.890081419s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m27s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m20s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m52s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         8m53s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |          9m8s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         8m23s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         4m11s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         6m57s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 34.502102222s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 24.762127432s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 23.594139567s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m29s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         6m12s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         3m12s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 35.906535061s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 28.598324609s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m58s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 25.918835166s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         4m46s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         1m32s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         7m46s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         7m20s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |          2m9s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         5m34s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m14s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 25.113703789s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.127Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m50s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m10s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m29s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m30s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m54s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m50s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 32.429332414s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | time=2026-10-07T06:30:10.128Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | time=2026-10-07T06:30:10.129Z level=INFO source=llama_server.go:1633 msg="aborting completion request due to client closing the connection"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |  4.804310139s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 | 11.801383194s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m45s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         2m44s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m33s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 06:30:10 | 500 |         9m33s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv          stop: cancel task, id_task = 14037
+ollama-1  | slot      release: id  0 | task 14037 | stop processing: n_tokens = 445, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
