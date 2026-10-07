@@ -1,0 +1,24 @@
+{
+  "run_id": "mistral-7b_accuracy_golden175_run1",
+  "sut_url": "http://127.0.0.1:8000",
+  "golden_file": "datasets/golden_test_set.csv",
+  "golden_sha256": "b46128e9960ab44a94cc2170fa8ec6e6b342b3a0bd23d40f5134a8a3d5f21884",
+  "golden_rows": 175,
+  "label_column": "final_agreed_label",
+  "limit": null,
+  "timeout_s": 900,
+  "sessions": [
+    {
+      "started_at_utc": "2026-10-07T11:34:40Z",
+      "finished_at_utc": "2026-10-07T12:14:51Z",
+      "health": {
+        "status": "ok",
+        "model": "mistral:7b",
+        "prompt_version": "v1",
+        "think": "default"
+      },
+      "client_host": "LAPTOP-LVH7E9IH",
+      "python": "3.12.7"
+    }
+  ]
+}

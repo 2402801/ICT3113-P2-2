@@ -1,0 +1,29 @@
+run_id,golden_label,Credit reporting,Credit card,Consumer loan,Bank account or service,Debt collection,Money transfer or service,Mortgage,(no answer)
+gemma4-e4b_accuracy_golden175_run1,Credit reporting,30,0,0,1,1,0,3,0
+gemma4-e4b_accuracy_golden175_run1,Credit card,3,14,2,5,0,0,0,0
+gemma4-e4b_accuracy_golden175_run1,Consumer loan,1,0,22,0,0,0,0,0
+gemma4-e4b_accuracy_golden175_run1,Bank account or service,0,0,0,26,0,0,0,0
+gemma4-e4b_accuracy_golden175_run1,Debt collection,4,0,0,0,17,0,1,0
+gemma4-e4b_accuracy_golden175_run1,Money transfer or service,0,1,0,6,0,17,0,0
+gemma4-e4b_accuracy_golden175_run1,Mortgage,0,0,0,0,0,0,21,0
+llama3.2-1b_accuracy_golden175_run1,Credit reporting,25,0,0,0,8,0,2,0
+llama3.2-1b_accuracy_golden175_run1,Credit card,20,0,0,0,4,0,0,0
+llama3.2-1b_accuracy_golden175_run1,Consumer loan,10,0,2,1,9,0,1,0
+llama3.2-1b_accuracy_golden175_run1,Bank account or service,11,0,0,7,8,0,0,0
+llama3.2-1b_accuracy_golden175_run1,Debt collection,3,0,0,0,18,0,1,0
+llama3.2-1b_accuracy_golden175_run1,Money transfer or service,1,1,0,2,20,0,0,0
+llama3.2-1b_accuracy_golden175_run1,Mortgage,5,0,1,0,6,0,9,0
+mistral-7b_accuracy_golden175_run1,Credit reporting,29,1,0,0,1,0,4,0
+mistral-7b_accuracy_golden175_run1,Credit card,1,18,3,2,0,0,0,0
+mistral-7b_accuracy_golden175_run1,Consumer loan,3,1,15,1,1,0,2,0
+mistral-7b_accuracy_golden175_run1,Bank account or service,0,8,0,18,0,0,0,0
+mistral-7b_accuracy_golden175_run1,Debt collection,1,1,0,0,19,0,1,0
+mistral-7b_accuracy_golden175_run1,Money transfer or service,0,7,0,7,2,8,0,0
+mistral-7b_accuracy_golden175_run1,Mortgage,0,0,0,0,0,0,21,0
+phi3-3.8b_accuracy_golden175_run4,Credit reporting,30,0,1,0,0,0,4,0
+phi3-3.8b_accuracy_golden175_run4,Credit card,4,14,0,6,0,0,0,0
+phi3-3.8b_accuracy_golden175_run4,Consumer loan,0,0,17,1,0,0,5,0
+phi3-3.8b_accuracy_golden175_run4,Bank account or service,0,3,0,23,0,0,0,0
+phi3-3.8b_accuracy_golden175_run4,Debt collection,5,0,1,3,11,0,2,0
+phi3-3.8b_accuracy_golden175_run4,Money transfer or service,1,1,0,10,0,12,0,0
+phi3-3.8b_accuracy_golden175_run4,Mortgage,0,0,0,0,0,0,21,0

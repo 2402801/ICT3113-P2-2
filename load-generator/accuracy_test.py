@@ -3,6 +3,7 @@
 import argparse
 import csv
 import hashlib
+import io
 import json
 import platform
 import socket
@@ -39,13 +40,24 @@ def call(method: str, url: str, body: dict | None = None, headers: dict | None =
         return 0, {}, None, f"{type(exc).__name__}: {getattr(exc, 'reason', exc)}"
 
 
+def read_golden(path: Path) -> list[dict]:
+    """Golden-set rows; the frozen file is Windows-1252 (saved from Excel), so fall back to it when not UTF-8."""
+    raw = path.read_bytes()
+    try:
+        text = raw.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        text = raw.decode("cp1252")
+    return list(csv.DictReader(io.StringIO(text, newline="")))
+
+
 def utc_now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--url", default="http://localhost:8000", help="SUT base URL, e.g. http://192.168.0.104:8000")
+    # 127.0.0.1, not localhost: on Windows "localhost" tries IPv6 first and adds ~2 s to every request.
+    parser.add_argument("--url", default="http://127.0.0.1:8000", help="SUT base URL, e.g. http://192.168.0.104:8000")
     parser.add_argument("--run-id", required=True, help="run ID printed by prepare_run.ps1 (sent as X-Run-Id)")
     parser.add_argument("--golden", default=str(REPO_ROOT / "datasets" / "golden_test_set.csv"))
     parser.add_argument("--label-column", default="final_agreed_label")
@@ -59,8 +71,7 @@ def main() -> None:
     if not golden_path.exists():
         sys.exit(f"Golden set not found: {golden_path}\n"
                  "It is frozen on main: git checkout main -- datasets/golden_test_set.csv")
-    with open(golden_path, newline="", encoding="utf-8-sig") as f:
-        golden = [(r["row"], r["narrative"], r[args.label_column].strip()) for r in csv.DictReader(f)]
+    golden = [(r["row"], r["narrative"], r[args.label_column].strip()) for r in read_golden(golden_path)]
     if any(not label for _, _, label in golden):
         sys.exit(f"Some golden rows have an empty {args.label_column}")
     golden = golden[:args.limit] if args.limit else golden
@@ -77,7 +88,9 @@ def main() -> None:
     out_path = out_dir / f"{args.run_id}_accuracy.csv"
     meta_path = out_dir / f"{args.run_id}_accuracy.meta.json"
     done = set()
-    if out_path.exists():
+    # An empty file is a run that died before writing anything (not even the header): start it afresh.
+    new_file = not out_path.exists() or out_path.stat().st_size == 0
+    if not new_file:
         if not args.resume:
             sys.exit(f"{out_path} exists. Never overwrite evidence: --resume it, or use a new run ID.")
         with open(out_path, newline="", encoding="utf-8") as f:
@@ -107,13 +120,13 @@ def main() -> None:
     print(f"{health['model']} (prompt {health['prompt_version']}, think={health['think']}) at {base}: "
           f"{len(todo)} of {len(golden)} golden tickets to send -> {out_path}")
 
-    new_file = not out_path.exists()
     correct = 0
     try:
         with open(out_path, "a", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=COLUMNS)
             if new_file:
                 writer.writeheader()
+                f.flush()
             for i, (row, narrative, label) in enumerate(todo, 1):
                 start_ms = int(time.time() * 1000)
                 t0 = time.perf_counter()
