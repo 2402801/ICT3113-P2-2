@@ -1,0 +1,546 @@
+ollama-1  | [GIN] 2026/10/07 - 04:05:13 | 200 |      21.907µs |      172.21.0.1 | GET      "/api/version"
+ollama-1  | [GIN] 2026/10/07 - 04:05:22 | 200 |       16.81µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:05:22 | 200 |    1.139841ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:05:32 | 200 |      17.653µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:05:32 | 200 |     639.958µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:05:42 | 200 |      14.796µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:05:42 | 200 |     633.545µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:05:52 | 200 |       15.65µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:05:52 | 200 |      669.65µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:06:02 | 200 |      15.768µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:06:02 | 200 |     783.576µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:06:12 | 200 |      19.413µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:06:12 | 200 |     690.601µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:06:22 | 200 |      19.795µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:06:22 | 200 |     698.842µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:06:32 | 200 |      16.274µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:06:32 | 200 |    1.486534ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:06:42 | 200 |      22.736µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:06:42 | 200 |     662.621µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:06:53 | 200 |      17.018µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:06:53 | 200 |     744.284µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:07:03 | 200 |      16.823µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:07:03 | 200 |     642.927µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:07:13 | 200 |      19.946µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:07:13 | 200 |    6.039634ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:07:23 | 200 |      15.914µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:07:23 | 200 |     752.069µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:07:33 | 200 |       15.77µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:07:33 | 200 |     1.03906ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:07:43 | 200 |      34.801µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:07:43 | 200 |       668.5µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:07:53 | 200 |       15.05µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:07:53 | 200 |     662.782µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:08:03 | 200 |      16.279µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:08:03 | 200 |     642.352µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:08:13 | 200 |      17.933µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:08:13 | 200 |     662.044µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:08:23 | 200 |      15.232µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:08:23 | 200 |     735.685µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:08:33 | 200 |      21.397µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:08:33 | 200 |     646.962µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:08:43 | 200 |      16.718µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:08:43 | 200 |    1.191222ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:08:53 | 200 |      23.815µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:08:53 | 200 |     681.627µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:09:03 | 200 |      16.383µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:09:03 | 200 |     675.631µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:09:14 | 200 |      15.472µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:09:14 | 200 |     762.337µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:09:24 | 200 |      17.391µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:09:24 | 200 |     728.302µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:09:34 | 200 |      19.027µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:09:34 | 200 |     687.715µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:09:44 | 200 |       18.43µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:09:44 | 200 |     714.202µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:09:54 | 200 |      15.387µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:09:54 | 200 |    1.116368ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.882 (322/365) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.882 (> 0.100 thold), f_keep = 0.495
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 651, total state size = 30.186 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.495, f_sim = 0.882
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.882
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.882
+ollama-1  | srv        update:  - cache state: 2 prompts, 90.992 MiB (limits: 8192.000 MiB, 4096 tokens, 131533 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 24.53 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 741 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 741 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 365
+ollama-1  | slot   operator(): id  0 | task 741 | checking checkpoint with [0, 352] against 0...
+ollama-1  | slot   operator(): id  0 | task 741 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 741 | erased invalidated context checkpoint (pos_min = 0, pos_max = 352, n_tokens = 353, n_swa = 512, pos_next = 0, size = 13.794 MiB)
+ollama-1  | slot   operator(): id  0 | task 741 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | [GIN] 2026/10/07 - 04:10:04 | 200 |      24.532µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:10:04 | 200 |    1.375655ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot   operator(): id  0 | task 741 | cached n_tokens = 361, memory_seq_rm [361, end)
+ollama-1  | slot init_sampler: id  0 | task 741 | init sampler, took 0.05 ms, tokens: text = 365, total = 365
+ollama-1  | slot create_check: id  0 | task 741 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 360, n_tokens = 361, size = 14.106 MiB)
+ollama-1  | slot print_timing: id  0 | task 741 | n_gen =    100, tg =  17.99 t/s, tg_3s =  18.17 t/s
+ollama-1  | slot print_timing: id  0 | task 741 | n_gen =    154, tg =  17.91 t/s, tg_3s =  17.75 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:10:14 | 200 |      25.428µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:10:14 | 200 |     1.22502ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 741 | n_gen =    208, tg =  17.84 t/s, tg_3s =  17.66 t/s
+ollama-1  | slot print_timing: id  0 | task 741 | n_gen =    262, tg =  17.82 t/s, tg_3s =  17.76 t/s
+ollama-1  | slot print_timing: id  0 | task 741 | n_gen =    317, tg =  17.86 t/s, tg_3s =  18.06 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:10:24 | 200 |      34.149µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:10:24 | 200 |    2.379941ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 741 | n_gen =    370, tg =  17.79 t/s, tg_3s =  17.37 t/s
+ollama-1  | slot print_timing: id  0 | task 741 | prompt eval time =    3076.63 ms /   365 tokens (    8.43 ms per token,   118.64 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 741 |        eval time =   22894.12 ms /   406 tokens (   56.53 ms per token,    17.69 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 741 |       total time =   25970.75 ms /   771 tokens
+ollama-1  | slot print_timing: id  0 | task 741 |    graphs reused =       1131
+ollama-1  | slot      release: id  0 | task 741 | stop processing: n_tokens = 770, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:10:27 | 200 | 26.006787688s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.920 (322/350) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.920 (> 0.100 thold), f_keep = 0.418
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 770, total state size = 32.047 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.418, f_sim = 0.920
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.920
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.920
+ollama-1  | srv          load:    - prompt with length     770, lcp =     322, f_keep = 0.418, f_sim = 0.920
+ollama-1  | srv        update:  - cache state: 3 prompts, 137.145 MiB (limits: 8192.000 MiB, 4096 tokens, 133263 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv        update:    - prompt 0x256765c0:     770 tokens, checkpoints:  1,    46.153 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 21.10 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 1149 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 1149 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 350
+ollama-1  | slot   operator(): id  0 | task 1149 | checking checkpoint with [0, 360] against 0...
+ollama-1  | slot   operator(): id  0 | task 1149 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 1149 | erased invalidated context checkpoint (pos_min = 0, pos_max = 360, n_tokens = 361, n_swa = 512, pos_next = 0, size = 14.106 MiB)
+ollama-1  | slot   operator(): id  0 | task 1149 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot   operator(): id  0 | task 1149 | cached n_tokens = 346, memory_seq_rm [346, end)
+ollama-1  | slot init_sampler: id  0 | task 1149 | init sampler, took 0.05 ms, tokens: text = 350, total = 350
+ollama-1  | slot create_check: id  0 | task 1149 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 345, n_tokens = 346, size = 13.520 MiB)
+ollama-1  | [GIN] 2026/10/07 - 04:10:34 | 200 |      43.535µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:10:34 | 200 |    1.582678ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    100, tg =  18.19 t/s, tg_3s =  18.37 t/s
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    154, tg =  18.11 t/s, tg_3s =  17.97 t/s
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    208, tg =  18.04 t/s, tg_3s =  17.83 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:10:44 | 200 |      32.811µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:10:44 | 200 |    1.505754ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    261, tg =  17.90 t/s, tg_3s =  17.39 t/s
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    315, tg =  17.89 t/s, tg_3s =  17.85 t/s
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    369, tg =  17.86 t/s, tg_3s =  17.64 t/s
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    423, tg =  17.85 t/s, tg_3s =  17.82 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:10:54 | 200 |      48.896µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:10:54 | 200 |    1.028988ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1149 | n_gen =    475, tg =  17.78 t/s, tg_3s =  17.22 t/s
+ollama-1  | slot print_timing: id  0 | task 1149 | prompt eval time =    3044.03 ms /   350 tokens (    8.70 ms per token,   114.98 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 1149 |        eval time =   27263.57 ms /   485 tokens (   56.33 ms per token,    17.75 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 1149 |       total time =   30307.60 ms /   835 tokens
+ollama-1  | slot print_timing: id  0 | task 1149 |    graphs reused =       1612
+ollama-1  | slot      release: id  0 | task 1149 | stop processing: n_tokens = 834, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:10:57 | 200 |  39.74576801s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.809 (322/398) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.809 (> 0.100 thold), f_keep = 0.386
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 834, total state size = 33.047 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.386, f_sim = 0.809
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.809
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.809
+ollama-1  | srv          load:    - prompt with length     770, lcp =     323, f_keep = 0.419, f_sim = 0.812
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.809
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.419, f_sim = 0.812
+ollama-1  | srv        update:  - cache state: 3 prompts, 137.559 MiB (limits: 8192.000 MiB, 4096 tokens, 136673 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 24.84 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 1636 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 1636 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 398
+ollama-1  | slot   operator(): id  0 | task 1636 | checking checkpoint with [0, 360] against 0...
+ollama-1  | slot   operator(): id  0 | task 1636 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 1636 | erased invalidated context checkpoint (pos_min = 0, pos_max = 360, n_tokens = 361, n_swa = 512, pos_next = 0, size = 14.106 MiB)
+ollama-1  | slot   operator(): id  0 | task 1636 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot print_timing: id  0 | task 1636 | prompt processing, n_tokens =    394, progress = 0.99, t =   3.50 s / 112.53 tokens per second
+ollama-1  | slot   operator(): id  0 | task 1636 | cached n_tokens = 394, memory_seq_rm [394, end)
+ollama-1  | slot init_sampler: id  0 | task 1636 | init sampler, took 0.06 ms, tokens: text = 398, total = 398
+ollama-1  | slot create_check: id  0 | task 1636 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 393, n_tokens = 394, size = 15.396 MiB)
+ollama-1  | [GIN] 2026/10/07 - 04:11:05 | 200 |      47.727µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:11:05 | 200 |    2.948361ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1636 | n_gen =    100, tg =  17.83 t/s, tg_3s =  18.01 t/s
+ollama-1  | slot print_timing: id  0 | task 1636 | n_gen =    154, tg =  17.85 t/s, tg_3s =  17.89 t/s
+ollama-1  | slot print_timing: id  0 | task 1636 | n_gen =    208, tg =  17.82 t/s, tg_3s =  17.73 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:11:15 | 200 |      27.383µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:11:15 | 200 |     1.38212ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1636 | n_gen =    262, tg =  17.79 t/s, tg_3s =  17.68 t/s
+ollama-1  | slot print_timing: id  0 | task 1636 | prompt eval time =    3580.28 ms /   398 tokens (    9.00 ms per token,   111.16 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 1636 |        eval time =   16990.74 ms /   303 tokens (   56.26 ms per token,    17.77 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 1636 |       total time =   20571.02 ms /   701 tokens
+ollama-1  | slot print_timing: id  0 | task 1636 |    graphs reused =       1912
+ollama-1  | slot      release: id  0 | task 1636 | stop processing: n_tokens = 700, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:11:18 | 200 | 59.828499763s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.818 (323/395) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.818 (> 0.100 thold), f_keep = 0.461
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 700, total state size = 30.952 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.461, f_sim = 0.818
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.815
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.815
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.815
+ollama-1  | srv          load:    - prompt with length     700, lcp =     323, f_keep = 0.461, f_sim = 0.818
+ollama-1  | srv        update:  - cache state: 4 prompts, 183.907 MiB (limits: 8192.000 MiB, 4096 tokens, 133410 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324d570:     700 tokens, checkpoints:  1,    46.348 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 19.94 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 1941 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 1941 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 395
+ollama-1  | slot   operator(): id  0 | task 1941 | checking checkpoint with [0, 393] against 0...
+ollama-1  | slot   operator(): id  0 | task 1941 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 1941 | erased invalidated context checkpoint (pos_min = 0, pos_max = 393, n_tokens = 394, n_swa = 512, pos_next = 0, size = 15.396 MiB)
+ollama-1  | slot   operator(): id  0 | task 1941 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot print_timing: id  0 | task 1941 | prompt processing, n_tokens =    391, progress = 0.99, t =   3.42 s / 114.29 tokens per second
+ollama-1  | slot   operator(): id  0 | task 1941 | cached n_tokens = 391, memory_seq_rm [391, end)
+ollama-1  | slot init_sampler: id  0 | task 1941 | init sampler, took 0.06 ms, tokens: text = 395, total = 395
+ollama-1  | slot create_check: id  0 | task 1941 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 390, n_tokens = 391, size = 15.278 MiB)
+ollama-1  | [GIN] 2026/10/07 - 04:11:25 | 200 |       22.47µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:11:25 | 200 |     885.162µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    100, tg =  17.93 t/s, tg_3s =  18.11 t/s
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    154, tg =  17.89 t/s, tg_3s =  17.80 t/s
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    207, tg =  17.82 t/s, tg_3s =  17.62 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:11:35 | 200 |      26.064µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:11:35 | 200 |    1.370928ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    259, tg =  17.72 t/s, tg_3s =  17.33 t/s
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    313, tg =  17.75 t/s, tg_3s =  17.90 t/s
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    364, tg =  17.63 t/s, tg_3s =  16.96 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:11:45 | 200 |      32.165µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:11:45 | 200 |    2.406653ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    417, tg =  17.59 t/s, tg_3s =  17.33 t/s
+ollama-1  | slot print_timing: id  0 | task 1941 | n_gen =    470, tg =  17.59 t/s, tg_3s =  17.52 t/s
+ollama-1  | slot print_timing: id  0 | task 1941 | prompt eval time =    3495.22 ms /   395 tokens (    8.85 ms per token,   113.01 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 1941 |        eval time =   29132.60 ms /   513 tokens (   56.90 ms per token,    17.57 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 1941 |       total time =   32627.82 ms /   908 tokens
+ollama-1  | slot print_timing: id  0 | task 1941 |    graphs reused =       2421
+ollama-1  | slot      release: id  0 | task 1941 | stop processing: n_tokens = 907, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:11:51 | 200 | 32.659082484s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 04:11:55 | 200 |      16.418µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:11:55 | 200 |      673.03µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:12:05 | 200 |      16.309µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:12:05 | 200 |     641.838µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:12:15 | 200 |       17.68µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:12:15 | 200 |     673.003µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:12:25 | 200 |      19.099µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:12:25 | 200 |     664.699µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:12:35 | 200 |      15.449µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:12:35 | 200 |     663.273µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:12:45 | 200 |      14.214µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:12:45 | 200 |    1.285858ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:12:55 | 200 |      15.942µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:12:55 | 200 |     642.037µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:13:06 | 200 |      23.889µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:13:06 | 200 |     644.822µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:13:16 | 200 |      16.245µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:13:16 | 200 |     633.425µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:13:26 | 200 |       15.63µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:13:26 | 200 |      721.48µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:13:36 | 200 |      15.905µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:13:36 | 200 |     686.838µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:13:46 | 200 |      20.078µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:13:46 | 200 |    1.280083ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:13:56 | 200 |      15.635µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:13:56 | 200 |    5.587341ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:14:06 | 200 |      15.911µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:14:06 | 200 |      670.47µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:14:16 | 200 |      15.671µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:14:16 | 200 |     646.351µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.822 (323/393) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.822 (> 0.100 thold), f_keep = 0.356
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 907, total state size = 34.189 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.356, f_sim = 0.822
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.819
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.819
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.819
+ollama-1  | srv          load:    - prompt with length     700, lcp =     324, f_keep = 0.463, f_sim = 0.824
+ollama-1  | srv          load:    - prompt with length     907, lcp =     323, f_keep = 0.356, f_sim = 0.822
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.463, f_sim = 0.824
+ollama-1  | srv        update:  - cache state: 4 prompts, 187.026 MiB (limits: 8192.000 MiB, 4096 tokens, 140251 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     907 tokens, checkpoints:  1,    49.467 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 18.66 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 2456 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 2456 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 393
+ollama-1  | slot   operator(): id  0 | task 2456 | checking checkpoint with [0, 393] against 0...
+ollama-1  | slot   operator(): id  0 | task 2456 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 2456 | erased invalidated context checkpoint (pos_min = 0, pos_max = 393, n_tokens = 394, n_swa = 512, pos_next = 0, size = 15.396 MiB)
+ollama-1  | slot   operator(): id  0 | task 2456 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | slot print_timing: id  0 | task 2456 | prompt processing, n_tokens =    389, progress = 0.99, t =   3.09 s / 125.72 tokens per second
+ollama-1  | slot   operator(): id  0 | task 2456 | cached n_tokens = 389, memory_seq_rm [389, end)
+ollama-1  | slot init_sampler: id  0 | task 2456 | init sampler, took 0.05 ms, tokens: text = 393, total = 393
+ollama-1  | slot create_check: id  0 | task 2456 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 388, n_tokens = 389, size = 15.200 MiB)
+ollama-1  | [GIN] 2026/10/07 - 04:14:26 | 200 |       29.62µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:14:26 | 200 |     2.51029ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    100, tg =  17.89 t/s, tg_3s =  18.07 t/s
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    154, tg =  17.82 t/s, tg_3s =  17.68 t/s
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    208, tg =  17.85 t/s, tg_3s =  17.93 t/s
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    261, tg =  17.79 t/s, tg_3s =  17.57 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:14:36 | 200 |      30.558µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:14:36 | 200 |     828.834µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    315, tg =  17.77 t/s, tg_3s =  17.70 t/s
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    370, tg =  17.82 t/s, tg_3s =  18.08 t/s
+ollama-1  | slot print_timing: id  0 | task 2456 | n_gen =    422, tg =  17.73 t/s, tg_3s =  17.14 t/s
+ollama-1  | slot print_timing: id  0 | task 2456 | prompt eval time =    3172.07 ms /   393 tokens (    8.07 ms per token,   123.89 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 2456 |        eval time =   24030.28 ms /   427 tokens (   56.41 ms per token,    17.73 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 2456 |       total time =   27202.34 ms /   820 tokens
+ollama-1  | slot print_timing: id  0 | task 2456 |    graphs reused =       2844
+ollama-1  | slot      release: id  0 | task 2456 | stop processing: n_tokens = 819, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:14:45 | 200 | 27.230645852s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 04:14:46 | 200 |      14.225µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:14:46 | 200 |     659.876µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:14:56 | 200 |      15.215µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:14:56 | 200 |     689.985µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:15:06 | 200 |      16.863µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:15:06 | 200 |      635.65µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:15:17 | 200 |       22.68µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:15:17 | 200 |     686.592µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:15:27 | 200 |      15.858µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:15:27 | 200 |    1.401623ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:15:37 | 200 |      15.924µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:15:37 | 200 |     636.557µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:15:47 | 200 |      17.567µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:15:47 | 200 |     816.767µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:15:57 | 200 |      14.877µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:15:57 | 200 |     711.683µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:16:07 | 200 |      15.492µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:16:07 | 200 |     669.227µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:16:17 | 200 |      16.849µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:16:17 | 200 |     766.444µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:16:27 | 200 |      16.432µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:16:27 | 200 |     641.064µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:16:37 | 200 |      14.807µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:16:37 | 200 |    1.232053ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:16:47 | 200 |      15.136µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:16:47 | 200 |     684.218µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:16:57 | 200 |      18.826µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:16:57 | 200 |     5.98145ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:17:07 | 200 |      19.699µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:17:07 | 200 |     728.784µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:17:17 | 200 |      16.268µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:17:17 | 200 |      718.96µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:17:27 | 200 |      20.165µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:17:27 | 200 |     852.848µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:17:37 | 200 |      19.077µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:17:37 | 200 |     732.007µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:17:48 | 200 |      16.039µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:17:48 | 200 |    1.475743ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:17:58 | 200 |      14.325µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:17:58 | 200 |     733.657µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:18:08 | 200 |      15.875µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:18:08 | 200 |     677.838µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:18:18 | 200 |      16.579µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:18:18 | 200 |     656.236µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:18:28 | 200 |      16.172µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:18:28 | 200 |      776.27µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:18:38 | 200 |      17.038µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:18:38 | 200 |     682.325µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:18:48 | 200 |      15.756µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:18:48 | 200 |    1.148049ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:18:58 | 200 |      15.441µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:18:58 | 200 |     639.016µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:19:08 | 200 |      15.381µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:19:08 | 200 |     747.834µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:19:18 | 200 |      14.565µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:19:18 | 200 |     722.817µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:19:28 | 200 |      16.167µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:19:28 | 200 |     717.511µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:19:38 | 200 |      43.403µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:19:38 | 200 |     688.061µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:19:48 | 200 |      17.265µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:19:48 | 200 |      696.97µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:19:58 | 200 |      15.394µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:19:58 | 200 |    1.314875ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:20:08 | 200 |      15.838µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:20:08 | 200 |     628.687µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:20:19 | 200 |      14.644µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:20:19 | 200 |     648.718µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:20:29 | 200 |      15.282µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:20:29 | 200 |     660.343µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:20:39 | 200 |      19.085µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:20:39 | 200 |     722.567µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:20:49 | 200 |      16.736µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:20:49 | 200 |     696.447µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:20:59 | 200 |      16.555µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:20:59 | 200 |    1.084935ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:21:09 | 200 |      15.204µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:21:09 | 200 |     655.891µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:21:19 | 200 |       15.31µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:21:19 | 200 |     691.921µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:21:29 | 200 |      23.347µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:21:29 | 200 |      656.68µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:21:39 | 200 |      14.447µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:21:39 | 200 |     643.287µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:21:49 | 200 |      16.609µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:21:49 | 200 |     770.949µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:21:59 | 200 |      17.253µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:21:59 | 200 |     681.145µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:22:09 | 200 |      15.746µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:22:09 | 200 |    1.433409ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.976 (322/330) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.976 (> 0.100 thold), f_keep = 0.393
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 819, total state size = 32.813 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.393, f_sim = 0.976
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.976
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.976
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.976
+ollama-1  | srv          load:    - prompt with length     907, lcp =     322, f_keep = 0.355, f_sim = 0.976
+ollama-1  | srv          load:    - prompt with length     819, lcp =     322, f_keep = 0.393, f_sim = 0.976
+ollama-1  | srv        update:  - cache state: 5 prompts, 235.039 MiB (limits: 8192.000 MiB, 4096 tokens, 140146 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x25971370:     907 tokens, checkpoints:  1,    49.467 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 17.47 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 2885 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 2885 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 330
+ollama-1  | slot   operator(): id  0 | task 2885 | checking checkpoint with [0, 388] against 0...
+ollama-1  | slot   operator(): id  0 | task 2885 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 2885 | erased invalidated context checkpoint (pos_min = 0, pos_max = 388, n_tokens = 389, n_swa = 512, pos_next = 0, size = 15.200 MiB)
+ollama-1  | slot   operator(): id  0 | task 2885 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | [GIN] 2026/10/07 - 04:22:19 | 200 |      21.419µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:22:19 | 200 |    1.346271ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot   operator(): id  0 | task 2885 | cached n_tokens = 326, memory_seq_rm [326, end)
+ollama-1  | slot init_sampler: id  0 | task 2885 | init sampler, took 0.05 ms, tokens: text = 330, total = 330
+ollama-1  | slot create_check: id  0 | task 2885 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 325, n_tokens = 326, size = 12.739 MiB)
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    100, tg =  16.28 t/s, tg_3s =  16.45 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:22:29 | 200 |      27.421µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:22:29 | 200 |     852.504µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    152, tg =  16.56 t/s, tg_3s =  17.13 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    205, tg =  16.78 t/s, tg_3s =  17.45 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    256, tg =  16.78 t/s, tg_3s =  16.76 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    308, tg =  16.81 t/s, tg_3s =  16.98 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:22:40 | 200 |      45.614µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:22:40 | 200 |    1.828943ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    357, tg =  16.72 t/s, tg_3s =  16.16 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    406, tg =  16.64 t/s, tg_3s =  16.04 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    453, tg =  16.49 t/s, tg_3s =  15.34 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:22:50 | 200 |      33.661µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:22:50 | 200 |     906.969µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    500, tg =  16.40 t/s, tg_3s =  15.59 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    549, tg =  16.39 t/s, tg_3s =  16.26 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | n_gen =    600, tg =  16.42 t/s, tg_3s =  16.78 t/s
+ollama-1  | slot print_timing: id  0 | task 2885 | prompt eval time =    2687.26 ms /   330 tokens (    8.14 ms per token,   122.80 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 2885 |        eval time =   37583.30 ms /   619 tokens (   60.81 ms per token,    16.44 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 2885 |       total time =   40270.56 ms /   949 tokens
+ollama-1  | slot print_timing: id  0 | task 2885 |    graphs reused =       3459
+ollama-1  | slot      release: id  0 | task 2885 | stop processing: n_tokens = 948, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:22:58 | 200 | 40.299919477s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | srv  server_strea: conv_id= (empty=1)
+ollama-1  | slot get_availabl: id  0 | task -1 |  - checking sim = 0.801 (322/402) > 0.100
+ollama-1  | slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.801 (> 0.100 thold), f_keep = 0.340
+ollama-1  | srv  get_availabl: updating prompt cache
+ollama-1  | srv   prompt_save:  - saving prompt with length 948, total state size = 34.830 MiB (draft: 0.000 MiB)
+ollama-1  | srv          load:  - looking for better prompt, base f_keep = 0.340, f_sim = 0.801
+ollama-1  | srv          load:    - prompt with length     810, lcp =     322, f_keep = 0.398, f_sim = 0.801
+ollama-1  | srv          load:    - prompt with length     651, lcp =     322, f_keep = 0.495, f_sim = 0.801
+ollama-1  | srv          load:    - prompt with length     834, lcp =     322, f_keep = 0.386, f_sim = 0.801
+ollama-1  | srv          load:    - prompt with length     907, lcp =     324, f_keep = 0.357, f_sim = 0.806
+ollama-1  | srv          load:    - prompt with length     819, lcp =     323, f_keep = 0.394, f_sim = 0.803
+ollama-1  | srv          load:    - prompt with length     948, lcp =     322, f_keep = 0.340, f_sim = 0.801
+ollama-1  | srv          load:  - found better prompt with f_keep = 0.357, f_sim = 0.806
+ollama-1  | srv        update:  - cache state: 5 prompts, 233.141 MiB (limits: 8192.000 MiB, 4096 tokens, 142728 est)
+ollama-1  | srv        update:    - prompt 0x23262930:     810 tokens, checkpoints:  1,    47.013 MiB
+ollama-1  | srv        update:    - prompt 0x25875ca0:     651 tokens, checkpoints:  1,    43.979 MiB
+ollama-1  | srv        update:    - prompt 0x25882cd0:     834 tokens, checkpoints:  1,    46.567 MiB
+ollama-1  | srv        update:    - prompt 0x2324cbb0:     819 tokens, checkpoints:  1,    48.013 MiB
+ollama-1  | srv        update:    - prompt 0x2595b650:     948 tokens, checkpoints:  1,    47.568 MiB
+ollama-1  | srv  get_availabl: prompt cache update took 22.32 ms
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+ollama-1  | slot launch_slot_: id  0 | task -1 | sampler params: 
+ollama-1  | 	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+ollama-1  | 	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+ollama-1  | 	top_k = 64, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+ollama-1  | 	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+ollama-1  | slot launch_slot_: id  0 | task 3506 | processing task, is_child = 0
+ollama-1  | slot   operator(): id  0 | task 3506 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 402
+ollama-1  | slot   operator(): id  0 | task 3506 | checking checkpoint with [0, 390] against 0...
+ollama-1  | slot   operator(): id  0 | task 3506 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+ollama-1  | slot   operator(): id  0 | task 3506 | erased invalidated context checkpoint (pos_min = 0, pos_max = 390, n_tokens = 391, n_swa = 512, pos_next = 0, size = 15.278 MiB)
+ollama-1  | slot   operator(): id  0 | task 3506 | cached n_tokens = 0, memory_seq_rm [0, end)
+ollama-1  | [GIN] 2026/10/07 - 04:23:00 | 200 |      30.834µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:23:00 | 200 |    1.560189ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 3506 | prompt processing, n_tokens =    398, progress = 0.99, t =   3.53 s / 112.71 tokens per second
+ollama-1  | slot   operator(): id  0 | task 3506 | cached n_tokens = 398, memory_seq_rm [398, end)
+ollama-1  | slot init_sampler: id  0 | task 3506 | init sampler, took 0.06 ms, tokens: text = 402, total = 402
+ollama-1  | slot create_check: id  0 | task 3506 | created context checkpoint 1 of 32 (pos_min = 0, pos_max = 397, n_tokens = 398, size = 15.552 MiB)
+ollama-1  | slot print_timing: id  0 | task 3506 | n_gen =    100, tg =  17.92 t/s, tg_3s =  18.11 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:23:10 | 200 |      26.495µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:23:10 | 200 |     978.214µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 3506 | n_gen =    153, tg =  17.81 t/s, tg_3s =  17.60 t/s
+ollama-1  | slot print_timing: id  0 | task 3506 | n_gen =    207, tg =  17.76 t/s, tg_3s =  17.63 t/s
+ollama-1  | slot print_timing: id  0 | task 3506 | n_gen =    259, tg =  17.63 t/s, tg_3s =  17.12 t/s
+ollama-1  | slot print_timing: id  0 | task 3506 | n_gen =    313, tg =  17.69 t/s, tg_3s =  18.00 t/s
+ollama-1  | [GIN] 2026/10/07 - 04:23:20 | 200 |      45.791µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:23:20 | 200 |    1.423214ms |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | slot print_timing: id  0 | task 3506 | n_gen =    363, tg =  17.53 t/s, tg_3s =  16.58 t/s
+ollama-1  | slot print_timing: id  0 | task 3506 | prompt eval time =    3609.60 ms /   402 tokens (    8.98 ms per token,   111.37 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 3506 |        eval time =   23325.62 ms /   406 tokens (   57.59 ms per token,    17.36 tokens per second)
+ollama-1  | slot print_timing: id  0 | task 3506 |       total time =   26935.22 ms /   808 tokens
+ollama-1  | slot print_timing: id  0 | task 3506 |    graphs reused =       3861
+ollama-1  | slot      release: id  0 | task 3506 | stop processing: n_tokens = 807, truncated = 0
+ollama-1  | srv  update_slots: all slots are idle
+ollama-1  | [GIN] 2026/10/07 - 04:23:25 | 200 | 26.969224719s |      172.21.0.4 | POST     "/api/generate"
+ollama-1  | [GIN] 2026/10/07 - 04:23:30 | 200 |      16.243µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:23:30 | 200 |     661.519µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:23:40 | 200 |      18.648µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:23:40 | 200 |     635.896µs |       127.0.0.1 | GET      "/api/tags"
+ollama-1  | [GIN] 2026/10/07 - 04:23:47 | 200 |      36.158µs |      172.21.0.1 | GET      "/api/ps"
+ollama-1  | [GIN] 2026/10/07 - 04:23:47 | 200 |      16.963µs |       127.0.0.1 | HEAD     "/"
+ollama-1  | [GIN] 2026/10/07 - 04:23:47 | 200 |      23.371µs |       127.0.0.1 | GET      "/api/ps"
