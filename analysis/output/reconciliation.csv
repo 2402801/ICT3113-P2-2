@@ -1,4 +1,4 @@
 run_id,verdict,excluded,client_record,client_samples,server_lines,paired_req_id,clock_offset_ms,gap_p50_ms,gap_p95_ms,paired_time,client_unpaired,server_unpaired,tickets_db,fails,warns
-llama3.2-1b_accuracy_golden175_run1,PASS,,llama3.2-1b_accuracy_golden175_run1_accuracy.csv,175,177,175,3.0,3.9,20.35,0,0,0,175,,
-llama3.2-1b_accuracy_golden175_run2,PASS,,llama3.2-1b_accuracy_golden175_run2_accuracy.csv,175,177,175,3.0,3.93,22.71,0,0,0,175,,
-llama3.2-1b_accuracy_golden175_run3,PASS,,llama3.2-1b_accuracy_golden175_run3_accuracy.csv,175,177,175,3.0,4.45,26.833,0,0,0,175,,
+phi3-3.8b_accuracy_golden175_run4,PASS,,phi3-3.8b_accuracy_golden175_run4_accuracy.csv,175,177,175,2.0,3.25,22.324,0,0,0,175,,
+phi3-3.8b_accuracy_golden175_run5,PASS,,phi3-3.8b_accuracy_golden175_run5_accuracy.csv,175,177,175,2.0,3.15,25.291,0,0,0,175,,
+phi3-3.8b_accuracy_golden175_run6,PASS,,phi3-3.8b_accuracy_golden175_run6_accuracy.csv,175,177,175,2.0,3.14,21.158,0,0,0,175,,

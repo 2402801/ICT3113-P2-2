@@ -41,24 +41,24 @@ mistral-7b_accuracy_golden175_run3,Bank account or service,0,8,0,18,0,0,0,0
 mistral-7b_accuracy_golden175_run3,Debt collection,1,1,0,0,19,0,1,0
 mistral-7b_accuracy_golden175_run3,Money transfer or service,0,7,0,7,2,8,0,0
 mistral-7b_accuracy_golden175_run3,Mortgage,0,0,0,0,0,0,21,0
-phi3-3.8b_accuracy_golden175_run1,Credit reporting,30,0,1,0,0,0,4,0
-phi3-3.8b_accuracy_golden175_run1,Credit card,4,14,0,6,0,0,0,0
-phi3-3.8b_accuracy_golden175_run1,Consumer loan,0,0,17,1,0,0,5,0
-phi3-3.8b_accuracy_golden175_run1,Bank account or service,0,3,0,23,0,0,0,0
-phi3-3.8b_accuracy_golden175_run1,Debt collection,5,0,1,3,11,0,2,0
-phi3-3.8b_accuracy_golden175_run1,Money transfer or service,1,1,0,10,0,11,0,1
-phi3-3.8b_accuracy_golden175_run1,Mortgage,0,0,0,0,0,0,21,0
-phi3-3.8b_accuracy_golden175_run2,Credit reporting,30,0,1,0,0,0,4,0
-phi3-3.8b_accuracy_golden175_run2,Credit card,3,14,0,6,0,0,0,1
-phi3-3.8b_accuracy_golden175_run2,Consumer loan,0,0,17,1,0,0,5,0
-phi3-3.8b_accuracy_golden175_run2,Bank account or service,0,3,0,23,0,0,0,0
-phi3-3.8b_accuracy_golden175_run2,Debt collection,5,0,1,3,11,0,2,0
-phi3-3.8b_accuracy_golden175_run2,Money transfer or service,1,1,0,10,0,12,0,0
-phi3-3.8b_accuracy_golden175_run2,Mortgage,0,0,0,0,0,0,21,0
-phi3-3.8b_accuracy_golden175_run3,Credit reporting,29,0,1,0,0,0,4,1
-phi3-3.8b_accuracy_golden175_run3,Credit card,4,14,0,6,0,0,0,0
-phi3-3.8b_accuracy_golden175_run3,Consumer loan,0,0,17,1,0,0,5,0
-phi3-3.8b_accuracy_golden175_run3,Bank account or service,0,3,0,23,0,0,0,0
-phi3-3.8b_accuracy_golden175_run3,Debt collection,5,0,1,3,10,0,2,1
-phi3-3.8b_accuracy_golden175_run3,Money transfer or service,1,1,0,10,0,12,0,0
-phi3-3.8b_accuracy_golden175_run3,Mortgage,0,0,0,0,0,0,21,0
+phi3-3.8b_accuracy_golden175_run4,Credit reporting,30,0,1,0,0,0,4,0
+phi3-3.8b_accuracy_golden175_run4,Credit card,4,14,0,6,0,0,0,0
+phi3-3.8b_accuracy_golden175_run4,Consumer loan,0,0,17,1,0,0,5,0
+phi3-3.8b_accuracy_golden175_run4,Bank account or service,0,3,0,23,0,0,0,0
+phi3-3.8b_accuracy_golden175_run4,Debt collection,5,0,1,3,11,0,2,0
+phi3-3.8b_accuracy_golden175_run4,Money transfer or service,1,1,0,10,0,12,0,0
+phi3-3.8b_accuracy_golden175_run4,Mortgage,0,0,0,0,0,0,21,0
+phi3-3.8b_accuracy_golden175_run5,Credit reporting,30,0,1,0,0,0,4,0
+phi3-3.8b_accuracy_golden175_run5,Credit card,4,14,0,6,0,0,0,0
+phi3-3.8b_accuracy_golden175_run5,Consumer loan,0,0,17,1,0,0,5,0
+phi3-3.8b_accuracy_golden175_run5,Bank account or service,0,3,0,23,0,0,0,0
+phi3-3.8b_accuracy_golden175_run5,Debt collection,5,0,1,3,11,0,2,0
+phi3-3.8b_accuracy_golden175_run5,Money transfer or service,1,1,0,10,0,12,0,0
+phi3-3.8b_accuracy_golden175_run5,Mortgage,0,0,0,0,0,0,21,0
+phi3-3.8b_accuracy_golden175_run6,Credit reporting,30,0,1,0,0,0,4,0
+phi3-3.8b_accuracy_golden175_run6,Credit card,4,14,0,6,0,0,0,0
+phi3-3.8b_accuracy_golden175_run6,Consumer loan,0,0,17,1,0,0,5,0
+phi3-3.8b_accuracy_golden175_run6,Bank account or service,0,3,0,23,0,0,0,0
+phi3-3.8b_accuracy_golden175_run6,Debt collection,5,0,1,3,11,0,2,0
+phi3-3.8b_accuracy_golden175_run6,Money transfer or service,1,1,0,10,0,12,0,0
+phi3-3.8b_accuracy_golden175_run6,Mortgage,0,0,0,0,0,0,21,0
