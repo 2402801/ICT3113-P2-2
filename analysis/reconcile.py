@@ -35,6 +35,8 @@ def client_record(run: Run) -> tuple[str, list[ClientSample], bool]:
     if jtl and acc:
         raise ValueError(f"both {jtl.name} and {acc.name} present - one client record per run")
     if jtl:
+        if jtl.stat().st_size == 0:  # JMeter died before writing the header
+            return jtl.name, [], False
         samples, has_req_id = read_jtl(jtl)
         return jtl.name, samples, has_req_id
     if acc:
@@ -58,6 +60,8 @@ def reconcile(run: Run) -> Result:
         res.fails.append("no client record: copy the tester's .jtl or *_accuracy.csv into the run folder")
         return res
     res.stats.update(client_samples=len(client), server_lines=len(server))
+    if not client:
+        res.warns.append(f"{res.source} has no samples: the run recorded nothing (crashed or never started?)")
 
     foreign = Counter(s.run for s in server if s.run not in ("-", run.run_id))
     if foreign:
