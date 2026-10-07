@@ -1,0 +1,1 @@
+2026-10-07T12:49:28.919Z GET /health 200 0.80ms client=172.21.0.1 req_id=d01540a89385 start_ms=1791377368918 run=- model=phi3:3.8b

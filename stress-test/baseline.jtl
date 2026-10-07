@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1790677382361,33917,HTTP Request,200,OK,Thread Group 1-1,text,true,,450,391,1,1,http://172.20.10.3:8000/tickets,33917,0,114
+1790677416281,33567,HTTP Request,200,OK,Thread Group 1-1,text,true,,450,391,1,1,http://172.20.10.3:8000/tickets,33567,0,0
+1790677449849,33260,HTTP Request,200,OK,Thread Group 1-1,text,true,,449,391,1,1,http://172.20.10.3:8000/tickets,33260,0,5
+1790677483110,33539,HTTP Request,200,OK,Thread Group 1-1,text,true,,450,391,1,1,http://172.20.10.3:8000/tickets,33539,0,0
+1790677516651,33269,HTTP Request,200,OK,Thread Group 1-1,text,true,,450,391,1,1,http://172.20.10.3:8000/tickets,33269,0,6

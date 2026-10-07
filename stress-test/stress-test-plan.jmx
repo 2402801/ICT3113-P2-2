@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Ticket Triage Stress Test" enabled="true">
+      <stringProp name="TestPlan.comments">Stress test, Step 5: open-loop arrival-rate ramp on POST /tickets, five steps held for STEP_SEC (240 s) each, no reset between steps, so backlog carries over. Default rates (tickets/hour) are 60/90/110/140/180% of the measured ceiling of 107/hour: 64, 97, 118, 150, 193 (override with -Jrate_1 .. -Jrate_5). Each step is its own Open Model Thread Group with even (evenly spaced, not Poisson) arrivals, so every step sends the same number of requests each run and requests arrive on schedule whether or not earlier ones have finished; there is no thread pool to run out. Every sampler is labelled with its step. prepare_run.ps1 already warms the model before READY, so the optional setUp warm-up request is off by default (-Jwarmup=1 sends one, label 'Warm-up POST /tickets'; exclude it from step statistics). Each group ends with pause(DRAIN) because JMeter interrupts in-flight requests when a schedule ends; DRAIN = connect timeout + drain_sec (default 300 s), so the run lasts 5 x STEP_SEC + RECOVERY_SEC + the drain. A sixth 'Recovery' group then drops back to the step 1 rate for recovery_sec (default 120 s) to check that latency returns toward baseline; disable that group to skip it. A request still unanswered at the end is recorded as an error and marks a backlog that never cleared. Data: one JSON body per line (load-generator/prepare_data.py), read tab-delimited so quotes and commas in a narrative cannot split it. Run with -Jrun_id=&lt;run-id&gt; -Jsample_variables=req_id so analysis/reconcile.py can trace every request.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="PROTOCOL" elementType="Argument">
+            <stringProp name="Argument.name">PROTOCOL</stringProp>
+            <stringProp name="Argument.value">${__P(protocol,http)}</stringProp>
+          </elementProp>
+          <elementProp name="HOST" elementType="Argument">
+            <stringProp name="Argument.name">HOST</stringProp>
+            <stringProp name="Argument.value">${__P(host,localhost)}</stringProp>
+          </elementProp>
+          <elementProp name="PORT" elementType="Argument">
+            <stringProp name="Argument.name">PORT</stringProp>
+            <stringProp name="Argument.value">${__P(port,8000)}</stringProp>
+          </elementProp>
+          <elementProp name="RUN_ID" elementType="Argument">
+            <stringProp name="Argument.name">RUN_ID</stringProp>
+            <stringProp name="Argument.value">${__P(run_id,norun)}</stringProp>
+          </elementProp>
+          <elementProp name="DATA_FILE" elementType="Argument">
+            <stringProp name="Argument.name">DATA_FILE</stringProp>
+            <stringProp name="Argument.value">${__P(data_file,data/tickets.jsonl)}</stringProp>
+          </elementProp>
+          <elementProp name="STEP_SEC" elementType="Argument">
+            <stringProp name="Argument.name">STEP_SEC</stringProp>
+            <stringProp name="Argument.value">${__P(step_sec,240)}</stringProp>
+          </elementProp>
+          <elementProp name="RATE_1" elementType="Argument">
+            <stringProp name="Argument.name">RATE_1</stringProp>
+            <stringProp name="Argument.value">${__P(rate_1,64)}</stringProp>
+          </elementProp>
+          <elementProp name="RATE_2" elementType="Argument">
+            <stringProp name="Argument.name">RATE_2</stringProp>
+            <stringProp name="Argument.value">${__P(rate_2,97)}</stringProp>
+          </elementProp>
+          <elementProp name="RATE_3" elementType="Argument">
+            <stringProp name="Argument.name">RATE_3</stringProp>
+            <stringProp name="Argument.value">${__P(rate_3,118)}</stringProp>
+          </elementProp>
+          <elementProp name="RATE_4" elementType="Argument">
+            <stringProp name="Argument.name">RATE_4</stringProp>
+            <stringProp name="Argument.value">${__P(rate_4,150)}</stringProp>
+          </elementProp>
+          <elementProp name="RATE_5" elementType="Argument">
+            <stringProp name="Argument.name">RATE_5</stringProp>
+            <stringProp name="Argument.value">${__P(rate_5,193)}</stringProp>
+          </elementProp>
+          <elementProp name="WARMUP_LOOPS" elementType="Argument">
+            <stringProp name="Argument.name">WARMUP_LOOPS</stringProp>
+            <stringProp name="Argument.value">${__P(warmup,0)}</stringProp>
+          </elementProp>
+          <elementProp name="CONNECT_TIMEOUT_MS" elementType="Argument">
+            <stringProp name="Argument.name">CONNECT_TIMEOUT_MS</stringProp>
+            <stringProp name="Argument.value">${__P(connect_timeout_ms,5000)}</stringProp>
+          </elementProp>
+          <elementProp name="RESPONSE_TIMEOUT_MS" elementType="Argument">
+            <stringProp name="Argument.name">RESPONSE_TIMEOUT_MS</stringProp>
+            <stringProp name="Argument.value">${__P(response_timeout_ms,630000)}</stringProp>
+          </elementProp>
+          <elementProp name="RECOVERY_SEC" elementType="Argument">
+            <stringProp name="Argument.name">RECOVERY_SEC</stringProp>
+            <stringProp name="Argument.value">${__P(recovery_sec,120)}</stringProp>
+          </elementProp>
+          <elementProp name="DRAIN_EXTRA_SEC" elementType="Argument">
+            <stringProp name="Argument.name">DRAIN_EXTRA_SEC</stringProp>
+            <stringProp name="Argument.value">${__P(drain_sec,300)}</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+
+      <!-- Computed from the variables above; must be a separate element (the Test Plan's own variables are evaluated before vars exists). -->
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Derived Values" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="START_1" elementType="Argument">
+            <stringProp name="Argument.name">START_1</stringProp>
+            <stringProp name="Argument.value">${__groovy(Integer.parseInt(vars.get("STEP_SEC")) * 0,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="START_2" elementType="Argument">
+            <stringProp name="Argument.name">START_2</stringProp>
+            <stringProp name="Argument.value">${__groovy(Integer.parseInt(vars.get("STEP_SEC")) * 1,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="START_3" elementType="Argument">
+            <stringProp name="Argument.name">START_3</stringProp>
+            <stringProp name="Argument.value">${__groovy(Integer.parseInt(vars.get("STEP_SEC")) * 2,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="START_4" elementType="Argument">
+            <stringProp name="Argument.name">START_4</stringProp>
+            <stringProp name="Argument.value">${__groovy(Integer.parseInt(vars.get("STEP_SEC")) * 3,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="START_5" elementType="Argument">
+            <stringProp name="Argument.name">START_5</stringProp>
+            <stringProp name="Argument.value">${__groovy(Integer.parseInt(vars.get("STEP_SEC")) * 4,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="START_6" elementType="Argument">
+            <stringProp name="Argument.name">START_6</stringProp>
+            <stringProp name="Argument.value">${__groovy(Integer.parseInt(vars.get("STEP_SEC")) * 5,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DRAIN_SEC" elementType="Argument">
+            <stringProp name="Argument.name">DRAIN_SEC</stringProp>
+            <stringProp name="Argument.value">${__groovy((int) Math.ceil(Long.parseLong(vars.get("CONNECT_TIMEOUT_MS")) / 1000.0d) + Integer.parseInt(vars.get("DRAIN_EXTRA_SEC")),)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+
+      <!-- X-Run-Id tags each server log line with the run; applies to every sampler below -->
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="X-Run-Id Header" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-Run-Id</stringProp>
+            <stringProp name="Header.value">${RUN_ID}</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Capture X-Request-ID" enabled="true">
+        <stringProp name="RegexExtractor.useHeaders">true</stringProp>
+        <stringProp name="RegexExtractor.refname">req_id</stringProp>
+        <stringProp name="RegexExtractor.regex">(?i)x-request-id:\s*(\w+)</stringProp>
+        <stringProp name="RegexExtractor.template">$1$</stringProp>
+        <stringProp name="RegexExtractor.default"></stringProp>
+        <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+        <stringProp name="RegexExtractor.match_number">1</stringProp>
+      </RegexExtractor>
+      <hashTree/>
+
+      <!-- Step 0, optional (off by default, -Jwarmup=1): prepare_run.ps1 already warms the model -->
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="Warm-up" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${WARMUP_LOOPS}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Warm-up POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;narrative&quot;: &quot;I was charged a fee on my checking account that I do not recognise. Please explain it and reverse it.&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- ===================== STEP 1 ===================== -->
+      <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Step 1" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController" guiclass="OpenModelThreadGroupControllerGui" testclass="OpenModelThreadGroupController" testname="Open Model Controller" enabled="true"/>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">pause(${START_1} sec) rate(${RATE_1}/hour) even_arrivals(${STEP_SEC} sec) rate(${RATE_1}/hour) pause(${DRAIN_SEC} sec)</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed"></stringProp>
+      </OpenModelThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket Data" enabled="true">
+          <stringProp name="filename">${DATA_FILE}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">jsonBody</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">&#9;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Step 1 POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${jsonBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- ===================== STEP 2 ===================== -->
+      <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Step 2" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController" guiclass="OpenModelThreadGroupControllerGui" testclass="OpenModelThreadGroupController" testname="Open Model Controller" enabled="true"/>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">pause(${START_2} sec) rate(${RATE_2}/hour) even_arrivals(${STEP_SEC} sec) rate(${RATE_2}/hour) pause(${DRAIN_SEC} sec)</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed"></stringProp>
+      </OpenModelThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket Data" enabled="true">
+          <stringProp name="filename">${DATA_FILE}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">jsonBody</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">&#9;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Step 2 POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${jsonBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- ===================== STEP 3 ===================== -->
+      <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Step 3" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController" guiclass="OpenModelThreadGroupControllerGui" testclass="OpenModelThreadGroupController" testname="Open Model Controller" enabled="true"/>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">pause(${START_3} sec) rate(${RATE_3}/hour) even_arrivals(${STEP_SEC} sec) rate(${RATE_3}/hour) pause(${DRAIN_SEC} sec)</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed"></stringProp>
+      </OpenModelThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket Data" enabled="true">
+          <stringProp name="filename">${DATA_FILE}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">jsonBody</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">&#9;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Step 3 POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${jsonBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- ===================== STEP 4 ===================== -->
+      <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Step 4" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController" guiclass="OpenModelThreadGroupControllerGui" testclass="OpenModelThreadGroupController" testname="Open Model Controller" enabled="true"/>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">pause(${START_4} sec) rate(${RATE_4}/hour) even_arrivals(${STEP_SEC} sec) rate(${RATE_4}/hour) pause(${DRAIN_SEC} sec)</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed"></stringProp>
+      </OpenModelThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket Data" enabled="true">
+          <stringProp name="filename">${DATA_FILE}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">jsonBody</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">&#9;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Step 4 POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${jsonBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- ===================== STEP 5 ===================== -->
+      <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Step 5" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController" guiclass="OpenModelThreadGroupControllerGui" testclass="OpenModelThreadGroupController" testname="Open Model Controller" enabled="true"/>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">pause(${START_5} sec) rate(${RATE_5}/hour) even_arrivals(${STEP_SEC} sec) rate(${RATE_5}/hour) pause(${DRAIN_SEC} sec)</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed"></stringProp>
+      </OpenModelThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket Data" enabled="true">
+          <stringProp name="filename">${DATA_FILE}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">jsonBody</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">&#9;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Step 5 POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${jsonBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- ===================== RECOVERY ===================== -->
+      <OpenModelThreadGroup guiclass="OpenModelThreadGroupGui" testclass="OpenModelThreadGroup" testname="Recovery" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="OpenModelThreadGroupController" guiclass="OpenModelThreadGroupControllerGui" testclass="OpenModelThreadGroupController" testname="Open Model Controller" enabled="true"/>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="OpenModelThreadGroup.schedule">pause(${START_6} sec) rate(${RATE_1}/hour) even_arrivals(${RECOVERY_SEC} sec) rate(${RATE_1}/hour) pause(${DRAIN_SEC} sec)</stringProp>
+        <stringProp name="OpenModelThreadGroup.random_seed"></stringProp>
+      </OpenModelThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Ticket Data" enabled="true">
+          <stringProp name="filename">${DATA_FILE}</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="variableNames">jsonBody</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">&#9;</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type Header" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Recovery POST /tickets" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${jsonBody}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/tickets</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.connect_timeout">${CONNECT_TIMEOUT_MS}</stringProp>
+          <stringProp name="HTTPSampler.response_timeout">${RESPONSE_TIMEOUT_MS}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+
+      <!-- Single test-plan-scoped listener captures samples from every thread group -->
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>false</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename">${__P(jtl,results/${RUN_ID}-${__time(yyyyMMdd-HHmmss,)}.jtl)}</stringProp>
+      </ResultCollector>
+      <hashTree/>
+
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

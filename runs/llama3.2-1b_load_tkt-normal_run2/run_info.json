@@ -1,0 +1,23 @@
+{
+    "run_id":  "llama3.2-1b_load_tkt-normal_run2",
+    "test_type":  "load",
+    "config":  "tkt-normal",
+    "run":  2,
+    "tester":  "P2",
+    "model":  "llama3.2:1b",
+    "model_digest":  "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "c1ed350ddfec61eb1da81155a1b742b847321d1e",
+    "git_branch":  "dev",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  100,
+    "power_mode":  "Best performance",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://172.20.10.2:8000",
+    "ready_at_utc":  "2026-10-07T09:13:44Z",
+    "notes":  "Legion Performance; tickets only at 1,312/h; 5 min send, 295 s timeout"
+}
