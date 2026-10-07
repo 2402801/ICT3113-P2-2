@@ -48,6 +48,8 @@ powershell -ExecutionPolicy Bypass -File scripts\p1\prepare_run.ps1 -TestType st
 
 Run ID = `gemma4-e4b_stress_ramp_run1`. Send traffic only between READY and `finish_run.ps1`.
 
+**Run record (2026-10-07):** `gemma4-e4b_stress_ramp_run1` was already taken by the invalid first attempt (see below; kept as evidence and listed in `analysis/excluded_runs.csv`), so P1 prepared this ramp as **`gemma4-e4b_stress_ramp_run2`** (READY 11:46:16Z, finished 12:16:36Z). The JMeter command below was run with `-Jrun_id=gemma4-e4b_stress_ramp_run1`, so the `X-Run-Id` in the server log and the `.jtl` file name say `run1`; all 41 requests in that window are this run's traffic. The evidence is in `runs/gemma4-e4b_stress_ramp_run2/`.
+
 ## Step 1: Baseline single-req latency (~3.5 min) — DONE
 
 5 sequential single requests. One at a time, no overlap. Log latency client-side + service-side.
@@ -162,7 +164,7 @@ The plan's `Recovery` group drops back to Step 2's step-1 rate (64/hr) for 120 s
 - vs. prediction: predicted ceiling was 80/hr, measured single-req latency implies ~107/hr, state the step-2 limit against both, and whether predicted RR-1 breach (p95<=30s) actually showed up
 - vs. requirements: state the measured limit next to TR-1 (1,312/hr) and TR-2 (3,936/hr). If the limit is below them, say so plainly and name the bottleneck; no fix is needed at this stage.
 - Limitations stated explicitly: single run (no spread across runs), evenly spaced rather than Poisson arrivals, small n per step (no percentiles), the invalid first attempt and why a second was run.
-- Evidence: `.jtl`, server log, DB export and the reconcile result, all in `runs/gemma4-e4b_stress_ramp_run1/`.
+- Evidence: `.jtl` (`gemma4-e4b_stress_ramp_run1.jtl`, named after the run ID JMeter was given), server log, DB export and the reconcile result, all in `runs/gemma4-e4b_stress_ramp_run2/`.
 
 ## Open items, blocks execution as-written
 
