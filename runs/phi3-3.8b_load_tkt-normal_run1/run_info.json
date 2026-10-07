@@ -1,0 +1,23 @@
+{
+    "run_id":  "phi3-3.8b_load_tkt-normal_run1",
+    "test_type":  "load",
+    "config":  "tkt-normal",
+    "run":  1,
+    "tester":  "P2",
+    "model":  "phi3:3.8b",
+    "model_digest":  "4f222292793889a9a40a020799cfd28d53f3e01af25d48e06c5e708610fc47e9",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "c1c6acf5554b2ae3ea474d5a149a7ff3346eb955",
+    "git_branch":  "dev",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  100,
+    "power_mode":  "Best performance",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://10.132.47.133:8000",
+    "ready_at_utc":  "2026-10-07T12:49:32Z",
+    "notes":  "Legion Performance; tickets only at 1,312/h; 5 min send, 295 s timeout"
+}
