@@ -1,0 +1,23 @@
+{
+    "run_id":  "phi3-3.8b_accuracy_golden175_run3",
+    "test_type":  "accuracy",
+    "config":  "golden175",
+    "run":  3,
+    "tester":  "P3",
+    "model":  "phi3:3.8b",
+    "model_digest":  "4f222292793889a9a40a020799cfd28d53f3e01af25d48e06c5e708610fc47e9",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "7bf9e24e2467a5499ce000afb75ac650e405d194",
+    "git_branch":  "accuracy_runs",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  99,
+    "power_mode":  "unknown",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://192.168.31.58:8000",
+    "ready_at_utc":  "2026-10-07T11:09:55Z",
+    "notes":  ""
+}
