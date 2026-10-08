@@ -1,0 +1,2 @@
+NAME         ID              SIZE      PROCESSOR    CONTEXT    UNTIL   
+phi3:3.8b    4f2222927938    3.9 GB    100% CPU     4096       Forever    

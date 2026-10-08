@@ -1,0 +1,803 @@
+2026-10-08T04:54:30.416Z GET /health 200 0.70ms client=172.21.0.1 req_id=ac60efaa5f7b start_ms=1791435270415 run=- model=phi3:3.8b
+2026-10-08T04:55:14.412Z GET /search 200 30.45ms client=172.21.0.1 req_id=b905dd804196 start_ms=1791435314381 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:14.417Z GET /search 200 35.33ms client=172.21.0.1 req_id=974b34d77258 start_ms=1791435314381 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:14.418Z GET /search 200 36.48ms client=172.21.0.1 req_id=2c4f5e955dfc start_ms=1791435314381 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:14.834Z GET /search 200 20.30ms client=172.21.0.1 req_id=e1bbf4fa66ae start_ms=1791435314813 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:15.368Z GET /search 200 13.78ms client=172.21.0.1 req_id=d4c5520be7f8 start_ms=1791435315354 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:15.424Z GET /search 200 15.09ms client=172.21.0.1 req_id=71207be7a85b start_ms=1791435315409 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:15.637Z GET /search 200 15.12ms client=172.21.0.1 req_id=533ca3e8a3ff start_ms=1791435315622 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:15.739Z GET /search 200 15.77ms client=172.21.0.1 req_id=ea575276dc40 start_ms=1791435315723 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:16.085Z GET /search 200 23.86ms client=172.21.0.1 req_id=b4506bc1d326 start_ms=1791435316061 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:17.674Z POST /tickets 200 3292.12ms client=172.21.0.1 req_id=d37727af091d start_ms=1791435314382 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=1 category="Credit reporting" ollama_total_ms=3240.4 ollama_load_ms=1.0 prompt_tokens=819 prompt_eval_ms=2913.8 eval_tokens=9 eval_ms=320.8
+2026-10-08T04:55:18.006Z GET /search 200 18.20ms client=172.21.0.1 req_id=7d3a10ef4813 start_ms=1791435317988 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:18.515Z GET /search 200 16.46ms client=172.21.0.1 req_id=65e7820405f9 start_ms=1791435318498 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:19.339Z GET /search 200 25.50ms client=172.21.0.1 req_id=17328bc973bd start_ms=1791435319314 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:19.398Z GET /search 200 13.39ms client=172.21.0.1 req_id=a2af1231fbfa start_ms=1791435319384 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:19.627Z GET /search 200 22.87ms client=172.21.0.1 req_id=547d0bd217f4 start_ms=1791435319604 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:19.762Z POST /tickets 200 5370.73ms client=172.21.0.1 req_id=051f5910238a start_ms=1791435314391 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=2 category="Consumer loan" ollama_total_ms=5321.8 ollama_load_ms=0.9 prompt_tokens=600 prompt_eval_ms=1476.6 eval_tokens=9 eval_ms=284.3
+2026-10-08T04:55:19.971Z GET /search 200 14.16ms client=172.21.0.1 req_id=1476f1d24e53 start_ms=1791435319957 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:20.297Z GET /search 200 14.29ms client=172.21.0.1 req_id=f13bd4bc2d09 start_ms=1791435320283 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:20.838Z POST /tickets 200 6320.68ms client=172.21.0.1 req_id=22b445a8cf67 start_ms=1791435314518 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=3 category="Credit card" ollama_total_ms=6284.4 ollama_load_ms=1.2 prompt_tokens=482 prompt_eval_ms=773.8 eval_tokens=9 eval_ms=309.7
+2026-10-08T04:55:20.906Z GET /search 200 15.98ms client=172.21.0.1 req_id=1e88079e6688 start_ms=1791435320890 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:21.011Z GET /search 200 20.79ms client=172.21.0.1 req_id=ecb7401d659a start_ms=1791435320990 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:21.367Z GET /search 200 15.54ms client=172.21.0.1 req_id=a49517bffc6e start_ms=1791435321351 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:21.775Z GET /search 200 17.87ms client=172.21.0.1 req_id=f66dca23b041 start_ms=1791435321757 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:21.825Z GET /search 200 13.58ms client=172.21.0.1 req_id=4869beac32e2 start_ms=1791435321812 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:22.249Z GET /search 200 36.37ms client=172.21.0.1 req_id=2211dfad833c start_ms=1791435322213 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:22.390Z GET /search 200 13.94ms client=172.21.0.1 req_id=e5c04099fa00 start_ms=1791435322376 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:22.397Z POST /tickets 200 7386.06ms client=172.21.0.1 req_id=24f860114858 start_ms=1791435315011 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=4 category="Consumer loan" ollama_total_ms=7345.2 ollama_load_ms=1.3 prompt_tokens=558 prompt_eval_ms=1268.0 eval_tokens=9 eval_ms=278.6
+2026-10-08T04:55:22.467Z GET /search 200 19.74ms client=172.21.0.1 req_id=572fc53fdc67 start_ms=1791435322448 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:23.121Z GET /search 200 20.15ms client=172.21.0.1 req_id=b4ea15a86084 start_ms=1791435323101 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:23.875Z GET /search 200 21.14ms client=172.21.0.1 req_id=6df641d7ae66 start_ms=1791435323853 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:24.060Z GET /search 200 14.21ms client=172.21.0.1 req_id=2916005659ae start_ms=1791435324046 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:25.892Z GET /search 200 21.01ms client=172.21.0.1 req_id=be102e8aa6a5 start_ms=1791435325871 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:25.898Z POST /tickets 200 8274.25ms client=172.21.0.1 req_id=1d6b8d2c9d6b start_ms=1791435316001 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=5 category="Credit reporting" ollama_total_ms=8220.9 ollama_load_ms=1.3 prompt_tokens=606 prompt_eval_ms=1583.0 eval_tokens=9 eval_ms=277.5
+2026-10-08T04:55:26.122Z GET /search 200 22.15ms client=172.21.0.1 req_id=dba9d060def8 start_ms=1791435326100 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:26.613Z GET /search 200 16.97ms client=172.21.0.1 req_id=bdb32bb59ffa start_ms=1791435326596 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:27.485Z GET /search 200 15.43ms client=172.21.0.1 req_id=1a22cc5d57eb start_ms=1791435327469 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:27.652Z GET /search 200 16.28ms client=172.21.0.1 req_id=818eb783d1ec start_ms=1791435327636 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:27.699Z GET /search 200 16.23ms client=172.21.0.1 req_id=3150f9b87f97 start_ms=1791435327683 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:28.432Z GET /search 200 14.61ms client=172.21.0.1 req_id=7527518aec41 start_ms=1791435328417 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:28.677Z GET /search 200 17.55ms client=172.21.0.1 req_id=3906dc97f606 start_ms=1791435328660 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:28.763Z GET /search 200 15.10ms client=172.21.0.1 req_id=3f9afa1a89f1 start_ms=1791435328748 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:28.826Z GET /search 200 14.24ms client=172.21.0.1 req_id=d654cdcbc8f0 start_ms=1791435328811 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:28.859Z GET /search 200 13.89ms client=172.21.0.1 req_id=ffe1c03211ed start_ms=1791435328845 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:29.260Z GET /search 200 28.79ms client=172.21.0.1 req_id=fde7e526da92 start_ms=1791435329231 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:29.358Z POST /tickets 200 11361.56ms client=172.21.0.1 req_id=0179b9aa15f1 start_ms=1791435316374 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=6 category="Credit reporting" ollama_total_ms=11317.1 ollama_load_ms=1.4 prompt_tokens=828 prompt_eval_ms=3154.1 eval_tokens=9 eval_ms=309.5
+2026-10-08T04:55:29.666Z GET /search 200 14.53ms client=172.21.0.1 req_id=3c8c9d146298 start_ms=1791435329652 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:29.830Z GET /search 200 18.73ms client=172.21.0.1 req_id=7faba6ba8534 start_ms=1791435329811 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:30.351Z GET /search 200 16.08ms client=172.21.0.1 req_id=ca0e8e1691df start_ms=1791435330335 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:30.489Z GET /search 200 17.20ms client=172.21.0.1 req_id=4eaae5f1fef9 start_ms=1791435330471 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:30.535Z GET /search 200 15.00ms client=172.21.0.1 req_id=524ff621561c start_ms=1791435330519 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:31.003Z GET /search 200 25.75ms client=172.21.0.1 req_id=ef79764ef990 start_ms=1791435330977 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:31.130Z GET /search 200 13.31ms client=172.21.0.1 req_id=8a8a8cb8bc5e start_ms=1791435331117 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:31.497Z POST /tickets 200 12913.94ms client=172.21.0.1 req_id=8d8c7f313fa4 start_ms=1791435316960 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=7 category="Consumer loan" ollama_total_ms=12878.9 ollama_load_ms=1.3 prompt_tokens=608 prompt_eval_ms=1619.9 eval_tokens=9 eval_ms=283.1
+2026-10-08T04:55:31.614Z GET /search 200 15.00ms client=172.21.0.1 req_id=e0432af4a34b start_ms=1791435331599 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:31.618Z GET /search 200 15.15ms client=172.21.0.1 req_id=a934538ff877 start_ms=1791435331603 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:31.841Z GET /search 200 14.69ms client=172.21.0.1 req_id=300e782ecd5d start_ms=1791435331827 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:32.536Z POST /tickets 200 13672.53ms client=172.21.0.1 req_id=a87004cb943b start_ms=1791435317241 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=8 category="Credit reporting" ollama_total_ms=13615.7 ollama_load_ms=1.1 prompt_tokens=478 prompt_eval_ms=737.0 eval_tokens=9 eval_ms=275.8
+2026-10-08T04:55:32.537Z GET /search 200 20.68ms client=172.21.0.1 req_id=421c4b460f1f start_ms=1791435332517 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:33.361Z GET /search 200 17.09ms client=172.21.0.1 req_id=36b8aceea7cf start_ms=1791435333344 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:33.602Z POST /tickets 200 9300.97ms client=172.21.0.1 req_id=95548ec12cbb start_ms=1791435322678 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=9 category="Debt collection" ollama_total_ms=9264.7 ollama_load_ms=1.5 prompt_tokens=489 prompt_eval_ms=806.8 eval_tokens=9 eval_ms=273.7
+2026-10-08T04:55:34.123Z GET /search 200 16.90ms client=172.21.0.1 req_id=ed5971c1f517 start_ms=1791435334106 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:34.980Z GET /search 200 16.32ms client=172.21.0.1 req_id=c51b62ef8626 start_ms=1791435334964 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:36.085Z POST /tickets 200 11437.76ms client=172.21.0.1 req_id=aaf6736272f4 start_ms=1791435323024 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=10 category="Credit card" ollama_total_ms=11396.0 ollama_load_ms=1.3 prompt_tokens=682 prompt_eval_ms=2166.4 eval_tokens=9 eval_ms=306.4
+2026-10-08T04:55:36.454Z GET /search 200 15.37ms client=172.21.0.1 req_id=dc2889560f64 start_ms=1791435336438 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:36.794Z GET /search 200 14.83ms client=172.21.0.1 req_id=69a99ef0e1fe start_ms=1791435336779 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:36.841Z GET /search 200 16.39ms client=172.21.0.1 req_id=7bd5933c80a9 start_ms=1791435336824 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:36.900Z GET /search 200 18.35ms client=172.21.0.1 req_id=cc9690f419a3 start_ms=1791435336882 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:37.058Z GET /search 200 24.33ms client=172.21.0.1 req_id=77cbd95b5044 start_ms=1791435337033 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:37.130Z GET /search 200 22.52ms client=172.21.0.1 req_id=104886dd502e start_ms=1791435337107 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:37.758Z GET /search 200 28.20ms client=172.21.0.1 req_id=d2631b35daed start_ms=1791435337730 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:37.876Z GET /search 200 15.41ms client=172.21.0.1 req_id=c273eee64a70 start_ms=1791435337860 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:38.022Z GET /search 200 17.78ms client=172.21.0.1 req_id=26d70415efb2 start_ms=1791435338004 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:38.945Z GET /search 200 25.59ms client=172.21.0.1 req_id=3c0829f6868a start_ms=1791435338919 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:39.079Z GET /search 200 27.60ms client=172.21.0.1 req_id=930b0d8524ce start_ms=1791435339051 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:39.084Z GET /search 200 32.56ms client=172.21.0.1 req_id=dd72f36d8d75 start_ms=1791435339051 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:39.328Z POST /tickets 200 14303.87ms client=172.21.0.1 req_id=acc823bb3fcf start_ms=1791435324092 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=11 category="Credit reporting" ollama_total_ms=14257.0 ollama_load_ms=1.4 prompt_tokens=788 prompt_eval_ms=2931.0 eval_tokens=9 eval_ms=299.7
+2026-10-08T04:55:39.359Z GET /search 200 15.14ms client=172.21.0.1 req_id=d289fdd71608 start_ms=1791435339344 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:39.364Z GET /search 200 19.63ms client=172.21.0.1 req_id=815aac24e0b7 start_ms=1791435339344 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:40.609Z GET /search 200 25.07ms client=172.21.0.1 req_id=47aaba613ac7 start_ms=1791435340584 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:42.064Z GET /search 200 21.87ms client=172.21.0.1 req_id=f4fe0e54bd8b start_ms=1791435342042 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:42.146Z POST /tickets 200 16326.79ms client=172.21.0.1 req_id=5922d0e27889 start_ms=1791435325820 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=12 category="Credit card" ollama_total_ms=16287.4 ollama_load_ms=1.6 prompt_tokens=713 prompt_eval_ms=2375.6 eval_tokens=9 eval_ms=285.7
+2026-10-08T04:55:43.110Z GET /search 200 23.46ms client=172.21.0.1 req_id=6b2a90e38fa2 start_ms=1791435343087 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:43.229Z GET /search 200 14.98ms client=172.21.0.1 req_id=3c583a515522 start_ms=1791435343214 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:43.540Z POST /tickets 200 16938.14ms client=172.21.0.1 req_id=33c7f4d4f6b5 start_ms=1791435326601 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=13 category="Credit reporting" ollama_total_ms=16903.6 ollama_load_ms=1.4 prompt_tokens=529 prompt_eval_ms=1106.4 eval_tokens=9 eval_ms=285.8
+2026-10-08T04:55:43.928Z GET /search 200 24.71ms client=172.21.0.1 req_id=e2b2bfdcad7a start_ms=1791435343903 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:44.478Z GET /search 200 15.16ms client=172.21.0.1 req_id=1ebc53959a9c start_ms=1791435344463 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:44.591Z GET /search 200 16.57ms client=172.21.0.1 req_id=4d69c52f8927 start_ms=1791435344574 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:44.660Z GET /search 200 13.47ms client=172.21.0.1 req_id=2a8430e31d96 start_ms=1791435344647 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:45.077Z POST /tickets 200 16832.34ms client=172.21.0.1 req_id=519806e33548 start_ms=1791435328245 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=14 category=Mortgage ollama_total_ms=16785.2 ollama_load_ms=1.3 prompt_tokens=547 prompt_eval_ms=1209.5 eval_tokens=10 eval_ms=310.3
+2026-10-08T04:55:45.447Z GET /search 200 15.41ms client=172.21.0.1 req_id=ba602c22c1f4 start_ms=1791435345431 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:45.661Z GET /search 200 18.06ms client=172.21.0.1 req_id=b59172c08415 start_ms=1791435345643 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:45.924Z GET /search 200 29.16ms client=172.21.0.1 req_id=46e21adcc292 start_ms=1791435345895 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:45.939Z GET /search 200 21.72ms client=172.21.0.1 req_id=cb6939943b04 start_ms=1791435345917 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:46.319Z GET /search 200 35.03ms client=172.21.0.1 req_id=0589d12d61bb start_ms=1791435346284 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:46.560Z GET /search 200 19.07ms client=172.21.0.1 req_id=dcaf13e09f5b start_ms=1791435346541 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:46.583Z GET /search 200 14.11ms client=172.21.0.1 req_id=dce97dbdda0c start_ms=1791435346569 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:48.333Z POST /tickets 200 19946.39ms client=172.21.0.1 req_id=51b978172868 start_ms=1791435328386 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=15 category="Bank account or service" ollama_total_ms=19897.5 ollama_load_ms=1.2 prompt_tokens=779 prompt_eval_ms=2869.1 eval_tokens=11 eval_ms=380.3
+2026-10-08T04:55:48.865Z GET /search 200 27.23ms client=172.21.0.1 req_id=d496e6fbbc49 start_ms=1791435348837 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:48.895Z GET /search 200 14.28ms client=172.21.0.1 req_id=e636db37714d start_ms=1791435348881 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:49.252Z GET /search 200 26.32ms client=172.21.0.1 req_id=d3a2ff46053a start_ms=1791435349225 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:49.253Z GET /search 200 27.31ms client=172.21.0.1 req_id=05b681a15972 start_ms=1791435349226 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:49.492Z GET /search 200 17.70ms client=172.21.0.1 req_id=8d8aa6d7cec1 start_ms=1791435349474 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:49.581Z GET /search 200 16.46ms client=172.21.0.1 req_id=08ad2ba9f831 start_ms=1791435349564 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:49.862Z GET /search 200 17.17ms client=172.21.0.1 req_id=7bfde6214c70 start_ms=1791435349845 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:50.131Z POST /tickets 200 20376.14ms client=172.21.0.1 req_id=ff2af8335473 start_ms=1791435329754 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=16 category="Credit reporting" ollama_total_ms=20325.6 ollama_load_ms=1.5 prompt_tokens=558 prompt_eval_ms=1295.5 eval_tokens=9 eval_ms=300.4
+2026-10-08T04:55:51.542Z GET /search 200 19.85ms client=172.21.0.1 req_id=5f483a642d0b start_ms=1791435351522 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:51.572Z GET /search 200 16.38ms client=172.21.0.1 req_id=55e82ac952f7 start_ms=1791435351555 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:51.732Z GET /search 200 15.11ms client=172.21.0.1 req_id=e3aa1eb23894 start_ms=1791435351717 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:51.748Z GET /search 200 23.76ms client=172.21.0.1 req_id=fd8d25d855b6 start_ms=1791435351724 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:52.097Z GET /search 200 19.91ms client=172.21.0.1 req_id=c48b99a8d986 start_ms=1791435352077 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:52.940Z GET /search 200 16.74ms client=172.21.0.1 req_id=ccf2b5250bdc start_ms=1791435352923 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:53.775Z GET /search 200 21.06ms client=172.21.0.1 req_id=690ca238436f start_ms=1791435353754 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:53.959Z GET /search 200 31.45ms client=172.21.0.1 req_id=83452dceec45 start_ms=1791435353928 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:54.147Z POST /tickets 200 23811.33ms client=172.21.0.1 req_id=05fdec2ef9e5 start_ms=1791435330336 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=17 category="Debt collection" ollama_total_ms=23769.8 ollama_load_ms=1.3 prompt_tokens=882 prompt_eval_ms=3724.0 eval_tokens=9 eval_ms=297.3
+2026-10-08T04:55:54.472Z GET /search 200 23.31ms client=172.21.0.1 req_id=e4397fa45841 start_ms=1791435354449 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:54.779Z GET /search 200 15.62ms client=172.21.0.1 req_id=80f19bff60f2 start_ms=1791435354763 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:57.164Z POST /tickets 200 23304.96ms client=172.21.0.1 req_id=4f64dafba4ab start_ms=1791435332149 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=18 category="Credit reporting" ollama_total_ms=23258.8 ollama_load_ms=1.3 prompt_tokens=488 prompt_eval_ms=826.0 eval_tokens=9 eval_ms=275.3
+2026-10-08T04:55:57.226Z GET /search 200 14.84ms client=172.21.0.1 req_id=f4cf1f5e1b9c start_ms=1791435357211 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:57.603Z GET /search 200 26.45ms client=172.21.0.1 req_id=1cba3f51065e start_ms=1791435357576 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:57.629Z GET /search 200 20.03ms client=172.21.0.1 req_id=b1892c65ec19 start_ms=1791435357609 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:57.785Z GET /search 200 24.04ms client=172.21.0.1 req_id=2ca2da134465 start_ms=1791435357761 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:57.789Z GET /search 200 25.30ms client=172.21.0.1 req_id=baeffea479d8 start_ms=1791435357764 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:57.841Z GET /search 200 13.27ms client=172.21.0.1 req_id=2717ae1be68d start_ms=1791435357827 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:58.367Z GET /search 200 24.97ms client=172.21.0.1 req_id=99fe6521876f start_ms=1791435358342 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:55:59.047Z POST /tickets 200 23876.32ms client=172.21.0.1 req_id=e699d963c14e start_ms=1791435333461 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=19 category=Mortgage ollama_total_ms=23813.1 ollama_load_ms=1.6 prompt_tokens=584 prompt_eval_ms=1541.2 eval_tokens=10 eval_ms=320.9
+2026-10-08T04:55:59.842Z GET /search 200 19.13ms client=172.21.0.1 req_id=ee8f76f95e9d start_ms=1791435359823 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:00.497Z GET /search 200 21.66ms client=172.21.0.1 req_id=fce22661fa7a start_ms=1791435360475 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:00.651Z GET /search 200 18.54ms client=172.21.0.1 req_id=bc9889245898 start_ms=1791435360633 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:00.679Z POST /tickets 200 25339.13ms client=172.21.0.1 req_id=77d4548b3477 start_ms=1791435333629 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=20 category="Credit card" ollama_total_ms=25303.8 ollama_load_ms=1.3 prompt_tokens=563 prompt_eval_ms=1372.5 eval_tokens=9 eval_ms=281.8
+2026-10-08T04:56:01.225Z GET /search 200 26.54ms client=172.21.0.1 req_id=7ba8ac8fb397 start_ms=1791435361198 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:01.566Z GET /search 200 21.24ms client=172.21.0.1 req_id=f8bd899de3b4 start_ms=1791435361545 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:02.535Z POST /tickets 200 27097.06ms client=172.21.0.1 req_id=528b1f76f8ec start_ms=1791435333728 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=21 category="Bank account or service" ollama_total_ms=27039.4 ollama_load_ms=1.3 prompt_tokens=576 prompt_eval_ms=1480.2 eval_tokens=11 eval_ms=350.2
+2026-10-08T04:56:03.442Z POST /tickets 200 27691.71ms client=172.21.0.1 req_id=42afb34b1096 start_ms=1791435334040 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=22 category="Credit card" ollama_total_ms=27653.5 ollama_load_ms=1.4 prompt_tokens=464 prompt_eval_ms=654.9 eval_tokens=9 eval_ms=266.6
+2026-10-08T04:56:03.512Z GET /search 200 17.77ms client=172.21.0.1 req_id=45e8914b3aa4 start_ms=1791435363495 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:04.029Z GET /search 200 27.74ms client=172.21.0.1 req_id=3b52b324c20e start_ms=1791435364001 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:04.293Z GET /search 200 25.65ms client=172.21.0.1 req_id=11f48bbe45f7 start_ms=1791435364267 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:04.814Z GET /search 200 18.63ms client=172.21.0.1 req_id=9abcd51cc43a start_ms=1791435364795 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:04.865Z GET /search 200 14.56ms client=172.21.0.1 req_id=ad8d8192f682 start_ms=1791435364851 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:05.472Z GET /search 200 28.81ms client=172.21.0.1 req_id=80331867a7c8 start_ms=1791435365443 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:05.783Z GET /search 200 16.05ms client=172.21.0.1 req_id=fb0892eed8ad start_ms=1791435365767 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:06.196Z GET /search 200 25.03ms client=172.21.0.1 req_id=e9c598703c47 start_ms=1791435366171 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:06.230Z GET /search 200 21.08ms client=172.21.0.1 req_id=25c982be9e1f start_ms=1791435366208 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:06.534Z POST /tickets 200 30602.05ms client=172.21.0.1 req_id=67964941cc87 start_ms=1791435334222 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=23 category="Consumer loan" ollama_total_ms=30555.1 ollama_load_ms=1.3 prompt_tokens=763 prompt_eval_ms=2786.3 eval_tokens=9 eval_ms=291.8
+2026-10-08T04:56:06.895Z GET /search 200 31.26ms client=172.21.0.1 req_id=48cf13622ff9 start_ms=1791435366864 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:07.221Z GET /search 200 16.22ms client=172.21.0.1 req_id=42a50bb6cda7 start_ms=1791435367205 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:07.356Z GET /search 200 21.48ms client=172.21.0.1 req_id=5b5ffb15f96f start_ms=1791435367335 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:08.151Z GET /search 200 20.85ms client=172.21.0.1 req_id=04b108cb4779 start_ms=1791435368130 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:09.409Z POST /tickets 200 31861.85ms client=172.21.0.1 req_id=bbdfc910937c start_ms=1791435335837 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=24 category="Debt collection" ollama_total_ms=31816.8 ollama_load_ms=1.1 prompt_tokens=708 prompt_eval_ms=2416.3 eval_tokens=9 eval_ms=281.2
+2026-10-08T04:56:09.995Z GET /search 200 18.23ms client=172.21.0.1 req_id=84a29d0e1925 start_ms=1791435369976 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:10.131Z GET /search 200 23.74ms client=172.21.0.1 req_id=544d66260dcf start_ms=1791435370107 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:10.159Z GET /search 200 17.41ms client=172.21.0.1 req_id=8ad06c1870d6 start_ms=1791435370141 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:10.398Z GET /search 200 22.73ms client=172.21.0.1 req_id=a90a7d821515 start_ms=1791435370375 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:11.510Z GET /search 200 28.01ms client=172.21.0.1 req_id=43e005385ad0 start_ms=1791435371482 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:11.716Z GET /search 200 30.81ms client=172.21.0.1 req_id=2697f245a4d2 start_ms=1791435371685 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:11.723Z GET /search 200 20.75ms client=172.21.0.1 req_id=9cbe15718cce start_ms=1791435371703 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:11.859Z POST /tickets 200 32514.16ms client=172.21.0.1 req_id=a8c96352585b start_ms=1791435337635 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=25 category="Credit reporting" ollama_total_ms=32475.5 ollama_load_ms=1.7 prompt_tokens=664 prompt_eval_ms=2158.3 eval_tokens=9 eval_ms=291.3
+2026-10-08T04:56:13.020Z POST /tickets 200 32552.80ms client=172.21.0.1 req_id=62a3a94d2934 start_ms=1791435338757 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=26 category="Bank account or service" ollama_total_ms=32500.2 ollama_load_ms=1.3 prompt_tokens=484 prompt_eval_ms=796.7 eval_tokens=11 eval_ms=345.1
+2026-10-08T04:56:13.153Z GET /search 200 14.89ms client=172.21.0.1 req_id=e9080d02f39c start_ms=1791435373139 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:13.822Z GET /search 200 16.58ms client=172.21.0.1 req_id=52c115523d1c start_ms=1791435373806 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:14.108Z GET /search 200 18.17ms client=172.21.0.1 req_id=41c918439f6f start_ms=1791435374090 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:14.398Z GET /search 200 27.03ms client=172.21.0.1 req_id=0ffc5302d805 start_ms=1791435374371 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:14.574Z GET /search 200 17.91ms client=172.21.0.1 req_id=56a05368f914 start_ms=1791435374556 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:14.709Z POST /tickets 200 33947.94ms client=172.21.0.1 req_id=9ffa0c55be54 start_ms=1791435339051 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=27 category=Mortgage ollama_total_ms=33903.2 ollama_load_ms=2.6 prompt_tokens=561 prompt_eval_ms=1366.2 eval_tokens=10 eval_ms=332.4
+2026-10-08T04:56:15.009Z GET /search 200 27.85ms client=172.21.0.1 req_id=d463b23cfea9 start_ms=1791435374981 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:15.017Z GET /search 200 26.31ms client=172.21.0.1 req_id=23963733ef2c start_ms=1791435374990 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:15.049Z GET /search 200 14.28ms client=172.21.0.1 req_id=7b6b9b82afd1 start_ms=1791435375034 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:15.254Z GET /search 200 18.99ms client=172.21.0.1 req_id=17c877a77ca7 start_ms=1791435375235 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:15.396Z GET /search 200 24.40ms client=172.21.0.1 req_id=91699cd042a2 start_ms=1791435375372 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:15.585Z POST /tickets 200 32878.84ms client=172.21.0.1 req_id=f83ddcc6c4cf start_ms=1791435340996 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=28 category="Credit reporting" ollama_total_ms=32842.7 ollama_load_ms=1.3 prompt_tokens=453 prompt_eval_ms=577.7 eval_tokens=9 eval_ms=294.6
+2026-10-08T04:56:15.723Z GET /search 200 30.09ms client=172.21.0.1 req_id=579e94dafd97 start_ms=1791435375692 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:15.728Z GET /search 200 36.25ms client=172.21.0.1 req_id=9ec12ec2fd0c start_ms=1791435375692 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:16.377Z GET /search 200 23.05ms client=172.21.0.1 req_id=c9da50147200 start_ms=1791435376354 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:16.508Z POST /tickets 200 33092.50ms client=172.21.0.1 req_id=be0a534cb8f6 start_ms=1791435341705 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=29 category="Bank account or service" ollama_total_ms=33057.8 ollama_load_ms=1.2 prompt_tokens=453 prompt_eval_ms=574.6 eval_tokens=11 eval_ms=344.3
+2026-10-08T04:56:16.627Z GET /search 200 18.91ms client=172.21.0.1 req_id=6d53325172fc start_ms=1791435376608 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:17.086Z GET /search 200 35.32ms client=172.21.0.1 req_id=b3305302680b start_ms=1791435377051 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:17.500Z GET /search 200 30.96ms client=172.21.0.1 req_id=07689a6f6445 start_ms=1791435377469 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:17.853Z POST /tickets 200 31448.96ms client=172.21.0.1 req_id=c6b89199d538 start_ms=1791435344693 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=30 category="Consumer loan" ollama_total_ms=31398.6 ollama_load_ms=1.3 prompt_tokens=514 prompt_eval_ms=1034.2 eval_tokens=9 eval_ms=290.2
+2026-10-08T04:56:18.909Z POST /tickets 200 32335.94ms client=172.21.0.1 req_id=db51b5e1addc start_ms=1791435344862 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=31 category="Money transfer or service" ollama_total_ms=32293.4 ollama_load_ms=1.2 prompt_tokens=470 prompt_eval_ms=726.0 eval_tokens=11 eval_ms=333.6
+2026-10-08T04:56:19.645Z GET /search 200 29.72ms client=172.21.0.1 req_id=16a04aeb2e1e start_ms=1791435379615 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:19.992Z POST /tickets 200 31535.53ms client=172.21.0.1 req_id=b3f462a140b4 start_ms=1791435346746 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=32 category="Money transfer or service" ollama_total_ms=31484.7 ollama_load_ms=1.4 prompt_tokens=476 prompt_eval_ms=723.4 eval_tokens=11 eval_ms=345.0
+2026-10-08T04:56:20.521Z GET /search 200 24.77ms client=172.21.0.1 req_id=df5758979cf3 start_ms=1791435380496 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:20.922Z GET /search 200 20.29ms client=172.21.0.1 req_id=43c1e9bf1c15 start_ms=1791435380902 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:21.210Z POST /tickets 200 32009.05ms client=172.21.0.1 req_id=d94d8e7d1b1b start_ms=1791435347491 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=33 category=Mortgage ollama_total_ms=31969.7 ollama_load_ms=1.5 prompt_tokens=500 prompt_eval_ms=911.6 eval_tokens=10 eval_ms=313.1
+2026-10-08T04:56:21.346Z GET /search 200 18.64ms client=172.21.0.1 req_id=e51d7d88741e start_ms=1791435381328 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:21.616Z GET /search 200 18.56ms client=172.21.0.1 req_id=ba7c3391578c start_ms=1791435381598 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:21.726Z GET /search 200 16.10ms client=172.21.0.1 req_id=d8ebd3894c75 start_ms=1791435381709 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:22.476Z GET /search 200 32.14ms client=172.21.0.1 req_id=9d50acd23f70 start_ms=1791435382444 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:22.827Z POST /tickets 200 31697.44ms client=172.21.0.1 req_id=34e44a24d87e start_ms=1791435349419 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=34 category=Mortgage ollama_total_ms=31658.4 ollama_load_ms=1.1 prompt_tokens=555 prompt_eval_ms=1305.9 eval_tokens=10 eval_ms=306.6
+2026-10-08T04:56:24.070Z GET /search 200 25.54ms client=172.21.0.1 req_id=d126b050d2c1 start_ms=1791435384044 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:24.259Z GET /search 200 21.35ms client=172.21.0.1 req_id=6b67214f6272 start_ms=1791435384238 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:24.376Z GET /search 200 27.57ms client=172.21.0.1 req_id=cbca05bf6591 start_ms=1791435384349 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:24.390Z POST /tickets 200 33217.94ms client=172.21.0.1 req_id=4d6249621074 start_ms=1791435349462 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=35 category="Consumer loan" ollama_total_ms=33168.1 ollama_load_ms=1.3 prompt_tokens=545 prompt_eval_ms=1250.5 eval_tokens=9 eval_ms=296.3
+2026-10-08T04:56:25.549Z GET /search 200 29.11ms client=172.21.0.1 req_id=e5bc9b4076e6 start_ms=1791435385520 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:25.798Z GET /search 200 54.58ms client=172.21.0.1 req_id=e0730568f87f start_ms=1791435385744 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:30.057Z POST /tickets 200 36374.78ms client=172.21.0.1 req_id=6978922f7c59 start_ms=1791435350413 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=36 category=Mortgage ollama_total_ms=36315.8 ollama_load_ms=1.5 prompt_tokens=895 prompt_eval_ms=3749.9 eval_tokens=10 eval_ms=343.7
+2026-10-08T04:56:30.076Z GET /search 200 2703.71ms client=172.21.0.1 req_id=30ffc4a1ad5b start_ms=1791435385813 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:32.993Z GET /search 200 5156.78ms client=172.21.0.1 req_id=d894be322144 start_ms=1791435386277 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:33.010Z GET /search 200 5099.05ms client=172.21.0.1 req_id=8e47b2aaf2c5 start_ms=1791435386352 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:33.038Z GET /search 200 5114.53ms client=172.21.0.1 req_id=07cb80da211d start_ms=1791435386364 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:33.824Z GET /search 200 5574.58ms client=172.21.0.1 req_id=c7e4c8409792 start_ms=1791435387325 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:33.843Z GET /search 200 5085.57ms client=172.21.0.1 req_id=912f244ab130 start_ms=1791435388758 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:33.857Z GET /search 200 4922.40ms client=172.21.0.1 req_id=4481f0e08e52 start_ms=1791435388934 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:37.894Z GET /search 200 8793.67ms client=172.21.0.1 req_id=6ad1d84fca2b start_ms=1791435389100 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.278Z GET /search 200 10731.62ms client=172.21.0.1 req_id=da0b0e3e174f start_ms=1791435389546 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.296Z GET /search 200 10303.12ms client=172.21.0.1 req_id=41f59e24a8c7 start_ms=1791435389993 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.309Z GET /search 200 10315.55ms client=172.21.0.1 req_id=bdd1886b573a start_ms=1791435389993 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.312Z POST /tickets 200 46608.48ms client=172.21.0.1 req_id=b3c3d37ba02b start_ms=1791435350435 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=37 category="Bank account or service" ollama_total_ms=37598.4 ollama_load_ms=1.4 prompt_tokens=475 prompt_eval_ms=750.5 eval_tokens=11 eval_ms=359.4
+2026-10-08T04:56:40.316Z POST /tickets 200 45129.21ms client=172.21.0.1 req_id=8197df99e2c9 start_ms=1791435351918 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=38 category="Bank account or service" ollama_total_ms=37740.2 ollama_load_ms=1.3 prompt_tokens=549 prompt_eval_ms=1272.1 eval_tokens=11 eval_ms=348.3
+2026-10-08T04:56:40.319Z POST /tickets 200 44777.64ms client=172.21.0.1 req_id=d1c1e96b3d3e start_ms=1791435352272 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=39 category="Money transfer or service" ollama_total_ms=38214.4 ollama_load_ms=1.3 prompt_tokens=434 prompt_eval_ms=465.6 eval_tokens=11 eval_ms=357.5
+2026-10-08T04:56:40.325Z POST /tickets 200 42010.25ms client=172.21.0.1 req_id=680a3249ac09 start_ms=1791435356755 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=40 category="Credit card" ollama_total_ms=39515.7 ollama_load_ms=1.3 prompt_tokens=892 prompt_eval_ms=3771.1 eval_tokens=9 eval_ms=297.5
+2026-10-08T04:56:40.328Z POST /tickets 200 41886.15ms client=172.21.0.1 req_id=af3cd0763ac8 start_ms=1791435356883 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=41 category="Bank account or service" ollama_total_ms=41749.9 ollama_load_ms=1.7 prompt_tokens=615 prompt_eval_ms=1780.7 eval_tokens=11 eval_ms=350.3
+2026-10-08T04:56:40.361Z GET /search 200 10118.54ms client=172.21.0.1 req_id=68e990f31ac1 start_ms=1791435390242 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.381Z GET /search 200 10132.67ms client=172.21.0.1 req_id=42bd73dd3d7b start_ms=1791435390248 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.401Z GET /search 200 9757.10ms client=172.21.0.1 req_id=4ee7d6c8f897 start_ms=1791435390644 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:40.420Z GET /search 200 9483.46ms client=172.21.0.1 req_id=baeaaf3bdbe0 start_ms=1791435390937 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:42.824Z GET /search 200 11050.06ms client=172.21.0.1 req_id=b6a892866b83 start_ms=1791435391774 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:42.840Z GET /search 200 10683.10ms client=172.21.0.1 req_id=cd0942dbe592 start_ms=1791435392157 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:42.859Z GET /search 200 10584.62ms client=172.21.0.1 req_id=b61a760e31d8 start_ms=1791435392274 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:42.872Z GET /search 200 10556.61ms client=172.21.0.1 req_id=35f30215bd82 start_ms=1791435392316 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:42.890Z GET /search 200 9598.28ms client=172.21.0.1 req_id=7422778d47be start_ms=1791435393291 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:45.505Z GET /search 200 11790.01ms client=172.21.0.1 req_id=e9f3d6ba0fc3 start_ms=1791435393715 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:48.328Z GET /search 200 14240.50ms client=172.21.0.1 req_id=8f9f047e963f start_ms=1791435394088 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:50.744Z GET /search 200 15783.06ms client=172.21.0.1 req_id=c68405968c59 start_ms=1791435394961 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:52.888Z GET /search 200 17765.67ms client=172.21.0.1 req_id=bb66c757453f start_ms=1791435395122 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:56:53.923Z GET /search 200 18499.91ms client=172.21.0.1 req_id=9b91b6a17b7c start_ms=1791435395423 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:08.075Z GET /search 200 28640.01ms client=172.21.0.1 req_id=3962f8817b23 start_ms=1791435397775 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:10.467Z GET /search 200 30400.06ms client=172.21.0.1 req_id=8053023816de start_ms=1791435398407 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:15.119Z GET /search 200 34597.71ms client=172.21.0.1 req_id=fd3abda3cee1 start_ms=1791435398862 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:16.458Z GET /search 200 35651.87ms client=172.21.0.1 req_id=7e09949b3b51 start_ms=1791435399146 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.061Z POST /tickets 500 95603.43ms client=172.21.0.1 req_id=262af97033b2 start_ms=1791435370543 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.078Z POST /tickets 200 108585.72ms client=172.21.0.1 req_id=17c9479e5fc9 start_ms=1791435357577 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=42 category="Credit card" ollama_total_ms=43617.5 ollama_load_ms=1.3 prompt_tokens=685 prompt_eval_ms=2249.1 eval_tokens=9 eval_ms=285.4
+2026-10-08T04:57:51.082Z POST /tickets 200 108292.47ms client=172.21.0.1 req_id=30981150cde9 start_ms=1791435357875 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=43 category=Mortgage ollama_total_ms=46019.7 ollama_load_ms=0.9 prompt_tokens=696 prompt_eval_ms=2370.2 eval_tokens=10 eval_ms=322.4
+2026-10-08T04:57:51.088Z POST /tickets 200 107326.96ms client=172.21.0.1 req_id=b665b92e7841 start_ms=1791435358846 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=44 category=Mortgage ollama_total_ms=47836.2 ollama_load_ms=1.3 prompt_tokens=715 prompt_eval_ms=2462.5 eval_tokens=10 eval_ms=320.4
+2026-10-08T04:57:51.094Z POST /tickets 200 106268.56ms client=172.21.0.1 req_id=9dcac64d45de start_ms=1791435359910 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=45 category="Credit reporting" ollama_total_ms=49211.4 ollama_load_ms=1.6 prompt_tokens=669 prompt_eval_ms=2153.4 eval_tokens=9 eval_ms=280.6
+2026-10-08T04:57:51.098Z POST /tickets 200 104479.45ms client=172.21.0.1 req_id=e1c47a02b38e start_ms=1791435361703 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=46 category="Bank account or service" ollama_total_ms=49566.4 ollama_load_ms=1.4 prompt_tokens=620 prompt_eval_ms=1791.6 eval_tokens=11 eval_ms=351.9
+2026-10-08T04:57:51.103Z POST /tickets 200 104388.23ms client=172.21.0.1 req_id=90a82af0f6e9 start_ms=1791435361799 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=47 category="Consumer loan" ollama_total_ms=50493.3 ollama_load_ms=1.3 prompt_tokens=474 prompt_eval_ms=744.2 eval_tokens=9 eval_ms=274.0
+2026-10-08T04:57:51.117Z POST /tickets 200 103221.72ms client=172.21.0.1 req_id=7604c262e1c3 start_ms=1791435362980 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=48 category="Bank account or service" ollama_total_ms=52497.5 ollama_load_ms=1.3 prompt_tokens=764 prompt_eval_ms=2806.6 eval_tokens=11 eval_ms=373.2
+2026-10-08T04:57:51.142Z POST /tickets 200 103192.97ms client=172.21.0.1 req_id=b92183cc17e5 start_ms=1791435363034 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=49 category="Bank account or service" ollama_total_ms=56407.9 ollama_load_ms=1.2 prompt_tokens=830 prompt_eval_ms=3418.1 eval_tokens=11 eval_ms=374.0
+2026-10-08T04:57:51.159Z POST /tickets 200 102831.75ms client=172.21.0.1 req_id=717aa426e03b start_ms=1791435363413 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=50 category="Credit reporting" ollama_total_ms=59282.2 ollama_load_ms=1.4 prompt_tokens=751 prompt_eval_ms=2728.4 eval_tokens=9 eval_ms=290.6
+2026-10-08T04:57:51.162Z POST /tickets 200 102677.66ms client=172.21.0.1 req_id=65c18a595134 start_ms=1791435363569 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=51 category="Credit reporting" ollama_total_ms=61224.7 ollama_load_ms=1.4 prompt_tokens=624 prompt_eval_ms=1808.5 eval_tokens=9 eval_ms=284.9
+2026-10-08T04:57:51.186Z POST /tickets 200 102565.56ms client=172.21.0.1 req_id=bb3edcd90662 start_ms=1791435363705 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=52 category="Credit reporting" ollama_total_ms=63478.5 ollama_load_ms=0.9 prompt_tokens=659 prompt_eval_ms=2106.5 eval_tokens=9 eval_ms=277.9
+2026-10-08T04:57:51.188Z POST /tickets 200 97630.82ms client=172.21.0.1 req_id=1e6509acfdc2 start_ms=1791435368642 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=54 category="Credit card" ollama_total_ms=63185.8 ollama_load_ms=1.3 prompt_tokens=589 prompt_eval_ms=1561.4 eval_tokens=9 eval_ms=278.5
+2026-10-08T04:57:51.189Z POST /tickets 200 101579.54ms client=172.21.0.1 req_id=b073110b5edd start_ms=1791435364694 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=53 category=Mortgage ollama_total_ms=65288.0 ollama_load_ms=1.3 prompt_tokens=714 prompt_eval_ms=2468.2 eval_tokens=10 eval_ms=323.6
+2026-10-08T04:57:51.190Z POST /tickets 200 96168.35ms client=172.21.0.1 req_id=cf538ba8da4f start_ms=1791435370107 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=55 category="Debt collection" ollama_total_ms=63068.0 ollama_load_ms=1.4 prompt_tokens=517 prompt_eval_ms=1065.4 eval_tokens=9 eval_ms=279.2
+2026-10-08T04:57:51.207Z POST /tickets 200 95891.42ms client=172.21.0.1 req_id=c4d63745974b start_ms=1791435370401 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=56 category="Credit card" ollama_total_ms=64651.1 ollama_load_ms=2.5 prompt_tokens=588 prompt_eval_ms=1587.5 eval_tokens=9 eval_ms=281.4
+2026-10-08T04:57:51.276Z GET /search 200 67158.28ms client=172.21.0.1 req_id=1f34011bcffe start_ms=1791435400762 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.291Z GET /search 200 65223.18ms client=172.21.0.1 req_id=2794a63b78fb start_ms=1791435402711 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.310Z GET /search 200 66818.25ms client=172.21.0.1 req_id=a3b0c8933c17 start_ms=1791435401135 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.329Z GET /search 200 66671.57ms client=172.21.0.1 req_id=866ae2f0fe02 start_ms=1791435401301 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.352Z GET /search 200 62821.83ms client=172.21.0.1 req_id=4fc2e6f741ba start_ms=1791435405174 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.373Z GET /search 200 65892.94ms client=172.21.0.1 req_id=a780c13cbf6d start_ms=1791435402124 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.394Z GET /search 200 61894.21ms client=172.21.0.1 req_id=f2ef497b97e1 start_ms=1791435406144 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.419Z GET /search 200 66698.09ms client=172.21.0.1 req_id=80060e8be5ea start_ms=1791435401365 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.432Z GET /search 200 67217.37ms client=172.21.0.1 req_id=37d49b7a055c start_ms=1791435400859 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.460Z GET /search 200 65180.21ms client=172.21.0.1 req_id=8f68eb78c2fb start_ms=1791435402924 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.481Z GET /search 200 63089.24ms client=172.21.0.1 req_id=a21666d9bb6f start_ms=1791435405036 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.495Z GET /search 200 60355.97ms client=172.21.0.1 req_id=4f1960aee804 start_ms=1791435407783 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.514Z GET /search 200 59451.94ms client=172.21.0.1 req_id=2f9c2d6c68dc start_ms=1791435408706 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.531Z GET /search 200 59185.68ms client=172.21.0.1 req_id=91ba912e2406 start_ms=1791435408990 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.546Z GET /search 200 59988.68ms client=172.21.0.1 req_id=bb27189f6796 start_ms=1791435408201 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.562Z GET /search 200 58971.19ms client=172.21.0.1 req_id=37683bb4b7a9 start_ms=1791435409235 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.581Z GET /search 200 58727.33ms client=172.21.0.1 req_id=5f9c94401796 start_ms=1791435409498 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.603Z GET /search 200 58356.91ms client=172.21.0.1 req_id=c1a581a47fd8 start_ms=1791435409889 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.616Z GET /search 200 57166.22ms client=172.21.0.1 req_id=38fb0486c826 start_ms=1791435411094 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:57:51.634Z GET /search 200 56600.16ms client=172.21.0.1 req_id=401ed659c3ba start_ms=1791435411678 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:27.424Z POST /tickets 500 117369.97ms client=172.21.0.1 req_id=8d2177c31d03 start_ms=1791435383523 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:28.956Z POST /tickets 500 116675.65ms client=172.21.0.1 req_id=409f5b3206c3 start_ms=1791435385749 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:29.882Z POST /tickets 500 117593.52ms client=172.21.0.1 req_id=5b3c59412fc2 start_ms=1791435385758 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:32.767Z POST /tickets 500 120233.02ms client=172.21.0.1 req_id=897410f9698d start_ms=1791435386003 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:35.977Z POST /tickets 500 121636.72ms client=172.21.0.1 req_id=3d09ceba431d start_ms=1791435386174 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:38.839Z POST /tickets 500 124294.37ms client=172.21.0.1 req_id=3629165369f0 start_ms=1791435386378 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:40.849Z POST /tickets 500 125266.68ms client=172.21.0.1 req_id=79a39063e35a start_ms=1791435388974 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:43.162Z POST /tickets 500 127452.87ms client=172.21.0.1 req_id=de2e7b5f0051 start_ms=1791435389102 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:44.887Z POST /tickets 500 126536.03ms client=172.21.0.1 req_id=4fe39848bcd8 start_ms=1791435391743 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:46.799Z POST /tickets 500 126773.95ms client=172.21.0.1 req_id=34ff0ed38b2d start_ms=1791435393418 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:49.892Z POST /tickets 500 129321.79ms client=172.21.0.1 req_id=c5a736f54f12 start_ms=1791435393963 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:53.613Z POST /tickets 500 132506.52ms client=172.21.0.1 req_id=1f4e0b866d6b start_ms=1791435394499 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:55.717Z POST /tickets 500 134148.73ms client=172.21.0.1 req_id=165f089827b7 start_ms=1791435394960 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:58:57.142Z POST /tickets 500 135242.88ms client=172.21.0.1 req_id=2709e57b7eeb start_ms=1791435395291 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:00.594Z GET /search 500 121539.56ms client=172.21.0.1 req_id=30c64eb9adc3 start_ms=1791435412446 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:01.126Z POST /tickets 500 138518.81ms client=172.21.0.1 req_id=166d5f36ad53 start_ms=1791435395999 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:01.520Z GET /search 500 122465.77ms client=172.21.0.1 req_id=f6cf4cde5f52 start_ms=1791435412447 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:03.272Z POST /tickets 500 140664.95ms client=172.21.0.1 req_id=a04416d0b17b start_ms=1791435396000 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:04.290Z POST /tickets 500 141539.96ms client=172.21.0.1 req_id=4d95af74e98e start_ms=1791435396143 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:07.183Z POST /tickets 500 141410.80ms client=172.21.0.1 req_id=6fa8853ab54c start_ms=1791435397511 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:07.631Z GET /search 500 125989.11ms client=172.21.0.1 req_id=b168915b9146 start_ms=1791435413381 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:09.950Z POST /tickets 500 143612.24ms client=172.21.0.1 req_id=16a867224a5d start_ms=1791435398078 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:10.493Z GET /search 500 128595.82ms client=172.21.0.1 req_id=46c5d8418382 start_ms=1791435413637 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:11.263Z POST /tickets 500 144433.71ms client=172.21.0.1 req_id=8a40404238d5 start_ms=1791435398569 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:12.152Z POST /tickets 500 145283.07ms client=172.21.0.1 req_id=d11307a075c0 start_ms=1791435398609 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:12.503Z GET /search 500 130551.85ms client=172.21.0.1 req_id=a717843dddbc start_ms=1791435413691 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:13.748Z POST /tickets 500 146511.86ms client=172.21.0.1 req_id=6e30e17b6a8f start_ms=1791435398975 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:16.056Z POST /tickets 500 148470.37ms client=172.21.0.1 req_id=97b924ad6b35 start_ms=1791435399325 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:18.413Z POST /tickets 500 150374.95ms client=172.21.0.1 req_id=218e2e3adbc6 start_ms=1791435399778 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:18.453Z GET /search 500 135996.10ms client=172.21.0.1 req_id=3afef787a96f start_ms=1791435414196 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:20.125Z POST /tickets 500 151170.35ms client=172.21.0.1 req_id=f250299a707e start_ms=1791435400694 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:21.547Z GET /search 500 138978.20ms client=172.21.0.1 req_id=03abf13037a1 start_ms=1791435414308 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:22.269Z POST /tickets 500 153666.58ms client=172.21.0.1 req_id=72c3eb403705 start_ms=1791435400342 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:23.048Z POST /tickets 500 151568.07ms client=172.21.0.1 req_id=e862ccf0b939 start_ms=1791435403220 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:23.057Z POST /tickets 200 181202.33ms client=172.21.0.1 req_id=8b90a6e7a6f5 start_ms=1791435372035 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=59 category="Credit card" ollama_total_ms=70498.3 ollama_load_ms=1.4 prompt_tokens=478 prompt_eval_ms=789.3 eval_tokens=9 eval_ms=280.1
+2026-10-08T04:59:23.082Z POST /tickets 200 181947.98ms client=172.21.0.1 req_id=5f136865296b start_ms=1791435371315 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=57 category="Bank account or service" ollama_total_ms=67990.1 ollama_load_ms=1.4 prompt_tokens=760 prompt_eval_ms=2805.4 eval_tokens=11 eval_ms=356.7
+2026-10-08T04:59:23.084Z GET /search 200 140178.96ms client=172.21.0.1 req_id=1cbe72343893 start_ms=1791435414644 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:23.679Z POST /tickets 500 151837.80ms client=172.21.0.1 req_id=d3d3e05fe540 start_ms=1791435403580 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:30.595Z GET /search 500 146857.67ms client=172.21.0.1 req_id=cd8285bc5986 start_ms=1791435415477 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:31.126Z GET /search 500 147108.63ms client=172.21.0.1 req_id=f80e8c1a1645 start_ms=1791435415757 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:31.522Z GET /search 500 147041.29ms client=172.21.0.1 req_id=584742c93b04 start_ms=1791435416220 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:32.292Z POST /tickets 500 157523.55ms client=172.21.0.1 req_id=437869860642 start_ms=1791435406508 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:34.928Z GET /search 500 150117.17ms client=172.21.0.1 req_id=c70be0608368 start_ms=1791435416550 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:35.212Z POST /tickets 500 159490.91ms client=172.21.0.1 req_id=72f10287b983 start_ms=1791435407460 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:39.296Z GET /search 500 151616.74ms client=172.21.0.1 req_id=97f20997cb74 start_ms=1791435417756 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:39.304Z POST /tickets 200 196175.84ms client=172.21.0.1 req_id=55a7c57205a9 start_ms=1791435371646 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=58 category="Consumer loan" ollama_total_ms=69813.5 ollama_load_ms=1.8 prompt_tokens=611 prompt_eval_ms=1712.1 eval_tokens=9 eval_ms=279.5
+2026-10-08T04:59:39.953Z GET /search 500 152101.49ms client=172.21.0.1 req_id=ccba016bc7a1 start_ms=1791435417929 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:40.495Z GET /search 500 152295.90ms client=172.21.0.1 req_id=95fe5d8dbf1a start_ms=1791435419006 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:42.987Z POST /tickets 500 165440.18ms client=172.21.0.1 req_id=1007b94b0216 start_ms=1791435407624 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:45.060Z POST /tickets 500 167354.45ms client=172.21.0.1 req_id=bf7650e5d1d9 start_ms=1791435407783 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:45.411Z GET /search 500 156552.06ms client=172.21.0.1 req_id=5568a85d86f4 start_ms=1791435420596 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:47.542Z POST /tickets 500 168495.25ms client=172.21.0.1 req_id=bd8c879639a7 start_ms=1791435409123 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:47.719Z GET /search 500 158859.20ms client=172.21.0.1 req_id=30db451fd905 start_ms=1791435420597 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:48.687Z POST /tickets 500 168482.99ms client=172.21.0.1 req_id=0475fcfe841b start_ms=1791435410281 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.077Z GET /search 500 161135.29ms client=172.21.0.1 req_id=c6ae75c03e54 start_ms=1791435420679 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.868Z POST /tickets 500 170130.90ms client=172.21.0.1 req_id=c2b7f2191b92 start_ms=1791435410814 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.877Z POST /tickets 200 203214.32ms client=172.21.0.1 req_id=5e09c75a24cc start_ms=1791435376181 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=62 category="Consumer loan" ollama_total_ms=73042.4 ollama_load_ms=1.7 prompt_tokens=838 prompt_eval_ms=3383.5 eval_tokens=9 eval_ms=293.5
+2026-10-08T04:59:50.880Z GET /search 500 161659.84ms client=172.21.0.1 req_id=ea5d72df565b start_ms=1791435420957 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.881Z POST /tickets 200 204198.87ms client=172.21.0.1 req_id=3970e14c3d2e start_ms=1791435375201 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=61 category="Credit reporting" ollama_total_ms=70340.2 ollama_load_ms=1.5 prompt_tokens=494 prompt_eval_ms=851.4 eval_tokens=9 eval_ms=273.6
+2026-10-08T04:59:50.883Z POST /tickets 200 205780.73ms client=172.21.0.1 req_id=b578082fc5b8 start_ms=1791435373621 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=60 category="Credit card" ollama_total_ms=70789.9 ollama_load_ms=1.3 prompt_tokens=585 prompt_eval_ms=1580.8 eval_tokens=9 eval_ms=291.7
+2026-10-08T04:59:50.916Z GET /search 200 151842.96ms client=172.21.0.1 req_id=89a3a15db332 start_ms=1791435430810 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.923Z GET /search 200 161695.30ms client=172.21.0.1 req_id=a43709f95740 start_ms=1791435420964 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.934Z GET /search 200 159903.52ms client=172.21.0.1 req_id=cb3e9e3f57c2 start_ms=1791435422768 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.945Z GET /search 200 159112.29ms client=172.21.0.1 req_id=cd83b120e441 start_ms=1791435423569 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.960Z GET /search 200 158472.06ms client=172.21.0.1 req_id=c5b8eb70bff9 start_ms=1791435424225 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:50.980Z GET /search 200 157490.59ms client=172.21.0.1 req_id=f6c8057890ad start_ms=1791435425226 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:52.271Z GET /search 500 163002.88ms client=172.21.0.1 req_id=edd42cbcf9ee start_ms=1791435421005 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:53.050Z GET /search 500 163532.10ms client=172.21.0.1 req_id=6145a3c9c302 start_ms=1791435421255 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:53.115Z GET /search 500 161513.68ms client=172.21.0.1 req_id=c5b997e57c71 start_ms=1791435423338 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:55.116Z POST /tickets 500 172827.81ms client=172.21.0.1 req_id=6f2f316e4541 start_ms=1791435412365 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T04:59:57.763Z POST /tickets 500 175468.64ms client=172.21.0.1 req_id=46a16f6b8b70 start_ms=1791435412372 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:00.596Z GET /search 500 168568.37ms client=172.21.0.1 req_id=f08951e87986 start_ms=1791435423764 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:02.294Z GET /search 500 169156.15ms client=172.21.0.1 req_id=d30ee5ccde29 start_ms=1791435424875 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:03.563Z POST /tickets 500 179650.04ms client=172.21.0.1 req_id=34cde9380bc6 start_ms=1791435413990 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:05.213Z GET /search 500 171029.23ms client=172.21.0.1 req_id=aca8bfeb7d28 start_ms=1791435425921 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:10.630Z POST /tickets 500 184081.29ms client=172.21.0.1 req_id=4992433fbe15 start_ms=1791435414993 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:10.933Z GET /search 500 175120.15ms client=172.21.0.1 req_id=399cb65ee9df start_ms=1791435425917 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:10.970Z GET /search 500 174805.63ms client=172.21.0.1 req_id=46938403933a start_ms=1791435426268 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.028Z POST /tickets 500 185096.12ms client=172.21.0.1 req_id=8628d444dfd5 start_ms=1791435415376 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.129Z GET /search 500 176603.54ms client=172.21.0.1 req_id=49fd7969c744 start_ms=1791435425630 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.138Z POST /tickets 200 219552.80ms client=172.21.0.1 req_id=8702fcbd3013 start_ms=1791435379470 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=63 category="Credit card" ollama_total_ms=78541.6 ollama_load_ms=1.5 prompt_tokens=691 prompt_eval_ms=2362.5 eval_tokens=9 eval_ms=293.7
+2026-10-08T05:00:12.161Z GET /search 200 163736.11ms client=172.21.0.1 req_id=2525349066c4 start_ms=1791435438529 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.189Z GET /search 200 173821.22ms client=172.21.0.1 req_id=c7538d8c8783 start_ms=1791435428472 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.211Z GET /search 200 172335.90ms client=172.21.0.1 req_id=c1fa7fd13a90 start_ms=1791435429979 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.236Z GET /search 200 171907.20ms client=172.21.0.1 req_id=8221e965e2df start_ms=1791435430433 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.258Z GET /search 200 173332.80ms client=172.21.0.1 req_id=21ef7f73b672 start_ms=1791435429029 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.281Z GET /search 200 170338.79ms client=172.21.0.1 req_id=444916b7056b start_ms=1791435432046 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.303Z GET /search 200 169845.58ms client=172.21.0.1 req_id=524b5e8357fa start_ms=1791435432562 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.323Z GET /search 200 169123.72ms client=172.21.0.1 req_id=ec795bdb53e0 start_ms=1791435433304 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.338Z GET /search 200 168627.78ms client=172.21.0.1 req_id=68589da5d8b2 start_ms=1791435433815 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.361Z GET /search 200 167857.53ms client=172.21.0.1 req_id=e818ff66594a start_ms=1791435434608 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.377Z GET /search 200 166213.32ms client=172.21.0.1 req_id=2fe1584cf231 start_ms=1791435436268 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.393Z GET /search 200 165739.26ms client=172.21.0.1 req_id=35f28f0b1a21 start_ms=1791435436758 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:12.989Z GET /search 500 175520.32ms client=172.21.0.1 req_id=e7f3232f8aaa start_ms=1791435427573 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:14.061Z POST /tickets 500 185945.90ms client=172.21.0.1 req_id=22cdb749c553 start_ms=1791435416560 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:17.543Z GET /search 500 177680.61ms client=172.21.0.1 req_id=0bd7b5846b4a start_ms=1791435429966 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:18.314Z POST /tickets 500 189138.03ms client=172.21.0.1 req_id=880ca0d8dc25 start_ms=1791435417620 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:19.414Z POST /tickets 500 189492.22ms client=172.21.0.1 req_id=703270687a12 start_ms=1791435420026 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:20.880Z GET /search 500 179055.72ms client=172.21.0.1 req_id=9ed8c6b0a1e6 start_ms=1791435431928 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:20.923Z GET /search 500 178763.54ms client=172.21.0.1 req_id=e343e660acd8 start_ms=1791435432263 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:20.946Z GET /search 500 177880.08ms client=172.21.0.1 req_id=728ee93b9812 start_ms=1791435433170 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:22.272Z GET /search 500 177058.38ms client=172.21.0.1 req_id=3a285626f0d3 start_ms=1791435435317 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:23.116Z GET /search 500 176672.90ms client=172.21.0.1 req_id=6168a2ff58bf start_ms=1791435436547 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:26.106Z POST /tickets 500 195954.13ms client=172.21.0.1 req_id=05c766f08953 start_ms=1791435420256 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:30.599Z GET /search 500 185554.07ms client=172.21.0.1 req_id=585d36b2e82e start_ms=1791435435149 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:30.679Z POST /tickets 500 199998.39ms client=172.21.0.1 req_id=10175a9b05e1 start_ms=1791435420784 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:33.203Z POST /tickets 500 200216.66ms client=172.21.0.1 req_id=326263caec68 start_ms=1791435423091 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:33.928Z GET /search 500 187245.78ms client=172.21.0.1 req_id=6331efe5a530 start_ms=1791435436786 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:35.831Z POST /tickets 500 201284.85ms client=172.21.0.1 req_id=4f79415c483a start_ms=1791435424651 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:37.775Z POST /tickets 500 201457.02ms client=172.21.0.1 req_id=17dca57a1334 start_ms=1791435426422 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:39.188Z POST /tickets 500 201226.98ms client=172.21.0.1 req_id=d4f8adfb99f8 start_ms=1791435428065 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:41.883Z POST /tickets 500 197455.89ms client=172.21.0.1 req_id=e0e3aa5a1a4c start_ms=1791435432894 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:42.269Z GET /search 500 193885.08ms client=172.21.0.1 req_id=79bff1ad04f9 start_ms=1791435436850 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:42.571Z GET /search 500 193292.67ms client=172.21.0.1 req_id=02535f195dc3 start_ms=1791435437746 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:43.849Z GET /search 500 192250.35ms client=172.21.0.1 req_id=30bdfdfb06c4 start_ms=1791435440065 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:43.918Z GET /search 500 191977.31ms client=172.21.0.1 req_id=7b157a6759d8 start_ms=1791435440408 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:43.941Z GET /search 500 191112.69ms client=172.21.0.1 req_id=cb20e99f371e start_ms=1791435441295 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:43.954Z POST /tickets 500 197305.86ms client=172.21.0.1 req_id=91e8bb8d2b39 start_ms=1791435435115 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:43.963Z GET /search 500 190467.72ms client=172.21.0.1 req_id=395d331fc9a4 start_ms=1791435441962 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:43.999Z GET /search 500 190196.55ms client=172.21.0.1 req_id=bf2ecd685f2e start_ms=1791435442269 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:44.015Z GET /search 500 190158.97ms client=172.21.0.1 req_id=53b1dcd542df start_ms=1791435442323 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:44.056Z GET /search 500 191519.35ms client=172.21.0.1 req_id=2e4dc843543b start_ms=1791435441004 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:47.161Z POST /tickets 500 198861.14ms client=172.21.0.1 req_id=1d901c22bfc4 start_ms=1791435436767 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:49.181Z GET /search 500 194724.92ms client=172.21.0.1 req_id=3aa0b824997d start_ms=1791435442923 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:49.952Z GET /search 500 195084.00ms client=172.21.0.1 req_id=9b5ad20fc526 start_ms=1791435443335 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:50.494Z POST /tickets 500 202173.61ms client=172.21.0.1 req_id=2158c87d689d start_ms=1791435436787 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:52.561Z GET /search 500 196881.77ms client=172.21.0.1 req_id=db28d2489c3d start_ms=1791435444146 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:53.412Z POST /tickets 500 205086.19ms client=172.21.0.1 req_id=b8cefd6302b2 start_ms=1791435436793 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:53.910Z GET /search 500 197376.08ms client=172.21.0.1 req_id=71dc462cf9ce start_ms=1791435445001 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:54.708Z POST /tickets 500 205222.22ms client=172.21.0.1 req_id=6c03761fe3ae start_ms=1791435437953 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:54.755Z GET /search 500 197552.72ms client=172.21.0.1 req_id=4f8c5c73f9ef start_ms=1791435445669 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:56.298Z POST /tickets 500 206502.28ms client=172.21.0.1 req_id=033063edbf29 start_ms=1791435438263 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:57.745Z GET /search 500 200197.21ms client=172.21.0.1 req_id=f881dec1d98d start_ms=1791435446014 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:00:59.814Z POST /tickets 500 208822.41ms client=172.21.0.1 req_id=01f7ec115547 start_ms=1791435439458 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:01.463Z POST /tickets 500 210361.49ms client=172.21.0.1 req_id=620d04958015 start_ms=1791435439569 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:02.317Z GET /search 500 204683.57ms client=172.21.0.1 req_id=792340656b01 start_ms=1791435446101 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:04.353Z POST /tickets 500 212754.23ms client=172.21.0.1 req_id=bbc499a28379 start_ms=1791435440066 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:04.841Z GET /search 500 207096.26ms client=172.21.0.1 req_id=7f73caeeafad start_ms=1791435446212 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:05.567Z GET /search 500 207588.81ms client=172.21.0.1 req_id=f1674633cfb3 start_ms=1791435446445 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:05.909Z POST /tickets 500 214036.69ms client=172.21.0.1 req_id=2c38da5a7c86 start_ms=1791435440340 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:05.918Z POST /tickets 200 271156.21ms client=172.21.0.1 req_id=155f20709c57 start_ms=1791435380010 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=64 category="Bank account or service" ollama_total_ms=79332.1 ollama_load_ms=1.3 prompt_tokens=506 prompt_eval_ms=977.8 eval_tokens=11 eval_ms=347.5
+2026-10-08T05:01:05.940Z GET /search 200 207356.25ms client=172.21.0.1 req_id=4dd124787da2 start_ms=1791435447051 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:06.069Z POST /tickets 500 212433.37ms client=172.21.0.1 req_id=efa1dd5f4adb start_ms=1791435442102 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:07.777Z GET /search 500 207564.47ms client=172.21.0.1 req_id=716305213ae5 start_ms=1791435448679 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:09.189Z GET /search 500 210409.33ms client=172.21.0.1 req_id=e88c75cc13ec start_ms=1791435447246 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:11.035Z POST /tickets 500 218331.55ms client=172.21.0.1 req_id=9b73377a16b9 start_ms=1791435441170 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:13.908Z GET /search 500 212432.69ms client=172.21.0.1 req_id=dfeafaa8fd1b start_ms=1791435448303 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:14.211Z GET /search 500 212934.63ms client=172.21.0.1 req_id=23c49e812086 start_ms=1791435448105 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:14.215Z POST /tickets 200 280960.09ms client=172.21.0.1 req_id=37f557282240 start_ms=1791435376865 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=65 category="Credit card" ollama_total_ms=74916.6 ollama_load_ms=1.4 prompt_tokens=658 prompt_eval_ms=2059.4 eval_tokens=9 eval_ms=287.1
+2026-10-08T05:01:14.235Z GET /search 500 213650.04ms client=172.21.0.1 req_id=53af348f1383 start_ms=1791435447413 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:14.246Z GET /search 500 213154.37ms client=172.21.0.1 req_id=3cb7921c32ac start_ms=1791435447920 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:15.604Z GET /search 500 212234.20ms client=172.21.0.1 req_id=053a10851a03 start_ms=1791435451895 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:15.639Z GET /search 500 209672.52ms client=172.21.0.1 req_id=ff287a8f249f start_ms=1791435454491 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:15.655Z GET /search 500 209341.35ms client=172.21.0.1 req_id=ce66042d7e15 start_ms=1791435454838 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:15.696Z GET /search 500 213135.47ms client=172.21.0.1 req_id=5bfa5a7a9602 start_ms=1791435449389 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:17.375Z POST /tickets 500 220632.76ms client=172.21.0.1 req_id=812900708d1b start_ms=1791435443570 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:18.394Z POST /tickets 500 221282.38ms client=172.21.0.1 req_id=ac3937d52570 start_ms=1791435443939 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:18.801Z GET /search 500 215225.84ms client=172.21.0.1 req_id=7f6bb69b5b0c start_ms=1791435452100 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:19.858Z POST /tickets 500 222534.18ms client=172.21.0.1 req_id=efb09aaf2c8b start_ms=1791435444152 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:20.820Z GET /search 500 215017.35ms client=172.21.0.1 req_id=af141e92a784 start_ms=1791435454327 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:21.593Z GET /search 500 215078.93ms client=172.21.0.1 req_id=afa4fa7c0d0f start_ms=1791435455038 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:22.133Z GET /search 500 215578.28ms client=172.21.0.1 req_id=4aee49815bc4 start_ms=1791435455079 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:22.544Z POST /tickets 500 223357.49ms client=172.21.0.1 req_id=97706759f8b5 start_ms=1791435446015 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:23.643Z POST /tickets 500 222549.62ms client=172.21.0.1 req_id=9f398d955cb3 start_ms=1791435447921 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:24.792Z POST /tickets 500 222813.37ms client=172.21.0.1 req_id=3f298afeb907 start_ms=1791435448807 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:25.053Z GET /search 500 217981.62ms client=172.21.0.1 req_id=7a89ef2bf249 start_ms=1791435455596 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:25.550Z GET /search 500 218430.21ms client=172.21.0.1 req_id=04889b94fa42 start_ms=1791435455645 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:27.266Z POST /tickets 500 225071.20ms client=172.21.0.1 req_id=83f8c3b46972 start_ms=1791435449023 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:27.938Z GET /search 500 221093.07ms client=172.21.0.1 req_id=2acd09531681 start_ms=1791435455369 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:29.384Z GET /search 500 220253.14ms client=172.21.0.1 req_id=83db45df72d1 start_ms=1791435457656 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:30.152Z POST /tickets 500 223301.34ms client=172.21.0.1 req_id=796a7d5516ab start_ms=1791435455375 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:31.850Z POST /tickets 500 224135.54ms client=172.21.0.1 req_id=826530691bd8 start_ms=1791435456239 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:33.104Z GET /search 500 224119.88ms client=172.21.0.1 req_id=6ce391d07142 start_ms=1791435457509 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:33.957Z GET /search 500 224944.85ms client=172.21.0.1 req_id=8c55089f4faa start_ms=1791435457537 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:34.108Z POST /tickets 500 226250.23ms client=172.21.0.1 req_id=4c39ee92793c start_ms=1791435456382 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:35.265Z POST /tickets 500 226835.17ms client=172.21.0.1 req_id=fc57103a71a6 start_ms=1791435456954 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:35.994Z GET /search 500 227086.77ms client=172.21.0.1 req_id=d64fe5e15117 start_ms=1791435457432 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:36.481Z GET /search 500 228086.15ms client=172.21.0.1 req_id=a48a18276787 start_ms=1791435456920 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:36.487Z POST /tickets 200 301557.78ms client=172.21.0.1 req_id=950b97120c1b start_ms=1791435378539 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=66 category="Credit card" ollama_total_ms=75693.1 ollama_load_ms=1.5 prompt_tokens=666 prompt_eval_ms=2163.0 eval_tokens=9 eval_ms=282.2
+2026-10-08T05:01:36.513Z GET /search 500 227096.25ms client=172.21.0.1 req_id=1e599d0e1856 start_ms=1791435457941 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:36.529Z GET /search 200 228307.33ms client=172.21.0.1 req_id=a69f9f1f4462 start_ms=1791435456746 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:37.779Z GET /search 500 227868.73ms client=172.21.0.1 req_id=10a16e240a80 start_ms=1791435458435 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:39.189Z POST /tickets 500 229543.86ms client=172.21.0.1 req_id=edcb801fe2f1 start_ms=1791435458170 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:40.829Z GET /search 500 229101.24ms client=172.21.0.1 req_id=7a279a902b1c start_ms=1791435460252 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:41.744Z POST /tickets 500 230369.42ms client=172.21.0.1 req_id=1729e2c2f199 start_ms=1791435459899 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:45.379Z POST /tickets 500 233011.87ms client=172.21.0.1 req_id=a278c40086f1 start_ms=1791435459212 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:45.589Z GET /search 500 233650.42ms client=172.21.0.1 req_id=9bdac036497d start_ms=1791435458783 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:45.896Z GET /search 500 232598.32ms client=172.21.0.1 req_id=1df520c78f62 start_ms=1791435460142 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:45.916Z GET /search 500 234750.03ms client=172.21.0.1 req_id=6b9f57547b8e start_ms=1791435458011 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:45.922Z POST /tickets 200 306238.08ms client=172.21.0.1 req_id=a4143d966b2a start_ms=1791435381614 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=67 category="Credit reporting" ollama_total_ms=83521.4 ollama_load_ms=1.0 prompt_tokens=453 prompt_eval_ms=589.1 eval_tokens=9 eval_ms=271.4
+2026-10-08T05:01:45.949Z GET /search 500 231646.42ms client=172.21.0.1 req_id=882f2a19003c start_ms=1791435461147 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:45.964Z POST /tickets 200 306916.80ms client=172.21.0.1 req_id=43d3f4386486 start_ms=1791435380976 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=68 category="Consumer loan" ollama_total_ms=80964.8 ollama_load_ms=2.2 prompt_tokens=687 prompt_eval_ms=2301.9 eval_tokens=9 eval_ms=292.3
+2026-10-08T05:01:45.966Z POST /tickets 200 306483.16ms client=172.21.0.1 req_id=1196ba23c118 start_ms=1791435381413 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=70 category="Consumer loan" ollama_total_ms=82858.7 ollama_load_ms=1.3 prompt_tokens=648 prompt_eval_ms=2041.3 eval_tokens=9 eval_ms=281.6
+2026-10-08T05:01:45.970Z POST /tickets 200 308605.40ms client=172.21.0.1 req_id=1cb143b998b7 start_ms=1791435379294 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=69 category="Bank account or service" ollama_total_ms=76055.5 ollama_load_ms=1.5 prompt_tokens=475 prompt_eval_ms=768.5 eval_tokens=11 eval_ms=344.6
+2026-10-08T05:01:45.986Z POST /tickets 200 304626.73ms client=172.21.0.1 req_id=11f45410f1c8 start_ms=1791435383288 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=71 category=Mortgage ollama_total_ms=84399.9 ollama_load_ms=1.3 prompt_tokens=678 prompt_eval_ms=2221.3 eval_tokens=10 eval_ms=325.7
+2026-10-08T05:01:46.002Z GET /search 200 230267.07ms client=172.21.0.1 req_id=5f90bbba82a6 start_ms=1791435462579 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.040Z GET /search 200 231709.41ms client=172.21.0.1 req_id=9da8f94b5ea1 start_ms=1791435461175 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.043Z GET /search 200 230634.18ms client=172.21.0.1 req_id=941bb96f06d0 start_ms=1791435462253 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.064Z GET /search 200 230841.71ms client=172.21.0.1 req_id=034251fd6979 start_ms=1791435462067 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.110Z GET /search 200 228928.84ms client=172.21.0.1 req_id=2441f1eafbc4 start_ms=1791435464026 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.135Z POST /tickets 200 284013.26ms client=172.21.0.1 req_id=5c0a996173ea start_ms=1791435405610 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=73 category="Credit reporting" ollama_total_ms=60043.4 ollama_load_ms=1.3 prompt_tokens=457 prompt_eval_ms=612.1 eval_tokens=9 eval_ms=265.3
+2026-10-08T05:01:46.137Z POST /tickets 200 283547.13ms client=172.21.0.1 req_id=c9f7c9f94f50 start_ms=1791435406078 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=72 category="Money transfer or service" ollama_total_ms=64567.0 ollama_load_ms=1.2 prompt_tokens=932 prompt_eval_ms=4150.9 eval_tokens=11 eval_ms=382.9
+2026-10-08T05:01:46.157Z POST /tickets 200 282050.29ms client=172.21.0.1 req_id=fe11cc2259aa start_ms=1791435407596 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=74 category="Credit card" ollama_total_ms=71464.7 ollama_load_ms=0.8 prompt_tokens=671 prompt_eval_ms=2206.0 eval_tokens=9 eval_ms=304.1
+2026-10-08T05:01:46.177Z POST /tickets 200 275651.12ms client=172.21.0.1 req_id=8659601ffb9f start_ms=1791435414014 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=77 category="Bank account or service" ollama_total_ms=48714.1 ollama_load_ms=0.9 prompt_tokens=517 prompt_eval_ms=1094.3 eval_tokens=11 eval_ms=400.0
+2026-10-08T05:01:46.179Z POST /tickets 200 276781.89ms client=172.21.0.1 req_id=2c43653d4411 start_ms=1791435412886 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=76 category="Debt collection" ollama_total_ms=54041.0 ollama_load_ms=1.4 prompt_tokens=655 prompt_eval_ms=2042.9 eval_tokens=9 eval_ms=295.1
+2026-10-08T05:01:46.187Z POST /tickets 200 277652.38ms client=172.21.0.1 req_id=e521d3a7dd13 start_ms=1791435412023 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=75 category="Credit card" ollama_total_ms=84987.6 ollama_load_ms=1.5 prompt_tokens=658 prompt_eval_ms=2124.3 eval_tokens=9 eval_ms=284.1
+2026-10-08T05:01:46.193Z GET /search 200 226092.68ms client=172.21.0.1 req_id=72667a768548 start_ms=1791435466945 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.223Z POST /tickets 200 271036.54ms client=172.21.0.1 req_id=80a12bf242f5 start_ms=1791435420335 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=78 category="Money transfer or service" ollama_total_ms=45272.9 ollama_load_ms=1.4 prompt_tokens=745 prompt_eval_ms=2665.1 eval_tokens=11 eval_ms=378.5
+2026-10-08T05:01:46.235Z POST /tickets 200 248988.76ms client=172.21.0.1 req_id=b78dd6262167 start_ms=1791435442394 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=79 category="Credit reporting" ollama_total_ms=25260.6 ollama_load_ms=1.4 prompt_tokens=551 prompt_eval_ms=1287.3 eval_tokens=9 eval_ms=297.8
+2026-10-08T05:01:46.238Z POST /tickets 200 236678.44ms client=172.21.0.1 req_id=e272d05dd8e5 start_ms=1791435456404 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=81 category="Credit card" ollama_total_ms=2115.4 ollama_load_ms=1.2 prompt_tokens=626 prompt_eval_ms=1825.0 eval_tokens=9 eval_ms=285.1
+2026-10-08T05:01:46.242Z POST /tickets 200 248917.56ms client=172.21.0.1 req_id=354a789cd982 start_ms=1791435442472 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=80 category="Credit card" ollama_total_ms=27893.6 ollama_load_ms=1.4 prompt_tokens=681 prompt_eval_ms=2272.1 eval_tokens=9 eval_ms=288.6
+2026-10-08T05:01:46.248Z GET /search 200 226104.99ms client=172.21.0.1 req_id=89ba11f2aeca start_ms=1791435466987 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.255Z GET /search 200 224566.34ms client=172.21.0.1 req_id=f083ca04cc4d start_ms=1791435468534 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.259Z GET /search 200 225214.18ms client=172.21.0.1 req_id=ccc2f60aa4b1 start_ms=1791435467889 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.286Z GET /search 200 223529.06ms client=172.21.0.1 req_id=8df82c84d5ec start_ms=1791435469601 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.299Z GET /search 200 225233.01ms client=172.21.0.1 req_id=c270a0e424fe start_ms=1791435467910 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.300Z GET /search 200 229969.55ms client=172.21.0.1 req_id=cc0c8518d99f start_ms=1791435463175 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.303Z GET /search 200 231121.29ms client=172.21.0.1 req_id=a5b3855232d2 start_ms=1791435462026 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.325Z GET /search 200 228739.83ms client=172.21.0.1 req_id=5480a9bc4a09 start_ms=1791435464429 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.339Z GET /search 200 220789.44ms client=172.21.0.1 req_id=b637481eb1d7 start_ms=1791435472394 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.349Z GET /search 200 221463.10ms client=172.21.0.1 req_id=06e0ead5c41e start_ms=1791435471731 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.360Z GET /search 200 226925.92ms client=172.21.0.1 req_id=f579730d66e7 start_ms=1791435466279 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.377Z GET /search 200 221119.32ms client=172.21.0.1 req_id=cf0e0e2c2e2d start_ms=1791435472102 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.390Z GET /search 200 230413.82ms client=172.21.0.1 req_id=3ccb7a5d9814 start_ms=1791435462820 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.409Z GET /search 200 219734.41ms client=172.21.0.1 req_id=6cc6b5bebe5e start_ms=1791435473520 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.417Z GET /search 200 226496.27ms client=172.21.0.1 req_id=d3d64246e4ce start_ms=1791435466765 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.421Z GET /search 200 223557.05ms client=172.21.0.1 req_id=c66201a6e958 start_ms=1791435469709 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.430Z GET /search 200 228791.85ms client=172.21.0.1 req_id=f9a090d9dcba start_ms=1791435464483 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.436Z GET /search 200 219648.46ms client=172.21.0.1 req_id=701ea7c60992 start_ms=1791435473633 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.452Z GET /search 200 222110.89ms client=172.21.0.1 req_id=caec9b650e0f start_ms=1791435471186 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.468Z GET /search 200 224011.12ms client=172.21.0.1 req_id=05df5b86e2a1 start_ms=1791435469302 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.480Z GET /search 200 221600.42ms client=172.21.0.1 req_id=fc7da4886081 start_ms=1791435471725 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.489Z GET /search 200 221263.85ms client=172.21.0.1 req_id=7182b6937840 start_ms=1791435472070 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.500Z GET /search 200 216791.74ms client=172.21.0.1 req_id=04374bc87cc4 start_ms=1791435476553 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.517Z GET /search 200 223365.82ms client=172.21.0.1 req_id=a5b3bed42b53 start_ms=1791435469995 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.526Z GET /search 200 230631.36ms client=172.21.0.1 req_id=4c0fcd1f4eeb start_ms=1791435462739 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.530Z GET /search 200 222532.23ms client=172.21.0.1 req_id=ebc5b378db8f start_ms=1791435470842 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.548Z GET /search 200 219776.60ms client=172.21.0.1 req_id=b4c0cc86e0e1 start_ms=1791435473616 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.555Z GET /search 200 215562.71ms client=172.21.0.1 req_id=eb76e49856b2 start_ms=1791435477837 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.560Z GET /search 200 219720.17ms client=172.21.0.1 req_id=c80e3d7ae010 start_ms=1791435473685 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.581Z GET /search 200 228607.19ms client=172.21.0.1 req_id=1ab613d541e2 start_ms=1791435464818 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.611Z GET /search 200 215029.90ms client=172.21.0.1 req_id=3fa650d3a21d start_ms=1791435478425 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.616Z POST /tickets 200 232673.03ms client=172.21.0.1 req_id=7b37145fb722 start_ms=1791435460787 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=82 category="Credit reporting" ollama_total_ms=1535.9 ollama_load_ms=0.7 prompt_tokens=547 prompt_eval_ms=1249.4 eval_tokens=9 eval_ms=281.7
+2026-10-08T05:01:46.620Z GET /search 200 218740.26ms client=172.21.0.1 req_id=4d4de73d4a70 start_ms=1791435474725 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.624Z GET /search 200 217422.90ms client=172.21.0.1 req_id=a34febce343f start_ms=1791435476046 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.643Z GET /search 200 214217.33ms client=172.21.0.1 req_id=9ed186426723 start_ms=1791435479270 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.646Z GET /search 200 220544.51ms client=172.21.0.1 req_id=86ed3db26987 start_ms=1791435472946 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.652Z GET /search 200 216689.92ms client=172.21.0.1 req_id=a26a89f4ad4b start_ms=1791435476807 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.662Z GET /search 200 216479.80ms client=172.21.0.1 req_id=a74614a56243 start_ms=1791435477027 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.672Z GET /search 200 215990.22ms client=172.21.0.1 req_id=c26d984b11cc start_ms=1791435477526 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.677Z GET /search 200 215721.96ms client=172.21.0.1 req_id=dac2a3b96a71 start_ms=1791435477800 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.691Z GET /search 200 215609.05ms client=172.21.0.1 req_id=b26f4e25a812 start_ms=1791435477927 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.697Z GET /search 200 213057.13ms client=172.21.0.1 req_id=8de9e00f3917 start_ms=1791435480484 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.718Z GET /search 200 215449.06ms client=172.21.0.1 req_id=f5afcdd98861 start_ms=1791435478114 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.721Z GET /search 200 214852.50ms client=172.21.0.1 req_id=1d75b67d855b start_ms=1791435478713 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.735Z GET /search 200 221514.93ms client=172.21.0.1 req_id=0423a4706363 start_ms=1791435472065 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.742Z GET /search 200 210207.38ms client=172.21.0.1 req_id=bc2c4059e6fe start_ms=1791435484995 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.750Z GET /search 200 217311.03ms client=172.21.0.1 req_id=5de1a188bc64 start_ms=1791435476284 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.761Z GET /search 200 214295.89ms client=172.21.0.1 req_id=739a81da58c2 start_ms=1791435479310 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.775Z GET /search 200 214162.68ms client=172.21.0.1 req_id=a70abc3a35a8 start_ms=1791435479457 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.790Z GET /search 200 210247.41ms client=172.21.0.1 req_id=c9d530858e16 start_ms=1791435485003 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.801Z GET /search 200 209493.35ms client=172.21.0.1 req_id=c9618418f607 start_ms=1791435485768 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.813Z GET /search 200 213758.84ms client=172.21.0.1 req_id=2d1d6ae0913b start_ms=1791435479898 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.823Z GET /search 200 211575.35ms client=172.21.0.1 req_id=27a90d6ddd5d start_ms=1791435483707 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.840Z GET /search 200 207656.41ms client=172.21.0.1 req_id=587e82814e6a start_ms=1791435487644 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.848Z GET /search 200 214632.28ms client=172.21.0.1 req_id=aba1ed507588 start_ms=1791435479060 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.867Z GET /search 200 206630.69ms client=172.21.0.1 req_id=be478b7303aa start_ms=1791435488696 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.870Z GET /search 200 206501.54ms client=172.21.0.1 req_id=0d31e3887960 start_ms=1791435488829 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.888Z GET /search 200 210041.23ms client=172.21.0.1 req_id=63e33dec61df start_ms=1791435485307 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.900Z GET /search 200 214031.55ms client=172.21.0.1 req_id=4c0cf01fc2f7 start_ms=1791435479713 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.912Z GET /search 200 213302.67ms client=172.21.0.1 req_id=8821e90fd104 start_ms=1791435480453 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.922Z GET /search 200 208586.25ms client=172.21.0.1 req_id=03948602e3c5 start_ms=1791435486796 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.933Z GET /search 200 205921.04ms client=172.21.0.1 req_id=6f6f9d4f037a start_ms=1791435489473 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.939Z GET /search 200 207555.27ms client=172.21.0.1 req_id=77b6bc86a12e start_ms=1791435487844 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.955Z GET /search 200 209003.80ms client=172.21.0.1 req_id=3fe424d9ddf7 start_ms=1791435486412 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.961Z GET /search 200 210984.61ms client=172.21.0.1 req_id=7798ff2c7894 start_ms=1791435484436 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.989Z GET /search 200 206519.99ms client=172.21.0.1 req_id=138c3043396f start_ms=1791435488930 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:46.998Z GET /search 200 210285.12ms client=172.21.0.1 req_id=636c6d090bb7 start_ms=1791435485173 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.029Z GET /search 200 203556.91ms client=172.21.0.1 req_id=4e0b841bed2d start_ms=1791435491933 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.037Z GET /search 200 211189.76ms client=172.21.0.1 req_id=cfc6311a9560 start_ms=1791435484308 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.066Z GET /search 200 204597.74ms client=172.21.0.1 req_id=721ee45eb978 start_ms=1791435490928 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.075Z GET /search 200 205642.03ms client=172.21.0.1 req_id=42626f172bf8 start_ms=1791435489893 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.101Z GET /search 200 200997.46ms client=172.21.0.1 req_id=3b303d838494 start_ms=1791435494564 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.106Z GET /search 200 200978.94ms client=172.21.0.1 req_id=d51b33638bb0 start_ms=1791435494587 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.134Z GET /search 200 215448.93ms client=172.21.0.1 req_id=7f8e1e8e1174 start_ms=1791435478530 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.145Z GET /search 200 206742.72ms client=172.21.0.1 req_id=7c5a4bedd247 start_ms=1791435488862 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.166Z GET /search 200 201017.38ms client=172.21.0.1 req_id=43d2475b7236 start_ms=1791435494609 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.170Z GET /search 200 201821.57ms client=172.21.0.1 req_id=448b20a4f5cb start_ms=1791435493809 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.197Z GET /search 200 204740.89ms client=172.21.0.1 req_id=c2d13560498e start_ms=1791435490916 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.201Z POST /tickets 200 233569.70ms client=172.21.0.1 req_id=0ca546d600dd start_ms=1791435460476 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=83 category="Bank account or service" ollama_total_ms=2394.2 ollama_load_ms=0.8 prompt_tokens=652 prompt_eval_ms=2037.7 eval_tokens=11 eval_ms=351.6
+2026-10-08T05:01:47.207Z GET /search 200 201375.36ms client=172.21.0.1 req_id=0a976e1742d4 start_ms=1791435494292 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.236Z GET /search 200 201701.99ms client=172.21.0.1 req_id=f77f724800d1 start_ms=1791435493994 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.237Z GET /search 200 199488.95ms client=172.21.0.1 req_id=b5b26b77672e start_ms=1791435496208 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.243Z GET /search 200 201682.05ms client=172.21.0.1 req_id=6bfe6741334b start_ms=1791435494022 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.255Z GET /search 200 198634.57ms client=172.21.0.1 req_id=8e234b86556b start_ms=1791435497081 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.270Z GET /search 200 198522.53ms client=172.21.0.1 req_id=2ea93321bf69 start_ms=1791435497208 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.278Z GET /search 200 206876.83ms client=172.21.0.1 req_id=ce07a909ca17 start_ms=1791435488862 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.295Z GET /search 200 200588.10ms client=172.21.0.1 req_id=2cd44d1e3081 start_ms=1791435495167 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.301Z GET /search 200 199552.68ms client=172.21.0.1 req_id=ad6ec165acfc start_ms=1791435496209 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.312Z GET /search 200 197590.43ms client=172.21.0.1 req_id=a28b20baa9e2 start_ms=1791435498182 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.316Z GET /search 200 197094.78ms client=172.21.0.1 req_id=0609514a8cc3 start_ms=1791435498681 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.323Z GET /search 200 198189.98ms client=172.21.0.1 req_id=ffda6d7033d3 start_ms=1791435497593 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.332Z GET /search 200 197679.90ms client=172.21.0.1 req_id=689d2c431165 start_ms=1791435498113 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.347Z GET /search 200 203501.37ms client=172.21.0.1 req_id=f00a7c955784 start_ms=1791435492306 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.355Z GET /search 200 196219.40ms client=172.21.0.1 req_id=cb1c438cfb8c start_ms=1791435499596 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.369Z GET /search 200 197273.81ms client=172.21.0.1 req_id=a9ccb8b137f7 start_ms=1791435498556 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.380Z GET /search 200 198827.80ms client=172.21.0.1 req_id=7b9ddcd64f8f start_ms=1791435497013 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.384Z GET /search 200 196032.62ms client=172.21.0.1 req_id=3f94f26661e2 start_ms=1791435499811 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.391Z GET /search 200 196075.93ms client=172.21.0.1 req_id=2e532719f396 start_ms=1791435499776 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.412Z GET /search 200 195633.95ms client=172.21.0.1 req_id=18044c39b155 start_ms=1791435500238 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.418Z GET /search 200 196650.68ms client=172.21.0.1 req_id=7dfd0a766221 start_ms=1791435499227 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.432Z GET /search 200 193665.33ms client=172.21.0.1 req_id=10d644947f31 start_ms=1791435502227 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.440Z GET /search 200 193064.78ms client=172.21.0.1 req_id=4eed31a0cfd8 start_ms=1791435502836 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.447Z GET /search 200 193088.16ms client=172.21.0.1 req_id=1ff51ca2fcb4 start_ms=1791435502819 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.459Z GET /search 200 194304.22ms client=172.21.0.1 req_id=0eb2217bf0dc start_ms=1791435501615 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.464Z GET /search 200 194237.02ms client=172.21.0.1 req_id=d2adbb037b32 start_ms=1791435501687 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.478Z GET /search 200 192909.05ms client=172.21.0.1 req_id=d7ade76c8956 start_ms=1791435503029 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.483Z GET /search 200 192274.44ms client=172.21.0.1 req_id=eadd0b001ff4 start_ms=1791435503669 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.491Z GET /search 200 192442.86ms client=172.21.0.1 req_id=5b4340f05e8a start_ms=1791435503508 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.494Z GET /search 200 192246.21ms client=172.21.0.1 req_id=3a6151f2eb24 start_ms=1791435503708 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.508Z GET /search 200 191663.62ms client=172.21.0.1 req_id=fc2f7a8c64f5 start_ms=1791435504304 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:47.512Z GET /search 200 190516.06ms client=172.21.0.1 req_id=f022e796e919 start_ms=1791435505456 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:48.093Z GET /search 200 190350.41ms client=172.21.0.1 req_id=8e9235bab76c start_ms=1791435506202 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:48.115Z GET /search 200 192699.09ms client=172.21.0.1 req_id=9b054a794b66 start_ms=1791435503876 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:49.440Z GET /search 200 189702.10ms client=172.21.0.1 req_id=fff6beb14d96 start_ms=1791435508198 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:49.456Z GET /search 200 189692.38ms client=172.21.0.1 req_id=9139db43d2e5 start_ms=1791435508224 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:01:49.488Z GET /search 200 189485.57ms client=172.21.0.1 req_id=4a5e69313b4d start_ms=1791435508462 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:26.296Z POST /tickets 500 258367.54ms client=172.21.0.1 req_id=5b0df900ea3f start_ms=1791435473122 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:29.549Z POST /tickets 500 261253.73ms client=172.21.0.1 req_id=e4865b44a1b2 start_ms=1791435473488 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:31.093Z POST /tickets 500 261855.63ms client=172.21.0.1 req_id=fb133b4995e2 start_ms=1791435474430 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:34.476Z POST /tickets 500 265122.92ms client=172.21.0.1 req_id=eb697edf04c3 start_ms=1791435474546 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:35.845Z POST /tickets 500 264772.44ms client=172.21.0.1 req_id=47cd9a666d09 start_ms=1791435476266 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:37.230Z POST /tickets 500 264936.07ms client=172.21.0.1 req_id=2526860c6720 start_ms=1791435477487 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:38.137Z POST /tickets 500 264861.02ms client=172.21.0.1 req_id=4f18d617fd35 start_ms=1791435478469 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:39.714Z POST /tickets 500 266368.85ms client=172.21.0.1 req_id=89145e7df916 start_ms=1791435478538 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:40.575Z POST /tickets 500 266756.14ms client=172.21.0.1 req_id=a346d54be3b9 start_ms=1791435479012 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:42.091Z POST /tickets 500 266970.42ms client=172.21.0.1 req_id=83ae330819b2 start_ms=1791435480314 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:42.874Z POST /tickets 500 265384.77ms client=172.21.0.1 req_id=9645a51ae3e8 start_ms=1791435484298 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:44.466Z POST /tickets 500 267683.15ms client=172.21.0.1 req_id=aecfed2ef4f9 start_ms=1791435483592 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:45.681Z POST /tickets 500 267653.83ms client=172.21.0.1 req_id=225143ed96ba start_ms=1791435484836 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:48.440Z POST /tickets 500 267405.95ms client=172.21.0.1 req_id=a6f24645def8 start_ms=1791435486227 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:50.713Z POST /tickets 500 268415.11ms client=172.21.0.1 req_id=10046bec71e8 start_ms=1791435487490 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:51.834Z POST /tickets 500 268498.66ms client=172.21.0.1 req_id=f4946472d6bc start_ms=1791435488527 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:53.196Z POST /tickets 500 270227.52ms client=172.21.0.1 req_id=f586ddbf1470 start_ms=1791435488161 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:55.802Z POST /tickets 500 271851.60ms client=172.21.0.1 req_id=7851a9b0d727 start_ms=1791435489143 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:57.354Z POST /tickets 500 272997.40ms client=172.21.0.1 req_id=c32d03ec60ab start_ms=1791435489549 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:02:58.225Z POST /tickets 500 273353.93ms client=172.21.0.1 req_id=3b0083c49bc9 start_ms=1791435490063 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:00.170Z POST /tickets 500 274077.44ms client=172.21.0.1 req_id=8d1b3c9f659c start_ms=1791435491285 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:01.238Z POST /tickets 500 274623.84ms client=172.21.0.1 req_id=a25711be1894 start_ms=1791435491807 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:02.667Z POST /tickets 500 271951.34ms client=172.21.0.1 req_id=d4a18232a02d start_ms=1791435495908 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:02.710Z GET /search 500 258823.07ms client=172.21.0.1 req_id=666046872dd2 start_ms=1791435509079 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:04.476Z POST /tickets 500 274076.45ms client=172.21.0.1 req_id=ee59f185f7c5 start_ms=1791435495592 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:06.061Z POST /tickets 500 274696.16ms client=172.21.0.1 req_id=537cec824b74 start_ms=1791435496557 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:06.848Z POST /tickets 500 272767.48ms client=172.21.0.1 req_id=844d9d17d8e3 start_ms=1791435499273 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:07.463Z GET /search 500 263104.32ms client=172.21.0.1 req_id=6046b95ab26b start_ms=1791435509551 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:08.847Z GET /search 500 264424.29ms client=172.21.0.1 req_id=fd1a9dcfe79b start_ms=1791435509616 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:09.224Z POST /tickets 500 274292.78ms client=172.21.0.1 req_id=85397d2bceb4 start_ms=1791435500123 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:10.624Z POST /tickets 500 274310.50ms client=172.21.0.1 req_id=3913ed18c73c start_ms=1791435501506 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:11.331Z GET /search 500 266101.67ms client=172.21.0.1 req_id=a313037c89e4 start_ms=1791435510422 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:12.193Z GET /search 500 263561.02ms client=172.21.0.1 req_id=fea001fd0e3d start_ms=1791435515460 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:13.709Z GET /search 500 265755.71ms client=172.21.0.1 req_id=6233887e73d5 start_ms=1791435513841 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:14.365Z POST /tickets 500 277597.14ms client=172.21.0.1 req_id=6e810dd68965 start_ms=1791435501961 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:14.492Z GET /search 500 266376.04ms client=172.21.0.1 req_id=959927a22096 start_ms=1791435514944 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:15.519Z POST /tickets 500 278253.25ms client=172.21.0.1 req_id=5905eca568e8 start_ms=1791435502458 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:16.084Z GET /search 500 269361.70ms client=172.21.0.1 req_id=19ac2f408629 start_ms=1791435511914 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:17.299Z GET /search 500 269217.83ms client=172.21.0.1 req_id=bd978e542767 start_ms=1791435513969 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:19.814Z POST /tickets 500 281387.92ms client=172.21.0.1 req_id=14916bf116a2 start_ms=1791435501958 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:20.102Z GET /search 500 270822.83ms client=172.21.0.1 req_id=53e61f9e8b46 start_ms=1791435512811 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:20.629Z POST /tickets 500 281069.38ms client=172.21.0.1 req_id=c690ba823a29 start_ms=1791435503091 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:22.047Z POST /tickets 500 281902.98ms client=172.21.0.1 req_id=30c2c6932f02 start_ms=1791435503675 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:23.496Z GET /search 500 272844.15ms client=172.21.0.1 req_id=238797099865 start_ms=1791435515819 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:24.472Z POST /tickets 500 285094.79ms client=172.21.0.1 req_id=90fed9612728 start_ms=1791435502909 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:24.858Z GET /search 500 274078.59ms client=172.21.0.1 req_id=0184788438c0 start_ms=1791435515947 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:27.464Z GET /search 500 276399.09ms client=172.21.0.1 req_id=273d67721adb start_ms=1791435516232 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:28.281Z POST /tickets 500 287409.41ms client=172.21.0.1 req_id=c7c2af1662d1 start_ms=1791435504404 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:29.017Z GET /search 500 277559.21ms client=172.21.0.1 req_id=a5f2d7c37238 start_ms=1791435516625 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:29.219Z POST /tickets 500 286794.47ms client=172.21.0.1 req_id=79ad833485cf start_ms=1791435505956 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:32.345Z POST /tickets 500 289728.46ms client=172.21.0.1 req_id=7eb661dbac05 start_ms=1791435506149 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:32.900Z GET /search 500 282103.17ms client=172.21.0.1 req_id=78a1b28f02c9 start_ms=1791435515964 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:34.329Z GET /search 500 281873.29ms client=172.21.0.1 req_id=0879b26d98bf start_ms=1791435517623 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:34.372Z GET /search 500 281725.98ms client=172.21.0.1 req_id=222d92bf0591 start_ms=1791435517814 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:35.113Z POST /tickets 500 290475.68ms client=172.21.0.1 req_id=9631c41dca7f start_ms=1791435508169 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:36.139Z GET /search 500 282822.00ms client=172.21.0.1 req_id=b16f6545dd16 start_ms=1791435518484 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:36.809Z POST /tickets 500 291786.24ms client=172.21.0.1 req_id=85e2461b5b63 start_ms=1791435508554 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:38.651Z POST /tickets 500 293279.92ms client=172.21.0.1 req_id=f3f35193575f start_ms=1791435508903 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:40.509Z GET /search 500 286281.84ms client=172.21.0.1 req_id=148b7422baa4 start_ms=1791435519395 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:40.700Z POST /tickets 500 297195.03ms client=172.21.0.1 req_id=bd46f25e9b7e start_ms=1791435507036 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:41.711Z POST /tickets 500 293754.42ms client=172.21.0.1 req_id=e4b6e92cd86d start_ms=1791435511488 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:42.992Z GET /search 500 287676.93ms client=172.21.0.1 req_id=012c9bd5eed2 start_ms=1791435520483 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:43.716Z POST /tickets 500 297706.77ms client=172.21.0.1 req_id=5131eb582791 start_ms=1791435509540 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:44.636Z POST /tickets 500 297846.81ms client=172.21.0.1 req_id=8ef6beecdab6 start_ms=1791435510321 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:45.371Z GET /search 500 288457.06ms client=172.21.0.1 req_id=bb084be44289 start_ms=1791435522081 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:45.793Z POST /tickets 500 297670.38ms client=172.21.0.1 req_id=2867226c8dba start_ms=1791435511654 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:46.028Z GET /search 500 289110.73ms client=172.21.0.1 req_id=56e4c16b5594 start_ms=1791435522084 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:46.154Z GET /search 500 288655.51ms client=172.21.0.1 req_id=6ec17a5161fe start_ms=1791435522666 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:47.181Z GET /search 500 289648.12ms client=172.21.0.1 req_id=403eb6277f09 start_ms=1791435522700 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:47.746Z GET /search 500 290148.14ms client=172.21.0.1 req_id=3a7039f6e97c start_ms=1791435522765 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:47.800Z POST /tickets 500 295374.20ms client=172.21.0.1 req_id=697bafc3b123 start_ms=1791435517593 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:48.961Z GET /search 500 290883.92ms client=172.21.0.1 req_id=5cc5f500bdf9 start_ms=1791435523244 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:51.613Z POST /tickets 500 299501.77ms client=172.21.0.1 req_id=eb49f8178d8e start_ms=1791435515599 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:51.783Z GET /search 500 291504.48ms client=172.21.0.1 req_id=1da6a1e278b6 start_ms=1791435523766 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:52.310Z GET /search 500 291485.20ms client=172.21.0.1 req_id=9264035f1222 start_ms=1791435524312 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:54.309Z POST /tickets 500 299312.11ms client=172.21.0.1 req_id=3a8953fc37ec start_ms=1791435518485 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:55.177Z GET /search 500 293221.75ms client=172.21.0.1 req_id=43a3a69b3c94 start_ms=1791435525443 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:55.234Z POST /tickets 500 299816.78ms client=172.21.0.1 req_id=fb11534610b4 start_ms=1791435518905 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:56.154Z GET /search 500 293867.77ms client=172.21.0.1 req_id=f44f2a2fb3ec start_ms=1791435525774 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:57.470Z POST /tickets 500 301951.05ms client=172.21.0.1 req_id=e9cc0ace0be7 start_ms=1791435519007 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:59.144Z GET /search 500 295991.85ms client=172.21.0.1 req_id=8c039542892a start_ms=1791435526640 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:03:59.963Z GET /search 500 296241.46ms client=172.21.0.1 req_id=3f1bfab50b2c start_ms=1791435527209 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:00.043Z POST /tickets 500 303285.78ms client=172.21.0.1 req_id=4fd06caa9a20 start_ms=1791435520245 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:00.698Z GET /search 500 299689.29ms client=172.21.0.1 req_id=ffa0be8ac1b8 start_ms=1791435524496 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:00.901Z GET /search 500 297134.24ms client=172.21.0.1 req_id=f1a82820bd28 start_ms=1791435527254 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:01.528Z POST /tickets 500 304698.23ms client=172.21.0.1 req_id=5e79263fd304 start_ms=1791435520317 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:04.028Z GET /search 500 299950.44ms client=172.21.0.1 req_id=c08a8476fc84 start_ms=1791435527565 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:04.278Z POST /tickets 500 306383.34ms client=172.21.0.1 req_id=bf23535b6e68 start_ms=1791435521382 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:04.581Z GET /search 500 300421.52ms client=172.21.0.1 req_id=98d0d1cc0cae start_ms=1791435527647 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:05.485Z POST /tickets 500 305628.33ms client=172.21.0.1 req_id=6244ed68977b start_ms=1791435523345 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:06.010Z GET /search 500 300795.49ms client=172.21.0.1 req_id=b714e0012e4c start_ms=1791435528702 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:06.053Z GET /search 500 300556.50ms client=172.21.0.1 req_id=46494703548d start_ms=1791435528984 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:07.588Z POST /tickets 500 305946.54ms client=172.21.0.1 req_id=5b61031cec16 start_ms=1791435525129 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:08.490Z GET /search 500 301734.59ms client=172.21.0.1 req_id=b958a8de0c5f start_ms=1791435530243 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:08.602Z POST /tickets 500 306018.67ms client=172.21.0.1 req_id=0739ea54e88b start_ms=1791435526071 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:10.332Z GET /search 500 302858.31ms client=172.21.0.1 req_id=9959f69d5338 start_ms=1791435530962 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:11.139Z POST /tickets 500 304867.38ms client=172.21.0.1 req_id=854324f90374 start_ms=1791435529759 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:12.190Z GET /search 500 303315.75ms client=172.21.0.1 req_id=6c84dac04480 start_ms=1791435532362 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:12.198Z POST /tickets 200 368534.54ms client=172.21.0.1 req_id=4d22ac05dcae start_ms=1791435463899 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=84 category="Credit reporting" ollama_total_ms=2290.7 ollama_load_ms=1.2 prompt_tokens=571 prompt_eval_ms=1398.8 eval_tokens=9 eval_ms=275.9
+2026-10-08T05:04:12.224Z POST /tickets 500 305595.56ms client=172.21.0.1 req_id=5cbef12d61f1 start_ms=1791435530116 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:12.230Z GET /search 200 302735.41ms client=172.21.0.1 req_id=5d79e889303a start_ms=1791435532982 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:14.637Z GET /search 500 306704.50ms client=172.21.0.1 req_id=29b6fad13356 start_ms=1791435531421 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:15.795Z GET /search 500 305664.57ms client=172.21.0.1 req_id=e870fa25a076 start_ms=1791435533618 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:17.617Z POST /tickets 500 308001.94ms client=172.21.0.1 req_id=a680b3b0761c start_ms=1791435533103 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:18.862Z GET /search 500 306551.10ms client=172.21.0.1 req_id=4e874356deb4 start_ms=1791435535798 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:19.427Z GET /search 500 306661.33ms client=172.21.0.1 req_id=64224ba6394b start_ms=1791435536253 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:19.481Z GET /search 500 309166.86ms client=172.21.0.1 req_id=1ec42c863306 start_ms=1791435533802 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:19.487Z POST /tickets 200 375540.80ms client=172.21.0.1 req_id=c3d06377d5e8 start_ms=1791435464183 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b ticket_id=85 category="Consumer loan" ollama_total_ms=2624.0 ollama_load_ms=1.6 prompt_tokens=458 prompt_eval_ms=635.1 eval_tokens=9 eval_ms=264.3
+2026-10-08T05:04:19.509Z GET /search 500 309641.36ms client=172.21.0.1 req_id=3f3e9e439620 start_ms=1791435533356 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:23.439Z GET /search 500 311332.99ms client=172.21.0.1 req_id=3d0ea880c551 start_ms=1791435533939 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:23.628Z POST /tickets 500 314496.05ms client=172.21.0.1 req_id=459b99e03b69 start_ms=1791435530966 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:23.964Z GET /search 500 307463.49ms client=172.21.0.1 req_id=156105245edc start_ms=1791435538334 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:24.531Z POST /tickets 500 312303.06ms client=172.21.0.1 req_id=6cc9018f4050 start_ms=1791435534062 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:26.048Z POST /tickets 500 312305.56ms client=172.21.0.1 req_id=e718377b7728 start_ms=1791435535576 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:26.832Z GET /search 500 311017.60ms client=172.21.0.1 req_id=5f69acdcc446 start_ms=1791435537648 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:26.889Z GET /search 500 311039.42ms client=172.21.0.1 req_id=1d637526c510 start_ms=1791435537683 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:27.154Z POST /tickets 500 312733.28ms client=172.21.0.1 req_id=534750267107 start_ms=1791435536255 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:29.124Z POST /tickets 500 313454.46ms client=172.21.0.1 req_id=5a70b2200ccc start_ms=1791435537503 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:29.128Z GET /search 500 312906.13ms client=172.21.0.1 req_id=0983203ac3d7 start_ms=1791435538056 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:30.443Z POST /tickets 500 314411.01ms client=172.21.0.1 req_id=b7ceb2aba7fb start_ms=1791435537866 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:32.355Z GET /search 500 314150.89ms client=172.21.0.1 req_id=8776009a8d36 start_ms=1791435540038 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:32.362Z POST /tickets 500 317334.96ms client=172.21.0.1 req_id=01a8d05d6fed start_ms=1791435536860 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:32.557Z GET /search 500 314289.42ms client=172.21.0.1 req_id=327ef80007c5 start_ms=1791435540101 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:33.185Z GET /search 500 314707.03ms client=172.21.0.1 req_id=92a0408334cc start_ms=1791435540311 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:34.730Z POST /tickets 500 317647.96ms client=172.21.0.1 req_id=d7fa336b753e start_ms=1791435538916 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:35.684Z GET /search 500 316925.05ms client=172.21.0.1 req_id=28326ed193d2 start_ms=1791435540592 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:35.933Z GET /search 500 316952.31ms client=172.21.0.1 req_id=5832241f8309 start_ms=1791435540814 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:36.442Z POST /tickets 500 318425.34ms client=172.21.0.1 req_id=2bb4b257f7c7 start_ms=1791435539850 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:38.226Z POST /tickets 500 321913.99ms client=172.21.0.1 req_id=f9393c155f94 start_ms=1791435538145 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:39.243Z GET /search 500 319009.50ms client=172.21.0.1 req_id=30de44ad6773 start_ms=1791435542067 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:40.795Z POST /tickets 500 321683.11ms client=172.21.0.1 req_id=0f7dfaa5efe3 start_ms=1791435540946 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:41.777Z POST /tickets 500 322507.69ms client=172.21.0.1 req_id=1ff15267af14 start_ms=1791435541103 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:41.989Z GET /search 500 320237.38ms client=172.21.0.1 req_id=ac864584dee4 start_ms=1791435543585 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:42.793Z GET /search 500 320712.03ms client=172.21.0.1 req_id=5dda289cb518 start_ms=1791435543915 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:43.604Z POST /tickets 500 323958.89ms client=172.21.0.1 req_id=91ecdec032c6 start_ms=1791435541478 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:43.849Z GET /search 500 321416.94ms client=172.21.0.1 req_id=8cb40258b6ed start_ms=1791435544266 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:43.879Z GET /search 500 321211.93ms client=172.21.0.1 req_id=8c0c29ea3786 start_ms=1791435544500 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:43.921Z GET /search 500 320946.49ms client=172.21.0.1 req_id=036b7f89a56d start_ms=1791435545510 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:45.317Z POST /tickets 500 324575.97ms client=172.21.0.1 req_id=408e97e65437 start_ms=1791435542575 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:47.450Z GET /search 500 324139.25ms client=172.21.0.1 req_id=6d98a65a6370 start_ms=1791435546798 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:47.932Z POST /tickets 500 327037.51ms client=172.21.0.1 req_id=6b9e287a3aed start_ms=1791435542728 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:49.272Z GET /search 500 325717.73ms client=172.21.0.1 req_id=6613c1db8901 start_ms=1791435547041 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:49.310Z POST /tickets 500 326508.24ms client=172.21.0.1 req_id=0d19a4403c55 start_ms=1791435544635 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:50.518Z GET /search 500 326826.79ms client=172.21.0.1 req_id=d90f9b27db5a start_ms=1791435547177 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:51.082Z GET /search 500 327359.14ms client=172.21.0.1 req_id=4961a8030746 start_ms=1791435547210 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:51.137Z GET /search 500 326358.97ms client=172.21.0.1 req_id=b000393e685f start_ms=1791435548264 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:51.167Z GET /search 500 326246.68ms client=172.21.0.1 req_id=a384dbf0e05b start_ms=1791435548406 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:51.201Z POST /tickets 500 328054.82ms client=172.21.0.1 req_id=3f27cbdda3c3 start_ms=1791435546633 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:55.082Z GET /search 500 328701.13ms client=172.21.0.1 req_id=eeaf59fdf2fe start_ms=1791435548227 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:55.118Z POST /tickets 500 328906.10ms client=172.21.0.1 req_id=dad0128ba566 start_ms=1791435548058 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:55.270Z GET /search 500 328575.57ms client=172.21.0.1 req_id=ae27df7c381b start_ms=1791435548541 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:55.606Z GET /search 500 328454.45ms client=172.21.0.1 req_id=8ab6dad8b263 start_ms=1791435548998 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:56.173Z GET /search 500 328415.16ms client=172.21.0.1 req_id=51408c52ec2a start_ms=1791435549604 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:57.689Z GET /search 500 329410.11ms client=172.21.0.1 req_id=daf2c68dd8fd start_ms=1791435550125 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:58.532Z GET /search 500 330072.82ms client=172.21.0.1 req_id=372576bd6158 start_ms=1791435550305 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:58.796Z GET /search 500 330138.29ms client=172.21.0.1 req_id=ebb4b811da57 start_ms=1791435550504 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:04:59.983Z POST /tickets 500 334111.01ms client=172.21.0.1 req_id=e6a7023ad548 start_ms=1791435547718 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:00.770Z GET /search 500 331367.32ms client=172.21.0.1 req_id=90aabe5ae41a start_ms=1791435551248 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:02.086Z GET /search 500 331989.84ms client=172.21.0.1 req_id=be84f3dbc28f start_ms=1791435551942 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:03.579Z POST /tickets 500 334740.82ms client=172.21.0.1 req_id=187e1520020d start_ms=1791435550684 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:03.997Z GET /search 500 333870.72ms client=172.21.0.1 req_id=9797c7b35ec1 start_ms=1791435551972 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:04.003Z GET /search 500 333730.34ms client=172.21.0.1 req_id=d67cc6d3dad8 start_ms=1791435552119 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:04.198Z GET /search 500 333831.87ms client=172.21.0.1 req_id=d58097ef48cf start_ms=1791435552213 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:04.826Z GET /search 500 336330.84ms client=172.21.0.1 req_id=2529914e2976 start_ms=1791435550341 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:06.372Z GET /search 500 336053.14ms client=172.21.0.1 req_id=14e76cadadeb start_ms=1791435552165 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:07.325Z GET /search 500 336896.73ms client=172.21.0.1 req_id=19b18dcd0c29 start_ms=1791435552274 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:07.575Z GET /search 500 336979.11ms client=172.21.0.1 req_id=a8d29dbcdd62 start_ms=1791435552442 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:08.083Z GET /search 500 337264.80ms client=172.21.0.1 req_id=d3f992c9f87f start_ms=1791435552664 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:10.885Z GET /search 500 338693.65ms client=172.21.0.1 req_id=2a22edacd922 start_ms=1791435554038 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:12.437Z GET /search 500 340174.38ms client=172.21.0.1 req_id=2c9a535769dd start_ms=1791435554108 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:12.842Z POST /tickets 500 341550.40ms client=172.21.0.1 req_id=a02d632e1848 start_ms=1791435553138 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:13.420Z GET /search 500 340870.69ms client=172.21.0.1 req_id=7bff8b0f6fbf start_ms=1791435554395 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:13.632Z GET /search 500 340867.34ms client=172.21.0.1 req_id=78fa890dcffd start_ms=1791435554610 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:14.436Z GET /search 500 340859.91ms client=172.21.0.1 req_id=e641987999d7 start_ms=1791435555422 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:15.245Z GET /search 500 341432.66ms client=172.21.0.1 req_id=75b9172a04e4 start_ms=1791435555658 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:15.491Z GET /search 500 341194.05ms client=172.21.0.1 req_id=7b318b45d02e start_ms=1791435556143 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:15.562Z GET /search 500 340437.80ms client=172.21.0.1 req_id=b439cc1a5246 start_ms=1791435556970 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:16.658Z POST /tickets 500 341881.36ms client=172.21.0.1 req_id=0858373b94c2 start_ms=1791435556622 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:19.092Z GET /search 500 343332.50ms client=172.21.0.1 req_id=a388477813da start_ms=1791435557605 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:19.174Z POST /tickets 500 343805.51ms client=172.21.0.1 req_id=3a63ce07deac start_ms=1791435557215 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:20.914Z GET /search 500 344758.60ms client=172.21.0.1 req_id=12f3e3151edc start_ms=1791435558001 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:20.952Z GET /search 500 344730.20ms client=172.21.0.1 req_id=f51db4564921 start_ms=1791435558068 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:21.231Z POST /tickets 500 345176.52ms client=172.21.0.1 req_id=f2c13fca3981 start_ms=1791435557901 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:22.725Z GET /search 500 348397.57ms client=172.21.0.1 req_id=6f0ead576273 start_ms=1791435556173 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:22.778Z GET /search 500 346463.25ms client=172.21.0.1 req_id=82d0a5229c0d start_ms=1791435558161 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:22.808Z GET /search 500 346425.31ms client=172.21.0.1 req_id=12e59d687867 start_ms=1791435558229 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:22.843Z GET /search 500 345908.94ms client=172.21.0.1 req_id=0892e819900a start_ms=1791435558781 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:24.125Z POST /tickets 500 347881.15ms client=172.21.0.1 req_id=0564ee55dd60 start_ms=1791435558089 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:26.781Z GET /search 500 348045.01ms client=172.21.0.1 req_id=2c5d70d9058d start_ms=1791435558920 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:26.933Z GET /search 500 347960.70ms client=172.21.0.1 req_id=d089406f5818 start_ms=1791435559157 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:27.269Z GET /search 500 348198.52ms client=172.21.0.1 req_id=d59bc143a1cd start_ms=1791435559254 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:27.835Z GET /search 500 348173.46ms client=172.21.0.1 req_id=092322058091 start_ms=1791435559846 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:28.367Z POST /tickets 500 349721.31ms client=172.21.0.1 req_id=ba016719b37b start_ms=1791435558830 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:30.459Z GET /search 500 350221.71ms client=172.21.0.1 req_id=adcf6820da08 start_ms=1791435560422 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:31.040Z POST /tickets 500 351205.15ms client=172.21.0.1 req_id=97ad76dee76a start_ms=1791435560019 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:31.647Z GET /search 500 350915.36ms client=172.21.0.1 req_id=0fdf24f99e8a start_ms=1791435560916 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:32.433Z GET /search 500 351658.81ms client=172.21.0.1 req_id=5de0ac9696eb start_ms=1791435560959 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:33.444Z POST /tickets 500 353262.07ms client=172.21.0.1 req_id=2efd13a966de start_ms=1791435560366 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:33.751Z GET /search 500 352696.93ms client=172.21.0.1 req_id=f18e353f4653 start_ms=1791435561239 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:35.242Z GET /search 500 353834.61ms client=172.21.0.1 req_id=b80318f99764 start_ms=1791435561592 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:35.659Z GET /search 500 354208.08ms client=172.21.0.1 req_id=958373c6fddc start_ms=1791435561636 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:35.861Z GET /search 500 354111.45ms client=172.21.0.1 req_id=58a986dd7d7b start_ms=1791435561934 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:38.036Z GET /search 500 356102.96ms client=172.21.0.1 req_id=8110c0269ef7 start_ms=1791435562117 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:38.268Z POST /tickets 500 356706.83ms client=172.21.0.1 req_id=2a7acf48f9bf start_ms=1791435561745 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:38.989Z GET /search 500 356964.86ms client=172.21.0.1 req_id=b79eddb8dbb8 start_ms=1791435562208 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:39.238Z GET /search 500 357160.78ms client=172.21.0.1 req_id=8b880d561da5 start_ms=1791435562262 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:39.733Z POST /tickets 500 357829.02ms client=172.21.0.1 req_id=2c7972a44219 start_ms=1791435562088 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:39.747Z GET /search 500 357368.75ms client=172.21.0.1 req_id=24fd0ea32ede start_ms=1791435562562 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:42.548Z GET /search 500 360115.56ms client=172.21.0.1 req_id=8b14317e7bb4 start_ms=1791435562617 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
+2026-10-08T05:05:44.100Z GET /search 500 361292.39ms client=172.21.0.1 req_id=34315bc81936 start_ms=1791435562992 run=phi3-3.8b_load_mix-peak_run2 model=phi3:3.8b
