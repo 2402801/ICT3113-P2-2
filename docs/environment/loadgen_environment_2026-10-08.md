@@ -10,9 +10,9 @@ Generated 2026-10-08T04:27:08Z by `scripts/record_loadgen_environment.ps1` on th
 | RAM | 15.7 GB |
 | OS | Microsoft Windows 11 Home 10.0.26300 (build 26300) |
 | Java | openjdk version "17.0.20.1" 2026-08-18 |
-| JMeter | not on PATH - fill in the JMeter version used |
+| JMeter | Apache JMeter 5.6.3 (C:\Users\natli\tools\apache-jmeter-5.6.3\bin\jmeter.bat) |
 | Adapter | Wi-Fi - Killer(TM) Wi-Fi 7 BE1750x 320MHz Wireless Network Adapter (BE200NGW), 817 Mbps |
-| Wi-Fi SSID | Nicholas TayΓÇÖs iPhone |
+| Wi-Fi SSID | Nicholas Tay’s iPhone |
 | This machine's IPv4 | 172.20.10.4 |
 | SUT target | http://172.20.10.2:8000 |
 | Separate machines? | yes - load generator 172.20.10.4, SUT 172.20.10.2 |
