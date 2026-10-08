@@ -1,0 +1,2 @@
+2026-10-08T06:56:45.329Z GET /health 200 0.70ms client=172.21.0.1 req_id=cb3e2ee1f7f0 start_ms=1791442605328 run=- model=mistral:7b
+2026-10-08T09:15:09.075Z GET /health 200 75.57ms client=172.21.0.1 req_id=baa7ae532935 start_ms=1791450908992 run=- model=mistral:7b
