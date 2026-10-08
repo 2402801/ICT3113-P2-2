@@ -1,0 +1,23 @@
+{
+    "run_id":  "mistral-7b_load_tkt-peak_run3",
+    "test_type":  "load",
+    "config":  "tkt-peak",
+    "run":  3,
+    "tester":  "P2",
+    "model":  "mistral:7b",
+    "model_digest":  "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "a73f8a604d1e282bec77100ff311aea6cf64f745",
+    "git_branch":  "dev",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  100,
+    "power_mode":  "Best performance",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://172.20.10.2:8000",
+    "ready_at_utc":  "2026-10-08T06:28:30Z",
+    "notes":  "Legion Performance; tickets only at 3,936/h; 5 min send, 295 s timeout; hotspot"
+}
