@@ -1,0 +1,2 @@
+NAME          ID              SIZE      PROCESSOR    CONTEXT    UNTIL   
+mistral:7b    6577803aa9a0    5.0 GB    100% CPU     4096       Forever    
