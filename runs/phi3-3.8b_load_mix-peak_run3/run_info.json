@@ -1,0 +1,23 @@
+{
+    "run_id":  "phi3-3.8b_load_mix-peak_run3",
+    "test_type":  "load",
+    "config":  "mix-peak",
+    "run":  3,
+    "tester":  "P2",
+    "model":  "phi3:3.8b",
+    "model_digest":  "4f222292793889a9a40a020799cfd28d53f3e01af25d48e06c5e708610fc47e9",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "a7fa436e90f6432b1c98bb397583d39cf451d983",
+    "git_branch":  "dev",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  100,
+    "power_mode":  "Best performance",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://172.20.10.2:8000",
+    "ready_at_utc":  "2026-10-08T05:07:36Z",
+    "notes":  "Legion Performance; tickets at 3,936/h + search at 7,872/h; 5 min send, 295 s timeout; hotspot"
+}
