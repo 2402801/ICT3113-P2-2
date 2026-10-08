@@ -5,13 +5,15 @@ import json
 import math
 import random
 import statistics
+import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from itertools import combinations
 from pathlib import Path
 
-from reconcile import reconcile
-from runlib import (
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "analysis"))  # shared run/log helpers live there
+from reconcile import reconcile  # noqa: E402
+from runlib import (  # noqa: E402
     CATEGORIES, MIN_RUNS, OUTPUT_DIR, fmt_spread, load_exclusions, load_runs, md_table, percentile,
     read_accuracy_rows, spread, write_csv,
 )
