@@ -7,3 +7,8 @@ gemma4-e4b_stress_ramp_run1,"invalid: run with P5's original closed-model plan (
 gemma4-e4b_load_tkt-normal_run2-dropped,"not used: phone hotspot disconnected during the run; redone as gemma4-e4b_load_tkt-normal_run2"
 gemma4-e4b_accuracy_golden175_run2,"interrupted and resumed twice; result CSV overwritten during a GitHub Desktop stash restore, so 8 logged requests (server ticket ids 85-91, 94) have no matching CSV row; replaced by gemma4-e4b_accuracy_golden175_run4"
 mistral-7b_load_mix-peak_run2-noconnect,"not used: no traffic reached the SUT (981 x Connect timed out) after the SUT slept while READY; redone as mistral-7b_load_mix-peak_run2"
+phi3-3.8b_load_tkt-normal_run1-noconnect,"not used: no traffic reached the SUT (SUT on SIT-WIFI, JMeter targeted the hotspot IP; 107 x Connect timed out); redone as phi3-3.8b_load_tkt-normal_run1"
+phi3-3.8b_load_tkt-normal_run1-refused,"not used: no traffic reached the SUT (P2 on a different network; 107 x Connection refused at 192.168.0.100:8000)"
+phi3-3.8b_accuracy_golden175_run1,"environment failure: 1 of 175 requests returned 502 (Ollama HTTP 500: model runner has unexpectedly stopped, resource limitations or internal error); replaced by phi3-3.8b_accuracy_golden175_run4"
+phi3-3.8b_accuracy_golden175_run2,"environment failure: 1 of 175 requests returned 502 (Ollama HTTP 500: model runner has unexpectedly stopped, resource limitations or internal error); replaced by phi3-3.8b_accuracy_golden175_run5"
+phi3-3.8b_accuracy_golden175_run3,"environment failure: 2 of 175 requests returned 502 (Ollama HTTP 500: model runner has unexpectedly stopped, resource limitations or internal error); replaced by phi3-3.8b_accuracy_golden175_run6"
