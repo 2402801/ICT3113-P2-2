@@ -220,9 +220,9 @@ __marimo__/
 # JMeter load generator outputs (scratch — copy a reported run's results into runs/ instead)
 load-generator/data/*.jsonl
 load-generator/results/*.jtl
-load-generator/results/*_accuracy.csv
-load-generator/results/*_accuracy.meta.json
 load-generator/results/report/
+# accuracy_test.py scratch output
+accuracy/results/
 load-generator/jmeter.log
 
 # Server access log (scratch — copy a reported run's log into runs/ instead)
