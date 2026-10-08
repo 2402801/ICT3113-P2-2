@@ -9,7 +9,7 @@
     "prompt_version":  "v1",
     "think":  "default",
     "ollama_version":  "0.34.4",
-    "git_commit":  "35d2ff84011000b9be5e0298fd2a10a9060cd47d",
+    "git_commit":  "5ead1f5c56d07c22038432ed2fe6dedda9b2d4a8",
     "git_branch":  "dev",
     "git_dirty":  false,
     "on_ac_power":  true,
@@ -18,6 +18,6 @@
     "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
     "warmup_count":  1,
     "sut_url":  "http://172.20.10.2:8000",
-    "ready_at_utc":  "2026-10-08T06:56:49Z",
-    "notes":  "Legion Performance; tickets at 3,936/h + search at 7,872/h; 5 min send, 295 s timeout; hotspot"
+    "ready_at_utc":  "2026-10-08T09:21:04Z",
+    "notes":  "Legion Performance; tickets at 3,936/h + search at 7,872/h; 5 min send, 295 s timeout; hotspot; redo of run2-noconnect; SUT AC sleep set to Never"
 }
