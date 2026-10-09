@@ -6,7 +6,7 @@
     scripts\p1\prepare_run.ps1 -TestType accuracy  ->  accuracy\accuracy_test.py  ->  scripts\p1\finish_run.ps1
   The accuracy CSV and .meta.json are written straight into runs\<run-id>\, so nothing needs copying.
   At the end it runs analysis\reconcile.py and accuracy\accuracy_report.py.
-  The full test procedure is in accuracy\ACCURACY_PLAYBOOK.md.
+  The full test procedure is in docs\ACCURACY_PLAYBOOK.md.
 
   Safe to re-run after a crash or Ctrl+C: finished runs are skipped, and a run that was prepared but
   not finished is resumed (accuracy_test.py --resume) and then finished.
