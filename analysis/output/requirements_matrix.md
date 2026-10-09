@@ -82,11 +82,11 @@ HTTP 500 = sqlalchemy QueuePool timeout per the register notes; 502 = classifica
 
 ## Accuracy runs vs the official SUT (same golden ticket)
 
-Golden-set tickets that were also sent during load, stress or smoke runs on the official SUT, compared with the categories the counted accuracy runs gave the same ticket.
+Golden-set tickets that were also sent during load or stress runs on the official SUT, compared with the categories the counted accuracy runs gave the same ticket.
 
 | Model | Golden tickets seen on the SUT | SUT answers | Same category |
 |---|---|---|---|
-| llama3.2:1b | 23 | 174 | 23/23 |
+| llama3.2:1b | 23 | 165 | 23/23 |
 | phi3:3.8b | 16 | 81 | 16/16 |
 | mistral:7b | 9 | 53 | 9/9 |
 | gemma4:e4b | 2 | 2 | 2/2 |
