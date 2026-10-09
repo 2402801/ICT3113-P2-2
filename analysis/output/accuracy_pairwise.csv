@@ -1,0 +1,7 @@
+group_a,group_b,tickets,accuracy_a_pct,accuracy_b_pct,both_correct,a_only_correct,b_only_correct,both_wrong,split_tickets_a,split_tickets_b,p_exact,p_holm
+gemma4-e4b_accuracy_golden175,llama3.2-1b_accuracy_golden175,175,84.571,34.857,57,91,4,23,13,0,0.0,0.0
+gemma4-e4b_accuracy_golden175,mistral-7b_accuracy_golden175,175,84.571,73.143,121,27,7,20,13,0,0.001,0.002
+gemma4-e4b_accuracy_golden175,phi3-3.8b_accuracy_golden175,175,84.571,73.143,122,26,6,21,13,0,0.001,0.002
+llama3.2-1b_accuracy_golden175,mistral-7b_accuracy_golden175,175,34.857,73.143,57,4,71,43,0,0,0.0,0.0
+llama3.2-1b_accuracy_golden175,phi3-3.8b_accuracy_golden175,175,34.857,73.143,52,9,76,38,0,0,0.0,0.0
+mistral-7b_accuracy_golden175,phi3-3.8b_accuracy_golden175,175,73.143,73.143,106,22,22,25,0,0,1.0,1.0

@@ -21,7 +21,7 @@ services:
       retries: 20
 
   ollama:
-    # Pinned version: the same Ollama build for every official run (see docs/P1_SUT_RUNBOOK.md).
+    # Pinned version: the same Ollama build for every official run (see docs/LOAD_TEST_PLAYBOOK.md).
     image: ollama/ollama:0.34.4
     restart: unless-stopped
     # No GPU devices are passed through to this container, so inference is CPU-only.

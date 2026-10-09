@@ -1,0 +1,21 @@
+[
+    {
+        "name":  "phi3:3.8b",
+        "model":  "phi3:3.8b",
+        "size":  3859588054,
+        "digest":  "4f222292793889a9a40a020799cfd28d53f3e01af25d48e06c5e708610fc47e9",
+        "details":  {
+                        "parent_model":  "",
+                        "format":  "gguf",
+                        "family":  "phi3",
+                        "families":  [
+                                         "phi3"
+                                     ],
+                        "parameter_size":  "3.8B",
+                        "quantization_level":  "Q4_0"
+                    },
+        "expires_at":  "2319-01-18T04:12:58.890244764Z",
+        "size_vram":  0,
+        "context_length":  4096
+    }
+]

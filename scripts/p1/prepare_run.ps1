@@ -37,7 +37,7 @@ Write-Ok "Model $model, digest $($digest.Substring(0, 12)) matches the pin"
 
 $git = Get-GitInfo
 if ($git.dirty -and -not $AllowDirty) {
-    throw "Uncommitted changes outside runs/ and docs/environment/:`n$($git.dirty_files -join "`n")`nCommit first so this run maps to one exact commit."
+    throw "Uncommitted changes outside runs/ and tests/environment/:`n$($git.dirty_files -join "`n")`nCommit first so this run maps to one exact commit."
 }
 Write-Ok "Git $($git.branch) @ $($git.commit.Substring(0, 12))$(if ($git.dirty) { ' (DIRTY - not official)' })"
 

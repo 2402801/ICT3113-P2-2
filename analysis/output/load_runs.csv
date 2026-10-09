@@ -1,0 +1,55 @@
+run_id,group,model,test_type,config,run,reconciliation,duration_s,label,samples,ok,error_pct,ok_per_hour,mean_ms,p50_ms,p90_ms,p95_ms,p99_ms,max_ms
+gemma4-e4b_load_mix-peak_run1,gemma4-e4b_load_mix-peak,gemma4:e4b,load,mix-peak,1,WARN,593.233,GET /search,654,112,82.875,679.665,26234.009,49.0,95096.5,205135.8,238651.99,274226.0
+gemma4-e4b_load_mix-peak_run1,gemma4-e4b_load_mix-peak,gemma4:e4b,load,mix-peak,1,WARN,593.233,POST /tickets,327,2,99.388,12.137,44003.5,44003.5,55667.9,57125.95,58292.39,58584.0
+gemma4-e4b_load_mix-peak_run2,gemma4-e4b_load_mix-peak,gemma4:e4b,load,mix-peak,2,FAIL,593.205,GET /search,654,101,84.557,612.942,21845.792,49.0,71775.0,160063.0,280418.0,280601.0
+gemma4-e4b_load_mix-peak_run2,gemma4-e4b_load_mix-peak,gemma4:e4b,load,mix-peak,2,FAIL,593.205,POST /tickets,327,2,99.388,12.137,44276.5,44276.5,55475.3,56875.15,57995.03,58275.0
+gemma4-e4b_load_mix-peak_run3,gemma4-e4b_load_mix-peak,gemma4:e4b,load,mix-peak,3,FAIL,593.789,GET /search,654,121,81.498,733.594,26758.198,62.0,128970.0,174736.0,268685.4,275784.0
+gemma4-e4b_load_mix-peak_run3,gemma4-e4b_load_mix-peak,gemma4:e4b,load,mix-peak,3,FAIL,593.789,POST /tickets,327,2,99.388,12.126,42876.0,42876.0,53147.2,54431.1,55458.22,55715.0
+gemma4-e4b_load_tkt-normal_run1,gemma4-e4b_load_tkt-normal,gemma4:e4b,load,tkt-normal,1,FAIL,590.342,POST /tickets,107,4,96.262,24.393,89535.25,91260.0,123995.4,128210.7,131582.94,132426.0
+gemma4-e4b_load_tkt-normal_run2,gemma4-e4b_load_tkt-normal,gemma4:e4b,load,tkt-normal,2,FAIL,589.605,POST /tickets,107,5,95.327,30.529,91182.4,92587.0,137065.6,141969.8,145893.16,146874.0
+gemma4-e4b_load_tkt-normal_run3,gemma4-e4b_load_tkt-normal,gemma4:e4b,load,tkt-normal,3,FAIL,505.386,POST /tickets,107,5,95.327,35.616,78807.6,79419.0,116942.2,122202.6,126410.92,127463.0
+gemma4-e4b_load_tkt-peak_run1,gemma4-e4b_load_tkt-peak,gemma4:e4b,load,tkt-peak,1,WARN,593.767,POST /tickets,327,2,99.388,12.126,43754.5,43754.5,55117.3,56537.65,57673.93,57958.0
+gemma4-e4b_load_tkt-peak_run2,gemma4-e4b_load_tkt-peak,gemma4:e4b,load,tkt-peak,2,WARN,592.896,POST /tickets,327,2,99.388,12.144,41653.0,41653.0,53157.0,54595.0,55745.4,56033.0
+gemma4-e4b_load_tkt-peak_run3,gemma4-e4b_load_tkt-peak,gemma4:e4b,load,tkt-peak,3,FAIL,590.4,POST /tickets,327,2,99.388,12.195,44054.0,44054.0,55204.4,56598.2,57713.24,57992.0
+gemma4-e4b_stress_ramp_run2,gemma4-e4b_stress_ramp,gemma4:e4b,stress,ramp,2,FAIL,1545.053,Recovery POST /tickets,2,2,0.0,4.66,299622.0,299622.0,307254.8,308208.9,308972.18,309163.0
+gemma4-e4b_stress_ramp_run2,gemma4-e4b_stress_ramp,gemma4:e4b,stress,ramp,2,FAIL,1545.053,Step 1 POST /tickets,4,4,0.0,9.32,34982.5,34043.5,41110.7,41718.35,42204.47,42326.0
+gemma4-e4b_stress_ramp_run2,gemma4-e4b_stress_ramp,gemma4:e4b,stress,ramp,2,FAIL,1545.053,Step 2 POST /tickets,6,6,0.0,13.98,37476.333,39455.5,46055.0,46345.5,46577.9,46636.0
+gemma4-e4b_stress_ramp_run2,gemma4-e4b_stress_ramp,gemma4:e4b,stress,ramp,2,FAIL,1545.053,Step 3 POST /tickets,7,7,0.0,16.31,78276.571,81211.0,100274.4,108428.7,114952.14,116583.0
+gemma4-e4b_stress_ramp_run2,gemma4-e4b_stress_ramp,gemma4:e4b,stress,ramp,2,FAIL,1545.053,Step 4 POST /tickets,10,10,0.0,23.3,124301.5,123983.0,147890.2,149790.1,151310.02,151690.0
+gemma4-e4b_stress_ramp_run2,gemma4-e4b_stress_ramp,gemma4:e4b,stress,ramp,2,FAIL,1545.053,Step 5 POST /tickets,12,12,0.0,27.96,215466.583,194465.5,291126.7,297906.0,301505.2,302405.0
+llama3.2-1b_load_mix-peak_run1,llama3.2-1b_load_mix-peak,llama3.2:1b,load,mix-peak,1,WARN,315.473,GET /search,654,654,0.0,7463.079,62.122,53.0,95.0,121.0,209.29,278.0
+llama3.2-1b_load_mix-peak_run1,llama3.2-1b_load_mix-peak,llama3.2:1b,load,mix-peak,1,WARN,315.473,POST /tickets,327,327,0.0,3731.54,15374.826,17909.0,21908.6,23160.8,25921.1,27161.0
+llama3.2-1b_load_mix-peak_run2,llama3.2-1b_load_mix-peak,llama3.2:1b,load,mix-peak,2,WARN,308.413,GET /search,654,654,0.0,7633.919,76.639,63.0,120.0,145.35,253.0,1064.0
+llama3.2-1b_load_mix-peak_run2,llama3.2-1b_load_mix-peak,llama3.2:1b,load,mix-peak,2,WARN,308.413,POST /tickets,327,327,0.0,3816.96,8369.893,8802.0,12841.4,14024.2,15002.5,15289.0
+llama3.2-1b_load_mix-peak_run3,llama3.2-1b_load_mix-peak,llama3.2:1b,load,mix-peak,3,WARN,308.738,GET /search,654,654,0.0,7625.883,61.133,53.0,88.7,104.0,158.94,567.0
+llama3.2-1b_load_mix-peak_run3,llama3.2-1b_load_mix-peak,llama3.2:1b,load,mix-peak,3,WARN,308.738,POST /tickets,327,327,0.0,3812.942,7980.229,7734.0,13042.8,14437.2,15397.14,16837.0
+llama3.2-1b_load_tkt-normal_run1,llama3.2-1b_load_tkt-normal,llama3.2:1b,load,tkt-normal,1,PASS,288.492,POST /tickets,107,107,0.0,1335.219,1271.15,1232.0,1938.2,2493.6,2900.5,3456.0
+llama3.2-1b_load_tkt-normal_run2,llama3.2-1b_load_tkt-normal,llama3.2:1b,load,tkt-normal,2,PASS,298.175,POST /tickets,107,107,0.0,1291.859,1289.346,1233.0,2166.6,2517.9,2736.38,2746.0
+llama3.2-1b_load_tkt-normal_run3,llama3.2-1b_load_tkt-normal,llama3.2:1b,load,tkt-normal,3,WARN,300.544,POST /tickets,107,107,0.0,1281.676,1239.234,1095.0,2200.4,2622.6,2746.38,3280.0
+llama3.2-1b_load_tkt-peak_run1,llama3.2-1b_load_tkt-peak,llama3.2:1b,load,tkt-peak,1,WARN,306.94,POST /tickets,327,327,0.0,3835.277,6441.116,5792.0,11346.8,11859.4,13020.34,13241.0
+llama3.2-1b_load_tkt-peak_run2,llama3.2-1b_load_tkt-peak,llama3.2:1b,load,tkt-peak,2,WARN,306.16,POST /tickets,327,327,0.0,3845.048,9735.373,8836.0,17587.8,22471.5,24412.48,25630.0
+llama3.2-1b_load_tkt-peak_run3,llama3.2-1b_load_tkt-peak,llama3.2:1b,load,tkt-peak,3,WARN,303.998,POST /tickets,327,327,0.0,3872.394,9728.685,7825.0,19964.8,22059.2,25358.44,27378.0
+mistral-7b_load_mix-peak_run1,mistral-7b_load_mix-peak,mistral:7b,load,mix-peak,1,FAIL,593.521,GET /search,654,207,68.349,1255.558,70442.768,4194.0,219186.4,223275.5,225826.76,226872.0
+mistral-7b_load_mix-peak_run1,mistral-7b_load_mix-peak,mistral:7b,load,mix-peak,1,FAIL,593.521,POST /tickets,327,34,89.602,206.227,136724.5,73980.0,291322.7,292580.65,293944.18,294424.0
+mistral-7b_load_mix-peak_run2,mistral-7b_load_mix-peak,mistral:7b,load,mix-peak,2,FAIL,593.041,GET /search,654,247,62.232,1499.39,104885.935,34019.0,269987.4,275506.6,280145.78,280874.0
+mistral-7b_load_mix-peak_run2,mistral-7b_load_mix-peak,mistral:7b,load,mix-peak,2,FAIL,593.041,POST /tickets,327,24,92.661,145.69,50965.292,45796.5,86974.4,87327.0,87764.73,87891.0
+mistral-7b_load_mix-peak_run3,mistral-7b_load_mix-peak,mistral:7b,load,mix-peak,3,FAIL,592.441,GET /search,654,189,71.101,1148.469,40192.709,10118.0,118347.6,121079.0,124012.6,294489.0
+mistral-7b_load_mix-peak_run3,mistral-7b_load_mix-peak,mistral:7b,load,mix-peak,3,FAIL,592.441,POST /tickets,327,32,90.214,194.45,100713.531,107876.5,170486.6,170690.8,218883.91,240441.0
+mistral-7b_load_tkt-normal_run1,mistral-7b_load_tkt-normal,mistral:7b,load,tkt-normal,1,PASS,427.11,POST /tickets,107,107,0.0,901.875,71016.561,70171.0,135784.8,141154.3,150358.32,155190.0
+mistral-7b_load_tkt-normal_run2,mistral-7b_load_tkt-normal,mistral:7b,load,tkt-normal,2,PASS,519.878,POST /tickets,107,107,0.0,740.943,85186.71,56662.0,182498.6,197598.9,221636.5,224716.0
+mistral-7b_load_tkt-normal_run3,mistral-7b_load_tkt-normal,mistral:7b,load,tkt-normal,3,PASS,412.184,POST /tickets,107,107,0.0,934.534,58377.318,52766.0,101017.0,103860.3,111168.2,114429.0
+mistral-7b_load_tkt-peak_run1,mistral-7b_load_tkt-peak,mistral:7b,load,tkt-peak,1,FAIL,593.602,POST /tickets,327,33,89.908,200.134,95209.545,54866.0,178378.2,178962.2,179828.16,180160.0
+mistral-7b_load_tkt-peak_run2,mistral-7b_load_tkt-peak,mistral:7b,load,tkt-peak,2,FAIL,593.608,POST /tickets,327,35,89.297,212.261,104417.2,65744.0,199011.8,200775.1,202447.1,203003.0
+mistral-7b_load_tkt-peak_run3,mistral-7b_load_tkt-peak,mistral:7b,load,tkt-peak,3,FAIL,593.511,POST /tickets,327,33,89.908,200.165,90560.636,61411.0,164875.0,166177.2,167135.52,167196.0
+phi3-3.8b_load_mix-peak_run1,phi3-3.8b_load_mix-peak,phi3:3.8b,load,mix-peak,1,FAIL,592.886,GET /search,654,365,44.19,2216.278,95045.058,30135.0,278094.4,285973.4,291883.8,293364.0
+phi3-3.8b_load_mix-peak_run1,phi3-3.8b_load_mix-peak,phi3:3.8b,load,mix-peak,1,FAIL,592.886,POST /tickets,327,68,79.205,412.896,83660.926,40745.5,185390.2,261979.9,294572.62,294783.0
+phi3-3.8b_load_mix-peak_run2,phi3-3.8b_load_mix-peak,phi3:3.8b,load,mix-peak,2,FAIL,592.843,GET /search,654,349,46.636,2119.279,92088.61,11170.0,231820.0,237627.8,243335.8,244455.0
+phi3-3.8b_load_mix-peak_run2,phi3-3.8b_load_mix-peak,phi3:3.8b,load,mix-peak,2,FAIL,592.843,POST /tickets,327,73,77.676,443.288,94424.671,44119.0,249041.2,286028.6,292274.88,292938.0
+phi3-3.8b_load_mix-peak_run3,phi3-3.8b_load_mix-peak,phi3:3.8b,load,mix-peak,3,FAIL,593.641,GET /search,654,244,62.691,1479.682,34672.865,149.0,117892.2,171707.65,273069.1,274703.0
+phi3-3.8b_load_mix-peak_run3,phi3-3.8b_load_mix-peak,phi3:3.8b,load,mix-peak,3,FAIL,593.641,POST /tickets,327,69,78.899,418.435,80920.188,40063.0,178085.8,219981.0,242704.2,245635.0
+phi3-3.8b_load_tkt-normal_run1,phi3-3.8b_load_tkt-normal,phi3:3.8b,load,tkt-normal,1,PASS,296.184,POST /tickets,107,107,0.0,1300.543,4768.047,3997.0,8749.2,9487.4,11043.56,11146.0
+phi3-3.8b_load_tkt-normal_run2,phi3-3.8b_load_tkt-normal,phi3:3.8b,load,tkt-normal,2,PASS,297.479,POST /tickets,107,107,0.0,1294.881,4733.804,4436.0,8428.4,10052.7,10822.52,11279.0
+phi3-3.8b_load_tkt-normal_run3,phi3-3.8b_load_tkt-normal,phi3:3.8b,load,tkt-normal,3,PASS,301.734,POST /tickets,107,107,0.0,1276.621,4749.869,3825.0,9536.8,10637.8,12159.3,15066.0
+phi3-3.8b_load_tkt-peak_run1,phi3-3.8b_load_tkt-peak,phi3:3.8b,load,tkt-peak,1,FAIL,592.944,POST /tickets,327,89,72.783,540.355,100553.382,65755.0,267713.2,280289.8,289641.32,293303.0
+phi3-3.8b_load_tkt-peak_run2,phi3-3.8b_load_tkt-peak,phi3:3.8b,load,tkt-peak,2,FAIL,592.065,POST /tickets,327,76,76.758,462.111,95727.737,58012.0,248037.0,266097.5,283256.5,285334.0
+phi3-3.8b_load_tkt-peak_run3,phi3-3.8b_load_tkt-peak,phi3:3.8b,load,tkt-peak,3,FAIL,590.503,POST /tickets,327,75,77.064,457.237,92551.467,48091.0,237092.4,271844.1,283885.16,288855.0

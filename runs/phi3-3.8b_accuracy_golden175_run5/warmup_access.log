@@ -1,0 +1,3 @@
+2026-10-07T14:50:37.091Z GET /health 200 1.02ms client=172.18.0.1 req_id=d80c94d65092 start_ms=1791384637090 run=- model=phi3:3.8b
+2026-10-07T14:50:37.206Z GET /health 200 0.64ms client=172.18.0.1 req_id=3e65e23dac6a start_ms=1791384637206 run=- model=phi3:3.8b
+2026-10-07T14:50:40.252Z POST /tickets 200 2853.74ms client=172.18.0.1 req_id=4c50674fd47c start_ms=1791384637398 run=phi3-3.8b_accuracy_golden175_run5-warmup model=phi3:3.8b ticket_id=176 category="Credit card" ollama_total_ms=2783.6 ollama_load_ms=1.2 prompt_tokens=419 prompt_eval_ms=1746.9 eval_tokens=9 eval_ms=1031.1

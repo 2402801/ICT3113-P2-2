@@ -1,0 +1,17 @@
+2026-10-05T09:49:40.693Z GET /health 200 0.74ms client=172.21.0.1 req_id=8a9ccca60ce5 start_ms=1791193780693 run=- model=llama3.2:1b
+2026-10-07T03:52:57.257Z GET /health 200 0.87ms client=172.21.0.1 req_id=7ed8f0752954 start_ms=1791345177256 run=- model=llama3.2:1b
+2026-10-07T03:53:09.349Z GET /health 200 0.75ms client=172.21.0.1 req_id=b0e9a87d4046 start_ms=1791345189348 run=- model=gemma4:e4b
+2026-10-07T03:55:15.483Z GET / 404 0.41ms client=172.21.0.1 req_id=f3e1f0fbe6c8 start_ms=1791345315482 run=- model=gemma4:e4b
+2026-10-07T03:55:15.591Z GET /favicon.ico 404 0.38ms client=172.21.0.1 req_id=030416bdff9a start_ms=1791345315590 run=- model=gemma4:e4b
+2026-10-07T03:55:17.644Z GET / 404 0.22ms client=172.21.0.1 req_id=1f3f3804a435 start_ms=1791345317643 run=- model=gemma4:e4b
+2026-10-07T03:55:18.315Z GET / 404 0.17ms client=172.21.0.1 req_id=150723c8d6de start_ms=1791345318315 run=- model=gemma4:e4b
+2026-10-07T03:55:57.428Z GET / 404 0.27ms client=172.21.0.1 req_id=06c24f901437 start_ms=1791345357427 run=- model=gemma4:e4b
+2026-10-07T03:57:55.023Z GET /health 200 0.58ms client=172.21.0.1 req_id=8d10d85673a3 start_ms=1791345475023 run=- model=gemma4:e4b
+2026-10-07T04:00:39.479Z GET / 404 0.26ms client=172.21.0.1 req_id=45ff1d61a4a4 start_ms=1791345639478 run=- model=gemma4:e4b
+2026-10-07T04:00:49.319Z GET /health 200 0.83ms client=172.21.0.1 req_id=c88582e5c0cd start_ms=1791345649318 run=- model=gemma4:e4b
+2026-10-07T04:00:54.145Z GET /health 200 0.38ms client=172.21.0.1 req_id=676369a43cfd start_ms=1791345654145 run=- model=gemma4:e4b
+2026-10-07T04:01:38.373Z POST /tickets 422 1.13ms client=172.21.0.1 req_id=7611402cbc72 start_ms=1791345698372 run=- model=gemma4:e4b
+2026-10-07T04:01:49.507Z POST /tickets 422 1.07ms client=172.21.0.1 req_id=b6a8aff2b990 start_ms=1791345709506 run=- model=gemma4:e4b
+2026-10-07T04:04:24.287Z POST /tickets 200 35297.03ms client=172.21.0.1 req_id=37a9e54e2d74 start_ms=1791345828905 run=- model=gemma4:e4b ticket_id=108 category="Consumer loan" ollama_total_ms=35233.5 ollama_load_ms=6582.3 prompt_tokens=371 prompt_eval_ms=3100.4 eval_tokens=440 eval_ms=25544.7
+2026-10-07T04:04:45.325Z GET /health 200 0.41ms client=172.21.0.1 req_id=58b13a0e67f1 start_ms=1791345885325 run=- model=gemma4:e4b
+2026-10-07T04:05:07.237Z POST /tickets 200 19616.99ms client=172.21.0.1 req_id=95b1f927db1d start_ms=1791345887588 run=gemma4-e4b_stress_ramp_run1-warmup model=gemma4:e4b ticket_id=109 category="Credit card" ollama_total_ms=19532.7 ollama_load_ms=0.6 prompt_tokens=357 prompt_eval_ms=2960.3 eval_tokens=295 eval_ms=16550.4

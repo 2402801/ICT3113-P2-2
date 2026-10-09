@@ -10,7 +10,7 @@ $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $ComposeFile = Join-Path $RepoRoot 'docker-compose.yml'
 $RunsDir = Join-Path $RepoRoot 'runs'
 $RegisterPath = Join-Path $RunsDir 'run_register.csv'
-$EnvDocDir = Join-Path $RepoRoot 'docs\environment'
+$EnvDocDir = Join-Path $RepoRoot 'tests\environment'
 $PinsPath = Join-Path $EnvDocDir 'model_pins.json'
 $AccessLog = Join-Path $RepoRoot 'server\logs\access.log'
 $ApiUrl = 'http://localhost:8000'
@@ -132,7 +132,7 @@ function Assert-PinnedDigest([string]$Model) {
     $current = Get-ModelInventory | Where-Object { $_.tag -eq $Model }
     if (-not $current) { throw "$Model is not pulled into Docker Ollama (scripts\p1\pin_models.ps1 -Pull)." }
     $pinned = Get-PinnedDigest $Model
-    if (-not $pinned) { throw "$Model has no pinned digest in docs\environment\model_pins.json (run scripts\p1\pin_models.ps1)." }
+    if (-not $pinned) { throw "$Model has no pinned digest in tests\environment\model_pins.json (run scripts\p1\pin_models.ps1)." }
     if ($current.digest -ne $pinned) {
         throw "$Model digest changed: pinned $pinned, now $($current.digest). Results would not be comparable."
     }
@@ -150,9 +150,10 @@ function Set-DotEnvValue([string]$Key, [string]$Value) {
 function Get-GitInfo {
     $commit = Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'rev-parse', 'HEAD') | Select-Object -First 1
     $branch = Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'rev-parse', '--abbrev-ref', 'HEAD') | Select-Object -First 1
-    # Evidence folders change during runs by design, so they do not count as a dirty tree.
+    # Evidence folders and analysis/reconcile.py's reports change during testing by design, so they do not count
+    # as a dirty tree.
     $dirty = @(Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'status', '--porcelain', '--',
-            '.', ':(exclude)runs', ':(exclude)docs/environment') | Where-Object { $_ })
+            '.', ':(exclude)runs', ':(exclude)tests/environment', ':(exclude)analysis/output') | Where-Object { $_ })
     [pscustomobject]@{ commit = $commit; branch = $branch; dirty = ($dirty.Count -gt 0); dirty_files = $dirty }
 }
 

@@ -1,0 +1,3 @@
+2026-10-07T08:03:42.576Z GET /health 200 0.70ms client=172.21.0.1 req_id=70c2422652e7 start_ms=1791360222575 run=- model=gemma4:e4b
+2026-10-07T08:04:50.332Z POST /tickets 200 30066.51ms client=172.21.0.1 req_id=fdda0a2eac7d start_ms=1791360260366 run=gemma4-e4b_load_tkt-peak_run3 model=gemma4:e4b ticket_id=1 category="Credit reporting" ollama_total_ms=30017.7 ollama_load_ms=0.8 prompt_tokens=707 prompt_eval_ms=3833.2 eval_tokens=453 eval_ms=26176.1
+2026-10-07T08:05:18.984Z POST /tickets 200 58112.47ms client=172.21.0.1 req_id=f248d7bab3c6 start_ms=1791360261080 run=gemma4-e4b_load_tkt-peak_run3 model=gemma4:e4b ticket_id=2 category="Consumer loan" ollama_total_ms=58054.6 ollama_load_ms=1.5 prompt_tokens=533 prompt_eval_ms=140.1 eval_tokens=505 eval_ms=28558.6

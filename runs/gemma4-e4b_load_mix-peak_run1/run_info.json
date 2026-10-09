@@ -1,0 +1,23 @@
+{
+    "run_id":  "gemma4-e4b_load_mix-peak_run1",
+    "test_type":  "load",
+    "config":  "mix-peak",
+    "run":  1,
+    "tester":  "P2",
+    "model":  "gemma4:e4b",
+    "model_digest":  "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+    "prompt_version":  "v1",
+    "think":  "default",
+    "ollama_version":  "0.34.4",
+    "git_commit":  "5a6aa3970329f9a9bd73198964d35cbfb0bcb059",
+    "git_branch":  "dev",
+    "git_dirty":  false,
+    "on_ac_power":  true,
+    "battery_pct":  100,
+    "power_mode":  "Best performance",
+    "power_scheme":  "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "warmup_count":  1,
+    "sut_url":  "http://172.20.10.2:8000",
+    "ready_at_utc":  "2026-10-07T08:17:38Z",
+    "notes":  "Legion Performance; tickets at 3,936/h + search at 7,872/h; 5 min send, 295 s timeout"
+}

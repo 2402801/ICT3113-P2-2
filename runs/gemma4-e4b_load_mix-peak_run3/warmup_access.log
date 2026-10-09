@@ -1,0 +1,3 @@
+2026-10-07T08:44:22.771Z GET /health 200 0.69ms client=172.21.0.1 req_id=4c052542bbae start_ms=1791362662771 run=- model=gemma4:e4b
+2026-10-07T08:45:53.398Z GET /health 200 0.78ms client=172.21.0.1 req_id=7dce921190f2 start_ms=1791362753397 run=- model=gemma4:e4b
+2026-10-07T08:46:13.052Z POST /tickets 200 17469.48ms client=172.21.0.1 req_id=da08d9a9212d start_ms=1791362755635 run=gemma4-e4b_load_mix-peak_run3-warmup model=gemma4:e4b ticket_id=18 category="Credit card" ollama_total_ms=17381.4 ollama_load_ms=1.1 prompt_tokens=357 prompt_eval_ms=144.4 eval_tokens=295 eval_ms=17219.9

@@ -1,0 +1,3 @@
+2026-10-08T05:34:45.185Z GET /health 200 0.67ms client=172.21.0.1 req_id=d97927d9091d start_ms=1791437685184 run=- model=mistral:7b
+2026-10-08T05:36:35.560Z GET /health 200 0.64ms client=172.21.0.1 req_id=d576cfde6512 start_ms=1791437795559 run=- model=mistral:7b
+2026-10-08T05:36:40.532Z POST /tickets 200 1115.33ms client=172.21.0.1 req_id=ab1786a83e44 start_ms=1791437799417 run=mistral-7b_load_tkt-normal_run2-warmup model=mistral:7b ticket_id=108 category="Credit card" ollama_total_ms=1026.5 ollama_load_ms=0.9 prompt_tokens=383 prompt_eval_ms=460.2 eval_tokens=9 eval_ms=561.4

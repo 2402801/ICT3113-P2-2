@@ -4,7 +4,7 @@
   path to the SUT for Slide 7, and proves the two are separate machines.
 .DESCRIPTION
   Standalone: needs only Windows PowerShell 5.1. Read-only apart from the output file.
-  Commit the output to docs\environment\ in the team repo.
+  Commit the output to tests\environment\ in the team repo.
 .EXAMPLE
   powershell -ExecutionPolicy Bypass -File scripts\record_loadgen_environment.ps1 -SutHost 192.168.0.104
 #>

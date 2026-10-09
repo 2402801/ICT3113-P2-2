@@ -2,7 +2,7 @@
 .SYNOPSIS
   Records the official SUT laptop's hardware / software / network state (Slide 7 evidence).
 .DESCRIPTION
-  Writes docs\environment\p1_sut_environment.md. Re-run it on test day and commit the result;
+  Writes tests\environment\p1_sut_environment.md. Re-run it on test day and commit the result;
   git history keeps every version. Read-only apart from that file.
 .EXAMPLE
   powershell -ExecutionPolicy Bypass -File scripts\p1\record_environment.ps1
@@ -149,7 +149,7 @@ $profileText = 'n/a'
 if ($netProfile) { $profileText = "$($netProfile.Name) [$($netProfile.NetworkCategory)]" }
 Add-Row 'Windows network category' $profileText
 Add-Row 'Service URL for testers' "http://$(Get-LanIPv4):8000"
-$fwText = 'MISSING (see runbook)'
+$fwText = 'MISSING (see docs/LOAD_TEST_PLAYBOOK.md section 3.1)'
 if ($fwRule) { $fwText = "present, enabled=$($fwRule.Enabled), profile=$($fwRule.Profile)" }
 Add-Row 'Firewall rule for TCP 8000' $fwText
 Add-Row 'MySQL 3306 / Ollama 11434' 'bound to 127.0.0.1 only - not reachable from the LAN'
@@ -161,7 +161,7 @@ Add '| --- | --- |'
 Add-Row 'Branch @ commit' "$($git.branch) @ $($git.commit)"
 $dirtyText = 'none'
 if ($git.dirty) { $dirtyText = "YES - $(@($git.dirty_files).Count) file(s)" }
-Add-Row 'Uncommitted changes (excl. runs/, docs/environment/)' $dirtyText
+Add-Row 'Uncommitted changes (excl. runs/, tests/environment/)' $dirtyText
 foreach ($f in @('datasets/golden_test_set.csv', 'datasets/labelling_protocol_v3.md', 'datasets/PredictionRecord.pdf')) {
     Add-Row "Frozen: $f" (Get-OrDefault { (Invoke-Native -Exe 'git' -Arguments @('-C', $RepoRoot, 'log', '--all', '-1', '--format=%h %ci %an', '--', $f)) -join ' ' })
 }
