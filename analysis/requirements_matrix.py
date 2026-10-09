@@ -4,7 +4,7 @@
 Load metrics come from the kept .jtl files of every load run not listed in excluded_runs.csv. By default only
 requests sent after the first 120 s of each run are counted (the warm-up exclusion in RR-1's measurement text);
 the same metrics over all samples are written alongside so the effect of the exclusion is visible.
-Accuracy comes from analysis/output/accuracy_runs.csv, i.e. the runs chosen by accuracy/accuracy_report.py.
+Accuracy comes from analysis/output/accuracy_runs.csv, i.e. the runs chosen by tests/accuracy/accuracy_report.py.
 
 Writes analysis/output/requirements_matrix.md and requirements_matrix_load.csv.
 """
@@ -200,7 +200,7 @@ def main() -> None:
         step1 = sorted(s.elapsed_ms for s in samples if s.label.startswith("Step 1") and s.success)
         if step1:
             single["gemma4:e4b stress step 1"] = (len(step1), percentile(step1, 50), percentile(step1, 95))
-    baseline = REPO_ROOT / "stress-test" / "baseline.jtl"
+    baseline = REPO_ROOT / "tests" / "stress" / "baseline.jtl"
     if baseline.exists():
         b, _ = read_jtl(baseline)
         v = sorted(s.elapsed_ms for s in b if s.success)

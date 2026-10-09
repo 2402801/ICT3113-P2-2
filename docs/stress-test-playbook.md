@@ -4,8 +4,8 @@ How Team 2 ran the stress test, in enough detail to repeat it: one arrival-rate 
 7 Oct 2026, preceded by a baseline latency measurement on 29 Sep 2026. An invalid first attempt on 7 Oct is kept
 as evidence and excluded (section 5).
 
-- **SUT laptop, operated by P1.** Runs the service, MySQL and Ollama. Its per-run procedure is in
-  `docs/P1_SUT_RUNBOOK.md`.
+- **SUT laptop, operated by P1.** Runs the service, MySQL and Ollama. Its procedure is in
+  `docs/LOAD_TEST_PLAYBOOK.md` (sections 2, 3 and 4).
 - **Load-generator laptop, operated by P5.** Runs JMeter, on a separate machine from the SUT.
 - Commands run from the repository root unless a step says otherwise. Paths are relative to the repository root.
   Times are UTC.
@@ -39,9 +39,9 @@ Related playbooks: `docs/ACCURACY_PLAYBOOK.md` (accuracy tests) and `docs/LOAD_T
 | Step duration | 4 min per step, 5 steps | Fits the budget including setup and drain. Sends 4–12 requests per step. |
 | Reset between steps | No, continuous ramp | Backlog carry-over matches a realistic sustained-load climb; also cheaper than restarting the service 5 times inside the time budget. |
 | Percentile stats (p50 / p95 / p99) | Not used for the limit | Too few requests per step for percentiles to mean anything; the per-request latency trend is used instead. |
-| JMeter build | `stress-test/stress-test-plan.jmx`: one **Open Model Thread Group per step** (5 steps + a recovery group), stock JMeter 5.6.3, no plugins | Open Model is one of the two open-loop options the brief allows. It starts a thread per arrival, so no thread pool can become the bottleneck. A first attempt with chained closed Thread Groups + a throughput timer capped at 3 in flight and was discarded (section 5). |
+| JMeter build | `tests/stress/stress-test-plan.jmx`: one **Open Model Thread Group per step** (5 steps + a recovery group), stock JMeter 5.6.3, no plugins | Open Model is one of the two open-loop options the brief allows. It starts a thread per arrival, so no thread pool can become the bottleneck. A first attempt with chained closed Thread Groups + a throughput timer capped at 3 in flight and was discarded (section 5). |
 | Arrival pattern | Evenly spaced (`even_arrivals`), not Poisson | With only 4–12 requests per step, Poisson noise would swamp the step-to-step comparison. Every run sends the same count per step. The load tests use Poisson arrivals, so this difference is stated in the report. |
-| Request data | `stress-test/data/tickets.jsonl`: 100 JSON bodies (first 100 rows of the team's dataset extract, rows 2000–2999), read tab-delimited | Narratives contain commas, quotes and newlines, which broke the earlier CSV read. 41 requests were sent, so no row is reused. |
+| Request data | `tests/stress/data/tickets.jsonl`: 100 JSON bodies (first 100 rows of the team's dataset extract, rows 2000–2999), read tab-delimited | Narratives contain commas, quotes and newlines, which broke the earlier CSV read. 41 requests were sent, so no row is reused. |
 | Recovery check | Included as a 6th group (`Recovery`, 120 s at the step-1 rate) | Distinguishes a queueing-delay explanation (recovers) from a harder failure mode (does not). |
 | Repeat runs | Single ramp, no repeat | Time budget does not allow it; stated as a limitation (section 9). |
 | Traceability | Every request carries `X-Run-Id`; `req_id` is saved in the `.jtl` | `analysis/reconcile.py` pairs each client sample with its server log line by request ID. |
@@ -70,27 +70,27 @@ Total run length is 5 × 240 s + 120 s + a 305 s drain = about 27 min, inside th
 |---|---|---|
 | Machine | Lenovo Legion Pro 5 (83DF), i9-14900HX, 32 GB, Windows 11 Home, CPU-only inference | P5's laptop (no environment record committed, section 9) |
 | Software | Docker Desktop: `server`, `mysql`, `ollama/ollama:0.34.4`, started with `docker compose up -d` | Apache JMeter 5.6.3, no plugins |
-| Details recorded in | `docs/environment/p1_sut_environment.md`; per-run state in `runs/<run-id>/run_info.json` | – |
+| Details recorded in | `tests/environment/p1_sut_environment.md`; per-run state in `runs/<run-id>/run_info.json` | – |
 
 **Network.** Both laptops on the same phone hotspot; the SUT was at `172.20.10.2` on 7 Oct (`172.20.10.3` for the
 29 Sep baseline).
 
-**Service settings** are the frozen ones used for every official run (`docs/P1_SUT_RUNBOOK.md` section 2):
-gemma4:e4b digest `c6eb396dbd59…` (matches the Step 4 ID, `docs/environment/model_pins.json`), prompt v1,
+**Service settings** are the frozen ones used for every official run (`docs/LOAD_TEST_PLAYBOOK.md` section 2):
+gemma4:e4b digest `c6eb396dbd59…` (matches the Step 4 ID, `tests/environment/model_pins.json`), prompt v1,
 `think` default (gemma4 reasons before answering), `temperature 0`, `OLLAMA_NUM_PARALLEL=1`, service-to-Ollama
 timeout 600 s.
 
 | File | Role |
 |---|---|
-| `stress-test/5-single-request-latency-test-plan.jmx` | Baseline plan: 1 thread, 5 sequential requests |
-| `stress-test/baseline.jtl` | Baseline result (29 Sep) |
-| `stress-test/stress-test-plan.jmx` | The ramp plan |
-| `stress-test/data/tickets.jsonl` | 100 request bodies for the ramp |
+| `tests/stress/5-single-request-latency-test-plan.jmx` | Baseline plan: 1 thread, 5 sequential requests |
+| `tests/stress/baseline.jtl` | Baseline result (29 Sep) |
+| `tests/stress/stress-test-plan.jmx` | The ramp plan |
+| `tests/stress/data/tickets.jsonl` | 100 request bodies for the ramp |
 | `load-generator/prepare_data.py` | Builds `tickets.jsonl` from the dataset extract |
 | `scripts/p1/prepare_run.ps1`, `finish_run.ps1` | SUT steps before and after the run |
 | `analysis/reconcile.py`, `analysis/load_summary.py` | Reconciliation and per-step statistics |
 
-**How the ramp plan is built** (`stress-test/stress-test-plan.jmx`):
+**How the ramp plan is built** (`tests/stress/stress-test-plan.jmx`):
 
 - Open-loop only: closed-loop self-throttles, hides queue build-up and is not accepted as evidence. There is no
   thread count to size: an Open Model Thread Group starts one thread per arrival, so the arrival rate is the rate
@@ -118,18 +118,18 @@ timeout 600 s.
 2. Baseline service running in Docker on the SUT; gemma4:e4b pulled and matching its pinned digest.
 3. JMeter on a **separate machine** from the service and Ollama. Co-hosting steals CPU and distorts the latency
    numbers. On the load-generator laptop, run `scripts\record_loadgen_environment.ps1 -SutHost <SUT-IP>` once per
-   session and commit the output to `docs/environment/`.
+   session and commit the output to `tests/environment/`.
 4. Service logging on, so every request reconciles with a log line.
-5. SUT session checklist from `docs/P1_SUT_RUNBOOK.md` section 4: AC power, Windows power mode **Best
+5. SUT session checklist from `docs/LOAD_TEST_PLAYBOOK.md` section 3.4: AC power, Windows power mode **Best
    performance**, heavy apps closed, `scripts\p1\preflight.ps1` ends with `PREFLIGHT OK`.
 6. Sync both laptops' clocks (Settings → Time & language → Sync now), so JMeter `timeStamp` lines up with the
    server log `start_ms`.
-7. `stress-test/data/tickets.jsonl` exists (committed). To rebuild it from the dataset extract, which is not stored
+7. `tests/stress/data/tickets.jsonl` exists (committed). To rebuild it from the dataset extract, which is not stored
    in the repository:
 
    ```powershell
    cd load-generator
-   python prepare_data.py --csv <path>\ict3113_tickets_2000_2999.csv --limit 100 --output ..\stress-test\data\tickets.jsonl
+   python prepare_data.py --csv <path>\ict3113_tickets_2000_2999.csv --limit 100 --output ..\tests\stress\data\tickets.jsonl
    ```
 
 ---
@@ -139,7 +139,7 @@ timeout 600 s.
 ### 4.1 Baseline single-request latency (about 3.5 min, done once on 29 Sep)
 
 5 sequential single requests to `POST /tickets`, one at a time with no overlap, using
-`stress-test/5-single-request-latency-test-plan.jmx` (1 thread, 5 loops; the SUT address is set in the plan).
+`tests/stress/5-single-request-latency-test-plan.jmx` (1 thread, 5 loops; the SUT address is set in the plan).
 
 - The mean of the 5 is `BASELINE_LATENCY`. Use this, not the 35–45 s prediction, since the test is checking the
   prediction, not assuming it.
@@ -159,7 +159,7 @@ empties the database and prints `READY <run-id>` with the SUT address. Send traf
 
 ### 4.3 P5 runs the ramp and recovery (about 27 min)
 
-On the load-generator laptop, from `stress-test/`. Check `GET http://<SUT-IP>:8000/health` first. The command is
+On the load-generator laptop, from `tests/stress/`. Check `GET http://<SUT-IP>:8000/health` first. The command is
 one line and works in PowerShell and Git Bash:
 
 ```
@@ -210,8 +210,8 @@ Then copy the `.jtl` (and the JMeter log) into `runs\<run-id>\`, commit, and run
 JMeter was started with `-Jrun_id=gemma4-e4b_stress_ramp_run1` by mistake. As a result the `X-Run-Id` in the server
 log says `run1` and the `.jtl` is named `gemma4-e4b_stress_ramp_run1.jtl`, although it sits in
 `runs/gemma4-e4b_stress_ramp_run2/`. All 41 requests in that window are this run's traffic and pair one-to-one by
-`req_id`. The plan used was `stress-test/stress-test-plan.jmx` (committed after the run in `cbfbb73`), not
-`load-generator/stress_test.jmx`; the register row records this correction, including the 630 s timeout.
+`req_id`. The plan used was `tests/stress/stress-test-plan.jmx` (committed after the run in `cbfbb73`), not
+`load-generator/stress_test.jmx` (since deleted); the register row records this correction, including the 630 s timeout.
 
 ---
 
@@ -293,7 +293,7 @@ recovery requests are expected to be slow; judge the trend. Requests unanswered 
 
 ## 8. Results
 
-### 8.1 Baseline (29 Sep 2026, `stress-test/baseline.jtl`)
+### 8.1 Baseline (29 Sep 2026, `tests/stress/baseline.jtl`)
 
 5 of 5 successful, 0 errors. Latencies: 33.92 s, 33.57 s, 33.26 s, 33.54 s, 33.27 s.
 
@@ -367,11 +367,11 @@ classifying one ticket at a time; as the brief allows for Assignment 1, it is di
 
 | What | Where |
 |---|---|
-| Baseline samples | `stress-test/baseline.jtl` |
+| Baseline samples | `tests/stress/baseline.jtl` |
 | Ramp client samples (named after the run ID JMeter was given) | `runs/gemma4-e4b_stress_ramp_run2/gemma4-e4b_stress_ramp_run1.jtl` |
 | Ramp server side | `runs/gemma4-e4b_stress_ramp_run2/server_access.log`, `tickets.tsv`, `request_metrics.tsv`, `ollama.log` |
 | Model, digest, commit, power state, READY time; CPU-only proof | `runs/gemma4-e4b_stress_ramp_run2/run_info.json`; `ollama_ps_before.*`, `ollama_ps_after.*` |
 | Run notes and the explained reconcile FAIL | `runs/run_register.csv` |
 | Invalid first attempt | `runs/gemma4-e4b_stress_ramp_run1/`; reason in `analysis/excluded_runs.csv` |
 | Per-step statistics | `analysis/output/load_summary.md` (section `gemma4-e4b_stress_ramp`) |
-| Plans and data | `stress-test/stress-test-plan.jmx`, `stress-test/5-single-request-latency-test-plan.jmx`, `stress-test/data/tickets.jsonl` |
+| Plans and data | `tests/stress/stress-test-plan.jmx`, `tests/stress/5-single-request-latency-test-plan.jmx`, `tests/stress/data/tickets.jsonl` |

@@ -4,15 +4,15 @@ How Team 2 ran the 36 official load runs, in enough detail to repeat them. The r
 3 load configurations × 3 runs, on 7–8 Oct 2026. Eight earlier or failed attempts are excluded and kept as
 evidence (section 5).
 
-- **SUT laptop, operated by P1.** Runs the service, MySQL and Ollama. Its per-run procedure is in
-  `docs/P1_SUT_RUNBOOK.md`.
+- **SUT laptop, operated by P1.** Runs the service, MySQL and Ollama. This playbook also covers how to operate it.
 - **Load-generator laptop, operated by P2.** Runs JMeter, on a separate machine from the SUT. This playbook adds
   the JMeter side and ties both together.
 - Commands are Windows PowerShell 5.1 and run from the repository root unless a step says otherwise. Paths are
   relative to the repository root. Times are UTC unless marked SGT.
 
 Related playbooks: `docs/ACCURACY_PLAYBOOK.md` (accuracy tests) and `docs/stress-test-playbook.md`
-(stress test).
+(stress test). Both operate the SUT the same way: sections 2, 3.1, 3.4, 3.6, steps 1 and 3 of section 4, and
+section 11.
 
 ---
 
@@ -44,7 +44,7 @@ JMeter runs for about 10 minutes.
 | TR-2 | 3,936 tickets/h sustained, with < 1% errors |
 
 **Models, in run order.** The model changes only three times. Pinned tags and digests are in
-`docs/environment/model_pins.json`.
+`tests/environment/model_pins.json`.
 
 | Order | Model | Date | Runs |
 |---|---|---|---|
@@ -64,10 +64,45 @@ JMeter runs for about 10 minutes.
 |---|---|---|
 | Machine | Lenovo Legion Pro 5 (83DF), i9-14900HX, 32 GB, Windows 11 Home, CPU-only inference | Acer Swift SFG14-73, Core Ultra 7 155H, 15.7 GB, Windows 11 Home |
 | Software | Docker Desktop: `server`, `mysql`, `ollama/ollama:0.34.4`, started with `docker compose up -d` | Apache JMeter 5.6.3, Java 17, Python 3 (for `prepare_data.py`) |
-| Details recorded in | `docs/environment/p1_sut_environment.md` (recorded 26 Sep); per-run power state and address in `runs/<run-id>/run_info.json` | `docs/environment/loadgen_environment_2026-10-08.md` (8 Oct session); `docs/environment/loadgen_environment.md` (29 Sep rehearsal) |
+| Details recorded in | `tests/environment/p1_sut_environment.md` (recorded 26 Sep); per-run power state and address in `runs/<run-id>/run_info.json` | `tests/environment/loadgen_environment_2026-10-08.md` (8 Oct session); `tests/environment/loadgen_environment.md` (29 Sep rehearsal) |
 
 The service settings are frozen for every run (prompt v1, `think` default, `OLLAMA_NUM_PARALLEL=1`, temperature 0;
-see `docs/P1_SUT_RUNBOOK.md` section 2). **Never run JMeter on the SUT laptop.**
+the full list is below). **Never run JMeter on the SUT laptop.**
+
+**The SUT.**
+
+```
+ Load generator / accuracy / stress laptop            OFFICIAL SUT LAPTOP (P1)
+ ┌───────────────────────┐   HTTP over LAN   ┌──────────────────────────────────────────────┐
+ │ JMeter or test script │ ───────────────▶  │ :8000  triage service (FastAPI, synchronous) │
+ └───────────────────────┘                   │          │ 1 blocking call per ticket        │
+                                             │          ▼                                   │
+                                             │ Ollama 0.34.4, CPU only (127.0.0.1:11434)    │
+                                             │ MySQL 8.0.46 (127.0.0.1:3306)                │
+                                             └──────────────────────────────────────────────┘
+```
+
+Only port 8000 is reachable from other laptops. MySQL and Ollama are bound to localhost.
+
+**Settings frozen for every official run.** Only the model changes between official comparisons.
+
+| Setting | Value | Why |
+| --- | --- | --- |
+| Ollama image | `ollama/ollama:0.34.4` (digest in `tests/environment/p1_sut_environment.md`) | same inference engine for every run |
+| MySQL image | `mysql:8.0.46` | same storage engine |
+| Models | the 4 Step 4 candidates, full digests in `tests/environment/model_pins.json` | a changed digest = a different model |
+| GPU | none passed to the container; `size_vram = 0` checked before and after every run | brief forbids GPU inference |
+| `OLLAMA_NUM_PARALLEL` | 1 | baseline processes one ticket at a time; others wait in Ollama's queue |
+| `OLLAMA_MAX_QUEUE` | 512 (Ollama default) | never reached through this service: its 40-thread pool lets at most 40 tickets into Ollama at once (section 11.5) |
+| `OLLAMA_MAX_LOADED_MODELS` | 1 | only the model under test uses RAM |
+| `OLLAMA_KEEP_ALIVE` | -1 | a quiet period mid-test must not unload the model and turn the next ticket into a cold start |
+| Context window | Ollama default 4096 tokens (longest ticket + prompt ≈ 850 tokens) | no truncation |
+| Prompt | `server/prompt.py`, `PROMPT_VERSION = v1`: 7 categories + the protocol §1 definitions, no §2–3 edge-case rules | same instructions for every model |
+| Decoding | `temperature 0`, `seed 42`, JSON-schema output restricted to the 7 exact category names | deterministic; the answer is always one valid category |
+| `think` | not sent (`OLLAMA_THINK=default`): each model as shipped, so gemma4:e4b reasons before answering and the other three cannot | untuned baseline; matches how the Step 4 predictions were timed; see section 11.3, item 4 |
+| Service → Ollama timeout | 600 s, counted from when a service thread calls Ollama | failures come from the system limits under test, not an arbitrary short timeout |
+| Warm-up | 1 fixed invented ticket (`$WarmupNarrative` in `scripts/p1/_common.ps1`), before each run, not measured | every run starts with the model already in RAM |
+| Service | synchronous: `POST /tickets` returns only after classification; no caching, queuing or batching | Assignment 1 baseline |
 
 **Network.** Both laptops join the same phone hotspot. All 36 official runs sent their traffic over the hotspot to
 the SUT at `172.20.10.2` (HTTP round trip to `/health` on 8 Oct: median 11.9 ms). One run,
@@ -77,11 +112,12 @@ why the hotspot is used.
 
 | File | Role |
 |---|---|
-| `load-generator/load_test.jmx` | The JMeter plan (Open Model Thread Groups, no plugins) |
+| `tests/load/load_test.jmx` | The JMeter plan (Open Model Thread Groups, no plugins) |
 | `load-generator/prepare_data.py` | Builds the ticket file from the dataset extract |
 | `load-generator/data/tickets.jsonl` | One JSON request body per line (built locally, not committed) |
 | `load-generator/data/search_terms.csv` | 17 search terms (committed) |
 | `scripts/p1/preflight.ps1`, `switch_model.ps1`, `prepare_run.ps1`, `finish_run.ps1` | SUT steps |
+| `scripts/p1/pin_models.ps1`, `record_environment.ps1` | One-time SUT setup and its environment record (section 3.1) |
 | `scripts/record_loadgen_environment.ps1` | Records the load-generator machine and its link to the SUT |
 | `analysis/reconcile.py` | Checks each run's `.jtl` against the service's own logs (section 6) |
 | `analysis/load_summary.py`, `analysis/requirements_matrix.py` | Statistics and requirement verdicts (section 7) |
@@ -91,7 +127,21 @@ why the hotspot is used.
 
 ## 3. Preconditions
 
-### 3.1 One-time: ticket file (P2)
+### 3.1 One-time: SUT laptop (P1, already done)
+
+```powershell
+docker compose up -d --build                                                  # mysql + ollama + server
+powershell -ExecutionPolicy Bypass -File scripts\p1\pin_models.ps1 -Pull      # pull 4 models, write model_pins.json
+powershell -ExecutionPolicy Bypass -File scripts\p1\record_environment.ps1    # Slide 7 evidence
+```
+
+Firewall (admin PowerShell, once): lets laptops on the same subnet reach port 8000 on any network type.
+
+```powershell
+New-NetFirewallRule -DisplayName 'ICT3113 SUT API (TCP 8000)' -Direction Inbound -Protocol TCP -LocalPort 8000 -Action Allow -Profile Any -RemoteAddress LocalSubnet
+```
+
+### 3.2 One-time: ticket file (P2)
 
 JMeter reads one JSON request body per line from `load-generator/data/tickets.jsonl`. Build it from the team's
 dataset extract, rows 2000–2999 of the course CSV. The extract is not stored in this repository.
@@ -102,24 +152,27 @@ python prepare_data.py --csv <path>\ict3113_tickets_2000_2999.csv --output data\
 ```
 
 All ticket groups share one cursor on the file, in file order, and every run starts again from the first line.
-Search terms come from `load-generator/data/search_terms.csv`. Both files are read on a loop.
+Search terms come from `load-generator/data/search_terms.csv`. Both files are read on a loop. The plan lives in
+`tests/load/`, so every JMeter command below passes both files' paths with `-Jdata_file` and `-Jsearch_file`.
 
-### 3.2 One-time: dry run, to check that ticket-only runs send no searches (P2)
+### 3.3 One-time: dry run, to check that ticket-only runs send no searches (P2)
 
-This targets P2's own laptop on port 1, where nothing listens, so nothing reaches the SUT.
+This targets P2's own laptop on port 1, where nothing listens, so nothing reaches the SUT. Run it from `tests\load`.
 
 ```powershell
-jmeter -n -t load_test.jmx "-Jhost=127.0.0.1" "-Jport=1" "-Jrun_id=dryrun" "-Jsearch_k=0" "-Jtickets_per_hour_tr1=3936" "-Joffpeak_duration_sec=10" "-Jpeak_duration_sec=10" "-Jresponse_timeout_ms=1000" "-Jjtl=dryrun.jtl"
+jmeter -n -t load_test.jmx "-Jhost=127.0.0.1" "-Jport=1" "-Jrun_id=dryrun" "-Jdata_file=../../load-generator/data/tickets.jsonl" "-Jsearch_file=../../load-generator/data/search_terms.csv" "-Jsearch_k=0" "-Jtickets_per_hour_tr1=3936" "-Joffpeak_duration_sec=10" "-Jpeak_duration_sec=10" "-Jresponse_timeout_ms=1000" "-Jjtl=dryrun.jtl"
 (Select-String dryrun.jtl -Pattern "GET /search").Count    # must be 0
 (Select-String dryrun.jtl -Pattern "POST /tickets").Count  # about 30, all errors (expected)
 Remove-Item dryrun.jtl
 ```
 
-### 3.3 Start of each test session: P1, on the SUT laptop
+### 3.4 Start of each test session: P1, on the SUT laptop
 
-1. Plug in AC power. Set Windows power mode to **Best performance**. Set "When plugged in, put my device to sleep
+1. Plug in AC power. Set Windows power mode to **Best performance** and the Legion thermal mode to **Performance**
+   (Fn+Q); write the thermal mode in `-Notes` when preparing runs. Set "When plugged in, put my device to sleep
    after" to **Never** (`powercfg /change standby-timeout-ac 0`).
-2. Quit the native Windows Ollama app (tray icon → Quit) and close heavy applications.
+2. Quit the native Windows Ollama app (tray icon → Quit) and close heavy applications (games, VMs, big downloads,
+   browsers playing video).
 3. Join the hotspot, then run:
 
    ```powershell
@@ -129,7 +182,10 @@ Remove-Item dryrun.jtl
    ipconfig                                                              # send the Wi-Fi IPv4 to P2
    ```
 
-### 3.4 Start of each test session: P2, on the load-generator laptop
+`preflight.ps1` also checks that the Docker VM clock matches Windows. After the laptop sleeps, WSL2's clock can drift
+and server log timestamps no longer line up with JMeter's. Restart Docker Desktop if it warns.
+
+### 3.5 Start of each test session: P2, on the load-generator laptop
 
 1. Plug in AC power. Set sleep and screen-off to **Never** and turn off Wi-Fi power saving.
 2. Join the same hotspot and sync the clock (Settings → Time & language → Sync now). This keeps JMeter timestamps
@@ -141,19 +197,21 @@ Remove-Item dryrun.jtl
    Invoke-RestMethod http://<SUT-IP>:8000/health                         # status ok, shows the model
    Test-NetConnection <SUT-IP> -Port 8000                                # TcpTestSucceeded : True
    powershell -ExecutionPolicy Bypass -File scripts\record_loadgen_environment.ps1 -SutHost <SUT-IP>
-   cd load-generator
+   cd tests\load
    ```
 
-4. Send the generated `loadgen_environment.md` to P1 for `docs/environment/`.
+4. Send the generated `loadgen_environment.md` to P1 for `tests/environment/`.
 
 `ping` is not a valid connectivity check: the SUT's firewall does not answer it even when port 8000 is reachable.
 Use `Test-NetConnection` on port 8000.
 
-### 3.5 When the model changes: P1 (before runs 1, 10, 19 and 28)
+### 3.6 When the model changes: P1 (before runs 1, 10, 19 and 28)
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\p1\switch_model.ps1 -Model <tag>
 ```
+
+To switch by hand instead, see section 11.2.
 
 ---
 
@@ -175,13 +233,17 @@ powershell -ExecutionPolicy Bypass -File scripts\p1\prepare_run.ps1 -TestType lo
 
 It refuses an ID that already has a folder, so evidence is never overwritten. P1 tells P2 "READY" and the run ID.
 
-### Step 2: P2 runs JMeter once, in `load-generator`
+### Step 2: P2 runs JMeter once, in `tests\load`
 
-The common part of every command:
+Send traffic only between READY and `finish_run.ps1`, and only for your run: anything else lands in that run's
+evidence. The common part of every command:
 
 ```
-jmeter -n -t load_test.jmx "-Jhost=<SUT-IP>" "-Jport=8000" "-Jrun_id=<run-id>" "-Jsample_variables=req_id" "-Joffpeak_duration_sec=90" "-Jpeak_duration_sec=120" "-Jresponse_timeout_ms=295000" <rate flags>
+jmeter -n -t load_test.jmx "-Jhost=<SUT-IP>" "-Jport=8000" "-Jrun_id=<run-id>" "-Jsample_variables=req_id" "-Jdata_file=../../load-generator/data/tickets.jsonl" "-Jsearch_file=../../load-generator/data/search_terms.csv" "-Joffpeak_duration_sec=90" "-Jpeak_duration_sec=120" "-Jresponse_timeout_ms=295000" <rate flags>
 ```
+
+The official runs were started from `load-generator/`, where the plan and its data then sat together, so they did
+not need the two data flags. The plan has since moved to `tests/load/`; the data stayed in `load-generator/data/`.
 
 | Configuration | `<rate flags>` |
 |---|---|
@@ -201,7 +263,7 @@ What the flags do:
 - **`-Jresponse_timeout_ms=295000`** counts a request not answered within 295 s as an error. Each schedule ends
   with a drain pause of 300 s (5 s connect + 295 s response timeout), so a run lasts about 10 minutes.
 
-JMeter writes `results\<run-id>-<yyyyMMdd-HHmmss>.jtl`, a CSV with a `req_id` column. Wait for `... end of run`,
+JMeter writes `tests\load\results\<run-id>-<yyyyMMdd-HHmmss>.jtl`, a CSV with a `req_id` column. Wait for `... end of run`,
 and start JMeter only once per run. Then tell P1 "done" and send the `.jtl`.
 
 **Optional time-saver, llama and phi3 only.** Once at least 5 minutes have passed and the latest `summary` line ends
@@ -239,7 +301,7 @@ each affected run gives the actual gap.
 
    ```powershell
    python analysis\reconcile.py runs\<run-id>
-   git add runs docs/environment
+   git add runs tests/environment
    git commit -m "Load run <run-id>"
    git restore analysis/output
    git pull --no-edit
@@ -325,8 +387,9 @@ Outputs are written to `analysis/output/`: `requirements_matrix.md`, `requiremen
 `load_summary.md`, `load_summary.csv`, `load_runs.csv`.
 
 - **Why the first 120 s are dropped.** RR-1's measurement text excludes them as warm-up. This leaves about 3
-  minutes of traffic per run. Dropping them changes no requirement verdict (`docs/step6_recommendation.md`
-  section 4.2).
+  minutes of traffic per run. Dropping them changes one verdict: phi3:3.8b passes TR-1 after 120 s (drift
+  ×0.61–1.31) but fails it on all samples (drift up to ×1.68), because the first 2 minutes are when its latency
+  settles. Every other verdict is the same either way (check with the `--warmup-sec 0` command above).
 - **p95.** Counts failed and timed-out requests as slower than any answer, so it shows "> 295 s" once more than 5%
   of requests failed.
 - **Drift (TR-1, TR-2).** Median latency of the second half of the window divided by the first half; 1.5 or more
@@ -420,4 +483,103 @@ Across runs:
 | Reconciliation result | `analysis/output/reconciliation.csv` |
 | Requirement verdicts and load metrics (both windows) | `analysis/output/requirements_matrix.md`, `requirements_matrix_load.csv` |
 | Per-run and per-configuration statistics, all samples | `analysis/output/load_summary.md`, `load_summary.csv`, `load_runs.csv` |
-| Environment records | `docs/environment/` |
+| Environment records | `tests/environment/` |
+
+Environment evidence for Slide 7:
+
+| Evidence | Where |
+| --- | --- |
+| SUT hardware, OS, Docker/WSL, Ollama settings, model digests, network, CPU-only proof, commit | `tests/environment/p1_sut_environment.md` (re-run `record_environment.ps1` to refresh it) |
+| Full model pins | `tests/environment/model_pins.json` |
+| Load-generator hardware, JMeter/Java, separate-machine proof, network round trip | `tests/environment/loadgen_environment_2026-10-08.md` (P2 runs `scripts/record_loadgen_environment.ps1`) |
+| Per-run conditions | `runs/<run-id>/run_info.json`, `runs/run_register.csv` |
+
+---
+
+## 11. SUT reference
+
+### 11.1 Service interface, for anyone sending traffic
+
+- Target `http://<SUT-IP>:8000` (printed in the READY banner). Check `GET /health` first: it returns the model
+  under test, e.g. `{"status":"ok","model":"phi3:3.8b","prompt_version":"v1","think":"default"}`.
+- Optional header `X-Run-Id: <run-id>`: it is written into every server log line (`run=`) for that request.
+  `load_test.jmx` sends it from `-Jrun_id`.
+- `POST /tickets` → `200 {"id","category","narrative","classification_latency_ms"}`. `502` = classification failed;
+  the log's `error=` field says why: `OllamaError` (Ollama returned an error), `ReadTimeout` (no answer within 600 s)
+  or `ClassificationError` (no valid category in the answer). Count 502s as errors.
+- Server log line format (UTC):
+  `2026-09-26T13:17:09.317Z POST /tickets 200 3757.89ms client=… req_id=… start_ms=<epoch ms> run=… model=… ticket_id=… category="…" ollama_total_ms=… ollama_load_ms=… prompt_tokens=… prompt_eval_ms=… eval_tokens=… eval_ms=…`
+  - `start_ms` is directly comparable with JMeter's `timeStamp` (epoch ms), within the two laptops' clock offset.
+  - Every response carries an `X-Request-ID` header equal to `req_id`.
+  - Time spent waiting in Ollama's queue ≈ `ollama_total_ms − ollama_load_ms − prompt_eval_ms − eval_ms`.
+  - Time spent in the service outside the model call (under load, mostly waiting for a free thread) ≈ the line's
+    latency − `classification_latency_ms` of the same ticket (`tickets.tsv`, joined on `ticket_id`).
+- `client=` shows the Docker gateway, not the load generator's IP (Docker Desktop port forwarding). Runs are told
+  apart by time window and `run=`.
+- In `server_access.log`, the first `GET /health` with `run=-` is P1's readiness check, not test traffic.
+
+### 11.2 Manual fallback commands (P1)
+
+```powershell
+docker compose ps                                          # all three services running / healthy
+Invoke-RestMethod http://localhost:8000/health             # model the service is using
+Invoke-RestMethod http://localhost:11434/api/ps            # loaded model; size_vram must be 0
+docker compose exec ollama ollama ps                       # PROCESSOR column must say 100% CPU
+docker compose exec -T -e MYSQL_PWD=triage mysql mysql -utriage triage -e "TRUNCATE TABLE request_metrics; TRUNCATE TABLE tickets;"
+docker compose logs --tail 50 server                       # service errors
+docker compose logs --tail 50 ollama                       # Ollama errors
+docker compose down                                        # stop everything (volumes/models are kept)
+```
+
+Switching models by hand: set `OLLAMA_MODEL=<tag>` in `.env`, then `docker compose up -d --no-deps --force-recreate server`
+and confirm `/health`. A leftover `$env:OLLAMA_MODEL` in your shell overrides `.env`. `switch_model.ps1` handles both.
+
+### 11.3 Decisions settled before the official runs
+
+P1 raised these while setting up the SUT. Each was settled before run 1.
+
+| # | Question | Outcome |
+|---|---|---|
+| 1 | JMeter was closed-loop (Thread Group + Constant Throughput Timer), which the brief rejects | `load_test.jmx` uses Open Model Thread Groups with Poisson arrivals (section 1) |
+| 2 | JMeter and README rates were the old Tier A figures (5.5 tickets/h) | Step 4 rates: 1,312 and 3,936 tickets/h, 2 searches per ticket (section 1) |
+| 3 | Which laptop is the load generator | P2's laptop for every run (section 2). Running JMeter in Docker on the compose network would put it on the SUT, so it was never used |
+| 4 | Prompt v1, the `think` setting and JSON-schema output were P1 defaults, not team decisions | Kept for every official run (section 2). Changing any of them means redoing every run |
+| 5 | How the accuracy score counts 502s (no category) | Counted as incorrect (`docs/ACCURACY_PLAYBOOK.md`) |
+| 6 | University Wi-Fi often blocks laptop-to-laptop traffic | Phone hotspot (section 2) |
+| 7 | JMeter's 60 s response timeout hid every latency above 60 s; the plan appended to one fixed `results/results.jtl`; no `X-Run-Id` header | 295 s timeout chosen on purpose (`-Jresponse_timeout_ms`), a new `.jtl` per run, `X-Run-Id` from `-Jrun_id` (section 4, step 2) |
+
+**The `think` setting (item 4)** only matters for gemma4:e4b. Setup check, one sample each on the invented warm-up
+ticket, not official: thinking on (baseline) → 22.1 s, 295 generated tokens; `think=false` → 0.6 s warm, 8 tokens;
+same answer both times. Thinking on matches the Step 4 prediction basis (35–45 s). Turning it off is an obvious
+Assignment 2 optimisation. To change it: `OLLAMA_THINK=false` in `.env`, then `switch_model.ps1`.
+
+### 11.4 Note for Slide 5
+
+All four pulled digests match the Step 4 short IDs. The default tags use different quantisations: llama3.2:1b Q8_0,
+phi3:3.8b Q4_0, mistral:7b Q4_K_M, gemma4:e4b Q4_K_M (8.0B, 8.95 GB). This affects speed and accuracy, so mention it
+next to the digests.
+
+### 11.5 Observations for the bottleneck analysis
+
+These are not fixes; the baseline stays unoptimised.
+
+- All four endpoints are sync functions, so FastAPI runs them on one shared pool of 40 threads (anyio's default,
+  checked in the container). A `POST /tickets` holds its thread for the whole Ollama call.
+- Ollama (NUM_PARALLEL=1) classifies one ticket at a time, so at most 40 tickets are inside Ollama: 1 being
+  classified and up to 39 in its queue. Ollama's 512-request queue limit is never reached through this service.
+- Once 40 tickets are in flight, every new request (ticket, search, stats or health) waits inside the service for a
+  free thread, roughly first come first served, with no limit or timeout of its own. Under a ticket backlog, threads
+  free up only as fast as Ollama finishes tickets, so a search can wait minutes although it never calls the model.
+  This is the main risk for RR-2.
+- The 600 s timeout starts when the thread calls Ollama, so a ticket's total time can exceed 600 s. With up to 39
+  tickets ahead of it in Ollama's queue, a slow model can hit it (502, `error=ReadTimeout`).
+- `GET /search` scans the whole `tickets` table (`LIKE '%q%'`), then fetches each match again with its own query
+  (SQLAlchemy expires the loaded rows when the metric row is committed), and returns every full narrative: 1 + N
+  queries for N matches (checked in the container: 2 matches → 3 queries). It slows down as a run stores more tickets.
+- The database pool is SQLAlchemy's default: 5 connections + 10 overflow. A request that waits more than 30 s for a
+  connection fails with 500.
+- Ollama (llama.cpp) reuses the processed instruction prefix of the previous prompt. The service caches
+  nothing, but Ollama itself processes only the new ticket text. Example from the setup smoke test
+  (llama3.2:1b): the first ticket's prompt took 1,482 ms, the next one 179 ms for a similar-length prompt.
+  `prompt_tokens` in the log still counts the whole prompt; `prompt_eval_ms` shows the real work. The warm-up
+  pays the one-off cost, so every run starts in the same state. Disclose this on the architecture slide.

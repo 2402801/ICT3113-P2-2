@@ -10,10 +10,11 @@ analysis for the Assignment 1 load, stress and accuracy tests.
 server/              the ticket triage service (system under test)
 docker-compose.yml   MySQL + Ollama + server
 datasets/            golden test set, labelling files, Prediction Record
+docs/                load, stress and accuracy test playbooks
 tests/
-  load/              load test plan + playbook (also the SUT operating procedure)
-  stress/            stress test plans, data, baseline + playbook
-  accuracy/          accuracy test client, scoring, figures + playbook
+  load/              load test plan
+  stress/            stress test plans, data and baseline
+  accuracy/          accuracy test client, scoring and figures
   environment/       test environment records and model pins
 load-generator/      JMeter input preparation and search terms
 scripts/             SUT run tooling and environment recorders
@@ -32,14 +33,15 @@ analysis/            reconciliation, requirement verdicts, load statistics
   `combined_175_tickets_*` files, `labelling_protocol_v3.md` and `PredictionRecord.pdf`. The course dataset
   extract (rows 2000–2999) that the load generator reads is not stored here. Tickets never reach the service
   directly from a dataset; a load generator or test client submits them one at a time, as a real intake would.
-- `tests/load/` — `load_test.jmx`, the open-loop JMeter plan (see [Workload model](#workload-model-open-loop)), and
-  [`LOAD_TEST_PLAYBOOK.md`](tests/load/LOAD_TEST_PLAYBOOK.md): how the 36 official load runs were done, and how to
-  operate the SUT laptop for every test type.
+- `docs/` — the test playbooks. [`LOAD_TEST_PLAYBOOK.md`](docs/LOAD_TEST_PLAYBOOK.md): how the 36 official load
+  runs were done, and how to operate the SUT laptop for every test type.
+  [`stress-test-playbook.md`](docs/stress-test-playbook.md) and [`ACCURACY_PLAYBOOK.md`](docs/ACCURACY_PLAYBOOK.md):
+  the stress and accuracy tests.
+- `tests/load/` — `load_test.jmx`, the open-loop JMeter plan (see [Workload model](#workload-model-open-loop)).
 - `tests/stress/` — `stress-test-plan.jmx` (gemma4:e4b ramp), `5-single-request-latency-test-plan.jmx` and its
-  result `baseline.jtl`, the 100 request bodies in `data/tickets.jsonl`, and
-  [`stress-test-playbook.md`](tests/stress/stress-test-playbook.md).
+  result `baseline.jtl`, and the 100 request bodies in `data/tickets.jsonl`.
 - `tests/accuracy/` — `accuracy_test.py` sends the golden set to the service, `accuracy_report.py` scores the runs,
-  `accuracy_figures.py` draws the slide figures; procedure in [`ACCURACY_PLAYBOOK.md`](tests/accuracy/ACCURACY_PLAYBOOK.md).
+  `accuracy_figures.py` draws the slide figures.
 - `tests/environment/` — SUT and load-generator environment records for Slide 7 (`p1_sut_environment.md`,
   `loadgen_environment*.md`) and the pinned model digests (`model_pins.json`).
 - `load-generator/` — `prepare_data.py` converts the dataset CSV into JMeter's input file (`data/tickets.jsonl`,
@@ -85,7 +87,7 @@ curl http://localhost:8000/health
 
 ## Running the load generator (JMeter)
 
-Official runs follow [`tests/load/LOAD_TEST_PLAYBOOK.md`](tests/load/LOAD_TEST_PLAYBOOK.md), with JMeter on a
+Official runs follow [`docs/LOAD_TEST_PLAYBOOK.md`](docs/LOAD_TEST_PLAYBOOK.md), with JMeter on a
 separate laptop from the service. The basic steps:
 
 1. Convert dataset rows into JMeter's input format (one JSON request body per line):
@@ -128,7 +130,7 @@ sequence (off-peak, peak, off-peak), with `POST /tickets` and `GET /search` runn
 | `run_id` | `norun` | Sent as the `X-Run-Id` header on every request; always pass it |
 
 The official load runs override some of these (90 s / 120 s / 90 s phases at one steady rate, 295 s timeout); the
-exact flags per configuration are in the load test playbook, §5.
+exact flags per configuration are in the load test playbook, section 4, step 2.
 
 Rates are real per-hour rates (no time compression), so short phases send few requests: 1,312/hour is about 0.36
 per second. Lengthen the phases for a meaningful sample. Threads are not a setting: the Open Model group starts one

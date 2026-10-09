@@ -11,7 +11,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.colors import LinearSegmentedColormap  # noqa: E402
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "analysis"))  # shared run/log helpers live there
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "analysis"))  # shared run/log helpers live there
 from runlib import CATEGORIES, OUTPUT_DIR  # noqa: E402
 
 FIG_DIR = OUTPUT_DIR / "figures"

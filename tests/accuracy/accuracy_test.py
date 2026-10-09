@@ -14,7 +14,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 COLUMNS = ["row", "golden_label", "predicted", "correct", "status", "error", "req_id", "ticket_id",
            "start_ms", "elapsed_ms", "classification_latency_ms"]
 # Bypass any system HTTP proxy: the SUT is on the LAN.

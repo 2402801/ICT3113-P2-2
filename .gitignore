@@ -221,9 +221,11 @@ __marimo__/
 load-generator/data/*.jsonl
 load-generator/results/*.jtl
 load-generator/results/report/
-# accuracy_test.py scratch output
-accuracy/results/
 load-generator/jmeter.log
+tests/load/results/
+tests/load/jmeter.log
+# accuracy_test.py scratch output
+tests/accuracy/results/
 
 # Server access log (scratch — copy a reported run's log into runs/ instead)
 server/logs/*.log

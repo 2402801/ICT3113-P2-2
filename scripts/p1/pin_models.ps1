@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  Records the exact tag + FULL digest of every candidate model in docs\environment\model_pins.json.
+  Records the exact tag + FULL digest of every candidate model in tests\environment\model_pins.json.
 .DESCRIPTION
   The pins file is what every later run is checked against: if a model's digest ever changes
   (for example after an accidental re-pull), prepare_run.ps1 refuses to start.

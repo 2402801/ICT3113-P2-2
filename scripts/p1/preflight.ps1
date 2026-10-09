@@ -57,7 +57,7 @@ Test-Step 'Candidate models pulled + pinned' {
         elseif (-not $pin) { $problems += "$m not pinned" }
         elseif ($cur.digest -ne $pin) { $problems += "$m digest changed" }
     }
-    if ($problems.Count -eq 0) { Add-Check 'Candidate models pulled + pinned' 'PASS' "$($Candidates.Count) models match docs\environment\model_pins.json" }
+    if ($problems.Count -eq 0) { Add-Check 'Candidate models pulled + pinned' 'PASS' "$($Candidates.Count) models match tests\environment\model_pins.json" }
     else { Add-Check 'Candidate models pulled + pinned' 'FAIL' ($problems -join '; ') }
 }
 

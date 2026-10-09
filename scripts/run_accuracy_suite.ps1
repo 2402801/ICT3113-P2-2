@@ -3,9 +3,9 @@
   Runs the official golden-set accuracy runs for every candidate model, unattended.
 .DESCRIPTION
   For each model: scripts\p1\switch_model.ps1 once, then for each run number:
-    scripts\p1\prepare_run.ps1 -TestType accuracy  ->  accuracy\accuracy_test.py  ->  scripts\p1\finish_run.ps1
+    scripts\p1\prepare_run.ps1 -TestType accuracy  ->  tests\accuracy\accuracy_test.py  ->  scripts\p1\finish_run.ps1
   The accuracy CSV and .meta.json are written straight into runs\<run-id>\, so nothing needs copying.
-  At the end it runs analysis\reconcile.py and accuracy\accuracy_report.py.
+  At the end it runs analysis\reconcile.py and tests\accuracy\accuracy_report.py.
   The full test procedure is in docs\ACCURACY_PLAYBOOK.md.
 
   Safe to re-run after a crash or Ctrl+C: finished runs are skipped, and a run that was prepared but
@@ -26,8 +26,8 @@ param(
 $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $P1 = Join-Path $PSScriptRoot 'p1'
-$AccuracyTest = Join-Path $RepoRoot 'accuracy\accuracy_test.py'
-$AccuracyReport = Join-Path $RepoRoot 'accuracy\accuracy_report.py'
+$AccuracyTest = Join-Path $RepoRoot 'tests\accuracy\accuracy_test.py'
+$AccuracyReport = Join-Path $RepoRoot 'tests\accuracy\accuracy_report.py'
 
 function Find-Python {
     # "python" on Windows is often the Microsoft Store stub, which exits without running anything.

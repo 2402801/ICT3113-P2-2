@@ -19,7 +19,7 @@ Related playbooks: `docs/stress-test-playbook.md` (stress test) and `docs/LOAD_T
 | Item | Value |
 |---|---|
 | Golden set | `datasets/golden_test_set.csv`: 175 tickets with final team labels, 21–35 per category, frozen at commit `0630ef5` (2026-09-16), before any model saw them |
-| Models | `llama3.2:1b`, `phi3:3.8b`, `mistral:7b`, `gemma4:e4b`, each pinned by digest in `docs/environment/model_pins.json` |
+| Models | `llama3.2:1b`, `phi3:3.8b`, `mistral:7b`, `gemma4:e4b`, each pinned by digest in `tests/environment/model_pins.json` |
 | Service settings (identical for every model) | prompt v1 (`server/prompt.py`), `temperature 0`, `seed 42`, JSON-schema output restricted to the 7 categories, `think` left at the model default |
 | Traffic | Each golden ticket sent once per run to `POST /tickets`, one at a time, outside any load run |
 | Runs | 3 complete runs per model (section 8.2 explains why one run is not enough) |
@@ -50,10 +50,10 @@ Related playbooks: `docs/stress-test-playbook.md` (stress test) and `docs/LOAD_T
 |---|---|
 | `scripts/run_accuracy_suite.ps1` | Runs the whole test unattended (section 4) |
 | `scripts/p1/switch_model.ps1`, `prepare_run.ps1`, `finish_run.ps1` | Per-model and per-run SUT steps, called by the suite |
-| `accuracy/accuracy_test.py` | Client: sends each golden ticket to `POST /tickets` and records the answer |
+| `tests/accuracy/accuracy_test.py` | Client: sends each golden ticket to `POST /tickets` and records the answer |
 | `analysis/reconcile.py` | Checks each run's client record against the service's own logs (section 6) |
-| `accuracy/accuracy_report.py` | Scores the runs: overall and per-category accuracy, precision, confusion matrices (section 7) |
-| `accuracy/accuracy_figures.py` | Draws the figures in `analysis/output/figures/` |
+| `tests/accuracy/accuracy_report.py` | Scores the runs: overall and per-category accuracy, precision, confusion matrices (section 7) |
+| `tests/accuracy/accuracy_figures.py` | Draws the figures in `analysis/output/figures/` |
 | `analysis/requirements_matrix.py` | Turns the scores into AR-1 / AR-2 / AR-3 verdicts |
 | `analysis/excluded_runs.csv` | Runs that were invalidated, with the reason (section 5) |
 
@@ -67,7 +67,7 @@ Related playbooks: `docs/stress-test-playbook.md` (stress test) and `docs/LOAD_T
 3. The model under test is pulled into the **Docker** Ollama and matches its pin:
    `docker compose exec ollama ollama list` shows the pinned ID (for example gemma4:e4b = `c6eb396dbd59`).
    A tag can be re-pushed upstream with a different build: if the ID differs, do not run; obtain the pinned build.
-4. `git` is on PATH and the working tree is clean outside `runs/`, `docs/environment/` and `analysis/output/`.
+4. `git` is on PATH and the working tree is clean outside `runs/`, `tests/environment/` and `analysis/output/`.
 5. `powershell -ExecutionPolicy Bypass -File scripts\p1\preflight.ps1` shows no FAIL for the model under test
    (missing *other* candidates can be ignored).
 6. AC power, Windows power mode **Best performance**, sleep disabled.
@@ -101,7 +101,7 @@ these steps; nothing needs to be typed between them:
       clean git; sends one fixed, unmeasured warm-up ticket; checks the model is resident with `size_vram = 0`
       (CPU only); restarts the service with an empty access log; empties the database; writes
       `runs/<run-id>/run_info.json` and marks the run READY in `runs/run_register.csv`.
-   2. **Send the golden set** (`accuracy/accuracy_test.py`): posts all 175 golden tickets to
+   2. **Send the golden set** (`tests/accuracy/accuracy_test.py`): posts all 175 golden tickets to
       `http://127.0.0.1:8000/tickets`, **one at a time** (the next ticket is sent only after the previous answer
       arrives), with a 900 s client timeout and the header `X-Run-Id: <run-id>`. For every ticket it records the
       golden label, returned category, HTTP status and the service's `req_id` in
@@ -161,7 +161,7 @@ phi3 runs 2–3 are PASS.
 
 ```powershell
 cd analysis
-python ..\accuracy\accuracy_report.py <run IDs of every counted accuracy run>
+python ..\tests\accuracy\accuracy_report.py <run IDs of every counted accuracy run>
 python requirements_matrix.py
 ```
 
@@ -241,7 +241,7 @@ the reasoning and sometimes the category. A single run is therefore one sample, 
   counted accuracy runs (`analysis/output/requirements_matrix.md`).
 - **Latency from these runs is not a result.** The per-ticket times are **not** used as latency results. Latency
   comes from the JMeter load tests.
-- **No environment record for P3's machines.** Their hardware is not recorded in `docs/environment/`, and
+- **No environment record for P3's machines.** Their hardware is not recorded in `tests/environment/`, and
   `runs/run_register.csv` shows power mode `unknown` for every accuracy run (AC power: yes).
 - **Small categories.** The golden set has 21–35 tickets per category, so per-category confidence intervals are
   wide.
