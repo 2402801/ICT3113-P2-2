@@ -45,14 +45,17 @@ analysis/            reconciliation, requirement verdicts, load statistics
 - `tests/environment/` — SUT and load-generator environment records for Slide 7 (`p1_sut_environment.md`,
   `loadgen_environment*.md`) and the pinned model digests (`model_pins.json`).
 - `load-generator/` — `prepare_data.py` converts the dataset CSV into JMeter's input file (`data/tickets.jsonl`,
-  generated, not committed); `data/search_terms.csv` holds the 17 search terms. The `Dockerfile` builds a JMeter
-  image; it was never used for official runs, because JMeter must not run on the SUT.
+  generated, not committed); `data/search_terms.csv` holds the 17 search terms. The `Dockerfile` is left over from
+  the old layout: it expects `load_test.jmx` in this folder, so the image no longer runs the plan. It was never used
+  for official runs, because JMeter must not run on the SUT.
 - `scripts/` — `p1/` operates the official SUT laptop: preflight checks, model switching, per-run warm-up/reset
   (`prepare_run.ps1`) and log/database archiving into `runs/` (`finish_run.ps1`), environment evidence.
   `record_loadgen_environment.ps1` records the load-generator laptop; `run_accuracy_suite.ps1` runs the accuracy
   test unattended.
-- `runs/` — one folder per run, named `<model>_<test-type>_<config>_run<n>`: the client record (`.jtl` or accuracy
-  CSV), server log, database export, Ollama log and `run_info.json`. `run_register.csv` indexes every run.
+- `runs/` — one folder per kept run, named `<model>_<test-type>_<config>_run<n>`: the client record (`.jtl` or
+  accuracy CSV), server log, database export, Ollama log and `run_info.json`. `run_register.csv` is the run index.
+  The folders of the eight excluded load runs were removed and are kept in git history (load test playbook,
+  section 5); `analysis/excluded_runs.csv` lists every excluded run with the reason.
 - `analysis/` — `reconcile.py` checks each run's client record against the server log and database export,
   `requirements_matrix.py` gives the requirement verdicts, `load_summary.py` the per-run and per-configuration
   load statistics. `excluded_runs.csv` lists invalidated runs with the reason. Results go to `analysis/output/`.
@@ -81,8 +84,8 @@ curl http://localhost:8000/health
 ## API
 
 - `POST /tickets` — body `{"narrative": "..."}`, returns `{id, category, narrative, classification_latency_ms}`
-- `GET /search?q=...` — returns tickets whose narrative contains `q`
-- `GET /stats` — returns ticket counts per category
+- `GET /search?q=...` — returns `{count, results}`: every ticket whose narrative contains `q` (case-insensitive)
+- `GET /stats` — returns `{counts, total}`: ticket counts per category and overall
 - `GET /health` — returns `{status, model, prompt_version, think}`
 
 ## Running the load generator (JMeter)
@@ -90,7 +93,7 @@ curl http://localhost:8000/health
 Official runs follow [`docs/LOAD_TEST_PLAYBOOK.md`](docs/LOAD_TEST_PLAYBOOK.md), with JMeter on a
 separate laptop from the service. The basic steps:
 
-1. Convert dataset rows into JMeter's input format (one JSON request body per line):
+1. From the repository root, convert dataset rows into JMeter's input format (one JSON request body per line):
 
    ```bash
    cd load-generator
@@ -100,7 +103,7 @@ separate laptop from the service. The basic steps:
 2. Run the test plan from `tests/load/`, pointing it at the input files in `load-generator/data/`:
 
    ```bash
-   cd tests/load
+   cd ../tests/load
    jmeter -n -t load_test.jmx \
      -Jhost=<SUT-IP> -Jport=8000 \
      -Jrun_id=my-run-01 -Jsample_variables=req_id \
