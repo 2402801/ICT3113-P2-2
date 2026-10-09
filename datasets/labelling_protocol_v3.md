@@ -1,7 +1,7 @@
 # Labelling Protocol — Ticket Triage Golden Test Set (v3, final)
 
 **Team rows used:** 2000–2999
-**Golden set:** 175 tickets, stratified — 25 drawn from each of the 7 `source_label` categories (seed = 2113, reproducible). The original `source_label` was hidden from both annotators during labelling and revealed only at the resolution meeting, as a reference point; it decided no resolution.
+**Golden set:** 175 tickets, stratified — 25 drawn from each of the 7 `source_label` categories (seed = 2113, reproducible). The original `source_label` was present in each annotator's sheet but not used for labelling; annotators labelled from the narrative alone. It served as a reference point at the resolution meeting and decided no resolution.
 **Annotators:** Phoebe and Nicholas — labelled independently, without conferring, then reconciled by discussion.
 **Status:** Frozen. Final labels committed before any model-calling code was written.
 
@@ -113,7 +113,7 @@ Measured on all 175 tickets, comparing the two independently-submitted label col
 
 ## 5. Disagreement Log
 
-All twelve disagreements were resolved by discussion between both annotators. The original `source_label` was visible at this stage as a reference only; where the team's judgment differed from it, the team's judgment stands. Full narratives and both annotators' original reasoning are preserved in `golden_test_set_final_175.csv`.
+All twelve disagreements were resolved by discussion between both annotators. The original `source_label` served at this stage as a reference only; where the team's judgment differed from it, the team's judgment stands. Full narratives and both annotators' original reasoning are preserved in `golden_test_set.csv`.
 
 | Row | Phoebe | Nicholas | **Final** | Basis | Gap → rule |
 |---|---|---|---|---|---|
