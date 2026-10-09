@@ -3,6 +3,10 @@
 Owner: P1 (Environment & Infrastructure). Readers: whoever operates the SUT laptop, and the testers
 (P2–P5) who send traffic to it. Everything here is Windows PowerShell 5.1 and runs from the repo root.
 
+Test playbooks that use this runbook: load tests, [`docs/LOAD_TEST_PLAYBOOK.md`](LOAD_TEST_PLAYBOOK.md);
+accuracy tests, [`accuracy/ACCURACY_PLAYBOOK.md`](../accuracy/ACCURACY_PLAYBOOK.md); stress test,
+[`stress-test/stress-test-playbook.md`](../stress-test/stress-test-playbook.md).
+
 > Run scripts as `powershell -ExecutionPolicy Bypass -File scripts\p1\<name>.ps1 ...`
 
 ## 1. What the SUT is
