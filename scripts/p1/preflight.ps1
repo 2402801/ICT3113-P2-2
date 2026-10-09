@@ -104,7 +104,7 @@ Test-Step 'Frozen golden set + prediction record' {
 Test-Step 'Firewall rule TCP 8000' {
     $rule = Get-NetFirewallRule -DisplayName 'ICT3113 SUT API (TCP 8000)' -ErrorAction SilentlyContinue
     if ($rule -and $rule.Enabled -eq 'True') { Add-Check 'Firewall rule TCP 8000' 'PASS' 'inbound allow, local subnet' }
-    else { Add-Check 'Firewall rule TCP 8000' 'WARN' 'rule missing - teammates may be blocked (see runbook, needs admin)' }
+    else { Add-Check 'Firewall rule TCP 8000' 'WARN' 'rule missing - teammates may be blocked (see docs/LOAD_TEST_PLAYBOOK.md section 3.1, needs admin)' }
 }
 
 Test-Step 'LAN address' {

@@ -149,7 +149,7 @@ $profileText = 'n/a'
 if ($netProfile) { $profileText = "$($netProfile.Name) [$($netProfile.NetworkCategory)]" }
 Add-Row 'Windows network category' $profileText
 Add-Row 'Service URL for testers' "http://$(Get-LanIPv4):8000"
-$fwText = 'MISSING (see runbook)'
+$fwText = 'MISSING (see docs/LOAD_TEST_PLAYBOOK.md section 3.1)'
 if ($fwRule) { $fwText = "present, enabled=$($fwRule.Enabled), profile=$($fwRule.Profile)" }
 Add-Row 'Firewall rule for TCP 8000' $fwText
 Add-Row 'MySQL 3306 / Ollama 11434' 'bound to 127.0.0.1 only - not reachable from the LAN'
