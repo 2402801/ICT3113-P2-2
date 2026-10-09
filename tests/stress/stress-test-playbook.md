@@ -34,7 +34,7 @@
 - Baseline service running, Docker. gemma4:e4b pulled, pinned tag+digest.
 - JMeter on **separate machine** from service/Ollama. No co-host: steals CPU, fakes the latency numbers. On the load-generator laptop run `scripts\record_loadgen_environment.ps1 -SutHost <SUT-IP>` once per session and commit the output to `docs/environment/` (Slide 7).
 - Service logging on, writing to repo log path. Every request must reconcile w/ a log line.
-- SUT session checklist (AC power, Best performance, close heavy apps, `preflight.ps1` ends `PREFLIGHT OK`): `docs/P1_SUT_RUNBOOK.md` section 4. Sync both laptops' clocks first, so JMeter `timeStamp` lines up with the server log `start_ms`.
+- SUT session checklist (AC power, Best performance, close heavy apps, `preflight.ps1` ends `PREFLIGHT OK`): `tests/load/LOAD_TEST_PLAYBOOK.md` §4.1. Sync both laptops' clocks first, so JMeter `timeStamp` lines up with the server log `start_ms`.
 - `[OPEN]` Ollama host spec (CPU/RAM/OS), TBD, fill in before run. Drives monitoring branch below + Slide 7.
 
 ## Step 0: Warm-up (unmeasured)
@@ -170,6 +170,6 @@ The plan's `Recovery` group drops back to Step 2's step-1 rate (64/hr) for 120 s
 
 - `[OPEN]` Ollama host OS + hardware spec
 - `[OPEN]` Monitoring command (Linux vs Windows branch above) once host OS is confirmed
-- `[OPEN]` `think` setting: baseline 33.51 s was measured with the default (thinking on). Confirm the team keeps it; changing it later means redoing every run (`docs/P1_SUT_RUNBOOK.md` section 9, item 4).
+- `[OPEN]` `think` setting: baseline 33.51 s was measured with the default (thinking on). Confirm the team keeps it; changing it later means redoing every run (`tests/load/LOAD_TEST_PLAYBOOK.md` §12.1, item 4).
 - `[OPEN]` gemma4:e4b tag+digest: confirm matches Prediction Record / Candidate Models slide
 - `[OPEN]` Not yet validated end to end: the rebuilt `stress-test-plan.jmx` has not been executed. Review it and do a short dry run (for example `-Jstep_sec=20` with scaled-up rates against a stub or a fast model) before the real run.

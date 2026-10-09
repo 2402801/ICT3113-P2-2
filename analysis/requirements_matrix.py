@@ -178,7 +178,7 @@ def main() -> None:
             if a["status"] == "200":
                 acc_answers[r["model"]][a["row"]].add(a["predicted"])
     sut_answers = defaultdict(lambda: defaultdict(Counter))  # model -> golden row -> SUT categories
-    for run in load_runs({"load", "stress", "smoke"}):
+    for run in load_runs({"load", "stress"}):
         if run.run_id in excluded or not (run.path / "tickets.tsv").exists():
             continue
         for t in read_mysql_tsv(run.path / "tickets.tsv"):
@@ -266,7 +266,7 @@ def main() -> None:
                            for m in MODELS] for c in cats]))
 
     md += ["", "## Accuracy runs vs the official SUT (same golden ticket)", "",
-           "Golden-set tickets that were also sent during load, stress or smoke runs on the official SUT, compared "
+           "Golden-set tickets that were also sent during load or stress runs on the official SUT, compared "
            "with the categories the counted accuracy runs gave the same ticket.", ""]
     md.append(md_table(["Model", "Golden tickets seen on the SUT", "SUT answers", "Same category"], agreement))
 

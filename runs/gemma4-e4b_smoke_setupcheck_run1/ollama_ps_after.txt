@@ -1,2 +1,0 @@
-NAME          ID              SIZE      PROCESSOR    CONTEXT    UNTIL   
-gemma4:e4b    c6eb396dbd59    9.4 GB    100% CPU     4096       Forever    
