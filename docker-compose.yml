@@ -27,7 +27,7 @@ services:
     # No GPU devices are passed through to this container, so inference is CPU-only.
     environment:
       OLLAMA_NUM_PARALLEL: "1"       # baseline: one inference at a time, others wait in Ollama's queue
-      OLLAMA_MAX_LOADED_MODELS: "1"  # only the model under test is resident in RAM
+      OLLAMA_MAX_LOADED_MODELS: "2"  # A2: cascade needs small + large model resident together; held at 2 for every config
       OLLAMA_KEEP_ALIVE: "-1"        # never unload on idle mid-test; models are unloaded explicitly on switch
     ports:
       - "127.0.0.1:11434:11434"
@@ -55,6 +55,10 @@ services:
       OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:1b}
       OLLAMA_THINK: ${OLLAMA_THINK:-default}  # default = model's own behaviour; true/false forces it
       OLLAMA_TIMEOUT_S: ${OLLAMA_TIMEOUT_S:-600}
+      # A2 cascade (datasets/a2/escalation_rule.md): off = OLLAMA_MODEL alone; s1/s2 = OLLAMA_MODEL first,
+      # escalating to CASCADE_LARGE_MODEL unless its answer is in the setting's accept list.
+      CASCADE_SETTING: ${CASCADE_SETTING:-off}
+      CASCADE_LARGE_MODEL: ${CASCADE_LARGE_MODEL:-gemma4:e4b}
     volumes:
       - ./server/logs:/app/logs
     depends_on:

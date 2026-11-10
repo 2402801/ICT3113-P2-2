@@ -1,0 +1,151 @@
+{
+  "settings": "OLLAMA_HOST=0.0.0.0:11434\nOLLAMA_KEEP_ALIVE=-1\nOLLAMA_MAX_LOADED_MODELS=2\nOLLAMA_NUM_PARALLEL=1",
+  "calls": [
+    {
+      "call": 1,
+      "model": "phi3:3.8b",
+      "think": null,
+      "words": 175,
+      "wall_s": 4.4,
+      "load_s": 0.0,
+      "eval_tokens": 9,
+      "thinking_chars": 0,
+      "answer": "{\"category\": \"Consumer loan\"}",
+      "resident_after": [
+        [
+          "phi3:3.8b",
+          3.59,
+          0
+        ],
+        [
+          "gemma4:e4b",
+          8.78,
+          0
+        ]
+      ],
+      "mem_available_gib": 3.9
+    },
+    {
+      "call": 2,
+      "model": "gemma4:e4b",
+      "think": null,
+      "words": 115,
+      "wall_s": 31.9,
+      "load_s": 0.0,
+      "eval_tokens": 430,
+      "thinking_chars": 1880,
+      "answer": "{\"category\": \"Consumer loan\"}",
+      "resident_after": [
+        [
+          "gemma4:e4b",
+          8.78,
+          0
+        ],
+        [
+          "phi3:3.8b",
+          3.59,
+          0
+        ]
+      ],
+      "mem_available_gib": 3.74
+    },
+    {
+      "call": 3,
+      "model": "phi3:3.8b",
+      "think": null,
+      "words": 145,
+      "wall_s": 1.94,
+      "load_s": 0.0,
+      "eval_tokens": 9,
+      "thinking_chars": 0,
+      "answer": "{\"category\": \"Credit reporting\"}",
+      "resident_after": [
+        [
+          "phi3:3.8b",
+          3.59,
+          0
+        ],
+        [
+          "gemma4:e4b",
+          8.78,
+          0
+        ]
+      ],
+      "mem_available_gib": 3.74
+    },
+    {
+      "call": 4,
+      "model": "gemma4:e4b",
+      "think": null,
+      "words": 207,
+      "wall_s": 47.64,
+      "load_s": 0.0,
+      "eval_tokens": 636,
+      "thinking_chars": 2623,
+      "answer": "{\"category\": \"Credit reporting\"}",
+      "resident_after": [
+        [
+          "gemma4:e4b",
+          8.78,
+          0
+        ],
+        [
+          "phi3:3.8b",
+          3.59,
+          0
+        ]
+      ],
+      "mem_available_gib": 3.63
+    },
+    {
+      "call": 5,
+      "model": "phi3:3.8b",
+      "think": null,
+      "words": 134,
+      "wall_s": 2.09,
+      "load_s": 0.0,
+      "eval_tokens": 9,
+      "thinking_chars": 0,
+      "answer": "{\"category\": \"Consumer loan\"}",
+      "resident_after": [
+        [
+          "phi3:3.8b",
+          3.59,
+          0
+        ],
+        [
+          "gemma4:e4b",
+          8.78,
+          0
+        ]
+      ],
+      "mem_available_gib": 3.62
+    },
+    {
+      "call": 6,
+      "model": "gemma4:e4b",
+      "think": null,
+      "words": 175,
+      "wall_s": 39.41,
+      "load_s": 0.0,
+      "eval_tokens": 546,
+      "thinking_chars": 2277,
+      "answer": "{\"category\": \"Credit card\"}",
+      "resident_after": [
+        [
+          "gemma4:e4b",
+          8.78,
+          0
+        ],
+        [
+          "phi3:3.8b",
+          3.59,
+          0
+        ]
+      ],
+      "mem_available_gib": 3.52
+    }
+  ],
+  "ollama_ps": "NAME          ID              SIZE      PROCESSOR    CONTEXT    UNTIL   \ngemma4:e4b    c6eb396dbd59    9.4 GB    100% CPU     4096       Forever    \nphi3:3.8b     4f2222927938    3.9 GB    100% CPU     4096       Forever",
+  "verdict": "PASS"
+}

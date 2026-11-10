@@ -7,7 +7,7 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from categories import CATEGORIES
-from classifier import OLLAMA_MODEL, OLLAMA_THINK, classify_detailed
+from classifier import CASCADE_LARGE_MODEL, CASCADE_SETTING, OLLAMA_MODEL, OLLAMA_THINK, classify_detailed
 from database import Ticket, RequestMetric, get_db, init_db
 from logging_setup import configure_logging, format_fields
 from prompt import PROMPT_VERSION
@@ -78,7 +78,8 @@ def create_ticket(ticket: TicketIn, request: Request, db: Session = Depends(get_
         result = classify_detailed(ticket.narrative)
     except Exception as exc:
         status_code = 502
-        request.state.log_fields.update(getattr(exc, "ollama", {}), error=type(exc).__name__)
+        request.state.log_fields.update(getattr(exc, "ollama", {}), **getattr(exc, "route", {}),
+                                        error=type(exc).__name__)
         _record_metric(db, "/tickets", status_code, (time.perf_counter() - start) * 1000)
         raise HTTPException(status_code=502, detail=f"Classification backend error: {exc}")
 
@@ -94,7 +95,7 @@ def create_ticket(ticket: TicketIn, request: Request, db: Session = Depends(get_
     db.refresh(db_ticket)
 
     request.state.log_fields.update(
-        ticket_id=db_ticket.id, category=db_ticket.category, **result.ollama
+        ticket_id=db_ticket.id, category=db_ticket.category, **result.ollama, **result.route
     )
     _record_metric(db, "/tickets", status_code, latency_ms)
 
@@ -153,9 +154,13 @@ def stats(db: Session = Depends(get_db)):
 
 @app.get("/health")
 def health():
-    return {
+    body = {
         "status": "ok",
         "model": OLLAMA_MODEL,
         "prompt_version": PROMPT_VERSION,
         "think": OLLAMA_THINK,
+        "cascade": CASCADE_SETTING,
     }
+    if CASCADE_SETTING != "off":
+        body["large_model"] = CASCADE_LARGE_MODEL
+    return body
