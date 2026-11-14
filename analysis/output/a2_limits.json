@@ -1,0 +1,88 @@
+{
+  "source_run": "gemma4-e4b_accuracy_a2test88_run1",
+  "model": "gemma4:e4b",
+  "test_set": "datasets/a2/test_set.csv",
+  "test_set_sha256": "ce782c764cc8a81b665aa926da6aa10aef50a9e0e0ae4f8464616124d7dbdf9f",
+  "reconciliation": "PASS",
+  "n": 88,
+  "top_correct": 69,
+  "top_accuracy_pct": 78.409,
+  "no_answer": 0,
+  "overall": {
+    "drop_pp": 10,
+    "limit_pct": 68.409,
+    "min_correct": 61
+  },
+  "categories": {
+    "Credit reporting": {
+      "n": 20,
+      "top_correct": 17,
+      "top_accuracy_pct": 85.0,
+      "drop_pp": 15,
+      "limit_pct": 70.0,
+      "min_correct": 14,
+      "pp_per_ticket": 5.0,
+      "small": false
+    },
+    "Credit card": {
+      "n": 16,
+      "top_correct": 11,
+      "top_accuracy_pct": 68.75,
+      "drop_pp": 15,
+      "limit_pct": 53.75,
+      "min_correct": 9,
+      "pp_per_ticket": 6.2,
+      "small": false
+    },
+    "Consumer loan": {
+      "n": 8,
+      "top_correct": 8,
+      "top_accuracy_pct": 100.0,
+      "drop_pp": 15,
+      "limit_pct": 85.0,
+      "min_correct": 7,
+      "pp_per_ticket": 12.5,
+      "small": true
+    },
+    "Bank account or service": {
+      "n": 14,
+      "top_correct": 13,
+      "top_accuracy_pct": 92.857,
+      "drop_pp": 15,
+      "limit_pct": 77.857,
+      "min_correct": 11,
+      "pp_per_ticket": 7.1,
+      "small": false
+    },
+    "Debt collection": {
+      "n": 9,
+      "top_correct": 4,
+      "top_accuracy_pct": 44.444,
+      "drop_pp": 15,
+      "limit_pct": 29.444,
+      "min_correct": 3,
+      "pp_per_ticket": 11.1,
+      "small": true
+    },
+    "Money transfer or service": {
+      "n": 17,
+      "top_correct": 12,
+      "top_accuracy_pct": 70.588,
+      "drop_pp": 15,
+      "limit_pct": 55.588,
+      "min_correct": 10,
+      "pp_per_ticket": 5.9,
+      "small": false
+    },
+    "Mortgage": {
+      "n": 4,
+      "top_correct": 4,
+      "top_accuracy_pct": 100.0,
+      "drop_pp": 15,
+      "limit_pct": 85.0,
+      "min_correct": 4,
+      "pp_per_ticket": 25.0,
+      "small": true
+    }
+  }
+}

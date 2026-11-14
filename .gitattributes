@@ -1,2 +1,5 @@
 # Run evidence (logs, .jtl, DB exports) is stored byte-for-byte: no line-ending conversion
 runs/** -text
+# Datasets are model input: narratives contain line breaks inside CSV fields, and core.autocrlf would turn each
+# "\n" into "\r\n", changing the text sent to the models (and the file's sha256). Keep them byte-for-byte.
+datasets/** -text
