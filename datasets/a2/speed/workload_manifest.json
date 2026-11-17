@@ -1,0 +1,23 @@
+{
+  "seed": 20261117,
+  "source": "tests/stress/data/tickets.jsonl",
+  "row_number_means": "1-based line number in the source file",
+  "golden_tickets_excluded": true,
+  "counts": {
+    "workload": 45,
+    "long": 9,
+    "probe": 3,
+    "warmup_candidates": 15
+  },
+  "probe_rows": [
+    35,
+    85,
+    27
+  ],
+  "sha256": {
+    "s_probe_tickets.jsonl": "d607da5777ddc0db838c1e26d4b246732caf8cf7ec4798415ddd33e6b2860903",
+    "warmup_candidates.jsonl": "2bc615be1c1616383960728dfa319d2520d1e67e1dad6c7185d9cee79443ed11",
+    "workload_tickets.jsonl": "daadb330df75a9935579a0f284e4c1f83ff269a2aaeaf0f00ce669e7c4e297da",
+    "workload_rows.csv": "51028becc9f4bd541c68406bf2df8bed92f51a71fcf70d55bf0edb17c5a58ddf"
+  }
+}

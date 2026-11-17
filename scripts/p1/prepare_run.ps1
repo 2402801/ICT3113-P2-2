@@ -15,11 +15,13 @@
   powershell -ExecutionPolicy Bypass -File scripts\p1\prepare_run.ps1 -TestType load -Config 1312tph -Run 1 -Tester P2
 #>
 param(
-    [Parameter(Mandatory = $true)][ValidateSet('load', 'accuracy', 'stress', 'smoke')][string]$TestType,
+    [Parameter(Mandatory = $true)][ValidateSet('load', 'accuracy', 'stress', 'smoke', 'speed')][string]$TestType,
     [Parameter(Mandatory = $true)][ValidatePattern('^[A-Za-z0-9.+-]+$')][string]$Config,
     [Parameter(Mandatory = $true)][ValidateRange(1, 99)][int]$Run,
     [Parameter(Mandatory = $true)][string]$Tester,
     [ValidateRange(1, 10)][int]$WarmupCount = 1,
+    [string]$WarmupFile = '',     # A2: JSONL of fixed warm-up tickets (one {"narrative": ...} per line); replaces the single sentence
+    [string[]]$RequireModels = @(), # A2 cascade: models that must ALSO be resident (and CPU-only) before the run starts
     [string]$Notes = '',          # e.g. Legion thermal mode, network used, anything unusual
     [switch]$AllowDirty           # only for smoke/dev runs; official runs must be on a commit
 )
@@ -53,22 +55,32 @@ if ($power.on_ac_power -and $power.power_mode -eq 'Best performance') { Write-Ok
 
 Write-Step "Warm-up: $WarmupCount fixed ticket(s), not measured"
 New-Item -ItemType Directory -Path $runDir | Out-Null
-$warmupBody = @{ narrative = $WarmupNarrative } | ConvertTo-Json
+$warmupTexts = @($WarmupNarrative)
+if ($WarmupFile) {
+    $warmupTexts = @(Get-Content -LiteralPath $WarmupFile -Encoding UTF8 | Where-Object { $_.Trim() } | ForEach-Object { ($_ | ConvertFrom-Json).narrative })
+    $WarmupCount = $warmupTexts.Count
+}
 for ($i = 1; $i -le $WarmupCount; $i++) {
-    $r = Invoke-RestMethod -Method Post -Uri "$ApiUrl/tickets" -Body $warmupBody -ContentType 'application/json' `
+    $text = $warmupTexts[0]
+    if ($WarmupFile) { $text = $warmupTexts[$i - 1] }
+    $warmupBody = @{ narrative = $text } | ConvertTo-Json
+    $r = Invoke-RestMethod -Method Post -Uri "$ApiUrl/tickets" -Body ([Text.Encoding]::UTF8.GetBytes($warmupBody)) -ContentType 'application/json; charset=utf-8' `
         -Headers @{ 'X-Run-Id' = "$runId-warmup" } -TimeoutSec 900
     Write-Ok ("warm-up {0}: category='{1}' in {2:N0} ms" -f $i, $r.category, $r.classification_latency_ms)
 }
 
-Write-Step 'Checking the model is resident and CPU-only'
+Write-Step 'Checking the model(s) are resident and CPU-only'
 $loaded = @(Get-LoadedModels)
-$entry = $loaded | Where-Object { $_.name -eq $model }
-if (-not $entry) { throw "$model is not loaded in Ollama after the warm-up." }
-if ($entry.size_vram -gt 0) { throw "$model reports $($entry.size_vram) bytes in VRAM: GPU use is forbidden. Do not run." }
+$needed = @($model) + @($RequireModels | Where-Object { $_ -and $_ -ne $model })
+foreach ($name in $needed) {
+    $entry = $loaded | Where-Object { $_.name -eq $name }
+    if (-not $entry) { throw "$name is not loaded in Ollama after the warm-up (resident: $(($loaded.name) -join ', ')). Do not start the run." }
+    if ($entry.size_vram -gt 0) { throw "$name reports $($entry.size_vram) bytes in VRAM: GPU use is forbidden. Do not run." }
+}
 Write-Utf8File -Path (Join-Path $runDir 'ollama_ps_before.json') -Content (ConvertTo-Json @($loaded) -Depth 6)
 Write-Utf8File -Path (Join-Path $runDir 'ollama_ps_before.txt') -Content ((Invoke-Compose @('exec', '-T', 'ollama', 'ollama', 'ps')) -join "`n")
-if ($loaded.Count -ne 1) { Write-Warn "$($loaded.Count) models resident; expected only $model" }
-Write-Ok "$model loaded, size_vram=0 (CPU only)"
+if ($loaded.Count -ne $needed.Count) { Write-Warn "$($loaded.Count) models resident; expected $($needed -join ' + ')" }
+Write-Ok "$($needed -join ' + ') loaded, size_vram=0 (CPU only)"
 
 Write-Step 'Starting a fresh service log for this run'
 Invoke-Compose @('stop', 'server') | Out-Null

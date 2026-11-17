@@ -65,7 +65,9 @@ def _request_body(model: str, narrative: str) -> dict:
         "format": RESPONSE_FORMAT,
         "options": OPTIONS,
     }
-    if OLLAMA_THINK in ("true", "false"):
+    # Only gemma4 can think; the flag is not sent to the other models, so a cascade with think=false changes
+    # gemma4 only and the small model's call stays identical.
+    if OLLAMA_THINK in ("true", "false") and model.startswith("gemma4"):
         body["think"] = OLLAMA_THINK == "true"
     return body
 
