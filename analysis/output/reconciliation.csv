@@ -1,2 +1,6 @@
 run_id,verdict,excluded,client_record,client_samples,server_lines,paired_req_id,clock_offset_ms,gap_p50_ms,gap_p95_ms,paired_time,client_unpaired,server_unpaired,tickets_db,fails,warns
-gemma4-e4b_accuracy_a2test88_run1,PASS,,gemma4-e4b_accuracy_a2test88_run1_accuracy.csv,88,90,88,2.0,0.945,23.106,0,0,0,88,,
+llama3.2-1b_accuracy_a2test88_run1,PASS,,llama3.2-1b_accuracy_a2test88_run1_accuracy.csv,88,90,88,1.0,2.49,24.949,0,0,0,88,,
+mistral-7b_accuracy_a2test88_run1,PASS,,mistral-7b_accuracy_a2test88_run1_accuracy.csv,88,90,88,2.0,2.485,23.241,0,0,0,88,,
+phi3-3.8b_accuracy_a2test88_run1,PASS,,phi3-3.8b_accuracy_a2test88_run1_accuracy.csv,88,90,88,1.5,2.44,21.27,0,0,0,88,,
+phi3-3.8b_accuracy_a2test88-s1_run1,PASS,,phi3-3.8b_accuracy_a2test88-s1_run1_accuracy.csv,88,90,88,2.0,2.365,23.408,0,0,0,88,,
+phi3-3.8b_accuracy_a2test88-s2_run1,PASS,,phi3-3.8b_accuracy_a2test88-s2_run1_accuracy.csv,88,90,88,2.0,2.475,24.153,0,0,0,88,,

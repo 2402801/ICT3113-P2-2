@@ -1,0 +1,295 @@
+config,run_id,true,predicted,count
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Credit reporting,17
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Credit card,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Consumer loan,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Bank account or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Debt collection,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Money transfer or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit reporting,Mortgage,3
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Credit reporting,2
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Credit card,11
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Consumer loan,1
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Bank account or service,2
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Debt collection,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Money transfer or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Credit card,Mortgage,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Credit reporting,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Credit card,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Consumer loan,8
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Bank account or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Debt collection,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Money transfer or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Consumer loan,Mortgage,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Credit reporting,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Credit card,1
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Consumer loan,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Bank account or service,13
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Debt collection,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Money transfer or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Bank account or service,Mortgage,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Credit reporting,3
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Credit card,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Consumer loan,1
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Bank account or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Debt collection,4
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Money transfer or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Debt collection,Mortgage,1
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Credit reporting,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Credit card,1
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Consumer loan,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Bank account or service,4
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Debt collection,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Money transfer or service,12
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Money transfer or service,Mortgage,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Credit reporting,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Credit card,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Consumer loan,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Bank account or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Debt collection,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Money transfer or service,0
+gemma4:e4b,gemma4-e4b_accuracy_a2test88_run1,Mortgage,Mortgage,4
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Credit reporting,16
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Credit card,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Consumer loan,1
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Bank account or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Debt collection,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Money transfer or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit reporting,Mortgage,3
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Credit reporting,3
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Credit card,8
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Consumer loan,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Bank account or service,5
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Debt collection,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Money transfer or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Credit card,Mortgage,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Credit reporting,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Credit card,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Consumer loan,5
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Bank account or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Debt collection,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Money transfer or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Consumer loan,Mortgage,3
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Credit reporting,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Credit card,3
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Consumer loan,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Bank account or service,11
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Debt collection,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Money transfer or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Bank account or service,Mortgage,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Credit reporting,1
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Credit card,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Consumer loan,1
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Bank account or service,2
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Debt collection,3
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Money transfer or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Debt collection,Mortgage,2
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Credit reporting,1
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Credit card,1
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Consumer loan,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Bank account or service,4
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Debt collection,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Money transfer or service,11
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Money transfer or service,Mortgage,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Credit reporting,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Credit card,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Consumer loan,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Bank account or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Debt collection,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Money transfer or service,0
+phi3:3.8b,phi3-3.8b_accuracy_a2test88_run1,Mortgage,Mortgage,4
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Credit reporting,16
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Credit card,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Consumer loan,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Bank account or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Debt collection,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Money transfer or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit reporting,Mortgage,3
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Credit reporting,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Credit card,13
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Consumer loan,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Bank account or service,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Debt collection,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Money transfer or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Credit card,Mortgage,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Credit reporting,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Credit card,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Consumer loan,5
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Bank account or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Debt collection,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Money transfer or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Consumer loan,Mortgage,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Credit reporting,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Credit card,5
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Consumer loan,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Bank account or service,9
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Debt collection,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Money transfer or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Bank account or service,Mortgage,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Credit reporting,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Credit card,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Consumer loan,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Bank account or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Debt collection,8
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Money transfer or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Debt collection,Mortgage,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Credit reporting,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Credit card,5
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Consumer loan,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Bank account or service,5
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Debt collection,1
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Money transfer or service,6
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Money transfer or service,Mortgage,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Credit reporting,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Credit card,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Consumer loan,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Bank account or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Debt collection,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Money transfer or service,0
+mistral:7b,mistral-7b_accuracy_a2test88_run1,Mortgage,Mortgage,4
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Credit reporting,13
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Credit card,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Bank account or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Debt collection,6
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit reporting,Mortgage,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Credit reporting,13
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Credit card,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Bank account or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Debt collection,3
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Credit card,Mortgage,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Credit reporting,5
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Credit card,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Bank account or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Debt collection,2
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Consumer loan,Mortgage,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Credit reporting,7
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Credit card,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Bank account or service,4
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Debt collection,3
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Bank account or service,Mortgage,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Credit reporting,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Credit card,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Bank account or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Debt collection,7
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Debt collection,Mortgage,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Credit reporting,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Credit card,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Bank account or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Debt collection,15
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Money transfer or service,Mortgage,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Credit reporting,2
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Credit card,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Consumer loan,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Bank account or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Debt collection,1
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Money transfer or service,0
+llama3.2:1b,llama3.2-1b_accuracy_a2test88_run1,Mortgage,Mortgage,1
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Credit reporting,17
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Credit card,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Consumer loan,1
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit reporting,Mortgage,2
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Credit reporting,1
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Credit card,13
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Bank account or service,2
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Credit card,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Credit card,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Consumer loan,8
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Consumer loan,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Credit card,3
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Bank account or service,11
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Bank account or service,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Credit reporting,3
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Credit card,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Consumer loan,1
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Debt collection,4
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Debt collection,Mortgage,1
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Credit card,1
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Bank account or service,3
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Money transfer or service,13
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Money transfer or service,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Credit card,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s1),phi3-3.8b_accuracy_a2test88-s1_run1,Mortgage,Mortgage,4
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Credit reporting,16
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Credit card,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Consumer loan,1
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit reporting,Mortgage,3
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Credit reporting,1
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Credit card,13
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Bank account or service,2
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Credit card,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Credit card,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Consumer loan,5
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Consumer loan,Mortgage,3
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Credit card,3
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Bank account or service,11
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Bank account or service,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Credit reporting,1
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Credit card,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Consumer loan,1
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Debt collection,5
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Debt collection,Mortgage,2
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Credit card,1
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Bank account or service,3
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Money transfer or service,13
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Money transfer or service,Mortgage,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Credit reporting,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Credit card,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Consumer loan,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Bank account or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Debt collection,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Money transfer or service,0
+phi3:3.8b -> gemma4:e4b (s2),phi3-3.8b_accuracy_a2test88-s2_run1,Mortgage,Mortgage,4

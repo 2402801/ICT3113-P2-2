@@ -1,0 +1,40 @@
+[
+    {
+        "name":  "phi3:3.8b",
+        "model":  "phi3:3.8b",
+        "size":  3859588054,
+        "digest":  "4f222292793889a9a40a020799cfd28d53f3e01af25d48e06c5e708610fc47e9",
+        "details":  {
+                        "parent_model":  "",
+                        "format":  "gguf",
+                        "family":  "phi3",
+                        "families":  [
+                                         "phi3"
+                                     ],
+                        "parameter_size":  "3.8B",
+                        "quantization_level":  "Q4_0"
+                    },
+        "expires_at":  "2319-02-27T05:19:09.244046401Z",
+        "size_vram":  0,
+        "context_length":  4096
+    },
+    {
+        "name":  "gemma4:e4b",
+        "model":  "gemma4:e4b",
+        "size":  9426561924,
+        "digest":  "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+        "details":  {
+                        "parent_model":  "",
+                        "format":  "gguf",
+                        "family":  "gemma4",
+                        "families":  [
+                                         "gemma4"
+                                     ],
+                        "parameter_size":  "8.0B",
+                        "quantization_level":  "Q4_K_M"
+                    },
+        "expires_at":  "2319-02-27T05:19:07.828549765Z",
+        "size_vram":  0,
+        "context_length":  4096
+    }
+]
