@@ -104,7 +104,10 @@ function Initialize-ControlServer {
     try { Invoke-Control GET '/state' | Out-Null; return } catch { }
     Write-Step "Starting the hand-shake server on port $ControlPort"
     $py = (Get-Command python -ErrorAction Stop).Source
-    Start-Process -FilePath $py -ArgumentList @('-I', (Join-Path $PSScriptRoot 'control_server.py'), "$ControlPort") -WindowStyle Minimized | Out-Null
+    # Quote the script path: Windows PowerShell 5.1 joins -ArgumentList with spaces and does not quote, so a repo path
+    # containing spaces would reach python split into several arguments.
+    $server = '"{0}"' -f (Join-Path $PSScriptRoot 'control_server.py')
+    Start-Process -FilePath $py -ArgumentList @('-I', $server, "$ControlPort") -WindowStyle Minimized | Out-Null
     for ($i = 0; $i -lt 15; $i++) {
         Start-Sleep -Seconds 1
         try { Invoke-Control GET '/state' | Out-Null; Write-Ok 'hand-shake server up'; return } catch { }
