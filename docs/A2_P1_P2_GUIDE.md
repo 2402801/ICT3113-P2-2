@@ -67,7 +67,7 @@ one first: `accuracy_run.ps1 -Config cascadeS1NoThink` etc. Fill the addendum ro
 | Cascade inside `POST /tickets`, log fields `escalated`, `final_model` | done | `server/classifier.py`, rule doc "What the service log records" |
 | Memory check (phi3:3.8b + gemma4:e4b both resident) | PASS | `tests/environment/a2_memcheck/ollama_ps.txt` |
 | `OLLAMA_MAX_LOADED_MODELS=2`, `NUM_PARALLEL=1`, `KEEP_ALIVE=-1` | in compose | `docker-compose.yml` |
-| Prediction record | committed before any benchmark | commit `10fe162` |
+| Prediction record | committed 17 Nov (commit `10fe162`): after gemma's accuracy run of 14 Nov, before any speed run; team to settle the wording on slide 7 | commit `10fe162` |
 | **Speed workload row list** | **missing** | P2, section 2 |
 | **S measurement, rate, run length** | **missing** | P1 + P2, section 3 |
 | **`speed_test.jmx`** | **missing** (only `tests/load/load_test.jmx` from A1) | P2, section 4 |

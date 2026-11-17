@@ -16,7 +16,7 @@ From P2 (load generator). Read this top to bottom. Details are in `docs/A2_P1_P2
 - Arrival rate = 1 ticket per 2S s (`3600 / 2S` per hour).
 - Run length = max(S min, 5 min). Timeout = max(10S, 300 s). Pause = timeout + 90 s.
 - S is a measurement, not a setting: do not pick it. It depends on the laptop (GPU vs CPU, memory, power, other programs). The ~33 s in our notes is only an A1 estimate.
-- For a fair S: plugged in, high-performance power plan, other apps closed, gemma fully on GPU (`ollama ps` shows size_vram not 0).
+- For a fair S: plugged in, high-performance power plan, other apps closed, CPU only (`ollama ps` shows size_vram = 0, as the scripts require).
 - With S about 33 s: rate about 55 per hour, window about 33 min, about 30 tickets per run, timeout 330 s, pause 420 s.
 
 ## 3. The 9 runs
@@ -56,7 +56,7 @@ Escalation percentages are tuning-set estimates; the real fraction is measured f
    ```
    powershell -ExecutionPolicy Bypass -File scripts\a2\p1_run_all.ps1 -Configs gemmaAlone,cascadeS1,cascadeS2
    ```
-   Note: the script's default still includes the thinking-off configs, so always pass `-Configs` as above.
+   (The script default is now these same 3 configs; passing `-Configs` is optional.)
 9. When it prints ALL RUNS COMPLETE, commit `runs\`.
 
 ## 5. Steps for P2

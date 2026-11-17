@@ -7,7 +7,7 @@
   restarted after an interruption. It stops at the first failed run: fix the cause, delete that run's partial folder,
   start it again.
 .EXAMPLE
-  # required configurations only
+  # default: the 9 required runs (gemmaAlone, cascadeS1, cascadeS2 x 3)
   powershell -ExecutionPolicy Bypass -File scripts\a2\p1_run_all.ps1
   # add a single model that passed the accuracy limits
   powershell -ExecutionPolicy Bypass -File scripts\a2\p1_run_all.ps1 -Configs gemmaAlone,cascadeS1,cascadeS2,mistralAlone
@@ -15,10 +15,10 @@
   powershell -ExecutionPolicy Bypass -File scripts\a2\p1_run_all.ps1 -PlanOnly
 #>
 param(
-    # Default matrix: gemma alone and both cascades, each with gemma thinking on and off = 6 configurations x 3 runs = 18 runs.
-    # The brief requires only gemmaAlone, cascadeS1, cascadeS2 (9 runs); the NoThink ones are our additions and need the
-    # lecturer's OK on the `think` setting. Drop them with -Configs gemmaAlone,cascadeS1,cascadeS2.
-    [string[]]$Configs = @('gemmaAlone', 'gemmaNoThink', 'cascadeS1', 'cascadeS2', 'cascadeS1NoThink', 'cascadeS2NoThink'),
+    # Default matrix: the brief's required configurations, 3 configurations x 3 runs = 9 runs.
+    # The thinking-off configurations (gemmaNoThink, cascadeS1NoThink, cascadeS2NoThink) were dropped by the team; they stay
+    # defined in _a2common.ps1 but must be requested explicitly with -Configs.
+    [string[]]$Configs = @('gemmaAlone', 'cascadeS1', 'cascadeS2'),
     [ValidateRange(1, 9)][int]$Runs = 3,
     [string]$Tester = 'P2',
     [switch]$PlanOnly
