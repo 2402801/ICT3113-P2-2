@@ -1,0 +1,25 @@
+{
+  "run_id": "llama3.2-1b_accuracy_a2test88_run1",
+  "sut_url": "http://127.0.0.1:8000",
+  "golden_file": "datasets/a2/test_set.csv",
+  "golden_sha256": "ce782c764cc8a81b665aa926da6aa10aef50a9e0e0ae4f8464616124d7dbdf9f",
+  "golden_rows": 88,
+  "label_column": "final_agreed_label",
+  "limit": null,
+  "timeout_s": 900,
+  "sessions": [
+    {
+      "started_at_utc": "2026-11-17T04:16:09Z",
+      "finished_at_utc": "2026-11-17T04:17:26Z",
+      "health": {
+        "status": "ok",
+        "model": "llama3.2:1b",
+        "prompt_version": "v1",
+        "think": "default",
+        "cascade": "off"
+      },
+      "client_host": "DESKTOP-M4H382A",
+      "python": "3.14.6"
+    }
+  ]
+}

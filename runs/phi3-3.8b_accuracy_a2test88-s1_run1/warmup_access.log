@@ -1,0 +1,5 @@
+2026-11-17T04:21:52.725Z GET /health 200 0.66ms client=172.18.0.1 req_id=9ec90fe08716 start_ms=1794889312724 run=- model=phi3:3.8b
+2026-11-17T04:23:06.515Z GET /health 200 0.70ms client=172.18.0.1 req_id=ddc0ae45e04c start_ms=1794889386514 run=- model=phi3:3.8b
+2026-11-17T04:23:06.670Z GET /health 200 0.45ms client=172.18.0.1 req_id=b6708f2bd41f start_ms=1794889386670 run=- model=phi3:3.8b
+2026-11-17T04:23:06.921Z GET /health 200 0.39ms client=172.18.0.1 req_id=ac90c784ed78 start_ms=1794889386920 run=- model=phi3:3.8b
+2026-11-17T04:23:10.127Z POST /tickets 200 945.10ms client=172.18.0.1 req_id=66a4b01d5004 start_ms=1794889389181 run=phi3-3.8b_accuracy_a2test88-s1_run1-warmup model=phi3:3.8b ticket_id=89 category="Credit card" ollama_total_ms=876.7 ollama_load_ms=0.9 prompt_tokens=419 prompt_eval_ms=447.0 eval_tokens=9 eval_ms=425.9 call_ms=880.8 cascade=s1 final_model=phi3:3.8b escalated=0 small_answer="Credit card" small_ms=880.8
