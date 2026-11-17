@@ -1,0 +1,13 @@
+{
+  "run_id": "phi3-3.8b_speed_cascadeS1_run99",
+  "log_post_tickets_200": 30,
+  "log_escalated": 16,
+  "final_model_counts": {
+    "phi3:3.8b": 14,
+    "gemma4:e4b": 16
+  },
+  "escalation_fraction": 0.5333,
+  "stats_before": 0,
+  "stats_after": 30,
+  "completed_and_stored": 30
+}

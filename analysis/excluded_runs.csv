@@ -12,3 +12,4 @@ phi3-3.8b_load_tkt-normal_run1-refused,"not used: no traffic reached the SUT (P2
 phi3-3.8b_accuracy_golden175_run1,"environment failure: 1 of 175 requests returned 502 (Ollama HTTP 500: model runner has unexpectedly stopped, resource limitations or internal error); replaced by phi3-3.8b_accuracy_golden175_run4"
 phi3-3.8b_accuracy_golden175_run2,"environment failure: 1 of 175 requests returned 502 (Ollama HTTP 500: model runner has unexpectedly stopped, resource limitations or internal error); replaced by phi3-3.8b_accuracy_golden175_run5"
 phi3-3.8b_accuracy_golden175_run3,"environment failure: 2 of 175 requests returned 502 (Ollama HTTP 500: model runner has unexpectedly stopped, resource limitations or internal error); replaced by phi3-3.8b_accuracy_golden175_run6"
+phi3-3.8b_speed_cascadeS1_run99,"trial run: pipeline check before the official A2 speed matrix (30 sent, 30 OK, 30 stored, escalation 16/30); not an official run"
