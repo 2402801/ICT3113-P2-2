@@ -1,0 +1,25 @@
+{
+    "s_seconds":  31.08,
+    "s_timings_seconds":  [
+                              48.7,
+                              31.08,
+                              29.2
+                          ],
+    "s_probe_source_rows":  [
+                                35,
+                                85,
+                                27
+                            ],
+    "model_for_s":  "gemma4:e4b (cascade off)",
+    "rate_per_hour":  58,
+    "interarrival_seconds":  62.1,
+    "duration_sec":  1865,
+    "response_timeout_sec":  311,
+    "pause_sec":  401,
+    "expected_tickets":  30,
+    "a1_client_peak_per_hour":  3936,
+    "rate_vs_client_peak":  "BELOW the client peak: compares configurations only; say so on the limitations slide",
+    "run_length_deviation":  "none: duration = max(S min, 5 min) as in the brief",
+    "recorded_at_utc":  "2026-11-17T09:31:48Z",
+    "rule":  "rate = 1 ticket per 2S s (rounded to a whole number per hour); duration = max(S min, 5 min); timeout = max(10S, 300 s); pause = timeout + 90 s"
+}
