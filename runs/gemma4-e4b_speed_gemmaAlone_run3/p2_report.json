@@ -1,0 +1,8 @@
+{
+    "errored":  0,
+    "jmeter_exit":  null,
+    "p50_ms":  39653.0,
+    "sent":  30,
+    "completed_ok":  30,
+    "run_id":  "gemma4-e4b_speed_gemmaAlone_run3"
+}
