@@ -1,0 +1,197 @@
+2026-11-18 10:35:34,413 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-18 10:35:34,445 INFO o.a.j.JMeter: Loading user properties from: C:\Users\natli\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-11-18 10:35:34,448 INFO o.a.j.JMeter: Loading system properties from: C:\Users\natli\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: host=10.76.123.67
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: port=8000
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: run_id=gemma4-e4b_speed_gemmaAlone_run1
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: data_file=C:\Users\natli\Documents\GitHub\ICT3113-P2-2\datasets\a2\speed\workload_tickets.jsonl
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: jtl=C:\Users\natli\Documents\GitHub\ICT3113-P2-2\runs\gemma4-e4b_speed_gemmaAlone_run1\gemma4-e4b_speed_gemmaAlone_run1.jtl
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: sample_variables=req_id
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: rate_per_hour=58
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: duration_sec=1865
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: pause_sec=401
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: response_timeout_ms=311000
+2026-11-18 10:35:34,449 INFO o.a.j.JMeter: Setting JMeter property: random_seed=1001
+2026-11-18 10:35:34,462 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: java.version=17.0.20.1
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: os.name=Windows 11
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: os.version=10.0
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-18 10:35:34,463 INFO o.a.j.JMeter: Available Processors =22
+2026-11-18 10:35:34,476 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-18 10:35:34,476 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-18 10:35:34,476 INFO o.a.j.JMeter: JMeterHome=C:\Users\natli\tools\apache-jmeter-5.6.3
+2026-11-18 10:35:34,477 INFO o.a.j.JMeter: user.dir  =C:\Users\natli\Documents\GitHub\ICT3113-P2-2
+2026-11-18 10:35:34,478 INFO o.a.j.JMeter: PWD       =C:\Users\natli\Documents\GitHub\ICT3113-P2-2
+2026-11-18 10:35:34,479 INFO o.a.j.JMeter: IP: 10.76.123.109 Name: NTlaptop FullName: NTlaptop
+2026-11-18 10:35:34,501 INFO o.a.j.s.FileServer: Default base='C:\Users\natli\Documents\GitHub\ICT3113-P2-2'
+2026-11-18 10:35:34,504 INFO o.a.j.s.FileServer: Set new base='C:\Users\natli\Documents\GitHub\ICT3113-P2-2\tests\load'
+2026-11-18 10:35:34,780 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-18 10:35:34,824 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-18 10:35:34,829 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-18 10:35:34,835 INFO o.a.j.s.SaveService: Loading file: C:\Users\natli\Documents\GitHub\ICT3113-P2-2\tests\load\speed_test.jmx
+2026-11-18 10:35:34,937 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-18 10:35:34,937 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-18 10:35:34,937 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-18 10:35:34,937 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-18 10:35:34,937 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-18 10:35:34,937 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-18 10:35:34,973 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-18 10:35:34,994 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-18 10:35:34,996 INFO o.a.j.s.SampleEvent: List of sample_variables: [req_id]
+2026-11-18 10:35:34,996 INFO o.a.j.s.SampleEvent: List of sample_variables: [req_id]
+2026-11-18 10:35:35,002 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-18 10:35:35,003 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-18 10:35:35,112 INFO o.a.j.JMeter: Running test (1794969335112)
+2026-11-18 10:35:35,145 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Tickets - A2 speed test
+2026-11-18 10:35:35,145 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group Tickets - A2 speed test.
+2026-11-18 10:35:35,146 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-11-18 10:35:35,146 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#1 with schedule rate(58/hour) random_arrivals(1865 sec) rate(58/hour) pause(401 sec)
+2026-11-18 10:35:35,205 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-18 10:35:35,206 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-11-18 10:35:35,212 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 30 events, beginRate = 0.01611111111111111 / sec, endRate = 0.01611111111111111 / sec, duration = 1865.0 sec
+2026-11-18 10:36:55,056 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-1
+2026-11-18 10:36:55,058 INFO o.a.j.s.FileServer: Stored: C:\Users\natli\Documents\GitHub\ICT3113-P2-2\datasets\a2\speed\workload_tickets.jsonl
+2026-11-18 10:36:55,122 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = NTlaptop
+2026-11-18 10:36:55,133 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-18 10:36:55,135 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-18 10:36:55,135 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-18 10:36:55,135 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-18 10:36:55,136 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-18 10:37:05,322 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-2
+2026-11-18 10:37:31,103 INFO o.a.j.r.Summariser: summary +      1 in 00:01:56 =    0.0/s Avg: 35811 Min: 35811 Max: 35811 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+2026-11-18 10:37:31,103 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-1
+2026-11-18 10:37:31,104 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-1
+2026-11-18 10:37:41,005 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-3
+2026-11-18 10:37:55,240 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-4
+2026-11-18 10:38:13,043 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-2
+2026-11-18 10:38:13,044 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-2
+2026-11-18 10:38:41,504 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-3
+2026-11-18 10:38:41,504 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-3
+2026-11-18 10:39:16,248 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-5
+2026-11-18 10:39:26,477 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-4
+2026-11-18 10:39:26,478 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-4
+2026-11-18 10:39:51,625 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-5
+2026-11-18 10:39:51,625 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-5
+2026-11-18 10:41:04,549 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-6
+2026-11-18 10:41:09,451 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-7
+2026-11-18 10:41:30,034 INFO o.a.j.r.Summariser: summary +      5 in 00:03:59 =    0.0/s Avg: 56066 Min: 25480 Max: 91245 Err:     0 (0.00%) Active: 2 Started: 7 Finished: 5
+2026-11-18 10:41:30,035 INFO o.a.j.r.Summariser: summary =      6 in 00:05:55 =    0.0/s Avg: 52690 Min: 25480 Max: 91245 Err:     0 (0.00%)
+2026-11-18 10:41:30,036 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-6
+2026-11-18 10:41:30,036 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-6
+2026-11-18 10:42:00,750 INFO o.a.j.r.Summariser: summary +      1 in 00:00:31 =    0.0/s Avg: 51302 Min: 51302 Max: 51302 Err:     0 (0.00%) Active: 1 Started: 7 Finished: 6
+2026-11-18 10:42:00,751 INFO o.a.j.r.Summariser: summary =      7 in 00:06:26 =    0.0/s Avg: 52492 Min: 25480 Max: 91245 Err:     0 (0.00%)
+2026-11-18 10:42:00,752 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-7
+2026-11-18 10:42:00,752 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-7
+2026-11-18 10:42:54,285 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-8
+2026-11-18 10:43:17,779 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-8
+2026-11-18 10:43:17,779 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-8
+2026-11-18 10:47:42,903 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-9
+2026-11-18 10:48:10,290 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-9
+2026-11-18 10:48:10,290 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-9
+2026-11-18 10:49:53,360 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-10
+2026-11-18 10:50:09,183 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-11
+2026-11-18 10:50:19,722 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-12
+2026-11-18 10:50:30,403 INFO o.a.j.r.Summariser: summary +      3 in 00:08:30 =    0.0/s Avg: 29307 Min: 23492 Max: 37043 Err:     0 (0.00%) Active: 3 Started: 12 Finished: 9
+2026-11-18 10:50:30,403 INFO o.a.j.r.Summariser: summary =     10 in 00:14:55 =    0.0/s Avg: 45536 Min: 23492 Max: 91245 Err:     0 (0.00%)
+2026-11-18 10:50:30,404 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-10
+2026-11-18 10:50:30,404 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-10
+2026-11-18 10:50:45,242 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-13
+2026-11-18 10:51:06,000 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-11
+2026-11-18 10:51:06,000 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-11
+2026-11-18 10:51:14,419 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-14
+2026-11-18 10:51:17,575 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-15
+2026-11-18 10:51:32,050 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-16
+2026-11-18 10:51:38,693 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-17
+2026-11-18 10:51:58,915 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-12
+2026-11-18 10:51:58,915 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-12
+2026-11-18 10:52:27,187 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-13
+2026-11-18 10:52:27,188 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-13
+2026-11-18 10:53:02,963 INFO o.a.j.r.Summariser: summary +      4 in 00:02:33 =    0.0/s Avg: 91630 Min: 56819 Max: 108552 Err:     0 (0.00%) Active: 4 Started: 17 Finished: 13
+2026-11-18 10:53:02,965 INFO o.a.j.r.Summariser: summary =     14 in 00:17:28 =    0.0/s Avg: 58706 Min: 23492 Max: 108552 Err:     0 (0.00%)
+2026-11-18 10:53:02,965 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-14
+2026-11-18 10:53:02,965 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-14
+2026-11-18 10:53:36,129 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-15
+2026-11-18 10:53:36,129 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-15
+2026-11-18 10:53:36,791 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-18
+2026-11-18 10:54:09,620 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-16
+2026-11-18 10:54:09,620 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-16
+2026-11-18 10:54:49,586 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-17
+2026-11-18 10:54:49,586 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-17
+2026-11-18 10:54:50,247 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-19
+2026-11-18 10:55:22,580 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-18
+2026-11-18 10:55:22,580 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-18
+2026-11-18 10:56:03,412 INFO o.a.j.r.Summariser: summary +      5 in 00:03:00 =    0.0/s Avg: 133204 Min: 73169 Max: 190909 Err:     0 (0.00%) Active: 1 Started: 19 Finished: 18
+2026-11-18 10:56:03,412 INFO o.a.j.r.Summariser: summary =     19 in 00:20:28 =    0.0/s Avg: 78311 Min: 23492 Max: 190909 Err:     0 (0.00%)
+2026-11-18 10:56:03,412 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-19
+2026-11-18 10:56:03,412 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-19
+2026-11-18 10:57:39,314 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-20
+2026-11-18 10:58:09,121 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-21
+2026-11-18 10:58:09,496 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-20
+2026-11-18 10:58:09,496 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-20
+2026-11-18 10:58:26,635 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-22
+2026-11-18 10:58:43,271 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-23
+2026-11-18 10:58:46,430 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-21
+2026-11-18 10:58:46,431 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-21
+2026-11-18 10:58:58,036 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-24
+2026-11-18 10:59:34,082 INFO o.a.j.r.Summariser: summary +      3 in 00:03:31 =    0.0/s Avg: 44979 Min: 30180 Max: 67451 Err:     0 (0.00%) Active: 3 Started: 24 Finished: 21
+2026-11-18 10:59:34,082 INFO o.a.j.r.Summariser: summary =     22 in 00:23:59 =    0.0/s Avg: 73765 Min: 23492 Max: 190909 Err:     0 (0.00%)
+2026-11-18 10:59:34,082 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-22
+2026-11-18 10:59:34,082 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-22
+2026-11-18 10:59:38,340 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-25
+2026-11-18 11:00:03,887 INFO o.a.j.r.Summariser: summary +      1 in 00:00:30 =    0.0/s Avg: 80620 Min: 80620 Max: 80620 Err:     0 (0.00%) Active: 3 Started: 25 Finished: 22
+2026-11-18 11:00:03,888 INFO o.a.j.r.Summariser: summary =     23 in 00:24:29 =    0.0/s Avg: 74063 Min: 23492 Max: 190909 Err:     0 (0.00%)
+2026-11-18 11:00:03,889 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-23
+2026-11-18 11:00:03,889 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-23
+2026-11-18 11:00:25,533 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-26
+2026-11-18 11:00:33,900 INFO o.a.j.r.Summariser: summary +      1 in 00:00:30 =    0.0/s Avg: 95870 Min: 95870 Max: 95870 Err:     0 (0.00%) Active: 3 Started: 26 Finished: 23
+2026-11-18 11:00:33,901 INFO o.a.j.r.Summariser: summary =     24 in 00:24:59 =    0.0/s Avg: 74972 Min: 23492 Max: 190909 Err:     0 (0.00%)
+2026-11-18 11:00:33,901 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-24
+2026-11-18 11:00:33,901 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-24
+2026-11-18 11:00:57,506 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-27
+2026-11-18 11:01:06,550 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-25
+2026-11-18 11:01:06,550 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-25
+2026-11-18 11:01:07,444 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-28
+2026-11-18 11:01:32,485 INFO o.a.j.r.Summariser: summary +      2 in 00:00:59 =    0.0/s Avg: 77586 Min: 66956 Max: 88216 Err:     0 (0.00%) Active: 3 Started: 28 Finished: 25
+2026-11-18 11:01:32,485 INFO o.a.j.r.Summariser: summary =     26 in 00:25:57 =    0.0/s Avg: 75173 Min: 23492 Max: 190909 Err:     0 (0.00%)
+2026-11-18 11:01:32,485 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-26
+2026-11-18 11:01:32,485 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-26
+2026-11-18 11:02:08,001 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-27
+2026-11-18 11:02:08,001 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-27
+2026-11-18 11:02:12,591 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-29
+2026-11-18 11:02:48,399 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-28
+2026-11-18 11:02:48,399 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-28
+2026-11-18 11:03:18,005 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-29
+2026-11-18 11:03:18,007 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-29
+2026-11-18 11:05:44,644 INFO o.a.j.t.o.EvenArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 401.0 sec
+2026-11-18 11:05:44,644 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 456 sec till the end of the schedule
+2026-11-18 11:05:44,647 INFO o.a.j.t.JMeterThread: Thread started: Tickets - A2 speed test 1-30
+2026-11-18 11:06:28,413 INFO o.a.j.t.JMeterThread: Thread is done: Tickets - A2 speed test 1-30
+2026-11-18 11:06:28,413 INFO o.a.j.t.JMeterThread: Thread finished: Tickets - A2 speed test 1-30
+2026-11-18 11:06:46,358 INFO o.a.j.JMeter: Command: StopTestNow received from /127.0.0.1
+2026-11-18 11:06:46,361 INFO o.a.j.t.o.OpenModelThreadGroup: Gracefully stopping the threads
+2026-11-18 11:06:46,362 INFO o.a.j.t.o.OpenModelThreadGroup: Interrupting the threads
+2026-11-18 11:06:46,363 ERROR o.a.j.e.StandardJMeterEngine: One or more test threads won't exit; see log file.
+2026-11-18 11:06:46,363 ERROR o.a.j.e.StandardJMeterEngine: Exiting
+2026-11-18 11:06:46,364 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-18 11:06:46,364 INFO o.a.j.s.FileServer: Close: C:\Users\natli\Documents\GitHub\ICT3113-P2-2\datasets\a2\speed\workload_tickets.jsonl
+2026-11-18 11:06:46,368 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2026-11-18 11:06:46,370 INFO o.a.j.r.ResultCollector: Shutdown hook ended
+2026-11-18 11:06:46,366 WARN o.a.j.e.StandardJMeterEngine: Error encountered during shutdown of org.apache.jmeter.reporters.ResultCollector@6aed01ea
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(Unknown Source) ~[?:?]
+	at java.base/java.lang.Runtime.removeShutdownHook(Unknown Source) ~[?:?]
+	at org.apache.jmeter.reporters.ResultCollector.testEnded(ResultCollector.java:297) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.reporters.ResultCollector.testEnded(ResultCollector.java:345) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.engine.StandardJMeterEngine.notifyTestListenersOfEnd(StandardJMeterEngine.java:266) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:543) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]

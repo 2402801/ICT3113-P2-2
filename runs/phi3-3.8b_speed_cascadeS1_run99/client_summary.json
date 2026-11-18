@@ -1,0 +1,13 @@
+{
+  "jtl": "phi3-3.8b_speed_cascadeS1_run99.jtl",
+  "sent": 30,
+  "completed_ok": 30,
+  "errored": 0,
+  "window_s": 1674.8,
+  "throughput_per_s": 0.01791,
+  "error_rate": 0.0,
+  "p50_ms": 28666.0,
+  "mean_ms": 25212,
+  "min_ms": 1395,
+  "max_ms": 69058
+}

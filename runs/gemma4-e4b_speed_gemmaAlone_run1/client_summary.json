@@ -1,0 +1,13 @@
+{
+  "jtl": "gemma4-e4b_speed_gemmaAlone_run1.jtl",
+  "sent": 30,
+  "completed_ok": 30,
+  "errored": 0,
+  "window_s": 1773.1,
+  "throughput_per_s": 0.01692,
+  "error_rate": 0.0,
+  "p50_ms": 67588.0,
+  "mean_ms": 74505.2,
+  "min_ms": 23492,
+  "max_ms": 190909
+}
